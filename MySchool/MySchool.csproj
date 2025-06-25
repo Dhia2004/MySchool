@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4EA850E-B33C-4A19-B61D-94FD43E88299}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MySchool</RootNamespace>
+    <AssemblyName>MySchool</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsGlobalSettings.cs" />
+    <Compile Include="ctrlPersonInfoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlPersonInfoCard.Designer.cs">
+      <DependentUpon>ctrlPersonInfoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlPersonInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlPersonInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrlPersonInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlPersonMiniCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlPersonMiniCard.Designer.cs">
+      <DependentUpon>ctrlPersonMiniCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlStudentInfoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlStudentInfoCard.Designer.cs">
+      <DependentUpon>ctrlStudentInfoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlStudentInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlStudentInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrlStudentInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlStudentMiniCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlStudentMiniCard.Designer.cs">
+      <DependentUpon>ctrlStudentMiniCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditPerson.Designer.cs">
+      <DependentUpon>frmAddEditPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditStudent.Designer.cs">
+      <DependentUpon>frmAddEditStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAllStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAllStudents.Designer.cs">
+      <DependentUpon>frmAllStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditStudentStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditStudentStatus.Designer.cs">
+      <DependentUpon>frmEditStudentStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginPage.Designer.cs">
+      <DependentUpon>frmLoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonInfo.Designer.cs">
+      <DependentUpon>frmPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonInfoWithFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonInfoWithFilter.Designer.cs">
+      <DependentUpon>frmPersonInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchoolConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchoolConfig.Designer.cs">
+      <DependentUpon>frmSchoolConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWelcomeForm.Designer.cs">
+      <DependentUpon>frmWelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ctrlPersonInfoCard.resx">
+      <DependentUpon>ctrlPersonInfoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlPersonInfoWithFilter.resx">
+      <DependentUpon>ctrlPersonInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlPersonMiniCard.resx">
+      <DependentUpon>ctrlPersonMiniCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlStudentInfoCard.resx">
+      <DependentUpon>ctrlStudentInfoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlStudentInfoWithFilter.resx">
+      <DependentUpon>ctrlStudentInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlStudentMiniCard.resx">
+      <DependentUpon>ctrlStudentMiniCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditPerson.resx">
+      <DependentUpon>frmAddEditPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditStudent.resx">
+      <DependentUpon>frmAddEditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAllStudents.resx">
+      <DependentUpon>frmAllStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditStudentStatus.resx">
+      <DependentUpon>frmEditStudentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginPage.resx">
+      <DependentUpon>frmLoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonInfo.resx">
+      <DependentUpon>frmPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonInfoWithFilter.resx">
+      <DependentUpon>frmPersonInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchoolConfig.resx">
+      <DependentUpon>frmSchoolConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWelcomeForm.resx">
+      <DependentUpon>frmWelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PSMS_BusinessLayer\PSMS_BusinessLayer.csproj">
+      <Project>{ffef3412-ef29-4ab5-8071-93a6fb3063b9}</Project>
+      <Name>PSMS_BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person ID 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gender 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Join Date 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Created By User 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Education Level 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Woman 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Students 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tap 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove Picture 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equipment 72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye_open 72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye_closed 72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit Info 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddStudent 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Search 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Remove 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit Info Blue 32 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Historique 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surgery 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heart 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blood 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Allergy 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gluten-free 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disablty 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glasses 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ball 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\School 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign_in 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teachers 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Curriculum 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Classroom 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Groups 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Icon 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close ic 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medical File 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Basic Info 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reload 24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
