@@ -238,8 +238,10 @@ namespace MySchool
         private void frmAddEditStudent_Load(object sender, EventArgs e)
         {
             _PanelMode = enPanelMode.pnlBasicInfoActive;
+            btnMedicalFile.BringToFront();
+            btnClose.Location = new Point(252, 741);
             btnMedicalFile.Text = "Medical File";
-            //btnMedicalFile.Image = Resources.document__1_;
+            btnMedicalFile.Image = Resources.Medical_File_32;
             pnlBasicInfo.Visible = true;
             pnlMedicalInfo.Visible = false;
             _FullComboBoxWithLevels();
@@ -300,7 +302,9 @@ namespace MySchool
                     pnlMedicalInfo.Visible = false;
                     pnlBasicInfo.Visible = true;
                     btnMedicalFile.Text = "Medical File";
-                    //btnMedicalFile.Image = Resources.document__1_;
+                    btnMedicalFile.Location = new Point(370, 741);
+                    btnClose.Location = new Point(252, 741);
+                    btnMedicalFile.Image = Resources.Basic_Info_32;
                     break;
                 case enPanelMode.pnlBasicInfoActive:
                     _PanelMode = enPanelMode.pnlMedicalInfoActive;
@@ -308,9 +312,13 @@ namespace MySchool
                     pnlMedicalInfo.Visible = true;
                     pnlMedicalInfo.BringToFront();
                     btnMedicalFile.Text = "Basic Info";
-                    //btnMedicalFile.Image = Resources.id_card;
+                    btnMedicalFile.Location = new Point(163, 741);
+                    btnClose.Location = new Point(45, 741);
+                    btnMedicalFile.Image = Resources.Basic_Info_32;
                     break;
             }
+
+
         }
 
         private void rbChronicIllness_CheckedChanged(object sender, EventArgs e)
@@ -609,6 +617,11 @@ namespace MySchool
             pnlUploadImage.SendToBack();
             pnlDeleteImage.SendToBack();
             pbStudentImage.BringToFront();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

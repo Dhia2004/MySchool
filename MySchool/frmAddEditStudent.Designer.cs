@@ -30,10 +30,7 @@
         {
             this.lblPersonID = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.pnlBasicInfo = new System.Windows.Forms.Panel();
-            this.btnPersonInfo = new System.Windows.Forms.Button();
-            this.btnSelectPerson = new System.Windows.Forms.Button();
             this.label37 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -76,17 +73,6 @@
             this.pnlMedicalInfo = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.pnlMedications = new System.Windows.Forms.Panel();
-            this.chkVitSup = new System.Windows.Forms.CheckBox();
-            this.chkAntiEpiDrugs = new System.Windows.Forms.CheckBox();
-            this.chkPenicillin = new System.Windows.Forms.CheckBox();
-            this.txtMedications = new System.Windows.Forms.TextBox();
-            this.chkCardiacMedications = new System.Windows.Forms.CheckBox();
-            this.chkDiabetesMedications = new System.Windows.Forms.CheckBox();
-            this.chkAntihistamines = new System.Windows.Forms.CheckBox();
-            this.chkAsthmaMedications = new System.Windows.Forms.CheckBox();
-            this.chkParacetamol = new System.Windows.Forms.CheckBox();
-            this.chkInsulin = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
             this.rbMedication_Yes = new System.Windows.Forms.RadioButton();
             this.rbMedication_No = new System.Windows.Forms.RadioButton();
@@ -98,36 +84,12 @@
             this.txtAllergy = new System.Windows.Forms.TextBox();
             this.txtChronicIllness = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.pnlAllergy = new System.Windows.Forms.Panel();
-            this.chkEgg = new System.Windows.Forms.CheckBox();
-            this.chkDust = new System.Windows.Forms.CheckBox();
-            this.chkAspirin = new System.Windows.Forms.CheckBox();
-            this.chkSkin = new System.Windows.Forms.CheckBox();
-            this.chkPollen = new System.Windows.Forms.CheckBox();
-            this.chkGluten = new System.Windows.Forms.CheckBox();
-            this.chkLactose = new System.Windows.Forms.CheckBox();
-            this.chkPeanut = new System.Windows.Forms.CheckBox();
-            this.pnlChronicIllness = new System.Windows.Forms.Panel();
-            this.chkThyroidDisorders = new System.Windows.Forms.CheckBox();
-            this.chkAnemia = new System.Windows.Forms.CheckBox();
-            this.chkLiverDisease = new System.Windows.Forms.CheckBox();
-            this.chkKidneyDisease = new System.Windows.Forms.CheckBox();
-            this.chkEpilepsy = new System.Windows.Forms.CheckBox();
-            this.chkHeartDisease = new System.Windows.Forms.CheckBox();
-            this.chkDiabetes = new System.Windows.Forms.CheckBox();
-            this.chkAsthma = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbBloodType = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.rbAllergy_Yes = new System.Windows.Forms.RadioButton();
             this.rbAllergy_No = new System.Windows.Forms.RadioButton();
-            this.pnlNoChronics = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pnlNoAllergy = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.pnlNoMedication = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.rbGlasses_Yes = new System.Windows.Forms.RadioButton();
             this.rbGlasses_No = new System.Windows.Forms.RadioButton();
@@ -140,14 +102,49 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.rbPracticeSport_Yes = new System.Windows.Forms.RadioButton();
             this.rbPracticeSport_No = new System.Windows.Forms.RadioButton();
+            this.pnlChronicIllness = new System.Windows.Forms.Panel();
+            this.chkThyroidDisorders = new System.Windows.Forms.CheckBox();
+            this.chkAnemia = new System.Windows.Forms.CheckBox();
+            this.chkLiverDisease = new System.Windows.Forms.CheckBox();
+            this.chkKidneyDisease = new System.Windows.Forms.CheckBox();
+            this.chkEpilepsy = new System.Windows.Forms.CheckBox();
+            this.chkHeartDisease = new System.Windows.Forms.CheckBox();
+            this.chkDiabetes = new System.Windows.Forms.CheckBox();
+            this.chkAsthma = new System.Windows.Forms.CheckBox();
+            this.pnlNoChronics = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pnlAllergy = new System.Windows.Forms.Panel();
+            this.chkEgg = new System.Windows.Forms.CheckBox();
+            this.chkDust = new System.Windows.Forms.CheckBox();
+            this.chkAspirin = new System.Windows.Forms.CheckBox();
+            this.chkSkin = new System.Windows.Forms.CheckBox();
+            this.chkPollen = new System.Windows.Forms.CheckBox();
+            this.chkGluten = new System.Windows.Forms.CheckBox();
+            this.chkLactose = new System.Windows.Forms.CheckBox();
+            this.chkPeanut = new System.Windows.Forms.CheckBox();
+            this.pnlNoAllergy = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pnlMedications = new System.Windows.Forms.Panel();
+            this.chkVitSup = new System.Windows.Forms.CheckBox();
+            this.chkAntiEpiDrugs = new System.Windows.Forms.CheckBox();
+            this.chkPenicillin = new System.Windows.Forms.CheckBox();
+            this.txtMedications = new System.Windows.Forms.TextBox();
+            this.chkCardiacMedications = new System.Windows.Forms.CheckBox();
+            this.chkDiabetesMedications = new System.Windows.Forms.CheckBox();
+            this.chkAntihistamines = new System.Windows.Forms.CheckBox();
+            this.chkAsthmaMedications = new System.Windows.Forms.CheckBox();
+            this.chkParacetamol = new System.Windows.Forms.CheckBox();
+            this.chkInsulin = new System.Windows.Forms.CheckBox();
+            this.pnlNoMedication = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnMedicalFile = new System.Windows.Forms.Button();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.btnPersonInfo = new System.Windows.Forms.Button();
+            this.btnSelectPerson = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -157,33 +154,34 @@
             this.pbMale = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pbStudentImage = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pbStudentImage = new System.Windows.Forms.PictureBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.panel4.SuspendLayout();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnMedicalFile = new System.Windows.Forms.Button();
             this.pnlBasicInfo.SuspendLayout();
             this.panel5.SuspendLayout();
             this.pnlUploadImage.SuspendLayout();
             this.pnlDeleteImage.SuspendLayout();
             this.pnlMedicalInfo.SuspendLayout();
-            this.pnlMedications.SuspendLayout();
-            this.pnlAllergy.SuspendLayout();
-            this.pnlChronicIllness.SuspendLayout();
-            this.pnlNoChronics.SuspendLayout();
-            this.pnlNoAllergy.SuspendLayout();
-            this.pnlNoMedication.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.pnlChronicIllness.SuspendLayout();
+            this.pnlNoChronics.SuspendLayout();
+            this.pnlAllergy.SuspendLayout();
+            this.pnlNoAllergy.SuspendLayout();
+            this.pnlMedications.SuspendLayout();
+            this.pnlNoMedication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -198,17 +196,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPersonID
@@ -233,18 +231,10 @@
             this.label16.TabIndex = 78;
             this.label16.Text = "Student ID :";
             // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.btnMedicalFile);
-            this.panel4.Location = new System.Drawing.Point(12, 153);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(561, 571);
-            this.panel4.TabIndex = 77;
-            // 
             // pnlBasicInfo
             // 
             this.pnlBasicInfo.AutoScroll = true;
+            this.pnlBasicInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlBasicInfo.Controls.Add(this.pictureBox14);
             this.pnlBasicInfo.Controls.Add(this.pictureBox13);
             this.pnlBasicInfo.Controls.Add(this.btnPersonInfo);
@@ -291,36 +281,8 @@
             this.pnlBasicInfo.Controls.Add(this.pnlDeleteImage);
             this.pnlBasicInfo.Location = new System.Drawing.Point(13, 154);
             this.pnlBasicInfo.Name = "pnlBasicInfo";
-            this.pnlBasicInfo.Size = new System.Drawing.Size(559, 507);
+            this.pnlBasicInfo.Size = new System.Drawing.Size(561, 571);
             this.pnlBasicInfo.TabIndex = 97;
-            // 
-            // btnPersonInfo
-            // 
-            this.btnPersonInfo.BackColor = System.Drawing.Color.White;
-            this.btnPersonInfo.FlatAppearance.BorderSize = 0;
-            this.btnPersonInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnPersonInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPersonInfo.Image = global::MySchool.Properties.Resources.Info_24;
-            this.btnPersonInfo.Location = new System.Drawing.Point(472, 267);
-            this.btnPersonInfo.Name = "btnPersonInfo";
-            this.btnPersonInfo.Size = new System.Drawing.Size(27, 27);
-            this.btnPersonInfo.TabIndex = 142;
-            this.btnPersonInfo.UseVisualStyleBackColor = false;
-            this.btnPersonInfo.Click += new System.EventHandler(this.btnPersonInfo_Click);
-            // 
-            // btnSelectPerson
-            // 
-            this.btnSelectPerson.BackColor = System.Drawing.Color.White;
-            this.btnSelectPerson.FlatAppearance.BorderSize = 0;
-            this.btnSelectPerson.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnSelectPerson.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectPerson.Image = global::MySchool.Properties.Resources.Add_24;
-            this.btnSelectPerson.Location = new System.Drawing.Point(505, 267);
-            this.btnSelectPerson.Name = "btnSelectPerson";
-            this.btnSelectPerson.Size = new System.Drawing.Size(27, 27);
-            this.btnSelectPerson.TabIndex = 141;
-            this.btnSelectPerson.UseVisualStyleBackColor = false;
-            this.btnSelectPerson.Click += new System.EventHandler(this.btnSelectPerson_Click);
             // 
             // label37
             // 
@@ -336,7 +298,7 @@
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(20, 615);
+            this.panel3.Location = new System.Drawing.Point(20, 667);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(512, 10);
             this.panel3.TabIndex = 139;
@@ -420,7 +382,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(123, 524);
+            this.label3.Location = new System.Drawing.Point(123, 572);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(17, 21);
             this.label3.TabIndex = 127;
@@ -431,7 +393,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(51, 524);
+            this.label4.Location = new System.Drawing.Point(51, 572);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 21);
             this.label4.TabIndex = 124;
@@ -440,7 +402,7 @@
             // txtNotes
             // 
             this.txtNotes.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNotes.Location = new System.Drawing.Point(20, 558);
+            this.txtNotes.Location = new System.Drawing.Point(20, 614);
             this.txtNotes.Multiline = true;
             this.txtNotes.Name = "txtNotes";
             this.txtNotes.Size = new System.Drawing.Size(512, 53);
@@ -450,7 +412,7 @@
             // 
             this.cbLevel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.cbLevel.FormattingEnabled = true;
-            this.cbLevel.Location = new System.Drawing.Point(313, 319);
+            this.cbLevel.Location = new System.Drawing.Point(313, 327);
             this.cbLevel.Name = "cbLevel";
             this.cbLevel.Size = new System.Drawing.Size(219, 28);
             this.cbLevel.TabIndex = 121;
@@ -461,7 +423,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(400, 284);
+            this.label1.Location = new System.Drawing.Point(400, 286);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(17, 21);
             this.label1.TabIndex = 120;
@@ -508,7 +470,7 @@
             this.label41.BackColor = System.Drawing.Color.Transparent;
             this.label41.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.ForeColor = System.Drawing.Color.Red;
-            this.label41.Location = new System.Drawing.Point(123, 428);
+            this.label41.Location = new System.Drawing.Point(123, 466);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(17, 21);
             this.label41.TabIndex = 118;
@@ -533,7 +495,7 @@
             this.label39.BackColor = System.Drawing.Color.Transparent;
             this.label39.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.Color.Red;
-            this.label39.Location = new System.Drawing.Point(108, 362);
+            this.label39.Location = new System.Drawing.Point(108, 376);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(17, 21);
             this.label39.TabIndex = 117;
@@ -557,7 +519,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(51, 434);
+            this.label17.Location = new System.Drawing.Point(51, 466);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(78, 21);
             this.label17.TabIndex = 107;
@@ -579,7 +541,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(51, 360);
+            this.label19.Location = new System.Drawing.Point(51, 376);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(64, 21);
             this.label19.TabIndex = 105;
@@ -588,7 +550,7 @@
             // txtAddress
             // 
             this.txtAddress.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(20, 468);
+            this.txtAddress.Location = new System.Drawing.Point(20, 508);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(512, 43);
@@ -616,7 +578,7 @@
             // txtPhone
             // 
             this.txtPhone.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(20, 394);
+            this.txtPhone.Location = new System.Drawing.Point(20, 418);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(224, 27);
             this.txtPhone.TabIndex = 106;
@@ -625,7 +587,7 @@
             // 
             this.dtpBirthDate.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBirthDate.Location = new System.Drawing.Point(20, 320);
+            this.dtpBirthDate.Location = new System.Drawing.Point(20, 328);
             this.dtpBirthDate.Name = "dtpBirthDate";
             this.dtpBirthDate.Size = new System.Drawing.Size(224, 27);
             this.dtpBirthDate.TabIndex = 104;
@@ -738,6 +700,7 @@
             // pnlMedicalInfo
             // 
             this.pnlMedicalInfo.AutoScroll = true;
+            this.pnlMedicalInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlMedicalInfo.Controls.Add(this.panel6);
             this.pnlMedicalInfo.Controls.Add(this.pictureBox17);
             this.pnlMedicalInfo.Controls.Add(this.label11);
@@ -777,12 +740,12 @@
             this.pnlMedicalInfo.Controls.Add(this.pnlNoMedication);
             this.pnlMedicalInfo.Location = new System.Drawing.Point(13, 154);
             this.pnlMedicalInfo.Name = "pnlMedicalInfo";
-            this.pnlMedicalInfo.Size = new System.Drawing.Size(559, 507);
+            this.pnlMedicalInfo.Size = new System.Drawing.Size(561, 571);
             this.pnlMedicalInfo.TabIndex = 89;
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(14, 831);
+            this.panel6.Location = new System.Drawing.Point(17, 831);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(508, 12);
             this.panel6.TabIndex = 202;
@@ -792,11 +755,628 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(51, 76);
+            this.label11.Location = new System.Drawing.Point(54, 76);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(257, 21);
             this.label11.TabIndex = 200;
             this.label11.Text = "Do you wear prescription glasses?";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(54, 597);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(258, 21);
+            this.label9.TabIndex = 195;
+            this.label9.Text = "Do you take medication regularly?";
+            // 
+            // rbMedication_Yes
+            // 
+            this.rbMedication_Yes.AutoSize = true;
+            this.rbMedication_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbMedication_Yes.ForeColor = System.Drawing.Color.DarkGreen;
+            this.rbMedication_Yes.Location = new System.Drawing.Point(385, 599);
+            this.rbMedication_Yes.Name = "rbMedication_Yes";
+            this.rbMedication_Yes.Size = new System.Drawing.Size(42, 19);
+            this.rbMedication_Yes.TabIndex = 193;
+            this.rbMedication_Yes.Tag = "Yes";
+            this.rbMedication_Yes.Text = "Yes";
+            this.rbMedication_Yes.UseVisualStyleBackColor = true;
+            this.rbMedication_Yes.CheckedChanged += new System.EventHandler(this.rbMedication_CheckedChanged);
+            // 
+            // rbMedication_No
+            // 
+            this.rbMedication_No.AutoSize = true;
+            this.rbMedication_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbMedication_No.ForeColor = System.Drawing.Color.Red;
+            this.rbMedication_No.Location = new System.Drawing.Point(438, 599);
+            this.rbMedication_No.Name = "rbMedication_No";
+            this.rbMedication_No.Size = new System.Drawing.Size(41, 19);
+            this.rbMedication_No.TabIndex = 192;
+            this.rbMedication_No.Tag = "No";
+            this.rbMedication_No.Text = "No";
+            this.rbMedication_No.UseVisualStyleBackColor = true;
+            this.rbMedication_No.CheckedChanged += new System.EventHandler(this.rbMedication_CheckedChanged);
+            // 
+            // rbMentalDisability
+            // 
+            this.rbMentalDisability.AutoSize = true;
+            this.rbMentalDisability.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbMentalDisability.ForeColor = System.Drawing.Color.DarkGreen;
+            this.rbMentalDisability.Location = new System.Drawing.Point(361, 48);
+            this.rbMentalDisability.Name = "rbMentalDisability";
+            this.rbMentalDisability.Size = new System.Drawing.Size(146, 19);
+            this.rbMentalDisability.TabIndex = 191;
+            this.rbMentalDisability.Tag = "Man";
+            this.rbMentalDisability.Text = "Yes, a mental disability.";
+            this.rbMentalDisability.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(54, 142);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(266, 21);
+            this.label5.TabIndex = 185;
+            this.label5.Text = "Have you ever had surgery before?";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(276, 15);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(257, 21);
+            this.label7.TabIndex = 189;
+            this.label7.Text = "Are you a person with a disability?";
+            // 
+            // rbNo_Disability
+            // 
+            this.rbNo_Disability.AutoSize = true;
+            this.rbNo_Disability.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbNo_Disability.ForeColor = System.Drawing.Color.Red;
+            this.rbNo_Disability.Location = new System.Drawing.Point(86, 49);
+            this.rbNo_Disability.Name = "rbNo_Disability";
+            this.rbNo_Disability.Size = new System.Drawing.Size(41, 19);
+            this.rbNo_Disability.TabIndex = 188;
+            this.rbNo_Disability.Tag = "Woman";
+            this.rbNo_Disability.Text = "No";
+            this.rbNo_Disability.UseVisualStyleBackColor = true;
+            // 
+            // rbPhysicalDisability
+            // 
+            this.rbPhysicalDisability.AutoSize = true;
+            this.rbPhysicalDisability.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPhysicalDisability.ForeColor = System.Drawing.Color.DarkGreen;
+            this.rbPhysicalDisability.Location = new System.Drawing.Point(175, 49);
+            this.rbPhysicalDisability.Name = "rbPhysicalDisability";
+            this.rbPhysicalDisability.Size = new System.Drawing.Size(152, 19);
+            this.rbPhysicalDisability.TabIndex = 187;
+            this.rbPhysicalDisability.Tag = "Man";
+            this.rbPhysicalDisability.Text = "Yes, a physical disability.";
+            this.rbPhysicalDisability.UseVisualStyleBackColor = true;
+            // 
+            // txtAllergy
+            // 
+            this.txtAllergy.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAllergy.Location = new System.Drawing.Point(24, 532);
+            this.txtAllergy.Multiline = true;
+            this.txtAllergy.Name = "txtAllergy";
+            this.txtAllergy.Size = new System.Drawing.Size(493, 46);
+            this.txtAllergy.TabIndex = 179;
+            // 
+            // txtChronicIllness
+            // 
+            this.txtChronicIllness.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChronicIllness.Location = new System.Drawing.Point(24, 324);
+            this.txtChronicIllness.Multiline = true;
+            this.txtChronicIllness.Name = "txtChronicIllness";
+            this.txtChronicIllness.Size = new System.Drawing.Size(493, 46);
+            this.txtChronicIllness.TabIndex = 178;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(54, 109);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(182, 21);
+            this.label8.TabIndex = 181;
+            this.label8.Text = "Do you practice sports?";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(54, 175);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(225, 21);
+            this.label6.TabIndex = 169;
+            this.label6.Text = "Do you have a chronic illness?";
+            // 
+            // cbBloodType
+            // 
+            this.cbBloodType.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.cbBloodType.FormattingEnabled = true;
+            this.cbBloodType.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "AB+",
+            "AB-",
+            "O+",
+            "O-"});
+            this.cbBloodType.Location = new System.Drawing.Point(165, 11);
+            this.cbBloodType.Name = "cbBloodType";
+            this.cbBloodType.Size = new System.Drawing.Size(57, 28);
+            this.cbBloodType.TabIndex = 168;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(55, 15);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(101, 21);
+            this.label26.TabIndex = 164;
+            this.label26.Text = "Blood Type :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(54, 386);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(181, 21);
+            this.label10.TabIndex = 177;
+            this.label10.Text = "Do you have an allergy?";
+            // 
+            // rbAllergy_Yes
+            // 
+            this.rbAllergy_Yes.AutoSize = true;
+            this.rbAllergy_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAllergy_Yes.ForeColor = System.Drawing.Color.DarkGreen;
+            this.rbAllergy_Yes.Location = new System.Drawing.Point(385, 388);
+            this.rbAllergy_Yes.Name = "rbAllergy_Yes";
+            this.rbAllergy_Yes.Size = new System.Drawing.Size(42, 19);
+            this.rbAllergy_Yes.TabIndex = 176;
+            this.rbAllergy_Yes.Tag = "Yes";
+            this.rbAllergy_Yes.Text = "Yes";
+            this.rbAllergy_Yes.UseVisualStyleBackColor = true;
+            this.rbAllergy_Yes.CheckedChanged += new System.EventHandler(this.rbAllergy_CheckedChanged);
+            // 
+            // rbAllergy_No
+            // 
+            this.rbAllergy_No.AutoSize = true;
+            this.rbAllergy_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAllergy_No.Location = new System.Drawing.Point(438, 388);
+            this.rbAllergy_No.Name = "rbAllergy_No";
+            this.rbAllergy_No.Size = new System.Drawing.Size(41, 19);
+            this.rbAllergy_No.TabIndex = 175;
+            this.rbAllergy_No.Tag = "No";
+            this.rbAllergy_No.Text = "No";
+            this.rbAllergy_No.UseVisualStyleBackColor = true;
+            this.rbAllergy_No.CheckedChanged += new System.EventHandler(this.rbAllergy_CheckedChanged);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.rbGlasses_Yes);
+            this.panel7.Controls.Add(this.rbGlasses_No);
+            this.panel7.Location = new System.Drawing.Point(379, 75);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(100, 25);
+            this.panel7.TabIndex = 207;
+            // 
+            // rbGlasses_Yes
+            // 
+            this.rbGlasses_Yes.AutoSize = true;
+            this.rbGlasses_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbGlasses_Yes.ForeColor = System.Drawing.Color.DarkGreen;
+            this.rbGlasses_Yes.Location = new System.Drawing.Point(4, 3);
+            this.rbGlasses_Yes.Name = "rbGlasses_Yes";
+            this.rbGlasses_Yes.Size = new System.Drawing.Size(42, 19);
+            this.rbGlasses_Yes.TabIndex = 201;
+            this.rbGlasses_Yes.Tag = "Woman";
+            this.rbGlasses_Yes.Text = "Yes";
+            this.rbGlasses_Yes.UseVisualStyleBackColor = true;
+            // 
+            // rbGlasses_No
+            // 
+            this.rbGlasses_No.AutoSize = true;
+            this.rbGlasses_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbGlasses_No.ForeColor = System.Drawing.Color.Red;
+            this.rbGlasses_No.Location = new System.Drawing.Point(56, 3);
+            this.rbGlasses_No.Name = "rbGlasses_No";
+            this.rbGlasses_No.Size = new System.Drawing.Size(41, 19);
+            this.rbGlasses_No.TabIndex = 200;
+            this.rbGlasses_No.Tag = "Man";
+            this.rbGlasses_No.Text = "No";
+            this.rbGlasses_No.UseVisualStyleBackColor = true;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.rbChronic_Yes);
+            this.panel10.Controls.Add(this.rbChronic_No);
+            this.panel10.Location = new System.Drawing.Point(379, 174);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(100, 25);
+            this.panel10.TabIndex = 208;
+            // 
+            // rbChronic_Yes
+            // 
+            this.rbChronic_Yes.AutoSize = true;
+            this.rbChronic_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbChronic_Yes.ForeColor = System.Drawing.Color.DarkGreen;
+            this.rbChronic_Yes.Location = new System.Drawing.Point(4, 3);
+            this.rbChronic_Yes.Name = "rbChronic_Yes";
+            this.rbChronic_Yes.Size = new System.Drawing.Size(42, 19);
+            this.rbChronic_Yes.TabIndex = 168;
+            this.rbChronic_Yes.Tag = "Yes";
+            this.rbChronic_Yes.Text = "Yes";
+            this.rbChronic_Yes.UseVisualStyleBackColor = true;
+            this.rbChronic_Yes.CheckedChanged += new System.EventHandler(this.rbChronicIllness_CheckedChanged);
+            // 
+            // rbChronic_No
+            // 
+            this.rbChronic_No.AutoSize = true;
+            this.rbChronic_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbChronic_No.ForeColor = System.Drawing.Color.Red;
+            this.rbChronic_No.Location = new System.Drawing.Point(56, 3);
+            this.rbChronic_No.Name = "rbChronic_No";
+            this.rbChronic_No.Size = new System.Drawing.Size(41, 19);
+            this.rbChronic_No.TabIndex = 167;
+            this.rbChronic_No.Tag = "No";
+            this.rbChronic_No.Text = "No";
+            this.rbChronic_No.UseVisualStyleBackColor = true;
+            this.rbChronic_No.CheckedChanged += new System.EventHandler(this.rbChronicIllness_CheckedChanged);
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.rbSurgery_Yes);
+            this.panel9.Controls.Add(this.rbSurgery_No);
+            this.panel9.Location = new System.Drawing.Point(379, 141);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(100, 25);
+            this.panel9.TabIndex = 208;
+            // 
+            // rbSurgery_Yes
+            // 
+            this.rbSurgery_Yes.AutoSize = true;
+            this.rbSurgery_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSurgery_Yes.ForeColor = System.Drawing.Color.DarkGreen;
+            this.rbSurgery_Yes.Location = new System.Drawing.Point(4, 3);
+            this.rbSurgery_Yes.Name = "rbSurgery_Yes";
+            this.rbSurgery_Yes.Size = new System.Drawing.Size(42, 19);
+            this.rbSurgery_Yes.TabIndex = 186;
+            this.rbSurgery_Yes.Tag = "Woman";
+            this.rbSurgery_Yes.Text = "Yes";
+            this.rbSurgery_Yes.UseVisualStyleBackColor = true;
+            // 
+            // rbSurgery_No
+            // 
+            this.rbSurgery_No.AutoSize = true;
+            this.rbSurgery_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSurgery_No.ForeColor = System.Drawing.Color.Red;
+            this.rbSurgery_No.Location = new System.Drawing.Point(56, 3);
+            this.rbSurgery_No.Name = "rbSurgery_No";
+            this.rbSurgery_No.Size = new System.Drawing.Size(41, 19);
+            this.rbSurgery_No.TabIndex = 185;
+            this.rbSurgery_No.Tag = "Man";
+            this.rbSurgery_No.Text = "No";
+            this.rbSurgery_No.UseVisualStyleBackColor = true;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.rbPracticeSport_Yes);
+            this.panel8.Controls.Add(this.rbPracticeSport_No);
+            this.panel8.Location = new System.Drawing.Point(379, 108);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(100, 25);
+            this.panel8.TabIndex = 208;
+            // 
+            // rbPracticeSport_Yes
+            // 
+            this.rbPracticeSport_Yes.AutoSize = true;
+            this.rbPracticeSport_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPracticeSport_Yes.ForeColor = System.Drawing.Color.DarkGreen;
+            this.rbPracticeSport_Yes.Location = new System.Drawing.Point(4, 3);
+            this.rbPracticeSport_Yes.Name = "rbPracticeSport_Yes";
+            this.rbPracticeSport_Yes.Size = new System.Drawing.Size(42, 19);
+            this.rbPracticeSport_Yes.TabIndex = 182;
+            this.rbPracticeSport_Yes.Tag = "Woman";
+            this.rbPracticeSport_Yes.Text = "Yes";
+            this.rbPracticeSport_Yes.UseVisualStyleBackColor = true;
+            // 
+            // rbPracticeSport_No
+            // 
+            this.rbPracticeSport_No.AutoSize = true;
+            this.rbPracticeSport_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPracticeSport_No.ForeColor = System.Drawing.Color.Red;
+            this.rbPracticeSport_No.Location = new System.Drawing.Point(56, 3);
+            this.rbPracticeSport_No.Name = "rbPracticeSport_No";
+            this.rbPracticeSport_No.Size = new System.Drawing.Size(41, 19);
+            this.rbPracticeSport_No.TabIndex = 181;
+            this.rbPracticeSport_No.Tag = "Man";
+            this.rbPracticeSport_No.Text = "No";
+            this.rbPracticeSport_No.UseVisualStyleBackColor = true;
+            // 
+            // pnlChronicIllness
+            // 
+            this.pnlChronicIllness.AutoScroll = true;
+            this.pnlChronicIllness.BackColor = System.Drawing.Color.Gainsboro;
+            this.pnlChronicIllness.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlChronicIllness.Controls.Add(this.chkThyroidDisorders);
+            this.pnlChronicIllness.Controls.Add(this.chkAnemia);
+            this.pnlChronicIllness.Controls.Add(this.chkLiverDisease);
+            this.pnlChronicIllness.Controls.Add(this.chkKidneyDisease);
+            this.pnlChronicIllness.Controls.Add(this.chkEpilepsy);
+            this.pnlChronicIllness.Controls.Add(this.chkHeartDisease);
+            this.pnlChronicIllness.Controls.Add(this.chkDiabetes);
+            this.pnlChronicIllness.Controls.Add(this.chkAsthma);
+            this.pnlChronicIllness.Location = new System.Drawing.Point(17, 210);
+            this.pnlChronicIllness.Name = "pnlChronicIllness";
+            this.pnlChronicIllness.Size = new System.Drawing.Size(508, 166);
+            this.pnlChronicIllness.TabIndex = 174;
+            // 
+            // chkThyroidDisorders
+            // 
+            this.chkThyroidDisorders.AutoSize = true;
+            this.chkThyroidDisorders.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkThyroidDisorders.Location = new System.Drawing.Point(249, 85);
+            this.chkThyroidDisorders.Name = "chkThyroidDisorders";
+            this.chkThyroidDisorders.Size = new System.Drawing.Size(255, 19);
+            this.chkThyroidDisorders.TabIndex = 8;
+            this.chkThyroidDisorders.Text = "Thyroid Disorders ( مشاكل في الغدة الدرقية )";
+            this.chkThyroidDisorders.UseVisualStyleBackColor = true;
+            this.chkThyroidDisorders.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
+            // 
+            // chkAnemia
+            // 
+            this.chkAnemia.AutoSize = true;
+            this.chkAnemia.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAnemia.Location = new System.Drawing.Point(10, 85);
+            this.chkAnemia.Name = "chkAnemia";
+            this.chkAnemia.Size = new System.Drawing.Size(228, 19);
+            this.chkAnemia.TabIndex = 7;
+            this.chkAnemia.Text = "Sickle Cell Anemia ( ذفقر الدم المنجلي )";
+            this.chkAnemia.UseVisualStyleBackColor = true;
+            this.chkAnemia.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
+            // 
+            // chkLiverDisease
+            // 
+            this.chkLiverDisease.AutoSize = true;
+            this.chkLiverDisease.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLiverDisease.Location = new System.Drawing.Point(249, 60);
+            this.chkLiverDisease.Name = "chkLiverDisease";
+            this.chkLiverDisease.Size = new System.Drawing.Size(209, 19);
+            this.chkLiverDisease.TabIndex = 5;
+            this.chkLiverDisease.Text = "Liver Disease ( مشاكل الكبد المزمنة )";
+            this.chkLiverDisease.UseVisualStyleBackColor = true;
+            this.chkLiverDisease.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
+            // 
+            // chkKidneyDisease
+            // 
+            this.chkKidneyDisease.AutoSize = true;
+            this.chkKidneyDisease.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkKidneyDisease.Location = new System.Drawing.Point(249, 35);
+            this.chkKidneyDisease.Name = "chkKidneyDisease";
+            this.chkKidneyDisease.Size = new System.Drawing.Size(224, 19);
+            this.chkKidneyDisease.TabIndex = 4;
+            this.chkKidneyDisease.Text = "Kidney Disease ( مشاكل الكلى المزمنة )";
+            this.chkKidneyDisease.UseVisualStyleBackColor = true;
+            this.chkKidneyDisease.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
+            // 
+            // chkEpilepsy
+            // 
+            this.chkEpilepsy.AutoSize = true;
+            this.chkEpilepsy.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEpilepsy.Location = new System.Drawing.Point(249, 10);
+            this.chkEpilepsy.Name = "chkEpilepsy";
+            this.chkEpilepsy.Size = new System.Drawing.Size(116, 19);
+            this.chkEpilepsy.TabIndex = 3;
+            this.chkEpilepsy.Text = "Epilepsy ( الصرع )";
+            this.chkEpilepsy.UseVisualStyleBackColor = true;
+            this.chkEpilepsy.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
+            // 
+            // chkHeartDisease
+            // 
+            this.chkHeartDisease.AutoSize = true;
+            this.chkHeartDisease.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHeartDisease.Location = new System.Drawing.Point(10, 60);
+            this.chkHeartDisease.Name = "chkHeartDisease";
+            this.chkHeartDisease.Size = new System.Drawing.Size(179, 19);
+            this.chkHeartDisease.TabIndex = 2;
+            this.chkHeartDisease.Text = "Heart Disease ( أمراض القلب )";
+            this.chkHeartDisease.UseVisualStyleBackColor = true;
+            this.chkHeartDisease.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
+            // 
+            // chkDiabetes
+            // 
+            this.chkDiabetes.AutoSize = true;
+            this.chkDiabetes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkDiabetes.Location = new System.Drawing.Point(10, 35);
+            this.chkDiabetes.Name = "chkDiabetes";
+            this.chkDiabetes.Size = new System.Drawing.Size(125, 19);
+            this.chkDiabetes.TabIndex = 1;
+            this.chkDiabetes.Text = "Diabetes ( السكري )";
+            this.chkDiabetes.UseVisualStyleBackColor = true;
+            this.chkDiabetes.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
+            // 
+            // chkAsthma
+            // 
+            this.chkAsthma.AutoSize = true;
+            this.chkAsthma.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAsthma.Location = new System.Drawing.Point(10, 10);
+            this.chkAsthma.Name = "chkAsthma";
+            this.chkAsthma.Size = new System.Drawing.Size(106, 19);
+            this.chkAsthma.TabIndex = 0;
+            this.chkAsthma.Text = "Asthma ( الربو )";
+            this.chkAsthma.UseVisualStyleBackColor = true;
+            this.chkAsthma.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
+            // 
+            // pnlNoChronics
+            // 
+            this.pnlNoChronics.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlNoChronics.Controls.Add(this.label12);
+            this.pnlNoChronics.Location = new System.Drawing.Point(18, 210);
+            this.pnlNoChronics.Name = "pnlNoChronics";
+            this.pnlNoChronics.Size = new System.Drawing.Size(507, 166);
+            this.pnlNoChronics.TabIndex = 203;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(230, 65);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(67, 37);
+            this.label12.TabIndex = 204;
+            this.label12.Text = "N/A";
+            // 
+            // pnlAllergy
+            // 
+            this.pnlAllergy.AutoScroll = true;
+            this.pnlAllergy.BackColor = System.Drawing.Color.Gainsboro;
+            this.pnlAllergy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAllergy.Controls.Add(this.chkEgg);
+            this.pnlAllergy.Controls.Add(this.chkDust);
+            this.pnlAllergy.Controls.Add(this.chkAspirin);
+            this.pnlAllergy.Controls.Add(this.chkSkin);
+            this.pnlAllergy.Controls.Add(this.chkPollen);
+            this.pnlAllergy.Controls.Add(this.chkGluten);
+            this.pnlAllergy.Controls.Add(this.chkLactose);
+            this.pnlAllergy.Controls.Add(this.chkPeanut);
+            this.pnlAllergy.Location = new System.Drawing.Point(17, 417);
+            this.pnlAllergy.Name = "pnlAllergy";
+            this.pnlAllergy.Size = new System.Drawing.Size(508, 166);
+            this.pnlAllergy.TabIndex = 177;
+            // 
+            // chkEgg
+            // 
+            this.chkEgg.AutoSize = true;
+            this.chkEgg.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEgg.Location = new System.Drawing.Point(249, 10);
+            this.chkEgg.Name = "chkEgg";
+            this.chkEgg.Size = new System.Drawing.Size(177, 19);
+            this.chkEgg.TabIndex = 8;
+            this.chkEgg.Text = "Egg Allergy ( حساسية البيض )";
+            this.chkEgg.UseVisualStyleBackColor = true;
+            this.chkEgg.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
+            // 
+            // chkDust
+            // 
+            this.chkDust.AutoSize = true;
+            this.chkDust.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkDust.Location = new System.Drawing.Point(10, 85);
+            this.chkDust.Name = "chkDust";
+            this.chkDust.Size = new System.Drawing.Size(177, 19);
+            this.chkDust.TabIndex = 7;
+            this.chkDust.Text = "Dust Allergy ( حساسية الغبار )";
+            this.chkDust.UseVisualStyleBackColor = true;
+            this.chkDust.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
+            // 
+            // chkAspirin
+            // 
+            this.chkAspirin.AutoSize = true;
+            this.chkAspirin.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAspirin.Location = new System.Drawing.Point(249, 60);
+            this.chkAspirin.Name = "chkAspirin";
+            this.chkAspirin.Size = new System.Drawing.Size(205, 19);
+            this.chkAspirin.TabIndex = 5;
+            this.chkAspirin.Text = "Aspirin Allergy ( حساسية الاسبرين )";
+            this.chkAspirin.UseVisualStyleBackColor = true;
+            this.chkAspirin.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
+            // 
+            // chkSkin
+            // 
+            this.chkSkin.AutoSize = true;
+            this.chkSkin.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSkin.Location = new System.Drawing.Point(249, 35);
+            this.chkSkin.Name = "chkSkin";
+            this.chkSkin.Size = new System.Drawing.Size(173, 19);
+            this.chkSkin.TabIndex = 4;
+            this.chkSkin.Text = "Skin Allergy ( حساسية الجلد )";
+            this.chkSkin.UseVisualStyleBackColor = true;
+            this.chkSkin.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
+            // 
+            // chkPollen
+            // 
+            this.chkPollen.AutoSize = true;
+            this.chkPollen.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPollen.Location = new System.Drawing.Point(249, 85);
+            this.chkPollen.Name = "chkPollen";
+            this.chkPollen.Size = new System.Drawing.Size(217, 19);
+            this.chkPollen.TabIndex = 3;
+            this.chkPollen.Text = "Pollen Allergy ( حساسية حبوب اللقاح )";
+            this.chkPollen.UseVisualStyleBackColor = true;
+            this.chkPollen.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
+            // 
+            // chkGluten
+            // 
+            this.chkGluten.AutoSize = true;
+            this.chkGluten.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkGluten.Location = new System.Drawing.Point(10, 60);
+            this.chkGluten.Name = "chkGluten";
+            this.chkGluten.Size = new System.Drawing.Size(201, 19);
+            this.chkGluten.TabIndex = 2;
+            this.chkGluten.Text = "Gluten Allergy ( حساسية الغلوتين )";
+            this.chkGluten.UseVisualStyleBackColor = true;
+            this.chkGluten.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
+            // 
+            // chkLactose
+            // 
+            this.chkLactose.AutoSize = true;
+            this.chkLactose.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLactose.Location = new System.Drawing.Point(10, 35);
+            this.chkLactose.Name = "chkLactose";
+            this.chkLactose.Size = new System.Drawing.Size(224, 19);
+            this.chkLactose.TabIndex = 1;
+            this.chkLactose.Text = "Lactose Intolerance ( حساسية اللاكتوز )";
+            this.chkLactose.UseVisualStyleBackColor = true;
+            this.chkLactose.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
+            // 
+            // chkPeanut
+            // 
+            this.chkPeanut.AutoSize = true;
+            this.chkPeanut.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPeanut.Location = new System.Drawing.Point(10, 10);
+            this.chkPeanut.Name = "chkPeanut";
+            this.chkPeanut.Size = new System.Drawing.Size(239, 19);
+            this.chkPeanut.TabIndex = 0;
+            this.chkPeanut.Text = "Peanut Allergy ( حساسية الفول السوداني )";
+            this.chkPeanut.UseVisualStyleBackColor = true;
+            this.chkPeanut.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
+            // 
+            // pnlNoAllergy
+            // 
+            this.pnlNoAllergy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlNoAllergy.Controls.Add(this.label13);
+            this.pnlNoAllergy.Location = new System.Drawing.Point(18, 417);
+            this.pnlNoAllergy.Name = "pnlNoAllergy";
+            this.pnlNoAllergy.Size = new System.Drawing.Size(507, 166);
+            this.pnlNoAllergy.TabIndex = 205;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(230, 65);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(67, 37);
+            this.label13.TabIndex = 204;
+            this.label13.Text = "N/A";
             // 
             // pnlMedications
             // 
@@ -813,7 +1393,7 @@
             this.pnlMedications.Controls.Add(this.chkAsthmaMedications);
             this.pnlMedications.Controls.Add(this.chkParacetamol);
             this.pnlMedications.Controls.Add(this.chkInsulin);
-            this.pnlMedications.Location = new System.Drawing.Point(14, 628);
+            this.pnlMedications.Location = new System.Drawing.Point(17, 628);
             this.pnlMedications.Name = "pnlMedications";
             this.pnlMedications.Size = new System.Drawing.Size(508, 197);
             this.pnlMedications.TabIndex = 194;
@@ -935,486 +1515,11 @@
             this.chkInsulin.UseVisualStyleBackColor = true;
             this.chkInsulin.CheckedChanged += new System.EventHandler(this.UpdateMadicationsSelected);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(51, 597);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(258, 21);
-            this.label9.TabIndex = 195;
-            this.label9.Text = "Do you take medication regularly?";
-            // 
-            // rbMedication_Yes
-            // 
-            this.rbMedication_Yes.AutoSize = true;
-            this.rbMedication_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMedication_Yes.ForeColor = System.Drawing.Color.DarkGreen;
-            this.rbMedication_Yes.Location = new System.Drawing.Point(382, 599);
-            this.rbMedication_Yes.Name = "rbMedication_Yes";
-            this.rbMedication_Yes.Size = new System.Drawing.Size(42, 19);
-            this.rbMedication_Yes.TabIndex = 193;
-            this.rbMedication_Yes.Tag = "Yes";
-            this.rbMedication_Yes.Text = "Yes";
-            this.rbMedication_Yes.UseVisualStyleBackColor = true;
-            this.rbMedication_Yes.CheckedChanged += new System.EventHandler(this.rbMedication_CheckedChanged);
-            // 
-            // rbMedication_No
-            // 
-            this.rbMedication_No.AutoSize = true;
-            this.rbMedication_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMedication_No.ForeColor = System.Drawing.Color.Red;
-            this.rbMedication_No.Location = new System.Drawing.Point(435, 599);
-            this.rbMedication_No.Name = "rbMedication_No";
-            this.rbMedication_No.Size = new System.Drawing.Size(41, 19);
-            this.rbMedication_No.TabIndex = 192;
-            this.rbMedication_No.Tag = "No";
-            this.rbMedication_No.Text = "No";
-            this.rbMedication_No.UseVisualStyleBackColor = true;
-            this.rbMedication_No.CheckedChanged += new System.EventHandler(this.rbMedication_CheckedChanged);
-            // 
-            // rbMentalDisability
-            // 
-            this.rbMentalDisability.AutoSize = true;
-            this.rbMentalDisability.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMentalDisability.ForeColor = System.Drawing.Color.DarkGreen;
-            this.rbMentalDisability.Location = new System.Drawing.Point(358, 48);
-            this.rbMentalDisability.Name = "rbMentalDisability";
-            this.rbMentalDisability.Size = new System.Drawing.Size(146, 19);
-            this.rbMentalDisability.TabIndex = 191;
-            this.rbMentalDisability.Tag = "Man";
-            this.rbMentalDisability.Text = "Yes, a mental disability.";
-            this.rbMentalDisability.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(51, 142);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(266, 21);
-            this.label5.TabIndex = 185;
-            this.label5.Text = "Have you ever had surgery before?";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(273, 15);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(257, 21);
-            this.label7.TabIndex = 189;
-            this.label7.Text = "Are you a person with a disability?";
-            // 
-            // rbNo_Disability
-            // 
-            this.rbNo_Disability.AutoSize = true;
-            this.rbNo_Disability.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbNo_Disability.ForeColor = System.Drawing.Color.Red;
-            this.rbNo_Disability.Location = new System.Drawing.Point(83, 49);
-            this.rbNo_Disability.Name = "rbNo_Disability";
-            this.rbNo_Disability.Size = new System.Drawing.Size(41, 19);
-            this.rbNo_Disability.TabIndex = 188;
-            this.rbNo_Disability.Tag = "Woman";
-            this.rbNo_Disability.Text = "No";
-            this.rbNo_Disability.UseVisualStyleBackColor = true;
-            // 
-            // rbPhysicalDisability
-            // 
-            this.rbPhysicalDisability.AutoSize = true;
-            this.rbPhysicalDisability.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbPhysicalDisability.ForeColor = System.Drawing.Color.DarkGreen;
-            this.rbPhysicalDisability.Location = new System.Drawing.Point(172, 49);
-            this.rbPhysicalDisability.Name = "rbPhysicalDisability";
-            this.rbPhysicalDisability.Size = new System.Drawing.Size(152, 19);
-            this.rbPhysicalDisability.TabIndex = 187;
-            this.rbPhysicalDisability.Tag = "Man";
-            this.rbPhysicalDisability.Text = "Yes, a physical disability.";
-            this.rbPhysicalDisability.UseVisualStyleBackColor = true;
-            // 
-            // txtAllergy
-            // 
-            this.txtAllergy.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAllergy.Location = new System.Drawing.Point(21, 532);
-            this.txtAllergy.Multiline = true;
-            this.txtAllergy.Name = "txtAllergy";
-            this.txtAllergy.Size = new System.Drawing.Size(493, 46);
-            this.txtAllergy.TabIndex = 179;
-            // 
-            // txtChronicIllness
-            // 
-            this.txtChronicIllness.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChronicIllness.Location = new System.Drawing.Point(21, 324);
-            this.txtChronicIllness.Multiline = true;
-            this.txtChronicIllness.Name = "txtChronicIllness";
-            this.txtChronicIllness.Size = new System.Drawing.Size(493, 46);
-            this.txtChronicIllness.TabIndex = 178;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(51, 109);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(182, 21);
-            this.label8.TabIndex = 181;
-            this.label8.Text = "Do you practice sports?";
-            // 
-            // pnlAllergy
-            // 
-            this.pnlAllergy.AutoScroll = true;
-            this.pnlAllergy.BackColor = System.Drawing.Color.Gainsboro;
-            this.pnlAllergy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlAllergy.Controls.Add(this.chkEgg);
-            this.pnlAllergy.Controls.Add(this.chkDust);
-            this.pnlAllergy.Controls.Add(this.chkAspirin);
-            this.pnlAllergy.Controls.Add(this.chkSkin);
-            this.pnlAllergy.Controls.Add(this.chkPollen);
-            this.pnlAllergy.Controls.Add(this.chkGluten);
-            this.pnlAllergy.Controls.Add(this.chkLactose);
-            this.pnlAllergy.Controls.Add(this.chkPeanut);
-            this.pnlAllergy.Location = new System.Drawing.Point(14, 417);
-            this.pnlAllergy.Name = "pnlAllergy";
-            this.pnlAllergy.Size = new System.Drawing.Size(508, 166);
-            this.pnlAllergy.TabIndex = 177;
-            // 
-            // chkEgg
-            // 
-            this.chkEgg.AutoSize = true;
-            this.chkEgg.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkEgg.Location = new System.Drawing.Point(249, 10);
-            this.chkEgg.Name = "chkEgg";
-            this.chkEgg.Size = new System.Drawing.Size(177, 19);
-            this.chkEgg.TabIndex = 8;
-            this.chkEgg.Text = "Egg Allergy ( حساسية البيض )";
-            this.chkEgg.UseVisualStyleBackColor = true;
-            this.chkEgg.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
-            // 
-            // chkDust
-            // 
-            this.chkDust.AutoSize = true;
-            this.chkDust.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDust.Location = new System.Drawing.Point(10, 85);
-            this.chkDust.Name = "chkDust";
-            this.chkDust.Size = new System.Drawing.Size(177, 19);
-            this.chkDust.TabIndex = 7;
-            this.chkDust.Text = "Dust Allergy ( حساسية الغبار )";
-            this.chkDust.UseVisualStyleBackColor = true;
-            this.chkDust.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
-            // 
-            // chkAspirin
-            // 
-            this.chkAspirin.AutoSize = true;
-            this.chkAspirin.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAspirin.Location = new System.Drawing.Point(249, 60);
-            this.chkAspirin.Name = "chkAspirin";
-            this.chkAspirin.Size = new System.Drawing.Size(205, 19);
-            this.chkAspirin.TabIndex = 5;
-            this.chkAspirin.Text = "Aspirin Allergy ( حساسية الاسبرين )";
-            this.chkAspirin.UseVisualStyleBackColor = true;
-            this.chkAspirin.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
-            // 
-            // chkSkin
-            // 
-            this.chkSkin.AutoSize = true;
-            this.chkSkin.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSkin.Location = new System.Drawing.Point(249, 35);
-            this.chkSkin.Name = "chkSkin";
-            this.chkSkin.Size = new System.Drawing.Size(173, 19);
-            this.chkSkin.TabIndex = 4;
-            this.chkSkin.Text = "Skin Allergy ( حساسية الجلد )";
-            this.chkSkin.UseVisualStyleBackColor = true;
-            this.chkSkin.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
-            // 
-            // chkPollen
-            // 
-            this.chkPollen.AutoSize = true;
-            this.chkPollen.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkPollen.Location = new System.Drawing.Point(249, 85);
-            this.chkPollen.Name = "chkPollen";
-            this.chkPollen.Size = new System.Drawing.Size(217, 19);
-            this.chkPollen.TabIndex = 3;
-            this.chkPollen.Text = "Pollen Allergy ( حساسية حبوب اللقاح )";
-            this.chkPollen.UseVisualStyleBackColor = true;
-            this.chkPollen.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
-            // 
-            // chkGluten
-            // 
-            this.chkGluten.AutoSize = true;
-            this.chkGluten.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkGluten.Location = new System.Drawing.Point(10, 60);
-            this.chkGluten.Name = "chkGluten";
-            this.chkGluten.Size = new System.Drawing.Size(201, 19);
-            this.chkGluten.TabIndex = 2;
-            this.chkGluten.Text = "Gluten Allergy ( حساسية الغلوتين )";
-            this.chkGluten.UseVisualStyleBackColor = true;
-            this.chkGluten.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
-            // 
-            // chkLactose
-            // 
-            this.chkLactose.AutoSize = true;
-            this.chkLactose.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLactose.Location = new System.Drawing.Point(10, 35);
-            this.chkLactose.Name = "chkLactose";
-            this.chkLactose.Size = new System.Drawing.Size(224, 19);
-            this.chkLactose.TabIndex = 1;
-            this.chkLactose.Text = "Lactose Intolerance ( حساسية اللاكتوز )";
-            this.chkLactose.UseVisualStyleBackColor = true;
-            this.chkLactose.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
-            // 
-            // chkPeanut
-            // 
-            this.chkPeanut.AutoSize = true;
-            this.chkPeanut.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkPeanut.Location = new System.Drawing.Point(10, 10);
-            this.chkPeanut.Name = "chkPeanut";
-            this.chkPeanut.Size = new System.Drawing.Size(239, 19);
-            this.chkPeanut.TabIndex = 0;
-            this.chkPeanut.Text = "Peanut Allergy ( حساسية الفول السوداني )";
-            this.chkPeanut.UseVisualStyleBackColor = true;
-            this.chkPeanut.CheckedChanged += new System.EventHandler(this.UpdateAllergySelected);
-            // 
-            // pnlChronicIllness
-            // 
-            this.pnlChronicIllness.AutoScroll = true;
-            this.pnlChronicIllness.BackColor = System.Drawing.Color.Gainsboro;
-            this.pnlChronicIllness.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlChronicIllness.Controls.Add(this.chkThyroidDisorders);
-            this.pnlChronicIllness.Controls.Add(this.chkAnemia);
-            this.pnlChronicIllness.Controls.Add(this.chkLiverDisease);
-            this.pnlChronicIllness.Controls.Add(this.chkKidneyDisease);
-            this.pnlChronicIllness.Controls.Add(this.chkEpilepsy);
-            this.pnlChronicIllness.Controls.Add(this.chkHeartDisease);
-            this.pnlChronicIllness.Controls.Add(this.chkDiabetes);
-            this.pnlChronicIllness.Controls.Add(this.chkAsthma);
-            this.pnlChronicIllness.Location = new System.Drawing.Point(14, 210);
-            this.pnlChronicIllness.Name = "pnlChronicIllness";
-            this.pnlChronicIllness.Size = new System.Drawing.Size(508, 166);
-            this.pnlChronicIllness.TabIndex = 174;
-            // 
-            // chkThyroidDisorders
-            // 
-            this.chkThyroidDisorders.AutoSize = true;
-            this.chkThyroidDisorders.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkThyroidDisorders.Location = new System.Drawing.Point(249, 85);
-            this.chkThyroidDisorders.Name = "chkThyroidDisorders";
-            this.chkThyroidDisorders.Size = new System.Drawing.Size(255, 19);
-            this.chkThyroidDisorders.TabIndex = 8;
-            this.chkThyroidDisorders.Text = "Thyroid Disorders ( مشاكل في الغدة الدرقية )";
-            this.chkThyroidDisorders.UseVisualStyleBackColor = true;
-            this.chkThyroidDisorders.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
-            // 
-            // chkAnemia
-            // 
-            this.chkAnemia.AutoSize = true;
-            this.chkAnemia.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAnemia.Location = new System.Drawing.Point(10, 85);
-            this.chkAnemia.Name = "chkAnemia";
-            this.chkAnemia.Size = new System.Drawing.Size(228, 19);
-            this.chkAnemia.TabIndex = 7;
-            this.chkAnemia.Text = "Sickle Cell Anemia ( ذفقر الدم المنجلي )";
-            this.chkAnemia.UseVisualStyleBackColor = true;
-            this.chkAnemia.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
-            // 
-            // chkLiverDisease
-            // 
-            this.chkLiverDisease.AutoSize = true;
-            this.chkLiverDisease.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLiverDisease.Location = new System.Drawing.Point(249, 60);
-            this.chkLiverDisease.Name = "chkLiverDisease";
-            this.chkLiverDisease.Size = new System.Drawing.Size(209, 19);
-            this.chkLiverDisease.TabIndex = 5;
-            this.chkLiverDisease.Text = "Liver Disease ( مشاكل الكبد المزمنة )";
-            this.chkLiverDisease.UseVisualStyleBackColor = true;
-            this.chkLiverDisease.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
-            // 
-            // chkKidneyDisease
-            // 
-            this.chkKidneyDisease.AutoSize = true;
-            this.chkKidneyDisease.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkKidneyDisease.Location = new System.Drawing.Point(249, 35);
-            this.chkKidneyDisease.Name = "chkKidneyDisease";
-            this.chkKidneyDisease.Size = new System.Drawing.Size(224, 19);
-            this.chkKidneyDisease.TabIndex = 4;
-            this.chkKidneyDisease.Text = "Kidney Disease ( مشاكل الكلى المزمنة )";
-            this.chkKidneyDisease.UseVisualStyleBackColor = true;
-            this.chkKidneyDisease.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
-            // 
-            // chkEpilepsy
-            // 
-            this.chkEpilepsy.AutoSize = true;
-            this.chkEpilepsy.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkEpilepsy.Location = new System.Drawing.Point(249, 10);
-            this.chkEpilepsy.Name = "chkEpilepsy";
-            this.chkEpilepsy.Size = new System.Drawing.Size(116, 19);
-            this.chkEpilepsy.TabIndex = 3;
-            this.chkEpilepsy.Text = "Epilepsy ( الصرع )";
-            this.chkEpilepsy.UseVisualStyleBackColor = true;
-            this.chkEpilepsy.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
-            // 
-            // chkHeartDisease
-            // 
-            this.chkHeartDisease.AutoSize = true;
-            this.chkHeartDisease.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkHeartDisease.Location = new System.Drawing.Point(10, 60);
-            this.chkHeartDisease.Name = "chkHeartDisease";
-            this.chkHeartDisease.Size = new System.Drawing.Size(179, 19);
-            this.chkHeartDisease.TabIndex = 2;
-            this.chkHeartDisease.Text = "Heart Disease ( أمراض القلب )";
-            this.chkHeartDisease.UseVisualStyleBackColor = true;
-            this.chkHeartDisease.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
-            // 
-            // chkDiabetes
-            // 
-            this.chkDiabetes.AutoSize = true;
-            this.chkDiabetes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDiabetes.Location = new System.Drawing.Point(10, 35);
-            this.chkDiabetes.Name = "chkDiabetes";
-            this.chkDiabetes.Size = new System.Drawing.Size(125, 19);
-            this.chkDiabetes.TabIndex = 1;
-            this.chkDiabetes.Text = "Diabetes ( السكري )";
-            this.chkDiabetes.UseVisualStyleBackColor = true;
-            this.chkDiabetes.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
-            // 
-            // chkAsthma
-            // 
-            this.chkAsthma.AutoSize = true;
-            this.chkAsthma.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAsthma.Location = new System.Drawing.Point(10, 10);
-            this.chkAsthma.Name = "chkAsthma";
-            this.chkAsthma.Size = new System.Drawing.Size(106, 19);
-            this.chkAsthma.TabIndex = 0;
-            this.chkAsthma.Text = "Asthma ( الربو )";
-            this.chkAsthma.UseVisualStyleBackColor = true;
-            this.chkAsthma.CheckedChanged += new System.EventHandler(this.UpdateChronicsSelected);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(51, 175);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(225, 21);
-            this.label6.TabIndex = 169;
-            this.label6.Text = "Do you have a chronic illness?";
-            // 
-            // cbBloodType
-            // 
-            this.cbBloodType.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.cbBloodType.FormattingEnabled = true;
-            this.cbBloodType.Items.AddRange(new object[] {
-            "A+",
-            "A-",
-            "B+",
-            "B-",
-            "AB+",
-            "AB-",
-            "O+",
-            "O-"});
-            this.cbBloodType.Location = new System.Drawing.Point(162, 11);
-            this.cbBloodType.Name = "cbBloodType";
-            this.cbBloodType.Size = new System.Drawing.Size(57, 28);
-            this.cbBloodType.TabIndex = 168;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(52, 15);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(101, 21);
-            this.label26.TabIndex = 164;
-            this.label26.Text = "Blood Type :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(51, 386);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(181, 21);
-            this.label10.TabIndex = 177;
-            this.label10.Text = "Do you have an allergy?";
-            // 
-            // rbAllergy_Yes
-            // 
-            this.rbAllergy_Yes.AutoSize = true;
-            this.rbAllergy_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbAllergy_Yes.ForeColor = System.Drawing.Color.DarkGreen;
-            this.rbAllergy_Yes.Location = new System.Drawing.Point(382, 388);
-            this.rbAllergy_Yes.Name = "rbAllergy_Yes";
-            this.rbAllergy_Yes.Size = new System.Drawing.Size(42, 19);
-            this.rbAllergy_Yes.TabIndex = 176;
-            this.rbAllergy_Yes.Tag = "Yes";
-            this.rbAllergy_Yes.Text = "Yes";
-            this.rbAllergy_Yes.UseVisualStyleBackColor = true;
-            this.rbAllergy_Yes.CheckedChanged += new System.EventHandler(this.rbAllergy_CheckedChanged);
-            // 
-            // rbAllergy_No
-            // 
-            this.rbAllergy_No.AutoSize = true;
-            this.rbAllergy_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbAllergy_No.Location = new System.Drawing.Point(435, 388);
-            this.rbAllergy_No.Name = "rbAllergy_No";
-            this.rbAllergy_No.Size = new System.Drawing.Size(41, 19);
-            this.rbAllergy_No.TabIndex = 175;
-            this.rbAllergy_No.Tag = "No";
-            this.rbAllergy_No.Text = "No";
-            this.rbAllergy_No.UseVisualStyleBackColor = true;
-            this.rbAllergy_No.CheckedChanged += new System.EventHandler(this.rbAllergy_CheckedChanged);
-            // 
-            // pnlNoChronics
-            // 
-            this.pnlNoChronics.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlNoChronics.Controls.Add(this.label12);
-            this.pnlNoChronics.Location = new System.Drawing.Point(15, 210);
-            this.pnlNoChronics.Name = "pnlNoChronics";
-            this.pnlNoChronics.Size = new System.Drawing.Size(507, 166);
-            this.pnlNoChronics.TabIndex = 203;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(230, 65);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(67, 37);
-            this.label12.TabIndex = 204;
-            this.label12.Text = "N/A";
-            // 
-            // pnlNoAllergy
-            // 
-            this.pnlNoAllergy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlNoAllergy.Controls.Add(this.label13);
-            this.pnlNoAllergy.Location = new System.Drawing.Point(15, 417);
-            this.pnlNoAllergy.Name = "pnlNoAllergy";
-            this.pnlNoAllergy.Size = new System.Drawing.Size(507, 166);
-            this.pnlNoAllergy.TabIndex = 205;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(230, 65);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(67, 37);
-            this.label13.TabIndex = 204;
-            this.label13.Text = "N/A";
-            // 
             // pnlNoMedication
             // 
             this.pnlNoMedication.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlNoMedication.Controls.Add(this.label14);
-            this.pnlNoMedication.Location = new System.Drawing.Point(15, 628);
+            this.pnlNoMedication.Location = new System.Drawing.Point(18, 628);
             this.pnlNoMedication.Name = "pnlNoMedication";
             this.pnlNoMedication.Size = new System.Drawing.Size(507, 197);
             this.pnlNoMedication.TabIndex = 206;
@@ -1429,148 +1534,6 @@
             this.label14.Size = new System.Drawing.Size(67, 37);
             this.label14.TabIndex = 204;
             this.label14.Text = "N/A";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.rbGlasses_Yes);
-            this.panel7.Controls.Add(this.rbGlasses_No);
-            this.panel7.Location = new System.Drawing.Point(376, 75);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(100, 25);
-            this.panel7.TabIndex = 207;
-            // 
-            // rbGlasses_Yes
-            // 
-            this.rbGlasses_Yes.AutoSize = true;
-            this.rbGlasses_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbGlasses_Yes.ForeColor = System.Drawing.Color.DarkGreen;
-            this.rbGlasses_Yes.Location = new System.Drawing.Point(4, 3);
-            this.rbGlasses_Yes.Name = "rbGlasses_Yes";
-            this.rbGlasses_Yes.Size = new System.Drawing.Size(42, 19);
-            this.rbGlasses_Yes.TabIndex = 201;
-            this.rbGlasses_Yes.Tag = "Woman";
-            this.rbGlasses_Yes.Text = "Yes";
-            this.rbGlasses_Yes.UseVisualStyleBackColor = true;
-            // 
-            // rbGlasses_No
-            // 
-            this.rbGlasses_No.AutoSize = true;
-            this.rbGlasses_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbGlasses_No.ForeColor = System.Drawing.Color.Red;
-            this.rbGlasses_No.Location = new System.Drawing.Point(56, 3);
-            this.rbGlasses_No.Name = "rbGlasses_No";
-            this.rbGlasses_No.Size = new System.Drawing.Size(41, 19);
-            this.rbGlasses_No.TabIndex = 200;
-            this.rbGlasses_No.Tag = "Man";
-            this.rbGlasses_No.Text = "No";
-            this.rbGlasses_No.UseVisualStyleBackColor = true;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.rbChronic_Yes);
-            this.panel10.Controls.Add(this.rbChronic_No);
-            this.panel10.Location = new System.Drawing.Point(376, 174);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(100, 25);
-            this.panel10.TabIndex = 208;
-            // 
-            // rbChronic_Yes
-            // 
-            this.rbChronic_Yes.AutoSize = true;
-            this.rbChronic_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbChronic_Yes.ForeColor = System.Drawing.Color.DarkGreen;
-            this.rbChronic_Yes.Location = new System.Drawing.Point(4, 3);
-            this.rbChronic_Yes.Name = "rbChronic_Yes";
-            this.rbChronic_Yes.Size = new System.Drawing.Size(42, 19);
-            this.rbChronic_Yes.TabIndex = 168;
-            this.rbChronic_Yes.Tag = "Yes";
-            this.rbChronic_Yes.Text = "Yes";
-            this.rbChronic_Yes.UseVisualStyleBackColor = true;
-            this.rbChronic_Yes.CheckedChanged += new System.EventHandler(this.rbChronicIllness_CheckedChanged);
-            // 
-            // rbChronic_No
-            // 
-            this.rbChronic_No.AutoSize = true;
-            this.rbChronic_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbChronic_No.ForeColor = System.Drawing.Color.Red;
-            this.rbChronic_No.Location = new System.Drawing.Point(56, 3);
-            this.rbChronic_No.Name = "rbChronic_No";
-            this.rbChronic_No.Size = new System.Drawing.Size(41, 19);
-            this.rbChronic_No.TabIndex = 167;
-            this.rbChronic_No.Tag = "No";
-            this.rbChronic_No.Text = "No";
-            this.rbChronic_No.UseVisualStyleBackColor = true;
-            this.rbChronic_No.CheckedChanged += new System.EventHandler(this.rbChronicIllness_CheckedChanged);
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.rbSurgery_Yes);
-            this.panel9.Controls.Add(this.rbSurgery_No);
-            this.panel9.Location = new System.Drawing.Point(376, 141);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(100, 25);
-            this.panel9.TabIndex = 208;
-            // 
-            // rbSurgery_Yes
-            // 
-            this.rbSurgery_Yes.AutoSize = true;
-            this.rbSurgery_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbSurgery_Yes.ForeColor = System.Drawing.Color.DarkGreen;
-            this.rbSurgery_Yes.Location = new System.Drawing.Point(4, 3);
-            this.rbSurgery_Yes.Name = "rbSurgery_Yes";
-            this.rbSurgery_Yes.Size = new System.Drawing.Size(42, 19);
-            this.rbSurgery_Yes.TabIndex = 186;
-            this.rbSurgery_Yes.Tag = "Woman";
-            this.rbSurgery_Yes.Text = "Yes";
-            this.rbSurgery_Yes.UseVisualStyleBackColor = true;
-            // 
-            // rbSurgery_No
-            // 
-            this.rbSurgery_No.AutoSize = true;
-            this.rbSurgery_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbSurgery_No.ForeColor = System.Drawing.Color.Red;
-            this.rbSurgery_No.Location = new System.Drawing.Point(56, 3);
-            this.rbSurgery_No.Name = "rbSurgery_No";
-            this.rbSurgery_No.Size = new System.Drawing.Size(41, 19);
-            this.rbSurgery_No.TabIndex = 185;
-            this.rbSurgery_No.Tag = "Man";
-            this.rbSurgery_No.Text = "No";
-            this.rbSurgery_No.UseVisualStyleBackColor = true;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.rbPracticeSport_Yes);
-            this.panel8.Controls.Add(this.rbPracticeSport_No);
-            this.panel8.Location = new System.Drawing.Point(376, 108);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(100, 25);
-            this.panel8.TabIndex = 208;
-            // 
-            // rbPracticeSport_Yes
-            // 
-            this.rbPracticeSport_Yes.AutoSize = true;
-            this.rbPracticeSport_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbPracticeSport_Yes.ForeColor = System.Drawing.Color.DarkGreen;
-            this.rbPracticeSport_Yes.Location = new System.Drawing.Point(4, 3);
-            this.rbPracticeSport_Yes.Name = "rbPracticeSport_Yes";
-            this.rbPracticeSport_Yes.Size = new System.Drawing.Size(42, 19);
-            this.rbPracticeSport_Yes.TabIndex = 182;
-            this.rbPracticeSport_Yes.Tag = "Woman";
-            this.rbPracticeSport_Yes.Text = "Yes";
-            this.rbPracticeSport_Yes.UseVisualStyleBackColor = true;
-            // 
-            // rbPracticeSport_No
-            // 
-            this.rbPracticeSport_No.AutoSize = true;
-            this.rbPracticeSport_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbPracticeSport_No.ForeColor = System.Drawing.Color.Red;
-            this.rbPracticeSport_No.Location = new System.Drawing.Point(56, 3);
-            this.rbPracticeSport_No.Name = "rbPracticeSport_No";
-            this.rbPracticeSport_No.Size = new System.Drawing.Size(41, 19);
-            this.rbPracticeSport_No.TabIndex = 181;
-            this.rbPracticeSport_No.Tag = "Man";
-            this.rbPracticeSport_No.Text = "No";
-            this.rbPracticeSport_No.UseVisualStyleBackColor = true;
             // 
             // pictureBox21
             // 
@@ -1614,52 +1577,13 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::MySchool.Properties.Resources.Close_ic_32;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(341, 741);
+            this.btnClose.Location = new System.Drawing.Point(252, 741);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(113, 36);
+            this.btnClose.Size = new System.Drawing.Size(113, 40);
             this.btnClose.TabIndex = 83;
             this.btnClose.Text = "     Close";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.White;
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Image = global::MySchool.Properties.Resources.Save_32;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(460, 742);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(113, 35);
-            this.btnSave.TabIndex = 82;
-            this.btnSave.Text = "     Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnMedicalFile
-            // 
-            this.btnMedicalFile.BackColor = System.Drawing.Color.White;
-            this.btnMedicalFile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMedicalFile.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnMedicalFile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnMedicalFile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnMedicalFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMedicalFile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMedicalFile.ForeColor = System.Drawing.Color.Black;
-            this.btnMedicalFile.Image = global::MySchool.Properties.Resources.Medical_File_32;
-            this.btnMedicalFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMedicalFile.Location = new System.Drawing.Point(19, 513);
-            this.btnMedicalFile.Name = "btnMedicalFile";
-            this.btnMedicalFile.Size = new System.Drawing.Size(513, 40);
-            this.btnMedicalFile.TabIndex = 96;
-            this.btnMedicalFile.Text = "Medical File";
-            this.btnMedicalFile.UseVisualStyleBackColor = false;
-            this.btnMedicalFile.Click += new System.EventHandler(this.btnMedicalFile_Click);
             // 
             // pictureBox14
             // 
@@ -1680,6 +1604,34 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 143;
             this.pictureBox13.TabStop = false;
+            // 
+            // btnPersonInfo
+            // 
+            this.btnPersonInfo.BackColor = System.Drawing.Color.White;
+            this.btnPersonInfo.FlatAppearance.BorderSize = 0;
+            this.btnPersonInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnPersonInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPersonInfo.Image = global::MySchool.Properties.Resources.Info_24;
+            this.btnPersonInfo.Location = new System.Drawing.Point(472, 267);
+            this.btnPersonInfo.Name = "btnPersonInfo";
+            this.btnPersonInfo.Size = new System.Drawing.Size(27, 27);
+            this.btnPersonInfo.TabIndex = 142;
+            this.btnPersonInfo.UseVisualStyleBackColor = false;
+            this.btnPersonInfo.Click += new System.EventHandler(this.btnPersonInfo_Click);
+            // 
+            // btnSelectPerson
+            // 
+            this.btnSelectPerson.BackColor = System.Drawing.Color.White;
+            this.btnSelectPerson.FlatAppearance.BorderSize = 0;
+            this.btnSelectPerson.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnSelectPerson.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectPerson.Image = global::MySchool.Properties.Resources.Add_24;
+            this.btnSelectPerson.Location = new System.Drawing.Point(505, 267);
+            this.btnSelectPerson.Name = "btnSelectPerson";
+            this.btnSelectPerson.Size = new System.Drawing.Size(27, 27);
+            this.btnSelectPerson.TabIndex = 141;
+            this.btnSelectPerson.UseVisualStyleBackColor = false;
+            this.btnSelectPerson.Click += new System.EventHandler(this.btnSelectPerson_Click);
             // 
             // pictureBox8
             // 
@@ -1714,7 +1666,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MySchool.Properties.Resources.Notes_32;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 521);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 569);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1734,7 +1686,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::MySchool.Properties.Resources.Address_32;
-            this.pictureBox7.Location = new System.Drawing.Point(20, 431);
+            this.pictureBox7.Location = new System.Drawing.Point(20, 463);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(25, 27);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1754,7 +1706,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::MySchool.Properties.Resources.Phone_32;
-            this.pictureBox10.Location = new System.Drawing.Point(20, 357);
+            this.pictureBox10.Location = new System.Drawing.Point(20, 373);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(25, 27);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1770,6 +1722,18 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 111;
             this.pictureBox11.TabStop = false;
+            // 
+            // pbStudentImage
+            // 
+            this.pbStudentImage.BackColor = System.Drawing.Color.White;
+            this.pbStudentImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbStudentImage.Location = new System.Drawing.Point(19, 17);
+            this.pbStudentImage.Name = "pbStudentImage";
+            this.pbStudentImage.Size = new System.Drawing.Size(142, 146);
+            this.pbStudentImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbStudentImage.TabIndex = 102;
+            this.pbStudentImage.TabStop = false;
+            this.pbStudentImage.MouseEnter += new System.EventHandler(this.pbStudentImage_MouseEnter);
             // 
             // pictureBox19
             // 
@@ -1793,22 +1757,29 @@
             this.pictureBox20.TabIndex = 139;
             this.pictureBox20.TabStop = false;
             // 
-            // pbStudentImage
+            // btnSave
             // 
-            this.pbStudentImage.BackColor = System.Drawing.Color.White;
-            this.pbStudentImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbStudentImage.Location = new System.Drawing.Point(19, 17);
-            this.pbStudentImage.Name = "pbStudentImage";
-            this.pbStudentImage.Size = new System.Drawing.Size(142, 146);
-            this.pbStudentImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbStudentImage.TabIndex = 102;
-            this.pbStudentImage.TabStop = false;
-            this.pbStudentImage.MouseEnter += new System.EventHandler(this.pbStudentImage_MouseEnter);
+            this.btnSave.BackColor = System.Drawing.Color.White;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Image = global::MySchool.Properties.Resources.Save_32;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(369, 741);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(202, 40);
+            this.btnSave.TabIndex = 82;
+            this.btnSave.Text = "     Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // pictureBox17
             // 
             this.pictureBox17.Image = global::MySchool.Properties.Resources.glasses_32;
-            this.pictureBox17.Location = new System.Drawing.Point(14, 73);
+            this.pictureBox17.Location = new System.Drawing.Point(17, 73);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(25, 27);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1818,7 +1789,7 @@
             // pictureBox16
             // 
             this.pictureBox16.Image = global::MySchool.Properties.Resources.medicine_32;
-            this.pictureBox16.Location = new System.Drawing.Point(14, 593);
+            this.pictureBox16.Location = new System.Drawing.Point(17, 593);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(25, 27);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1828,7 +1799,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::MySchool.Properties.Resources.disablty_32;
-            this.pictureBox6.Location = new System.Drawing.Point(242, 12);
+            this.pictureBox6.Location = new System.Drawing.Point(245, 12);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 27);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1838,7 +1809,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::MySchool.Properties.Resources.surgery_32;
-            this.pictureBox5.Location = new System.Drawing.Point(14, 139);
+            this.pictureBox5.Location = new System.Drawing.Point(17, 139);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 27);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1848,27 +1819,17 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::MySchool.Properties.Resources.Ball_32;
-            this.pictureBox15.Location = new System.Drawing.Point(14, 106);
+            this.pictureBox15.Location = new System.Drawing.Point(17, 106);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(25, 27);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 182;
             this.pictureBox15.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::MySchool.Properties.Resources.Heart_32;
-            this.pictureBox4.Location = new System.Drawing.Point(14, 172);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 170;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::MySchool.Properties.Resources.Blood_32;
-            this.pictureBox9.Location = new System.Drawing.Point(14, 12);
+            this.pictureBox9.Location = new System.Drawing.Point(17, 12);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(25, 27);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1878,12 +1839,41 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::MySchool.Properties.Resources.gluten_free_32;
-            this.pictureBox12.Location = new System.Drawing.Point(14, 383);
+            this.pictureBox12.Location = new System.Drawing.Point(17, 383);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(25, 27);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 178;
             this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::MySchool.Properties.Resources.Heart_32;
+            this.pictureBox4.Location = new System.Drawing.Point(17, 172);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 170;
+            this.pictureBox4.TabStop = false;
+            // 
+            // btnMedicalFile
+            // 
+            this.btnMedicalFile.BackColor = System.Drawing.Color.White;
+            this.btnMedicalFile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMedicalFile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnMedicalFile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnMedicalFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMedicalFile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMedicalFile.ForeColor = System.Drawing.Color.Black;
+            this.btnMedicalFile.Image = global::MySchool.Properties.Resources.Medical_File_32;
+            this.btnMedicalFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMedicalFile.Location = new System.Drawing.Point(369, 741);
+            this.btnMedicalFile.Name = "btnMedicalFile";
+            this.btnMedicalFile.Size = new System.Drawing.Size(202, 40);
+            this.btnMedicalFile.TabIndex = 146;
+            this.btnMedicalFile.Text = "     Medical File";
+            this.btnMedicalFile.UseVisualStyleBackColor = false;
+            this.btnMedicalFile.Click += new System.EventHandler(this.btnMedicalFile_Click);
             // 
             // frmAddEditStudent
             // 
@@ -1896,19 +1886,18 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblMode);
             this.Controls.Add(this.lblPersonID);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.pnlBasicInfo);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.pnlMedicalInfo);
+            this.Controls.Add(this.btnMedicalFile);
+            this.Controls.Add(this.pnlBasicInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddEditStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddEditStudent";
             this.Load += new System.EventHandler(this.frmAddEditStudent_Load);
-            this.panel4.ResumeLayout(false);
             this.pnlBasicInfo.ResumeLayout(false);
             this.pnlBasicInfo.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -1919,18 +1908,6 @@
             this.pnlDeleteImage.PerformLayout();
             this.pnlMedicalInfo.ResumeLayout(false);
             this.pnlMedicalInfo.PerformLayout();
-            this.pnlMedications.ResumeLayout(false);
-            this.pnlMedications.PerformLayout();
-            this.pnlAllergy.ResumeLayout(false);
-            this.pnlAllergy.PerformLayout();
-            this.pnlChronicIllness.ResumeLayout(false);
-            this.pnlChronicIllness.PerformLayout();
-            this.pnlNoChronics.ResumeLayout(false);
-            this.pnlNoChronics.PerformLayout();
-            this.pnlNoAllergy.ResumeLayout(false);
-            this.pnlNoAllergy.PerformLayout();
-            this.pnlNoMedication.ResumeLayout(false);
-            this.pnlNoMedication.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -1939,6 +1916,18 @@
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.pnlChronicIllness.ResumeLayout(false);
+            this.pnlChronicIllness.PerformLayout();
+            this.pnlNoChronics.ResumeLayout(false);
+            this.pnlNoChronics.PerformLayout();
+            this.pnlAllergy.ResumeLayout(false);
+            this.pnlAllergy.PerformLayout();
+            this.pnlNoAllergy.ResumeLayout(false);
+            this.pnlNoAllergy.PerformLayout();
+            this.pnlMedications.ResumeLayout(false);
+            this.pnlMedications.PerformLayout();
+            this.pnlNoMedication.ResumeLayout(false);
+            this.pnlNoMedication.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -1953,17 +1942,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1972,7 +1961,6 @@
         #endregion
         private System.Windows.Forms.Label lblPersonID;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblMode;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSave;
@@ -1980,7 +1968,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pbExit;
-        private System.Windows.Forms.Button btnMedicalFile;
         private System.Windows.Forms.Panel pnlBasicInfo;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
@@ -2110,5 +2097,6 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.Button btnMedicalFile;
     }
 }
