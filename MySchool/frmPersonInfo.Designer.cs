@@ -58,6 +58,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = global::MySchool.Properties.Resources.Students_512;
             this.pictureBox3.Location = new System.Drawing.Point(10, 10);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(44, 44);
@@ -68,6 +69,7 @@
             // pbClose
             // 
             this.pbClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbClose.Image = global::MySchool.Properties.Resources.Cross_64;
             this.pbClose.Location = new System.Drawing.Point(347, 5);
             this.pbClose.Name = "pbClose";
             this.pbClose.Size = new System.Drawing.Size(48, 45);

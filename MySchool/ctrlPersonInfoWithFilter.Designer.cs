@@ -30,10 +30,10 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnFilter = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtInput = new System.Windows.Forms.TextBox();
             this.pbAddNewPerson = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pbSearch = new System.Windows.Forms.PictureBox();
+            this.txtInput = new System.Windows.Forms.TextBox();
             this.ctrlPersonInfoCard1 = new MySchool.ctrlPersonInfoCard();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddNewPerson)).BeginInit();
@@ -69,6 +69,17 @@
             this.btnFilter.UseVisualStyleBackColor = true;
             this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
+            // pbAddNewPerson
+            // 
+            this.pbAddNewPerson.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbAddNewPerson.Image = global::MySchool.Properties.Resources.AddStudent_32;
+            this.pbAddNewPerson.Location = new System.Drawing.Point(342, 14);
+            this.pbAddNewPerson.Name = "pbAddNewPerson";
+            this.pbAddNewPerson.Size = new System.Drawing.Size(30, 30);
+            this.pbAddNewPerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAddNewPerson.TabIndex = 124;
+            this.pbAddNewPerson.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -76,6 +87,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1, 20);
             this.panel2.TabIndex = 123;
+            // 
+            // pbSearch
+            // 
+            this.pbSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbSearch.Image = global::MySchool.Properties.Resources.Search_24;
+            this.pbSearch.Location = new System.Drawing.Point(294, 16);
+            this.pbSearch.Name = "pbSearch";
+            this.pbSearch.Size = new System.Drawing.Size(25, 27);
+            this.pbSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSearch.TabIndex = 122;
+            this.pbSearch.TabStop = false;
+            this.pbSearch.Click += new System.EventHandler(this.pbSearch_Click);
             // 
             // txtInput
             // 
@@ -86,27 +109,6 @@
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(159, 23);
             this.txtInput.TabIndex = 122;
-            // 
-            // pbAddNewPerson
-            // 
-            this.pbAddNewPerson.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbAddNewPerson.Location = new System.Drawing.Point(342, 14);
-            this.pbAddNewPerson.Name = "pbAddNewPerson";
-            this.pbAddNewPerson.Size = new System.Drawing.Size(30, 30);
-            this.pbAddNewPerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAddNewPerson.TabIndex = 124;
-            this.pbAddNewPerson.TabStop = false;
-            // 
-            // pbSearch
-            // 
-            this.pbSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbSearch.Location = new System.Drawing.Point(294, 16);
-            this.pbSearch.Name = "pbSearch";
-            this.pbSearch.Size = new System.Drawing.Size(25, 27);
-            this.pbSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbSearch.TabIndex = 122;
-            this.pbSearch.TabStop = false;
-            this.pbSearch.Click += new System.EventHandler(this.pbSearch_Click);
             // 
             // ctrlPersonInfoCard1
             // 

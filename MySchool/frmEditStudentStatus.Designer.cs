@@ -47,6 +47,7 @@
             // pbExit
             // 
             this.pbExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbExit.Image = global::MySchool.Properties.Resources.Cross_64;
             this.pbExit.Location = new System.Drawing.Point(307, 2);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(47, 48);

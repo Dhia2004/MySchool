@@ -136,6 +136,7 @@
             this.btnMoreDetails.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.btnMoreDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMoreDetails.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMoreDetails.Image = global::MySchool.Properties.Resources.Basic_Info_32;
             this.btnMoreDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMoreDetails.Location = new System.Drawing.Point(714, 7);
             this.btnMoreDetails.Name = "btnMoreDetails";

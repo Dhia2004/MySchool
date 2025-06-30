@@ -90,6 +90,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::MySchool.Properties.Resources.School_512;
             this.pictureBox1.Location = new System.Drawing.Point(42, 37);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(264, 244);
@@ -119,6 +120,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::MySchool.Properties.Resources.Warning_64;
             this.pictureBox3.Location = new System.Drawing.Point(25, 246);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(37, 38);
@@ -129,6 +131,7 @@
             // pbClose
             // 
             this.pbClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbClose.Image = global::MySchool.Properties.Resources.Cross_64;
             this.pbClose.Location = new System.Drawing.Point(586, 3);
             this.pbClose.Name = "pbClose";
             this.pbClose.Size = new System.Drawing.Size(59, 61);

@@ -35,14 +35,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblRecorsNumber = new System.Windows.Forms.Label();
             this.lblPageNumber = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.ctrlStudentInfoWithFilter1 = new MySchool.ctrlStudentInfoWithFilter();
             this.pbBack = new System.Windows.Forms.PictureBox();
             this.pbNext = new System.Windows.Forms.PictureBox();
             this.pbRefrech = new System.Windows.Forms.PictureBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbStudentImage = new System.Windows.Forms.PictureBox();
-            this.ctrlStudentInfoWithFilter1 = new MySchool.ctrlStudentInfoWithFilter();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRefrech)).BeginInit();
@@ -119,37 +119,27 @@
             // 
             this.lblPageNumber.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPageNumber.ForeColor = System.Drawing.Color.Black;
-            this.lblPageNumber.Location = new System.Drawing.Point(835, 716);
+            this.lblPageNumber.Location = new System.Drawing.Point(811, 711);
             this.lblPageNumber.Name = "lblPageNumber";
-            this.lblPageNumber.Size = new System.Drawing.Size(37, 25);
+            this.lblPageNumber.Size = new System.Drawing.Size(61, 35);
             this.lblPageNumber.TabIndex = 110;
             this.lblPageNumber.Tag = "1";
             this.lblPageNumber.Text = "1";
             this.lblPageNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnClose
+            // ctrlStudentInfoWithFilter1
             // 
-            this.btnClose.BackColor = System.Drawing.Color.White;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.Black;
-            this.btnClose.Image = global::MySchool.Properties.Resources.Close_ic_32;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(1190, 756);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(113, 35);
-            this.btnClose.TabIndex = 84;
-            this.btnClose.Text = "     Close";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.ctrlStudentInfoWithFilter1.BackColor = System.Drawing.Color.White;
+            this.ctrlStudentInfoWithFilter1.Location = new System.Drawing.Point(919, 92);
+            this.ctrlStudentInfoWithFilter1.Name = "ctrlStudentInfoWithFilter1";
+            this.ctrlStudentInfoWithFilter1.Size = new System.Drawing.Size(389, 658);
+            this.ctrlStudentInfoWithFilter1.TabIndex = 0;
             // 
             // pbBack
             // 
             this.pbBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbBack.Location = new System.Drawing.Point(794, 711);
+            this.pbBack.Image = global::MySchool.Properties.Resources.Back_32;
+            this.pbBack.Location = new System.Drawing.Point(770, 711);
             this.pbBack.Name = "pbBack";
             this.pbBack.Size = new System.Drawing.Size(35, 35);
             this.pbBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -160,6 +150,7 @@
             // pbNext
             // 
             this.pbNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbNext.Image = global::MySchool.Properties.Resources.Next_32;
             this.pbNext.Location = new System.Drawing.Point(878, 711);
             this.pbNext.Name = "pbNext";
             this.pbNext.Size = new System.Drawing.Size(35, 35);
@@ -172,7 +163,7 @@
             // 
             this.pbRefrech.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbRefrech.Image = global::MySchool.Properties.Resources.Reload_24;
-            this.pbRefrech.Location = new System.Drawing.Point(741, 711);
+            this.pbRefrech.Location = new System.Drawing.Point(717, 711);
             this.pbRefrech.Name = "pbRefrech";
             this.pbRefrech.Size = new System.Drawing.Size(35, 35);
             this.pbRefrech.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -183,6 +174,7 @@
             // pbExit
             // 
             this.pbExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbExit.Image = global::MySchool.Properties.Resources.Cross_64;
             this.pbExit.Location = new System.Drawing.Point(1261, 10);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(47, 48);
@@ -212,13 +204,24 @@
             this.pbStudentImage.TabIndex = 85;
             this.pbStudentImage.TabStop = false;
             // 
-            // ctrlStudentInfoWithFilter1
+            // btnClose
             // 
-            this.ctrlStudentInfoWithFilter1.BackColor = System.Drawing.Color.White;
-            this.ctrlStudentInfoWithFilter1.Location = new System.Drawing.Point(919, 92);
-            this.ctrlStudentInfoWithFilter1.Name = "ctrlStudentInfoWithFilter1";
-            this.ctrlStudentInfoWithFilter1.Size = new System.Drawing.Size(389, 658);
-            this.ctrlStudentInfoWithFilter1.TabIndex = 0;
+            this.btnClose.BackColor = System.Drawing.Color.White;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.Black;
+            this.btnClose.Image = global::MySchool.Properties.Resources.Close_ic_32;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(1190, 756);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(113, 35);
+            this.btnClose.TabIndex = 84;
+            this.btnClose.Text = "     Close";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmAllStudents
             // 

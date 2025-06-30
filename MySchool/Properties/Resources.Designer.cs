@@ -103,6 +103,26 @@ namespace MySchool.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Back_24 {
+            get {
+                object obj = ResourceManager.GetObject("Back 24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Back_32 {
+            get {
+                object obj = ResourceManager.GetObject("Back 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ball_32 {
             get {
                 object obj = ResourceManager.GetObject("Ball 32", resourceCulture);
@@ -196,6 +216,16 @@ namespace MySchool.Properties {
         internal static System.Drawing.Bitmap Created_By_User_32 {
             get {
                 object obj = ResourceManager.GetObject("Created By User 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cross_64 {
+            get {
+                object obj = ResourceManager.GetObject("Cross 64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,6 +443,16 @@ namespace MySchool.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Next_32 {
+            get {
+                object obj = ResourceManager.GetObject("Next 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Notes_32 {
             get {
                 object obj = ResourceManager.GetObject("Notes 32", resourceCulture);
@@ -506,6 +546,16 @@ namespace MySchool.Properties {
         internal static System.Drawing.Bitmap Search_32 {
             get {
                 object obj = ResourceManager.GetObject("Search 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Select_32 {
+            get {
+                object obj = ResourceManager.GetObject("Select 32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -616,6 +666,16 @@ namespace MySchool.Properties {
         internal static System.Drawing.Bitmap Users_64 {
             get {
                 object obj = ResourceManager.GetObject("Users 64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Warning_64 {
+            get {
+                object obj = ResourceManager.GetObject("Warning 64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
