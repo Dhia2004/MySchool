@@ -35,6 +35,7 @@
             this.pbSearch = new System.Windows.Forms.PictureBox();
             this.txtInput = new System.Windows.Forms.TextBox();
             this.ctrlPersonInfoCard1 = new MySchool.ctrlPersonInfoCard();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddNewPerson)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSearch)).BeginInit();
@@ -42,6 +43,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.btnFilter);
             this.panel1.Controls.Add(this.pbAddNewPerson);
             this.panel1.Controls.Add(this.panel2);
@@ -98,6 +100,7 @@
             this.pbSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSearch.TabIndex = 122;
             this.pbSearch.TabStop = false;
+            this.pbSearch.Visible = false;
             this.pbSearch.Click += new System.EventHandler(this.pbSearch_Click);
             // 
             // txtInput
@@ -109,6 +112,7 @@
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(159, 23);
             this.txtInput.TabIndex = 122;
+            this.txtInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
             // 
             // ctrlPersonInfoCard1
             // 
@@ -117,6 +121,21 @@
             this.ctrlPersonInfoCard1.Name = "ctrlPersonInfoCard1";
             this.ctrlPersonInfoCard1.Size = new System.Drawing.Size(389, 591);
             this.ctrlPersonInfoCard1.TabIndex = 3;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.White;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Image = global::MySchool.Properties.Resources.Search_24;
+            this.btnSearch.Location = new System.Drawing.Point(294, 16);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(25, 27);
+            this.btnSearch.TabIndex = 143;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // ctrlPersonInfoWithFilter
             // 
@@ -144,5 +163,6 @@
         private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Button btnFilter;
         private ctrlPersonInfoCard ctrlPersonInfoCard1;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

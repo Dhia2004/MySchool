@@ -98,5 +98,28 @@ namespace MySchool
             }
            
         }
+
+        private void txtInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Check if the pressed key is Enter (character code 13)
+            if (e.KeyChar == (char)13)
+            {
+
+                btnSearch.PerformClick();
+            }
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (btnFilter.Text == "Person ID")
+            {
+                ctrlPersonInfoCard1.LoadPersonInfo(Convert.ToInt32(txtInput.Text));
+            }
+            else if (btnFilter.Text == "National ID")
+            {
+                ctrlPersonInfoCard1.LoadPersonInfo(txtInput.Text);
+            }
+        }
     }
 }

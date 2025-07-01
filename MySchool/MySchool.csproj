@@ -412,5 +412,8 @@
   <ItemGroup>
     <None Include="Resources\Warning 64.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete 32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

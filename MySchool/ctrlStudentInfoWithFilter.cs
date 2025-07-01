@@ -165,6 +165,18 @@ namespace MySchool
             if (!string.IsNullOrEmpty(txtStudentID.Text))
                 ctrlStudentInfoCard1.LoadStudentInfo(Convert.ToInt32(txtStudentID.Text));
         }
+
+        private void txtStudentID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Check if the pressed key is Enter (character code 13)
+            if (e.KeyChar == (char)13)
+            {
+
+                btnSearch.PerformClick();
+            }
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+
+        }
     }
 }
     

@@ -16,6 +16,8 @@ namespace MySchool
     public partial class frmAddEditStudent : Form
     {
         private bool IsUpdated = false;
+        //private bool MessingMedicalFile = false; // To check if the medical file is missing or not
+
         private int _StudentID;
 
         private clsStudent _Student;
@@ -99,6 +101,157 @@ namespace MySchool
 
         }
 
+        private void FullPnlMedicalFile()
+        {
+            chkMedicalFile.Checked = true;
+            cbBloodType.SelectedIndex = cbBloodType.FindString(_Student.MedicalFile.BloodType);
+            
+            if (_Student.MedicalFile.IsDisabled)
+            {
+                if (_Student.MedicalFile.DisabilityDescription == "Physical")
+                    rbPhysicalDisability.Checked = true;
+                else
+                    rbMentalDisability.Checked = true;
+            }
+            else
+                rbNo_Disability.Checked = true;
+
+            rbGlasses_Yes.Checked = _Student.MedicalFile.WearsGlasses;
+            rbPracticeSport_Yes.Checked = _Student.MedicalFile.CanParticipateInSports;
+            rbSurgery_Yes.Checked = _Student.MedicalFile.HasUndergoneSurgery;
+            rbChronic_Yes.Checked = _Student.MedicalFile.HasChronicDisease;
+            if (_Student.MedicalFile.HasChronicDisease)
+            {
+                rbChronic_Yes.Checked = true;
+                string [] ChronicsSelected = _Student.MedicalFile.ChronicDiseaseDescription.Split('-');
+
+                foreach (string item in ChronicsSelected)
+                {
+                    switch (item.Trim())
+                    {
+                        case "Asthma":
+                            chkAsthma.Checked = true;
+                            break;
+                        case "Diabetes":
+                            chkDiabetes.Checked = true;
+                            break;
+                        case "Heart Disease":
+                            chkHeartDisease.Checked = true;
+                            break;
+                        case "Anemia":
+                            chkAnemia.Checked = true;
+                            break;
+                        case "Epilepsy":
+                            chkEpilepsy.Checked = true;
+                            break;
+                        case "Kidney Disease":
+                            chkKidneyDisease.Checked = true;
+                            break;
+                        case "Liver Disease":
+                            chkLiverDisease.Checked = true;
+                            break;
+                        case "Thyroid Disorders":
+                            chkThyroidDisorders.Checked = true;
+                            break;
+                    }
+                }
+                
+            }
+            else
+            {
+                rbChronic_No.Checked = true;
+                pnlNoChronics.Visible = true;
+            }
+
+            rbAllergy_Yes.Checked = _Student.MedicalFile.HasAllergy;
+            if (_Student.MedicalFile.HasAllergy)
+            {
+                rbAllergy_Yes.Checked = true;
+                string[] AllergySelected = _Student.MedicalFile.AllergyDescription.Split('-');
+                foreach (string item in AllergySelected)
+                {
+                    switch (item.Trim())
+                    {
+                        case "Peanut":
+                            chkPeanut.Checked = true;
+                            break;
+                        case "Lactose":
+                            chkLactose.Checked = true;
+                            break;
+                        case "Gluten":
+                            chkGluten.Checked = true;
+                            break;
+                        case "Dust":
+                            chkDust.Checked = true;
+                            break;
+                        case "Egg":
+                            chkEgg.Checked = true;
+                            break;
+                        case "Skin":
+                            chkSkin.Checked = true;
+                            break;
+                        case "Aspirin":
+                            chkAspirin.Checked = true;
+                            break;
+                        case "Pollen":
+                            chkPollen.Checked = true;
+                            break;
+                    }
+                }
+            }
+            else
+            {
+                rbAllergy_No.Checked = true;
+                pnlNoAllergy.Visible = true;
+            }
+
+            rbMedication_Yes.Checked = _Student.MedicalFile.TakesMedication;
+            if (_Student.MedicalFile.TakesMedication)
+            {
+                rbMedication_Yes.Checked = true;
+                string[] MedicationsSelected = _Student.MedicalFile.MedicationDescription.Split('-');
+                foreach (string item in MedicationsSelected)
+                {
+                    switch (item.Trim())
+                    {
+                        case "Insulin":
+                            chkInsulin.Checked = true;
+                            break;
+                        case "Paracetamol":
+                            chkParacetamol.Checked = true;
+                            break;
+                        case "Asthma Medications":
+                            chkAsthmaMedications.Checked = true;
+                            break;
+                        case "Cardiac Medications":
+                            chkCardiacMedications.Checked = true;
+                            break;
+                        case "Penicillin":
+                            chkPenicillin.Checked = true;
+                            break;
+                        case "Antihistamines":
+                            chkAntihistamines.Checked = true;
+                            break;
+                        case "Diabetes Medications":
+                            chkDiabetesMedications.Checked = true;
+                            break;
+                        case "Anti Epi Drugs":
+                            chkAntiEpiDrugs.Checked = true;
+                            break;
+                    }
+                }
+            }
+            else
+            {
+                rbMedication_No.Checked = true;
+                pnlNoMedication.Visible = true;
+            }
+
+            txtMedicalRemarks.Text = _Student.MedicalFile.Remarks;
+
+
+
+        }
 
         public void GetStudentByID(int StudentID)
         {
@@ -112,6 +265,13 @@ namespace MySchool
                     rbMale.Checked = true;
                 else
                     rbFemale.Checked = true;
+
+                if (_Student.Guardian != null)
+                {
+                    lblFullName.Text = _Student.Guardian.FullName();
+                    lblPhone.Text = _Student.Guardian.PhoneNumber;
+                }
+                    
 
 
                 txtAddress.Text = _Student.Address;
@@ -128,17 +288,40 @@ namespace MySchool
                 }
 
 
-                else
-                {
-                    //ll_RemoveLink.Visible = false;
-                    //ll_SetLink.Visible = true;
-                }
+                
 
 
                 cbLevel.SelectedIndex = cbLevel.FindString(clsLevel.FindByID(_Student.LevelID).Name);
+
+                if (_Student.HasMedicalFile)
+                {
+                    FullPnlMedicalFile();
+                }
             }
         }
 
+        private clsMedicalFile CreateNewMedicalFile()
+        {
+            clsMedicalFile MedicalFile = new clsMedicalFile();
+            MedicalFile.StudentID = -1;
+            MedicalFile.BloodType = cbBloodType.SelectedItem.ToString();
+            MedicalFile.IsDisabled = rbNo_Disability.Checked;
+            MedicalFile.DisabilityDescription = rbPhysicalDisability.Checked? rbPhysicalDisability.Tag.ToString():rbMentalDisability.Tag.ToString();
+            MedicalFile.WearsGlasses = rbGlasses_No.Checked ? false : true;
+            MedicalFile.CanParticipateInSports = rbPracticeSport_Yes.Checked ? true : false;
+            MedicalFile.HasUndergoneSurgery = rbSurgery_No.Checked ? false : true;
+            MedicalFile.HasChronicDisease = rbChronic_No.Checked ? false : true;
+            MedicalFile.ChronicDiseaseDescription = txtChronicIllness.Text;
+            MedicalFile.HasAllergy = rbAllergy_No.Checked ? false : true;
+            MedicalFile.AllergyDescription = txtAllergy.Text;
+            MedicalFile.TakesMedication = rbMedication_No.Checked ? false : true;
+            MedicalFile.MedicationDescription = txtMedications.Text;
+            MedicalFile.Remarks = txtMedicalRemarks.Text;
+            MedicalFile.CreatedByUserID = clsGlobalSettings.CurrentUser.UserID; // TODO: Replace with actual user ID
+
+
+            return MedicalFile;
+        }
         public bool SaveDateUpdate()
         {
             bool IsDone = false;
@@ -158,6 +341,15 @@ namespace MySchool
                 _Student.IsActive = true; // Assuming new students are active by default
 
                 _Student.ImagePath = pbStudentImage.ImageLocation == null ? "" : pbStudentImage.ImageLocation;
+                if (_Student.HasMedicalFile == false && chkMedicalFile.Checked)
+                {
+                    _Student.MedicalFile = CreateNewMedicalFile();
+                }
+                _Student.HasMedicalFile = chkMedicalFile.Checked;
+                
+                    
+
+
                 if ((IsDone = _Student.Save()))
 
                     MessageBox.Show("Student Updated Successfully", "Done",
@@ -177,12 +369,20 @@ namespace MySchool
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (!chkMedicalFile.Checked)
+            {
+                if (MessageBox.Show("The student does not have a medical file.\nDo you want to continue?",
+                                "Medical File Missing", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+                    == DialogResult.No)
+                    return;
+            }
+
             if (SaveDateUpdate())
             {
                 Mode = enMode.Update;
                 _StudentID = _Student.StudentID;
                 lblPersonID.Text = _Student.StudentID.ToString();
-                lblMode.Text = "Update Person Informations";
+                lblMode.Text = "Update Student Informations";
                 IsUpdated = true;
                 //GetPersonByID(_PersonID);
                 return;
@@ -234,10 +434,26 @@ namespace MySchool
         }
 
 
+        private void IntializePnlMedicalInfo()
+        {
+            cbBloodType.SelectedIndex = 0;
+            chkMedicalFile.Checked = false;
+            chkMedicalFile.Visible = false;
+            rbNo_Disability.Checked = true;
+            rbGlasses_No.Checked = true;
+            rbPracticeSport_Yes.Checked = true;
+            rbSurgery_No.Checked = true;
+            rbChronic_No.Checked = true;
+            rbAllergy_No.Checked = true;
+            rbMedication_No.Checked = true;
+        }
 
         private void frmAddEditStudent_Load(object sender, EventArgs e)
         {
             _PanelMode = enPanelMode.pnlBasicInfoActive;
+            IntializePnlMedicalInfo();
+            pbDelete.Visible = false;
+            pbUpdate.Visible = false;
             btnMedicalFile.BringToFront();
             btnClose.Location = new Point(252, 741);
             btnMedicalFile.Text = "Medical File";
@@ -299,6 +515,9 @@ namespace MySchool
             {
                 case enPanelMode.pnlMedicalInfoActive:
                     _PanelMode = enPanelMode.pnlBasicInfoActive;
+                    chkMedicalFile.Visible = false;
+                    pbUpdate.Visible = false;
+                    pbDelete.Visible = false;
                     pnlMedicalInfo.Visible = false;
                     pnlBasicInfo.Visible = true;
                     btnMedicalFile.Text = "Medical File";
@@ -308,6 +527,9 @@ namespace MySchool
                     break;
                 case enPanelMode.pnlBasicInfoActive:
                     _PanelMode = enPanelMode.pnlMedicalInfoActive;
+                    chkMedicalFile.Visible = true;
+                    pbUpdate.Visible = true;
+                    pbDelete.Visible = true;
                     pnlBasicInfo.Visible = false;
                     pnlMedicalInfo.Visible = true;
                     pnlMedicalInfo.BringToFront();
@@ -535,6 +757,7 @@ namespace MySchool
 
                 if (Person != null)
                 {
+                    _Student.GuardianID = Person.PersonID;
                     _Student.Guardian = Person;
                     lblFullName.Text = Person.FullName();
                     lblPhone.Text = Person.PhoneNumber;
@@ -622,6 +845,27 @@ namespace MySchool
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void chkMedicalFile_CheckedChanged(object sender, EventArgs e)
+        {
+            pnlMedicalInfo.Enabled = chkMedicalFile.Checked;
+        }
+
+        private void pbDelete_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Are you sure you want to delete this medical file ?",
+                "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (_Student.MedicalFile != null)
+                {
+                    clsMedicalFile.Delete(_StudentID);
+                }
+                _Student.MedicalFile = null;
+                chkMedicalFile.Checked = false;
+                _Student.HasMedicalFile = false;
+
+            }
         }
     }
 }

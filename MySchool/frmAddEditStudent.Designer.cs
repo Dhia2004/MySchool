@@ -137,10 +137,20 @@
             this.chkInsulin = new System.Windows.Forms.CheckBox();
             this.pnlNoMedication = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
+            this.chkMedicalFile = new System.Windows.Forms.CheckBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.txtMedicalRemarks = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.pbDelete = new System.Windows.Forms.PictureBox();
+            this.pbUpdate = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnMedicalFile = new System.Windows.Forms.Button();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -149,7 +159,6 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnMedicalFile = new System.Windows.Forms.Button();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.btnPersonInfo = new System.Windows.Forms.Button();
@@ -166,7 +175,6 @@
             this.pbStudentImage = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.btnSave = new System.Windows.Forms.Button();
             this.pnlBasicInfo.SuspendLayout();
             this.panel5.SuspendLayout();
             this.pnlUploadImage.SuspendLayout();
@@ -182,9 +190,14 @@
             this.pnlNoAllergy.SuspendLayout();
             this.pnlMedications.SuspendLayout();
             this.pnlNoMedication.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUpdate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -701,13 +714,16 @@
             // 
             this.pnlMedicalInfo.AutoScroll = true;
             this.pnlMedicalInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMedicalInfo.Controls.Add(this.label28);
+            this.pnlMedicalInfo.Controls.Add(this.pictureBox22);
+            this.pnlMedicalInfo.Controls.Add(this.txtMedicalRemarks);
+            this.pnlMedicalInfo.Controls.Add(this.panel11);
+            this.pnlMedicalInfo.Controls.Add(this.panel4);
             this.pnlMedicalInfo.Controls.Add(this.panel6);
             this.pnlMedicalInfo.Controls.Add(this.pictureBox17);
             this.pnlMedicalInfo.Controls.Add(this.label11);
             this.pnlMedicalInfo.Controls.Add(this.label9);
             this.pnlMedicalInfo.Controls.Add(this.pictureBox16);
-            this.pnlMedicalInfo.Controls.Add(this.rbMedication_Yes);
-            this.pnlMedicalInfo.Controls.Add(this.rbMedication_No);
             this.pnlMedicalInfo.Controls.Add(this.rbMentalDisability);
             this.pnlMedicalInfo.Controls.Add(this.pictureBox6);
             this.pnlMedicalInfo.Controls.Add(this.pictureBox5);
@@ -716,8 +732,6 @@
             this.pnlMedicalInfo.Controls.Add(this.rbNo_Disability);
             this.pnlMedicalInfo.Controls.Add(this.rbPhysicalDisability);
             this.pnlMedicalInfo.Controls.Add(this.pictureBox15);
-            this.pnlMedicalInfo.Controls.Add(this.txtAllergy);
-            this.pnlMedicalInfo.Controls.Add(this.txtChronicIllness);
             this.pnlMedicalInfo.Controls.Add(this.label8);
             this.pnlMedicalInfo.Controls.Add(this.label6);
             this.pnlMedicalInfo.Controls.Add(this.cbBloodType);
@@ -725,8 +739,6 @@
             this.pnlMedicalInfo.Controls.Add(this.label26);
             this.pnlMedicalInfo.Controls.Add(this.label10);
             this.pnlMedicalInfo.Controls.Add(this.pictureBox12);
-            this.pnlMedicalInfo.Controls.Add(this.rbAllergy_Yes);
-            this.pnlMedicalInfo.Controls.Add(this.rbAllergy_No);
             this.pnlMedicalInfo.Controls.Add(this.panel7);
             this.pnlMedicalInfo.Controls.Add(this.panel10);
             this.pnlMedicalInfo.Controls.Add(this.panel9);
@@ -745,7 +757,7 @@
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(17, 831);
+            this.panel6.Location = new System.Drawing.Point(17, 966);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(508, 12);
             this.panel6.TabIndex = 202;
@@ -777,7 +789,7 @@
             this.rbMedication_Yes.AutoSize = true;
             this.rbMedication_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbMedication_Yes.ForeColor = System.Drawing.Color.DarkGreen;
-            this.rbMedication_Yes.Location = new System.Drawing.Point(385, 599);
+            this.rbMedication_Yes.Location = new System.Drawing.Point(4, 3);
             this.rbMedication_Yes.Name = "rbMedication_Yes";
             this.rbMedication_Yes.Size = new System.Drawing.Size(42, 19);
             this.rbMedication_Yes.TabIndex = 193;
@@ -791,7 +803,7 @@
             this.rbMedication_No.AutoSize = true;
             this.rbMedication_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbMedication_No.ForeColor = System.Drawing.Color.Red;
-            this.rbMedication_No.Location = new System.Drawing.Point(438, 599);
+            this.rbMedication_No.Location = new System.Drawing.Point(56, 3);
             this.rbMedication_No.Name = "rbMedication_No";
             this.rbMedication_No.Size = new System.Drawing.Size(41, 19);
             this.rbMedication_No.TabIndex = 192;
@@ -809,7 +821,7 @@
             this.rbMentalDisability.Name = "rbMentalDisability";
             this.rbMentalDisability.Size = new System.Drawing.Size(146, 19);
             this.rbMentalDisability.TabIndex = 191;
-            this.rbMentalDisability.Tag = "Man";
+            this.rbMentalDisability.Tag = "Mental";
             this.rbMentalDisability.Text = "Yes, a mental disability.";
             this.rbMentalDisability.UseVisualStyleBackColor = true;
             // 
@@ -857,14 +869,14 @@
             this.rbPhysicalDisability.Name = "rbPhysicalDisability";
             this.rbPhysicalDisability.Size = new System.Drawing.Size(152, 19);
             this.rbPhysicalDisability.TabIndex = 187;
-            this.rbPhysicalDisability.Tag = "Man";
+            this.rbPhysicalDisability.Tag = "Physical";
             this.rbPhysicalDisability.Text = "Yes, a physical disability.";
             this.rbPhysicalDisability.UseVisualStyleBackColor = true;
             // 
             // txtAllergy
             // 
             this.txtAllergy.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAllergy.Location = new System.Drawing.Point(24, 532);
+            this.txtAllergy.Location = new System.Drawing.Point(7, 112);
             this.txtAllergy.Multiline = true;
             this.txtAllergy.Name = "txtAllergy";
             this.txtAllergy.Size = new System.Drawing.Size(493, 46);
@@ -873,7 +885,7 @@
             // txtChronicIllness
             // 
             this.txtChronicIllness.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChronicIllness.Location = new System.Drawing.Point(24, 324);
+            this.txtChronicIllness.Location = new System.Drawing.Point(7, 112);
             this.txtChronicIllness.Multiline = true;
             this.txtChronicIllness.Name = "txtChronicIllness";
             this.txtChronicIllness.Size = new System.Drawing.Size(493, 46);
@@ -946,7 +958,7 @@
             this.rbAllergy_Yes.AutoSize = true;
             this.rbAllergy_Yes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbAllergy_Yes.ForeColor = System.Drawing.Color.DarkGreen;
-            this.rbAllergy_Yes.Location = new System.Drawing.Point(385, 388);
+            this.rbAllergy_Yes.Location = new System.Drawing.Point(4, 3);
             this.rbAllergy_Yes.Name = "rbAllergy_Yes";
             this.rbAllergy_Yes.Size = new System.Drawing.Size(42, 19);
             this.rbAllergy_Yes.TabIndex = 176;
@@ -959,7 +971,8 @@
             // 
             this.rbAllergy_No.AutoSize = true;
             this.rbAllergy_No.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbAllergy_No.Location = new System.Drawing.Point(438, 388);
+            this.rbAllergy_No.ForeColor = System.Drawing.Color.Red;
+            this.rbAllergy_No.Location = new System.Drawing.Point(56, 3);
             this.rbAllergy_No.Name = "rbAllergy_No";
             this.rbAllergy_No.Size = new System.Drawing.Size(41, 19);
             this.rbAllergy_No.TabIndex = 175;
@@ -1123,6 +1136,7 @@
             this.pnlChronicIllness.Controls.Add(this.chkHeartDisease);
             this.pnlChronicIllness.Controls.Add(this.chkDiabetes);
             this.pnlChronicIllness.Controls.Add(this.chkAsthma);
+            this.pnlChronicIllness.Controls.Add(this.txtChronicIllness);
             this.pnlChronicIllness.Location = new System.Drawing.Point(17, 210);
             this.pnlChronicIllness.Name = "pnlChronicIllness";
             this.pnlChronicIllness.Size = new System.Drawing.Size(508, 166);
@@ -1228,9 +1242,9 @@
             // 
             this.pnlNoChronics.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlNoChronics.Controls.Add(this.label12);
-            this.pnlNoChronics.Location = new System.Drawing.Point(18, 210);
+            this.pnlNoChronics.Location = new System.Drawing.Point(17, 210);
             this.pnlNoChronics.Name = "pnlNoChronics";
-            this.pnlNoChronics.Size = new System.Drawing.Size(507, 166);
+            this.pnlNoChronics.Size = new System.Drawing.Size(508, 166);
             this.pnlNoChronics.TabIndex = 203;
             // 
             // label12
@@ -1257,6 +1271,7 @@
             this.pnlAllergy.Controls.Add(this.chkGluten);
             this.pnlAllergy.Controls.Add(this.chkLactose);
             this.pnlAllergy.Controls.Add(this.chkPeanut);
+            this.pnlAllergy.Controls.Add(this.txtAllergy);
             this.pnlAllergy.Location = new System.Drawing.Point(17, 417);
             this.pnlAllergy.Name = "pnlAllergy";
             this.pnlAllergy.Size = new System.Drawing.Size(508, 166);
@@ -1362,9 +1377,9 @@
             // 
             this.pnlNoAllergy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlNoAllergy.Controls.Add(this.label13);
-            this.pnlNoAllergy.Location = new System.Drawing.Point(18, 417);
+            this.pnlNoAllergy.Location = new System.Drawing.Point(17, 417);
             this.pnlNoAllergy.Name = "pnlNoAllergy";
-            this.pnlNoAllergy.Size = new System.Drawing.Size(507, 166);
+            this.pnlNoAllergy.Size = new System.Drawing.Size(508, 166);
             this.pnlNoAllergy.TabIndex = 205;
             // 
             // label13
@@ -1437,7 +1452,7 @@
             // txtMedications
             // 
             this.txtMedications.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMedications.Location = new System.Drawing.Point(6, 140);
+            this.txtMedications.Location = new System.Drawing.Point(7, 140);
             this.txtMedications.Multiline = true;
             this.txtMedications.Name = "txtMedications";
             this.txtMedications.Size = new System.Drawing.Size(493, 46);
@@ -1519,9 +1534,9 @@
             // 
             this.pnlNoMedication.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlNoMedication.Controls.Add(this.label14);
-            this.pnlNoMedication.Location = new System.Drawing.Point(18, 628);
+            this.pnlNoMedication.Location = new System.Drawing.Point(17, 628);
             this.pnlNoMedication.Name = "pnlNoMedication";
-            this.pnlNoMedication.Size = new System.Drawing.Size(507, 197);
+            this.pnlNoMedication.Size = new System.Drawing.Size(508, 197);
             this.pnlNoMedication.TabIndex = 206;
             // 
             // label14
@@ -1534,6 +1549,81 @@
             this.label14.Size = new System.Drawing.Size(67, 37);
             this.label14.TabIndex = 204;
             this.label14.Text = "N/A";
+            // 
+            // chkMedicalFile
+            // 
+            this.chkMedicalFile.AutoSize = true;
+            this.chkMedicalFile.Checked = true;
+            this.chkMedicalFile.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkMedicalFile.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.chkMedicalFile.Location = new System.Drawing.Point(236, 113);
+            this.chkMedicalFile.Name = "chkMedicalFile";
+            this.chkMedicalFile.Size = new System.Drawing.Size(116, 25);
+            this.chkMedicalFile.TabIndex = 147;
+            this.chkMedicalFile.Text = "Medical File";
+            this.chkMedicalFile.UseVisualStyleBackColor = true;
+            this.chkMedicalFile.CheckedChanged += new System.EventHandler(this.chkMedicalFile_CheckedChanged);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.rbAllergy_Yes);
+            this.panel4.Controls.Add(this.rbAllergy_No);
+            this.panel4.Location = new System.Drawing.Point(379, 384);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(100, 25);
+            this.panel4.TabIndex = 209;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.rbMedication_Yes);
+            this.panel11.Controls.Add(this.rbMedication_No);
+            this.panel11.Location = new System.Drawing.Point(379, 595);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(100, 25);
+            this.panel11.TabIndex = 210;
+            // 
+            // txtMedicalRemarks
+            // 
+            this.txtMedicalRemarks.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMedicalRemarks.Location = new System.Drawing.Point(17, 873);
+            this.txtMedicalRemarks.Multiline = true;
+            this.txtMedicalRemarks.Name = "txtMedicalRemarks";
+            this.txtMedicalRemarks.Size = new System.Drawing.Size(508, 85);
+            this.txtMedicalRemarks.TabIndex = 211;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.Black;
+            this.label28.Location = new System.Drawing.Point(54, 840);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(134, 21);
+            this.label28.TabIndex = 212;
+            this.label28.Text = "Medical Remarks";
+            // 
+            // pbDelete
+            // 
+            this.pbDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbDelete.Image = global::MySchool.Properties.Resources.Delete_32;
+            this.pbDelete.Location = new System.Drawing.Point(539, 113);
+            this.pbDelete.Name = "pbDelete";
+            this.pbDelete.Size = new System.Drawing.Size(35, 35);
+            this.pbDelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbDelete.TabIndex = 149;
+            this.pbDelete.TabStop = false;
+            this.pbDelete.Click += new System.EventHandler(this.pbDelete_Click);
+            // 
+            // pbUpdate
+            // 
+            this.pbUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbUpdate.Image = global::MySchool.Properties.Resources.Reload_24;
+            this.pbUpdate.Location = new System.Drawing.Point(494, 113);
+            this.pbUpdate.Name = "pbUpdate";
+            this.pbUpdate.Size = new System.Drawing.Size(35, 35);
+            this.pbUpdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbUpdate.TabIndex = 148;
+            this.pbUpdate.TabStop = false;
             // 
             // pictureBox21
             // 
@@ -1585,6 +1675,54 @@
             this.btnClose.Text = "     Close";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.White;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Image = global::MySchool.Properties.Resources.Save_32;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(369, 741);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(202, 40);
+            this.btnSave.TabIndex = 82;
+            this.btnSave.Text = "     Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnMedicalFile
+            // 
+            this.btnMedicalFile.BackColor = System.Drawing.Color.White;
+            this.btnMedicalFile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMedicalFile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnMedicalFile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnMedicalFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMedicalFile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMedicalFile.ForeColor = System.Drawing.Color.Black;
+            this.btnMedicalFile.Image = global::MySchool.Properties.Resources.Medical_File_32;
+            this.btnMedicalFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMedicalFile.Location = new System.Drawing.Point(369, 741);
+            this.btnMedicalFile.Name = "btnMedicalFile";
+            this.btnMedicalFile.Size = new System.Drawing.Size(202, 40);
+            this.btnMedicalFile.TabIndex = 146;
+            this.btnMedicalFile.Text = "     Medical File";
+            this.btnMedicalFile.UseVisualStyleBackColor = false;
+            this.btnMedicalFile.Click += new System.EventHandler(this.btnMedicalFile_Click);
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::MySchool.Properties.Resources.Notes_32;
+            this.pictureBox22.Location = new System.Drawing.Point(17, 836);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox22.TabIndex = 213;
+            this.pictureBox22.TabStop = false;
             // 
             // pictureBox17
             // 
@@ -1665,25 +1803,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 170;
             this.pictureBox4.TabStop = false;
-            // 
-            // btnMedicalFile
-            // 
-            this.btnMedicalFile.BackColor = System.Drawing.Color.White;
-            this.btnMedicalFile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMedicalFile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnMedicalFile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnMedicalFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMedicalFile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMedicalFile.ForeColor = System.Drawing.Color.Black;
-            this.btnMedicalFile.Image = global::MySchool.Properties.Resources.Medical_File_32;
-            this.btnMedicalFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMedicalFile.Location = new System.Drawing.Point(369, 741);
-            this.btnMedicalFile.Name = "btnMedicalFile";
-            this.btnMedicalFile.Size = new System.Drawing.Size(202, 40);
-            this.btnMedicalFile.TabIndex = 146;
-            this.btnMedicalFile.Text = "     Medical File";
-            this.btnMedicalFile.UseVisualStyleBackColor = false;
-            this.btnMedicalFile.Click += new System.EventHandler(this.btnMedicalFile_Click);
             // 
             // pictureBox14
             // 
@@ -1857,31 +1976,15 @@
             this.pictureBox20.TabIndex = 139;
             this.pictureBox20.TabStop = false;
             // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.White;
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Image = global::MySchool.Properties.Resources.Save_32;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(369, 741);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(202, 40);
-            this.btnSave.TabIndex = 82;
-            this.btnSave.Text = "     Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // frmAddEditStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(588, 786);
+            this.Controls.Add(this.pbDelete);
+            this.Controls.Add(this.pbUpdate);
+            this.Controls.Add(this.chkMedicalFile);
             this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.pbExit);
             this.Controls.Add(this.panel1);
@@ -1891,9 +1994,9 @@
             this.Controls.Add(this.lblPersonID);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.pnlMedicalInfo);
-            this.Controls.Add(this.btnMedicalFile);
             this.Controls.Add(this.pnlBasicInfo);
             this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnMedicalFile);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddEditStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1929,9 +2032,16 @@
             this.pnlMedications.PerformLayout();
             this.pnlNoMedication.ResumeLayout(false);
             this.pnlNoMedication.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUpdate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -2099,5 +2209,13 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.Button btnMedicalFile;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.CheckBox chkMedicalFile;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.PictureBox pictureBox22;
+        private System.Windows.Forms.TextBox txtMedicalRemarks;
+        private System.Windows.Forms.PictureBox pbUpdate;
+        private System.Windows.Forms.PictureBox pbDelete;
     }
 }

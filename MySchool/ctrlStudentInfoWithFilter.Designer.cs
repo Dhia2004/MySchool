@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ctrlStudentInfoWithFilter));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAddNewStudent = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtStudentID = new System.Windows.Forms.TextBox();
             this.ctrlStudentInfoCard1 = new MySchool.ctrlStudentInfoCard();
-            this.btnAddNewStudent = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,32 +49,6 @@
             this.panel1.Size = new System.Drawing.Size(381, 58);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(286, 20);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1, 20);
-            this.panel2.TabIndex = 123;
-            // 
-            // txtStudentID
-            // 
-            this.txtStudentID.BackColor = System.Drawing.Color.White;
-            this.txtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtStudentID.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStudentID.Location = new System.Drawing.Point(39, 17);
-            this.txtStudentID.Name = "txtStudentID";
-            this.txtStudentID.Size = new System.Drawing.Size(241, 23);
-            this.txtStudentID.TabIndex = 122;
-            // 
-            // ctrlStudentInfoCard1
-            // 
-            this.ctrlStudentInfoCard1.BackColor = System.Drawing.Color.White;
-            this.ctrlStudentInfoCard1.Location = new System.Drawing.Point(0, 66);
-            this.ctrlStudentInfoCard1.Name = "ctrlStudentInfoCard1";
-            this.ctrlStudentInfoCard1.Size = new System.Drawing.Size(389, 591);
-            this.ctrlStudentInfoCard1.TabIndex = 0;
             // 
             // btnAddNewStudent
             // 
@@ -105,6 +79,33 @@
             this.btnSearch.TabIndex = 142;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(286, 20);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1, 20);
+            this.panel2.TabIndex = 123;
+            // 
+            // txtStudentID
+            // 
+            this.txtStudentID.BackColor = System.Drawing.Color.White;
+            this.txtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStudentID.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStudentID.Location = new System.Drawing.Point(39, 17);
+            this.txtStudentID.Name = "txtStudentID";
+            this.txtStudentID.Size = new System.Drawing.Size(241, 23);
+            this.txtStudentID.TabIndex = 122;
+            this.txtStudentID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStudentID_KeyPress);
+            // 
+            // ctrlStudentInfoCard1
+            // 
+            this.ctrlStudentInfoCard1.BackColor = System.Drawing.Color.White;
+            this.ctrlStudentInfoCard1.Location = new System.Drawing.Point(0, 66);
+            this.ctrlStudentInfoCard1.Name = "ctrlStudentInfoCard1";
+            this.ctrlStudentInfoCard1.Size = new System.Drawing.Size(389, 591);
+            this.ctrlStudentInfoCard1.TabIndex = 0;
             // 
             // ctrlStudentInfoWithFilter
             // 

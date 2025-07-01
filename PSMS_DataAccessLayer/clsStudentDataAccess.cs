@@ -16,7 +16,8 @@ namespace PSMS_DataAccessLayer
                                     ref char Gender, ref string Address,
                                     ref string PhoneNumber, ref DateTime JoinDate,
                                     ref int LevelID, ref string ImagePath, ref string Notes,
-                                    ref bool IsActive, ref int CreatedByUserID)
+                                    ref bool IsActive, ref int CreatedByUserID,ref bool HasMedicalFile,
+                                    ref int GuardianID, ref string DeactivationReason)
         {
             bool IsFound = false;
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
@@ -63,6 +64,21 @@ namespace PSMS_DataAccessLayer
                         ImagePath = (string)reader["ImagePath"];
                     else
                         ImagePath = "";
+
+                    if (reader["HasMedicalFile"] != DBNull.Value)
+                        HasMedicalFile = Convert.ToBoolean(reader["HasMedicalFile"]);
+                    else
+                        HasMedicalFile = false;
+
+                    if (reader["GuardianID"] != DBNull.Value)
+                        GuardianID = (int)reader["GuardianID"];
+                    else
+                        GuardianID = -1;
+
+                    if (reader["DeactivationReason"] != DBNull.Value)
+                        DeactivationReason = (string)reader["DeactivationReason"];
+                    else
+                        DeactivationReason = "";
 
                 }
                 else
@@ -198,7 +214,8 @@ namespace PSMS_DataAccessLayer
 
         static public int AddStudent(string FirstName, string LastName, DateTime DateOfBirth,
                           char Gender, string Address, string PhoneNumber, DateTime JoinDate, int LevelID,
-                          string ImagePath, string Notes, bool IsActive, int CreatedByUserID)
+                          string ImagePath, string Notes, bool IsActive, int CreatedByUserID,
+                          bool HasMedicalFile,int GuardianID,string DeactivationReason)
         {
             int StudentID = -1;
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
@@ -214,7 +231,10 @@ namespace PSMS_DataAccessLayer
                                      @IsActive,
                                      @Notes,
                                      @CreatedByUserID,
-                                     @ImagePath
+                                     @ImagePath,
+                                     @HasMedicalFile,
+                                     @GuardianID,
+                                     @DeactivationReason
                                      );
                             SELECT SCOPE_IDENTITY();";
 
@@ -254,6 +274,19 @@ namespace PSMS_DataAccessLayer
             else
                command.Parameters.AddWithValue("@ImagePath", DBNull.Value);
 
+            command.Parameters.AddWithValue("@HasMedicalFile", HasMedicalFile);
+
+            if (GuardianID == -1)
+                command.Parameters.AddWithValue("@GuardianID", DBNull.Value);
+            else
+                command.Parameters.AddWithValue("@GuardianID", GuardianID);
+
+            if (DeactivationReason != "")
+                command.Parameters.AddWithValue("@DeactivationReason", DeactivationReason);
+            else
+                command.Parameters.AddWithValue("@DeactivationReason", DBNull.Value);
+
+
             try
             {
                 connection.Open();
@@ -277,7 +310,8 @@ namespace PSMS_DataAccessLayer
 
         static public bool Update(int StudentID, string FirstName, string LastName, DateTime DateOfBirth,
                           char Gender, string Address, string PhoneNumber, DateTime JoinDate, int LevelID,
-                          string ImagePath, string Notes, bool IsActive, int CreatedByUserID)
+                          string ImagePath, string Notes, bool IsActive, int CreatedByUserID,
+                          bool HasMedicalFile,int GuardianID,string DeactivationReason)
 
         {
             int RowsAffected = 0;
@@ -294,7 +328,10 @@ namespace PSMS_DataAccessLayer
                                      IsActive = @IsActive,
                                      Notes = @Notes,
                                      CreatedByUserID = @CreatedByUserID,
-                                     ImagePath = @ImagePath
+                                     ImagePath = @ImagePath,
+                                     HasMedicalFile = @HasMedicalFile,
+                                     GuardianID = @GuardianID,
+                                     DeactivationReason = @DeactivationReason
                              WHERE StudentID = @StudentID";
 
             SqlCommand command = new SqlCommand(query, connection);
@@ -331,6 +368,18 @@ namespace PSMS_DataAccessLayer
                 command.Parameters.AddWithValue("@ImagePath", ImagePath);
             else
                 command.Parameters.AddWithValue("@ImagePath", DBNull.Value);
+
+            command.Parameters.AddWithValue("@HasMedicalFile", HasMedicalFile);
+
+            if (GuardianID == -1)
+                command.Parameters.AddWithValue("@GuardianID", DBNull.Value);
+            else
+                command.Parameters.AddWithValue("@GuardianID", GuardianID);
+
+            if (DeactivationReason != "")
+                command.Parameters.AddWithValue("@DeactivationReason", DeactivationReason);
+            else
+                command.Parameters.AddWithValue("@DeactivationReason", DBNull.Value);
 
             try
             {
