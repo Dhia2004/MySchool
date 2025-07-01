@@ -32,21 +32,11 @@
             this.lblPageNumber = new System.Windows.Forms.Label();
             this.lblPageName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pnlOwnerAccount = new System.Windows.Forms.Panel();
-            this.lblUserID = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.btnPage3Back = new System.Windows.Forms.Button();
-            this.btnSaveInfo = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.chkIsActive = new System.Windows.Forms.CheckBox();
-            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
-            this.txtOwnerPassword = new System.Windows.Forms.TextBox();
-            this.txtOwnerEmail = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.pbClose = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.pnlSchoolInfo = new System.Windows.Forms.Panel();
             this.btnPage1Next = new System.Windows.Forms.Button();
@@ -65,6 +55,7 @@
             this.txtSchoolEmail = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.pbSchoolLogo = new System.Windows.Forms.PictureBox();
             this.txtSchoolAddress = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtSecondaryFix = new System.Windows.Forms.TextBox();
@@ -76,9 +67,11 @@
             this.txtSchoolDescreption = new System.Windows.Forms.TextBox();
             this.pnlOwnerInfo = new System.Windows.Forms.Panel();
             this.btnPage2Back = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lblPersonID = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ll_RemoveLink = new System.Windows.Forms.LinkLabel();
             this.ll_SetLink = new System.Windows.Forms.LinkLabel();
             this.label41 = new System.Windows.Forms.Label();
@@ -88,6 +81,13 @@
             this.label37 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -96,8 +96,11 @@
             this.label19 = new System.Windows.Forms.Label();
             this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
             this.label20 = new System.Windows.Forms.Label();
+            this.pbPersonImage = new System.Windows.Forms.PictureBox();
             this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.pbFemale = new System.Windows.Forms.PictureBox();
             this.rbMale = new System.Windows.Forms.RadioButton();
+            this.pbMale = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txtNationalID = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
@@ -106,42 +109,34 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.btnPage2Next = new System.Windows.Forms.Button();
+            this.pnlOwnerAccount = new System.Windows.Forms.Panel();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.lblUserID = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.btnPage3Back = new System.Windows.Forms.Button();
+            this.btnSaveInfo = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pbNationalNo = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pbClose = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pbSchoolLogo = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pbPersonImage = new System.Windows.Forms.PictureBox();
-            this.pbFemale = new System.Windows.Forms.PictureBox();
-            this.pbMale = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.chkIsActive = new System.Windows.Forms.CheckBox();
+            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
+            this.txtOwnerPassword = new System.Windows.Forms.TextBox();
+            this.txtOwnerEmail = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            this.pnlOwnerAccount.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.pnlSchoolInfo.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.pnlOwnerInfo.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNationalNo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.pnlSchoolInfo.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSchoolLogo)).BeginInit();
+            this.pnlOwnerInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -153,7 +148,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFemale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMale)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlOwnerAccount.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNationalNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -203,6 +203,16 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Version 1.0";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MySchool.Properties.Resources.Config_512;
+            this.pictureBox1.Location = new System.Drawing.Point(42, 37);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(264, 244);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -221,168 +231,29 @@
             this.panel2.Size = new System.Drawing.Size(648, 533);
             this.panel2.TabIndex = 47;
             // 
-            // pnlOwnerAccount
+            // pbClose
             // 
-            this.pnlOwnerAccount.Controls.Add(this.pictureBox17);
-            this.pnlOwnerAccount.Controls.Add(this.lblUserID);
-            this.pnlOwnerAccount.Controls.Add(this.label26);
-            this.pnlOwnerAccount.Controls.Add(this.btnPage3Back);
-            this.pnlOwnerAccount.Controls.Add(this.btnSaveInfo);
-            this.pnlOwnerAccount.Controls.Add(this.panel5);
-            this.pnlOwnerAccount.Location = new System.Drawing.Point(3, 95);
-            this.pnlOwnerAccount.Name = "pnlOwnerAccount";
-            this.pnlOwnerAccount.Size = new System.Drawing.Size(642, 429);
-            this.pnlOwnerAccount.TabIndex = 79;
+            this.pbClose.BackColor = System.Drawing.Color.Transparent;
+            this.pbClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbClose.Image = global::MySchool.Properties.Resources.Cross_64;
+            this.pbClose.Location = new System.Drawing.Point(594, 3);
+            this.pbClose.Name = "pbClose";
+            this.pbClose.Size = new System.Drawing.Size(51, 49);
+            this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbClose.TabIndex = 33;
+            this.pbClose.TabStop = false;
+            this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
             // 
-            // lblUserID
+            // pictureBox6
             // 
-            this.lblUserID.AutoSize = true;
-            this.lblUserID.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserID.ForeColor = System.Drawing.Color.Red;
-            this.lblUserID.Location = new System.Drawing.Point(370, 21);
-            this.lblUserID.Name = "lblUserID";
-            this.lblUserID.Size = new System.Drawing.Size(48, 21);
-            this.lblUserID.TabIndex = 86;
-            this.lblUserID.Text = "[????]";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(255, 21);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(71, 21);
-            this.label26.TabIndex = 78;
-            this.label26.Text = "User ID :";
-            // 
-            // btnPage3Back
-            // 
-            this.btnPage3Back.BackColor = System.Drawing.Color.White;
-            this.btnPage3Back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPage3Back.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnPage3Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnPage3Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPage3Back.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPage3Back.ForeColor = System.Drawing.Color.Black;
-            this.btnPage3Back.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPage3Back.Location = new System.Drawing.Point(371, 370);
-            this.btnPage3Back.Name = "btnPage3Back";
-            this.btnPage3Back.Size = new System.Drawing.Size(113, 35);
-            this.btnPage3Back.TabIndex = 77;
-            this.btnPage3Back.Text = "     Back";
-            this.btnPage3Back.UseVisualStyleBackColor = false;
-            this.btnPage3Back.Click += new System.EventHandler(this.btnPage3Back_Click);
-            // 
-            // btnSaveInfo
-            // 
-            this.btnSaveInfo.BackColor = System.Drawing.Color.White;
-            this.btnSaveInfo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSaveInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnSaveInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnSaveInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveInfo.ForeColor = System.Drawing.Color.Black;
-            this.btnSaveInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveInfo.Location = new System.Drawing.Point(490, 370);
-            this.btnSaveInfo.Name = "btnSaveInfo";
-            this.btnSaveInfo.Size = new System.Drawing.Size(113, 35);
-            this.btnSaveInfo.TabIndex = 46;
-            this.btnSaveInfo.Text = "     Save";
-            this.btnSaveInfo.UseVisualStyleBackColor = false;
-            this.btnSaveInfo.Click += new System.EventHandler(this.btnSaveInfo_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.pictureBox15);
-            this.panel5.Controls.Add(this.pbNationalNo);
-            this.panel5.Controls.Add(this.pictureBox16);
-            this.panel5.Controls.Add(this.chkIsActive);
-            this.panel5.Controls.Add(this.txtConfirmPassword);
-            this.panel5.Controls.Add(this.txtOwnerPassword);
-            this.panel5.Controls.Add(this.txtOwnerEmail);
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Controls.Add(this.label25);
-            this.panel5.Location = new System.Drawing.Point(35, 60);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(568, 304);
-            this.panel5.TabIndex = 91;
-            // 
-            // chkIsActive
-            // 
-            this.chkIsActive.AutoSize = true;
-            this.chkIsActive.Checked = true;
-            this.chkIsActive.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkIsActive.Enabled = false;
-            this.chkIsActive.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkIsActive.Location = new System.Drawing.Point(318, 270);
-            this.chkIsActive.Name = "chkIsActive";
-            this.chkIsActive.Size = new System.Drawing.Size(91, 25);
-            this.chkIsActive.TabIndex = 96;
-            this.chkIsActive.Text = "Is Active";
-            this.chkIsActive.UseVisualStyleBackColor = true;
-            // 
-            // txtConfirmPassword
-            // 
-            this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPassword.Location = new System.Drawing.Point(159, 230);
-            this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.Size = new System.Drawing.Size(250, 25);
-            this.txtConfirmPassword.TabIndex = 95;
-            this.txtConfirmPassword.UseSystemPasswordChar = true;
-            this.txtConfirmPassword.TextChanged += new System.EventHandler(this.IsAllAccInfoFieldsFilled);
-            // 
-            // txtOwnerPassword
-            // 
-            this.txtOwnerPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOwnerPassword.Location = new System.Drawing.Point(159, 144);
-            this.txtOwnerPassword.Name = "txtOwnerPassword";
-            this.txtOwnerPassword.Size = new System.Drawing.Size(250, 25);
-            this.txtOwnerPassword.TabIndex = 94;
-            this.txtOwnerPassword.Tag = "the Password field can be not empty";
-            this.txtOwnerPassword.UseSystemPasswordChar = true;
-            this.txtOwnerPassword.TextChanged += new System.EventHandler(this.IsAllAccInfoFieldsFilled);
-            // 
-            // txtOwnerEmail
-            // 
-            this.txtOwnerEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOwnerEmail.Location = new System.Drawing.Point(159, 58);
-            this.txtOwnerEmail.Name = "txtOwnerEmail";
-            this.txtOwnerEmail.Size = new System.Drawing.Size(250, 25);
-            this.txtOwnerEmail.TabIndex = 93;
-            this.txtOwnerEmail.Tag = "The user name field can bo not empty";
-            this.txtOwnerEmail.TextChanged += new System.EventHandler(this.IsAllAccInfoFieldsFilled);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(191, 189);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(141, 21);
-            this.label8.TabIndex = 92;
-            this.label8.Text = "Cofirm Password :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(191, 103);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 21);
-            this.label9.TabIndex = 91;
-            this.label9.Text = "Password :";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(190, 17);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(94, 21);
-            this.label25.TabIndex = 90;
-            this.label25.Text = "UserName :";
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Image = global::MySchool.Properties.Resources.Equipment_72;
+            this.pictureBox6.Location = new System.Drawing.Point(112, 22);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(59, 61);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 25;
+            this.pictureBox6.TabStop = false;
             // 
             // label15
             // 
@@ -618,6 +489,16 @@
             this.label10.Text = "School Logo";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pbSchoolLogo
+            // 
+            this.pbSchoolLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbSchoolLogo.Location = new System.Drawing.Point(368, 58);
+            this.pbSchoolLogo.Name = "pbSchoolLogo";
+            this.pbSchoolLogo.Size = new System.Drawing.Size(209, 211);
+            this.pbSchoolLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSchoolLogo.TabIndex = 61;
+            this.pbSchoolLogo.TabStop = false;
+            // 
             // txtSchoolAddress
             // 
             this.txtSchoolAddress.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -719,7 +600,7 @@
             this.pnlOwnerInfo.Controls.Add(this.label16);
             this.pnlOwnerInfo.Controls.Add(this.panel4);
             this.pnlOwnerInfo.Controls.Add(this.btnPage2Next);
-            this.pnlOwnerInfo.Location = new System.Drawing.Point(3, 95);
+            this.pnlOwnerInfo.Location = new System.Drawing.Point(3, 98);
             this.pnlOwnerInfo.Name = "pnlOwnerInfo";
             this.pnlOwnerInfo.Size = new System.Drawing.Size(642, 429);
             this.pnlOwnerInfo.TabIndex = 61;
@@ -741,6 +622,16 @@
             this.btnPage2Back.Text = "     Back";
             this.btnPage2Back.UseVisualStyleBackColor = false;
             this.btnPage2Back.Click += new System.EventHandler(this.btnPage2Back_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::MySchool.Properties.Resources.Person_ID_32;
+            this.pictureBox8.Location = new System.Drawing.Point(53, 14);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 76;
+            this.pictureBox8.TabStop = false;
             // 
             // lblPersonID
             // 
@@ -808,6 +699,16 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(565, 302);
             this.panel4.TabIndex = 47;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MySchool.Properties.Resources.Gender_32;
+            this.pictureBox2.Location = new System.Drawing.Point(395, 20);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 88;
+            this.pictureBox2.TabStop = false;
             // 
             // ll_RemoveLink
             // 
@@ -915,6 +816,76 @@
             this.label34.TabIndex = 76;
             this.label34.Text = "*";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::MySchool.Properties.Resources.Address_32;
+            this.pictureBox7.Location = new System.Drawing.Point(15, 224);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 75;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::MySchool.Properties.Resources.Email_32;
+            this.pictureBox9.Location = new System.Drawing.Point(203, 156);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 74;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::MySchool.Properties.Resources.Phone_32;
+            this.pictureBox10.Location = new System.Drawing.Point(15, 156);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 73;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::MySchool.Properties.Resources.Calendar_32;
+            this.pictureBox11.Location = new System.Drawing.Point(278, 88);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 72;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::MySchool.Properties.Resources.Person_ID_32;
+            this.pictureBox12.Location = new System.Drawing.Point(15, 88);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 71;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::MySchool.Properties.Resources.Student_32;
+            this.pictureBox13.Location = new System.Drawing.Point(199, 20);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 70;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::MySchool.Properties.Resources.Student_32;
+            this.pictureBox14.Location = new System.Drawing.Point(15, 20);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 69;
+            this.pictureBox14.TabStop = false;
+            // 
             // txtAddress
             // 
             this.txtAddress.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -996,6 +967,16 @@
             this.label20.TabIndex = 61;
             this.label20.Text = "Date Of Birth :";
             // 
+            // pbPersonImage
+            // 
+            this.pbPersonImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbPersonImage.Location = new System.Drawing.Point(430, 98);
+            this.pbPersonImage.Name = "pbPersonImage";
+            this.pbPersonImage.Size = new System.Drawing.Size(123, 126);
+            this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPersonImage.TabIndex = 60;
+            this.pbPersonImage.TabStop = false;
+            // 
             // rbFemale
             // 
             this.rbFemale.AutoSize = true;
@@ -1008,6 +989,16 @@
             this.rbFemale.Text = "Female";
             this.rbFemale.UseVisualStyleBackColor = true;
             this.rbFemale.CheckedChanged += new System.EventHandler(this.rbFemale_CheckedChanged);
+            // 
+            // pbFemale
+            // 
+            this.pbFemale.Image = global::MySchool.Properties.Resources.Woman_32;
+            this.pbFemale.Location = new System.Drawing.Point(462, 53);
+            this.pbFemale.Name = "pbFemale";
+            this.pbFemale.Size = new System.Drawing.Size(25, 27);
+            this.pbFemale.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFemale.TabIndex = 58;
+            this.pbFemale.TabStop = false;
             // 
             // rbMale
             // 
@@ -1022,6 +1013,16 @@
             this.rbMale.Tag = "Man";
             this.rbMale.Text = "Male";
             this.rbMale.UseVisualStyleBackColor = true;
+            // 
+            // pbMale
+            // 
+            this.pbMale.Image = global::MySchool.Properties.Resources.Man_32;
+            this.pbMale.Location = new System.Drawing.Point(374, 53);
+            this.pbMale.Name = "pbMale";
+            this.pbMale.Size = new System.Drawing.Size(25, 27);
+            this.pbMale.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMale.TabIndex = 56;
+            this.pbMale.TabStop = false;
             // 
             // label21
             // 
@@ -1112,6 +1113,19 @@
             this.btnPage2Next.UseVisualStyleBackColor = false;
             this.btnPage2Next.Click += new System.EventHandler(this.btnPage2Next_Click);
             // 
+            // pnlOwnerAccount
+            // 
+            this.pnlOwnerAccount.Controls.Add(this.pictureBox17);
+            this.pnlOwnerAccount.Controls.Add(this.lblUserID);
+            this.pnlOwnerAccount.Controls.Add(this.label26);
+            this.pnlOwnerAccount.Controls.Add(this.btnPage3Back);
+            this.pnlOwnerAccount.Controls.Add(this.btnSaveInfo);
+            this.pnlOwnerAccount.Controls.Add(this.panel5);
+            this.pnlOwnerAccount.Location = new System.Drawing.Point(3, 98);
+            this.pnlOwnerAccount.Name = "pnlOwnerAccount";
+            this.pnlOwnerAccount.Size = new System.Drawing.Size(642, 429);
+            this.pnlOwnerAccount.TabIndex = 79;
+            // 
             // pictureBox17
             // 
             this.pictureBox17.Image = global::MySchool.Properties.Resources.Person_ID_32;
@@ -1121,6 +1135,81 @@
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox17.TabIndex = 90;
             this.pictureBox17.TabStop = false;
+            // 
+            // lblUserID
+            // 
+            this.lblUserID.AutoSize = true;
+            this.lblUserID.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserID.ForeColor = System.Drawing.Color.Red;
+            this.lblUserID.Location = new System.Drawing.Point(370, 21);
+            this.lblUserID.Name = "lblUserID";
+            this.lblUserID.Size = new System.Drawing.Size(48, 21);
+            this.lblUserID.TabIndex = 86;
+            this.lblUserID.Text = "[????]";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(255, 21);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(71, 21);
+            this.label26.TabIndex = 78;
+            this.label26.Text = "User ID :";
+            // 
+            // btnPage3Back
+            // 
+            this.btnPage3Back.BackColor = System.Drawing.Color.White;
+            this.btnPage3Back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPage3Back.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnPage3Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnPage3Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPage3Back.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPage3Back.ForeColor = System.Drawing.Color.Black;
+            this.btnPage3Back.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPage3Back.Location = new System.Drawing.Point(371, 370);
+            this.btnPage3Back.Name = "btnPage3Back";
+            this.btnPage3Back.Size = new System.Drawing.Size(113, 35);
+            this.btnPage3Back.TabIndex = 77;
+            this.btnPage3Back.Text = "     Back";
+            this.btnPage3Back.UseVisualStyleBackColor = false;
+            this.btnPage3Back.Click += new System.EventHandler(this.btnPage3Back_Click);
+            // 
+            // btnSaveInfo
+            // 
+            this.btnSaveInfo.BackColor = System.Drawing.Color.White;
+            this.btnSaveInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnSaveInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSaveInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveInfo.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveInfo.Location = new System.Drawing.Point(490, 370);
+            this.btnSaveInfo.Name = "btnSaveInfo";
+            this.btnSaveInfo.Size = new System.Drawing.Size(113, 35);
+            this.btnSaveInfo.TabIndex = 46;
+            this.btnSaveInfo.Text = "     Save";
+            this.btnSaveInfo.UseVisualStyleBackColor = false;
+            this.btnSaveInfo.Click += new System.EventHandler(this.btnSaveInfo_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.pictureBox15);
+            this.panel5.Controls.Add(this.pbNationalNo);
+            this.panel5.Controls.Add(this.pictureBox16);
+            this.panel5.Controls.Add(this.chkIsActive);
+            this.panel5.Controls.Add(this.txtConfirmPassword);
+            this.panel5.Controls.Add(this.txtOwnerPassword);
+            this.panel5.Controls.Add(this.txtOwnerEmail);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.label9);
+            this.panel5.Controls.Add(this.label25);
+            this.panel5.Location = new System.Drawing.Point(35, 60);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(568, 304);
+            this.panel5.TabIndex = 91;
             // 
             // pictureBox15
             // 
@@ -1150,169 +1239,80 @@
             this.pictureBox16.TabIndex = 97;
             this.pictureBox16.TabStop = false;
             // 
-            // pbClose
+            // chkIsActive
             // 
-            this.pbClose.BackColor = System.Drawing.Color.Transparent;
-            this.pbClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbClose.Image = global::MySchool.Properties.Resources.Cross_64;
-            this.pbClose.Location = new System.Drawing.Point(594, 3);
-            this.pbClose.Name = "pbClose";
-            this.pbClose.Size = new System.Drawing.Size(51, 49);
-            this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbClose.TabIndex = 33;
-            this.pbClose.TabStop = false;
-            this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
+            this.chkIsActive.AutoSize = true;
+            this.chkIsActive.Checked = true;
+            this.chkIsActive.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkIsActive.Enabled = false;
+            this.chkIsActive.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkIsActive.Location = new System.Drawing.Point(318, 270);
+            this.chkIsActive.Name = "chkIsActive";
+            this.chkIsActive.Size = new System.Drawing.Size(91, 25);
+            this.chkIsActive.TabIndex = 96;
+            this.chkIsActive.Text = "Is Active";
+            this.chkIsActive.UseVisualStyleBackColor = true;
             // 
-            // pictureBox6
+            // txtConfirmPassword
             // 
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Image = global::MySchool.Properties.Resources.Equipment_72;
-            this.pictureBox6.Location = new System.Drawing.Point(112, 22);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(59, 61);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 25;
-            this.pictureBox6.TabStop = false;
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPassword.Location = new System.Drawing.Point(159, 230);
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.Size = new System.Drawing.Size(250, 25);
+            this.txtConfirmPassword.TabIndex = 95;
+            this.txtConfirmPassword.UseSystemPasswordChar = true;
+            this.txtConfirmPassword.TextChanged += new System.EventHandler(this.IsAllAccInfoFieldsFilled);
             // 
-            // pbSchoolLogo
+            // txtOwnerPassword
             // 
-            this.pbSchoolLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbSchoolLogo.Location = new System.Drawing.Point(368, 58);
-            this.pbSchoolLogo.Name = "pbSchoolLogo";
-            this.pbSchoolLogo.Size = new System.Drawing.Size(209, 211);
-            this.pbSchoolLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbSchoolLogo.TabIndex = 61;
-            this.pbSchoolLogo.TabStop = false;
+            this.txtOwnerPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOwnerPassword.Location = new System.Drawing.Point(159, 144);
+            this.txtOwnerPassword.Name = "txtOwnerPassword";
+            this.txtOwnerPassword.Size = new System.Drawing.Size(250, 25);
+            this.txtOwnerPassword.TabIndex = 94;
+            this.txtOwnerPassword.Tag = "the Password field can be not empty";
+            this.txtOwnerPassword.UseSystemPasswordChar = true;
+            this.txtOwnerPassword.TextChanged += new System.EventHandler(this.IsAllAccInfoFieldsFilled);
             // 
-            // pictureBox8
+            // txtOwnerEmail
             // 
-            this.pictureBox8.Image = global::MySchool.Properties.Resources.Person_ID_32;
-            this.pictureBox8.Location = new System.Drawing.Point(53, 14);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 76;
-            this.pictureBox8.TabStop = false;
+            this.txtOwnerEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOwnerEmail.Location = new System.Drawing.Point(159, 58);
+            this.txtOwnerEmail.Name = "txtOwnerEmail";
+            this.txtOwnerEmail.Size = new System.Drawing.Size(250, 25);
+            this.txtOwnerEmail.TabIndex = 93;
+            this.txtOwnerEmail.Tag = "The user name field can bo not empty";
+            this.txtOwnerEmail.TextChanged += new System.EventHandler(this.IsAllAccInfoFieldsFilled);
             // 
-            // pictureBox2
+            // label8
             // 
-            this.pictureBox2.Image = global::MySchool.Properties.Resources.Gender_32;
-            this.pictureBox2.Location = new System.Drawing.Point(395, 20);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 88;
-            this.pictureBox2.TabStop = false;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(191, 189);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(141, 21);
+            this.label8.TabIndex = 92;
+            this.label8.Text = "Cofirm Password :";
             // 
-            // pictureBox7
+            // label9
             // 
-            this.pictureBox7.Image = global::MySchool.Properties.Resources.Address_32;
-            this.pictureBox7.Location = new System.Drawing.Point(15, 224);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 75;
-            this.pictureBox7.TabStop = false;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(191, 103);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 21);
+            this.label9.TabIndex = 91;
+            this.label9.Text = "Password :";
             // 
-            // pictureBox9
+            // label25
             // 
-            this.pictureBox9.Image = global::MySchool.Properties.Resources.Email_32;
-            this.pictureBox9.Location = new System.Drawing.Point(203, 156);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 74;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::MySchool.Properties.Resources.Phone_32;
-            this.pictureBox10.Location = new System.Drawing.Point(15, 156);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 73;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::MySchool.Properties.Resources.Calendar_32;
-            this.pictureBox11.Location = new System.Drawing.Point(278, 88);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 72;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::MySchool.Properties.Resources.Person_ID_32;
-            this.pictureBox12.Location = new System.Drawing.Point(15, 88);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 71;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::MySchool.Properties.Resources.Student_32;
-            this.pictureBox13.Location = new System.Drawing.Point(199, 20);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 70;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::MySchool.Properties.Resources.Student_32;
-            this.pictureBox14.Location = new System.Drawing.Point(15, 20);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 69;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pbPersonImage
-            // 
-            this.pbPersonImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbPersonImage.Location = new System.Drawing.Point(430, 98);
-            this.pbPersonImage.Name = "pbPersonImage";
-            this.pbPersonImage.Size = new System.Drawing.Size(123, 126);
-            this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPersonImage.TabIndex = 60;
-            this.pbPersonImage.TabStop = false;
-            // 
-            // pbFemale
-            // 
-            this.pbFemale.Image = global::MySchool.Properties.Resources.Woman_32;
-            this.pbFemale.Location = new System.Drawing.Point(462, 53);
-            this.pbFemale.Name = "pbFemale";
-            this.pbFemale.Size = new System.Drawing.Size(25, 27);
-            this.pbFemale.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbFemale.TabIndex = 58;
-            this.pbFemale.TabStop = false;
-            // 
-            // pbMale
-            // 
-            this.pbMale.Image = global::MySchool.Properties.Resources.Man_32;
-            this.pbMale.Location = new System.Drawing.Point(374, 53);
-            this.pbMale.Name = "pbMale";
-            this.pbMale.Size = new System.Drawing.Size(25, 27);
-            this.pbMale.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMale.TabIndex = 56;
-            this.pbMale.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MySchool.Properties.Resources.Config_512;
-            this.pictureBox1.Location = new System.Drawing.Point(42, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 244);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(190, 17);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(94, 21);
+            this.label25.TabIndex = 90;
+            this.label25.Text = "UserName :";
             // 
             // frmSchoolConfig
             // 
@@ -1329,27 +1329,20 @@
             this.Load += new System.EventHandler(this.frmSchoolConfig_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.pnlOwnerAccount.ResumeLayout(false);
-            this.pnlOwnerAccount.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.pnlSchoolInfo.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSchoolLogo)).EndInit();
             this.pnlOwnerInfo.ResumeLayout(false);
             this.pnlOwnerInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNationalNo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSchoolLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -1361,7 +1354,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFemale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMale)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlOwnerAccount.ResumeLayout(false);
+            this.pnlOwnerAccount.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNationalNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
 
         }
