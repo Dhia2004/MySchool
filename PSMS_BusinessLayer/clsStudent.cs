@@ -178,7 +178,20 @@ namespace PSMS_BusinessLayer
                         return false;
                     break;
                 case enMode.Update:
-                    return _UpdateStudent();
+                    {
+                        if (_UpdateStudent())
+                        {
+                            if (MedicalFile != null && MedicalFile.StudentID != -1)
+                            {
+                                MedicalFile.StudentID = this.StudentID;
+                                MedicalFile.Save();
+                            }
+                            return true;
+                        }
+
+                        return false;
+                    }
+                    
                     break;
 
                 default:

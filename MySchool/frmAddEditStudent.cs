@@ -304,9 +304,14 @@ namespace MySchool
         {
             clsMedicalFile MedicalFile = new clsMedicalFile();
             MedicalFile.StudentID = -1;
+            if (Mode == enMode.Update)
+            {
+                MedicalFile.StudentID = _Student.StudentID;
+            }
             MedicalFile.BloodType = cbBloodType.SelectedItem.ToString();
-            MedicalFile.IsDisabled = rbNo_Disability.Checked;
-            MedicalFile.DisabilityDescription = rbPhysicalDisability.Checked? rbPhysicalDisability.Tag.ToString():rbMentalDisability.Tag.ToString();
+            MedicalFile.IsDisabled = !rbNo_Disability.Checked;
+            if(MedicalFile.IsDisabled)
+                MedicalFile.DisabilityDescription = rbPhysicalDisability.Checked? rbPhysicalDisability.Tag.ToString():rbMentalDisability.Tag.ToString();
             MedicalFile.WearsGlasses = rbGlasses_No.Checked ? false : true;
             MedicalFile.CanParticipateInSports = rbPracticeSport_Yes.Checked ? true : false;
             MedicalFile.HasUndergoneSurgery = rbSurgery_No.Checked ? false : true;
@@ -741,12 +746,7 @@ namespace MySchool
 
             txtMedications.Text = MedicationsSelected;
 
-            string[] test = MedicationsSelected.Split('-');
-
-            foreach (var item in test)
-            {
-                MessageBox.Show(item.Trim());
-            }
+            
         }
 
         private void btnSelectPerson_Click(object sender, EventArgs e)
