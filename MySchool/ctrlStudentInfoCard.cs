@@ -67,6 +67,24 @@ namespace MySchool
 
         }
 
+        private void FillMedicalFile(clsMedicalFile MedicalFile)
+        {
+            lblBloodType.Text = MedicalFile.BloodType;
+            lblIsDisabled.Text = MedicalFile.IsDisabled ? "Yes, " + MedicalFile.DisabilityDescription : "No";
+            lblEyeGlasses.Text = MedicalFile.WearsGlasses ? "Yes" : "No";
+            lblSurgery.Text = MedicalFile.HasUndergoneSurgery ? "Yes" : "No";
+            lblPracticeSport.Text = MedicalFile.CanParticipateInSports ? "Yes" : "No";
+            lblChronicIllness.Text = MedicalFile.HasChronicDisease ? "Yes" : "No";
+            lblAllergy.Text = MedicalFile.HasAllergy ? "Yes" : "No";
+            lblTakeMedications.Text = MedicalFile.TakesMedication ? "Yes": "No";
+            lblMedicationRemarks.Text = MedicalFile.Remarks;
+
+
+
+
+
+        }
+
         public void FillPersonCard(clsStudent Student)
         {
             bool MedicalFileTest = true;
@@ -106,6 +124,11 @@ namespace MySchool
            
             if (Student.ImagePath != "")
                 pbStudentImage.Load(Student.ImagePath);
+
+            if (Student.HasMedicalFile)
+            {
+                FillMedicalFile(Student.MedicalFile);
+            }
 
             if (MedicalFileTest)
             {
