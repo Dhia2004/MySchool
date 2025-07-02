@@ -250,5 +250,59 @@ namespace MySchool
         {
 
         }
+
+        private void pnlDeleteImage_DoubleClick(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to remove this picture ?",
+                "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                pbSchoolLogo.ImageLocation = null;
+                
+                pnlDeleteImage.SendToBack();
+                pnlUploadImage.SendToBack();
+                pbSchoolLogo.BringToFront();
+            }
+        }
+
+        private void pnlDeleteImage_MouseLeave(object sender, EventArgs e)
+        {
+            pnlUploadImage.SendToBack();
+            pnlDeleteImage.SendToBack();
+            pbSchoolLogo.BringToFront();
+        }
+
+        private void pbSchoolLogo_MouseEnter(object sender, EventArgs e)
+        {
+            if (pbSchoolLogo.ImageLocation == null)
+            {
+                pnlUploadImage.BringToFront();
+                pbSchoolLogo.SendToBack();
+                return;
+            }
+            pnlDeleteImage.BringToFront();
+            pnlUploadImage.SendToBack();
+            pbSchoolLogo.SendToBack();
+        }
+
+        private void pnlUploadImage_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.InitialDirectory = @"c:\";
+            openFileDialog1.Title = "Select Image";
+            openFileDialog1.RestoreDirectory = true;
+            openFileDialog1.Filter = "(.png)|*.png";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+
+                if (openFileDialog1.FileName != "")
+                {
+                    pbSchoolLogo.Load(openFileDialog1.FileName);
+                    //ll_RemoveLink.Visible = true;
+                }
+        }
+
+        private void pnlUploadImage_MouseLeave(object sender, EventArgs e)
+        {
+            pnlUploadImage.SendToBack();
+            pbSchoolLogo.BringToFront();
+        }
     }
 }
