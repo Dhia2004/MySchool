@@ -265,5 +265,10 @@ namespace PSMS_BusinessLayer
 
 
         }
+
+        public void GenerateStudentRapport()
+        {
+            clsRapports.GenerateStudentRapport(this);
+        }
     }
 }

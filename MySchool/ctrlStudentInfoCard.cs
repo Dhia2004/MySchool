@@ -276,5 +276,10 @@ namespace MySchool
 
             frm.ShowDialog();
         }
+
+        private void btnGenerateStudentFile_Click(object sender, EventArgs e)
+        {
+            Student.GenerateStudentRapport();
+        }
     }
 }
