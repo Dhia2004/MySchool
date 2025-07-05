@@ -31,8 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tStudents = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tTeachers = new System.Windows.Forms.ToolStripMenuItem();
             this.tPeople = new System.Windows.Forms.ToolStripMenuItem();
             this.tCourses = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +39,9 @@
             this.tUsers = new System.Windows.Forms.ToolStripMenuItem();
             this.tSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.addNewUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -88,24 +89,6 @@
             this.tStudents.Size = new System.Drawing.Size(215, 68);
             this.tStudents.Text = "    Students";
             this.tStudents.Click += new System.EventHandler(this.studentsToolStripMenuItem_Click_1);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(222, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(880, 580);
-            this.panel1.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(222, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(880, 580);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // tTeachers
             // 
@@ -158,6 +141,8 @@
             // 
             // tUsers
             // 
+            this.tUsers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addNewUserToolStripMenuItem});
             this.tUsers.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tUsers.Image = global::MySchool.Properties.Resources.Users_64;
             this.tUsers.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -181,9 +166,34 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(117, 30);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(222, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(880, 580);
+            this.panel1.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(222, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(880, 580);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // addNewUserToolStripMenuItem
+            // 
+            this.addNewUserToolStripMenuItem.Name = "addNewUserToolStripMenuItem";
+            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.addNewUserToolStripMenuItem.Text = "Add New User";
+            this.addNewUserToolStripMenuItem.Click += new System.EventHandler(this.addNewUserToolStripMenuItem_Click);
             // 
             // frmMainPage
             // 
@@ -222,6 +232,7 @@
         private System.Windows.Forms.ToolStripMenuItem tGroups;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem tTeachers;
+        private System.Windows.Forms.ToolStripMenuItem addNewUserToolStripMenuItem;
     }
 }
 

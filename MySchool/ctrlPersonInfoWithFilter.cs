@@ -15,6 +15,7 @@ namespace MySchool
     public partial class ctrlPersonInfoWithFilter: UserControl
     {
         public clsPerson _Person;
+        public event Action<clsPerson> onPersonSelected;
         public ctrlPersonInfoWithFilter()
         {
             InitializeComponent();
@@ -110,6 +111,26 @@ namespace MySchool
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
+        public void LoadPersonInfo(int PersonID)
+        {
+            ctrlPersonInfoCard1.LoadPersonInfo(PersonID);
+            if (_Person != null)
+            {
+                txtInput.Text = _Person.PersonID.ToString();
+                btnFilter.Text = "Person ID"; // Set the filter to Person ID
+                // Trigger the event to notify that a person has been selected
+
+                onPersonSelected?.Invoke(_Person);
+                txtInput.Enabled = false; // Disable input after loading person info
+                btnFilter.Enabled = false; // Disable filter button after loading person info
+                btnSearch.Enabled = false; // Disable search button after loading person info   
+                pbAddNewPerson.Enabled = false; // Disable add new person button after loading person info
+
+            }
+                
+
+        }
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
             if (btnFilter.Text == "Person ID")
@@ -120,6 +141,9 @@ namespace MySchool
             {
                 ctrlPersonInfoCard1.LoadPersonInfo(txtInput.Text);
             }
+
+            if (_Person != null)
+                onPersonSelected?.Invoke(_Person);
         }
     }
 }

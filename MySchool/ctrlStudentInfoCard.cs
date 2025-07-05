@@ -35,9 +35,24 @@ namespace MySchool
         public event Action onReloadData;
 
 
-
+        public void ResetMedicalFileToDefault()
+        {
+            lblBloodType.Text = "[????]";
+            lblIsDisabled.Text = "[????]";
+            lblEyeGlasses.Text = "[????]";
+            lblSurgery.Text = "[????]";
+            lblPracticeSport.Text = "[????]";
+            lblChronicIllness.Text = "[????]";
+            lblAllergy.Text = "[????]";
+            lblTakeMedications.Text = "[????]";
+            lblMedicationRemarks.Text = "[????]";
+            flpChronicIlliness.Controls.Clear();
+            flpAllergies.Controls.Clear();
+            flpTakeMedications.Controls.Clear();
+        }
         public void ResetPersonCardToDefault()
         {
+            ResetMedicalFileToDefault();
             _PanelMode = enPanelMode.pnlBasicInfoActive;
             btnMedicalFile.Text = "Medical File";
             //btnMedicalFile.Image = Resources.document__1_;
@@ -78,6 +93,85 @@ namespace MySchool
             lblAllergy.Text = MedicalFile.HasAllergy ? "Yes" : "No";
             lblTakeMedications.Text = MedicalFile.TakesMedication ? "Yes": "No";
             lblMedicationRemarks.Text = MedicalFile.Remarks;
+
+            if (MedicalFile.HasChronicDisease)
+            {
+                flpChronicIlliness.Controls.Clear();
+                string[] ChronicsList = MedicalFile.ChronicDiseaseDescription.Split('-');
+                foreach (string chronic in ChronicsList)
+                {
+                    if (!string.IsNullOrWhiteSpace(chronic))
+                    {
+                        Label lblChronic = new Label();
+                        lblChronic.Text = "- " + chronic.Trim();
+                        lblChronic.AutoSize = true;
+
+
+                        flpChronicIlliness.Controls.Add(lblChronic);
+                    }
+                }
+
+            }
+            else
+            {
+                flpChronicIlliness.Controls.Clear();
+                Label lblNoChronic = new Label();
+                lblNoChronic.Text = "No Chronic Illnesses";
+                
+                flpChronicIlliness.Controls.Add(lblNoChronic);
+            }
+
+            if (MedicalFile.HasAllergy)
+            {
+                flpAllergies.Controls.Clear();
+                string[] AllergiesList = MedicalFile.AllergyDescription.Split('-');
+                foreach (string allergy in AllergiesList)
+                {
+                    if (!string.IsNullOrWhiteSpace(allergy))
+                    {
+                        Label lblAllergy = new Label();
+                        lblAllergy.Text = "- " + allergy.Trim();
+                        lblAllergy.AutoSize = true;
+
+
+                        flpAllergies.Controls.Add(lblAllergy);
+                    }
+                }
+            }
+            else
+            {
+                flpAllergies.Controls.Clear();
+                Label lblNoAllergy = new Label();
+                lblNoAllergy.Text = "No Allergies";
+                flpAllergies.Controls.Add(lblNoAllergy);
+            }
+
+            if (MedicalFile.TakesMedication)
+            {
+                flpTakeMedications.Controls.Clear();
+                string[] MedicationsList = MedicalFile.MedicationDescription.Split('-');
+                foreach (string medication in MedicationsList)
+                {
+                    if (!string.IsNullOrWhiteSpace(medication))
+                    {
+                        Label lblMedication = new Label();
+                        lblMedication.Text = "- " + medication.Trim();
+                        lblMedication.AutoSize = true;
+                        flpTakeMedications.Controls.Add(lblMedication);
+                    }
+                }
+            }
+            else
+            {
+                flpTakeMedications.Controls.Clear();
+                Label lblNoMedication = new Label();
+                lblNoMedication.Text = "No Medications";
+                flpTakeMedications.Controls.Add(lblNoMedication);
+            }
+
+
+            
+
 
 
 

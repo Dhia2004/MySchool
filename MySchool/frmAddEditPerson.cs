@@ -67,13 +67,13 @@ namespace MySchool
 
             if (pbPersonImage.ImageLocation != null)
             {
-                ll_SetLink.Visible = false;
-                ll_RemoveLink.Visible = true;
+                //ll_SetLink.Visible = false;
+                //ll_RemoveLink.Visible = true;
             }
             else
             {
-                ll_SetLink.Visible = true;
-                ll_RemoveLink.Visible = false;
+                //ll_SetLink.Visible = true;
+                //ll_RemoveLink.Visible = false;
             }
 
         }
@@ -84,10 +84,10 @@ namespace MySchool
         {
             if (pbPersonImage.ImageLocation == null)
             {
-                //if (((RadioButton)sender).Tag.ToString() == "Woman")
-                //    pbPersonImage.Image = Resources.Female_512;
-                //else
-                //    pbPersonImage.Image = Resources.Male_512;
+                if (((RadioButton)sender).Tag.ToString() == "Woman")
+                    pbPersonImage.Image = Resources.Female_512;
+                else
+                    pbPersonImage.Image = Resources.Male_512;
             }
 
 
@@ -116,7 +116,7 @@ namespace MySchool
                 if (_Person.ImagePath != "")
                 {
                     pbPersonImage.Load(_Person.ImagePath);
-                    ll_RemoveLink.Visible = true;
+                    //ll_RemoveLink.Visible = true;
 
 
                 }
@@ -124,8 +124,8 @@ namespace MySchool
 
                 else
                 {
-                    ll_RemoveLink.Visible = false;
-                    ll_SetLink.Visible = true;
+                    //ll_RemoveLink.Visible = false;
+                    //ll_SetLink.Visible = true;
                 }
 
 
@@ -201,15 +201,7 @@ namespace MySchool
             this.Close();
         }
 
-        private void l_lblSetImage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void l_lblRemoveImage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
+        
 
 
 
@@ -220,40 +212,13 @@ namespace MySchool
 
 
 
-        private void ll_SetLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            openFileDialog1.InitialDirectory = @"c:\";
-            openFileDialog1.Title = "Select Image";
-            openFileDialog1.RestoreDirectory = true;
-            openFileDialog1.Filter = "(.png)|*.png";
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                if (openFileDialog1.FileName != "")
-                {
-                    pbPersonImage.Load(openFileDialog1.FileName);
-                    ll_RemoveLink.Visible = true;
-                }
+        
 
-            }
-        }
-
-        private void ll_RemoveLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            pbPersonImage.ImageLocation = null;
-            //if (_Person.Gender == 'M')
-            //    pbPersonImage.Image = Resources.Male_512;
-            //else
-            //    pbPersonImage.Image = Resources.Female_512;
-        }
+        
 
 
 
-        private void pbExit_Click(object sender, EventArgs e)
-        {
-            CloseForm();
-
-
-        }
+        
 
         private void frmAddEditPerson_Load(object sender, EventArgs e)
         {
@@ -268,6 +233,63 @@ namespace MySchool
             }
 
             InitializefrmAddUpdatePerson();
+        }
+
+        private void pbPersonImage_MouseEnter(object sender, EventArgs e)
+        {
+            if (pbPersonImage.ImageLocation == null)
+            {
+                pnlUploadImage.BringToFront();
+                pbPersonImage.SendToBack();
+                return;
+            }
+            pnlDeleteImage.BringToFront();
+            pnlUploadImage.SendToBack();
+            pbPersonImage.SendToBack();
+        }
+
+        private void pnlUploadImage_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.InitialDirectory = @"c:\";
+            openFileDialog1.Title = "Select Image";
+            openFileDialog1.RestoreDirectory = true;
+            openFileDialog1.Filter = "(.png)|*.png";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+
+                if (openFileDialog1.FileName != "")
+                {
+                    pbPersonImage.Load(openFileDialog1.FileName);
+                    //ll_RemoveLink.Visible = true;
+                }
+        }
+
+        private void pnlUploadImage_MouseLeave(object sender, EventArgs e)
+        {
+            pnlUploadImage.SendToBack();
+            pbPersonImage.BringToFront();
+        }
+
+        private void pnlDeleteImage_DoubleClick(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to remove this picture ?",
+                "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                pbPersonImage.ImageLocation = null;
+                if (rbMale.Checked)
+                    pbPersonImage.Image = Resources.Male_512;
+                else
+                    pbPersonImage.Image = Resources.Female_512;
+                pnlDeleteImage.SendToBack();
+                pnlUploadImage.SendToBack();
+                pbPersonImage.BringToFront();
+            }
+        }
+
+        private void pnlDeleteImage_MouseLeave(object sender, EventArgs e)
+        {
+            pnlUploadImage.SendToBack();
+            pnlDeleteImage.SendToBack();
+            pbPersonImage.BringToFront();
         }
     }
 }

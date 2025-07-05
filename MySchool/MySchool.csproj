@@ -102,6 +102,12 @@
     <Compile Include="frmAddEditStudent.Designer.cs">
       <DependentUpon>frmAddEditStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAllStudents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddEditStudent.resx">
       <DependentUpon>frmAddEditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAllStudents.resx">
       <DependentUpon>frmAllStudents.cs</DependentUpon>

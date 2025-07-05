@@ -125,5 +125,11 @@ namespace MySchool
             //MessageBox.Show("This feature is not implemented yet.", "Comming soon...",
             //    MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void addNewUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUser frmAddUser = new frmAddUser(-1);
+            frmAddUser.ShowDialog();
+        }
     }
 }

@@ -29,8 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnGenerateStudentFile = new System.Windows.Forms.Button();
+            this.btnStudentHistory = new System.Windows.Forms.Button();
+            this.btnEditInfo = new System.Windows.Forms.Button();
+            this.pbStudentStatistiques = new System.Windows.Forms.PictureBox();
             this.lblIsActive = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();
+            this.pbStudentImage = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnMedicalFile = new System.Windows.Forms.Button();
             this.pnlMedicalInfo = new System.Windows.Forms.Panel();
@@ -39,6 +44,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTakeMedications = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
@@ -49,6 +56,7 @@
             this.label38 = new System.Windows.Forms.Label();
             this.lblAllergy = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.flpChronicIlliness = new System.Windows.Forms.FlowLayoutPanel();
             this.label24 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -68,18 +76,32 @@
             this.lblIsDisabled = new System.Windows.Forms.Label();
             this.lblBloodType = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label26 = new System.Windows.Forms.Label();
             this.pnlMedicationRemarks = new System.Windows.Forms.Panel();
             this.lblMedicationRemarks = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label41 = new System.Windows.Forms.Label();
             this.pnlBasicInfo = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lblEducationLevel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.lblCreatedByUser = new System.Windows.Forms.Label();
             this.lblJoinDate = new System.Windows.Forms.Label();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
@@ -94,48 +116,26 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnGenerateStudentFile = new System.Windows.Forms.Button();
-            this.btnStudentHistory = new System.Windows.Forms.Button();
-            this.btnEditInfo = new System.Windows.Forms.Button();
-            this.pbStudentStatistiques = new System.Windows.Forms.PictureBox();
-            this.pbStudentImage = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.pnlMedicalInfo.SuspendLayout();
-            this.flpTakeMedications.SuspendLayout();
-            this.flpChronicIlliness.SuspendLayout();
-            this.flpAllergies.SuspendLayout();
-            this.pnlMedicationRemarks.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.pnlBasicInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbStudentStatistiques)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.pnlMedicalInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            this.flpTakeMedications.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.flpChronicIlliness.SuspendLayout();
+            this.flpAllergies.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.pnlMedicationRemarks.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.pnlBasicInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -162,6 +162,61 @@
             this.panel1.Size = new System.Drawing.Size(383, 585);
             this.panel1.TabIndex = 0;
             // 
+            // btnGenerateStudentFile
+            // 
+            this.btnGenerateStudentFile.BackColor = System.Drawing.Color.White;
+            this.btnGenerateStudentFile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerateStudentFile.FlatAppearance.BorderSize = 0;
+            this.btnGenerateStudentFile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnGenerateStudentFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerateStudentFile.Image = global::MySchool.Properties.Resources.Pdf_32;
+            this.btnGenerateStudentFile.Location = new System.Drawing.Point(343, 112);
+            this.btnGenerateStudentFile.Name = "btnGenerateStudentFile";
+            this.btnGenerateStudentFile.Size = new System.Drawing.Size(33, 33);
+            this.btnGenerateStudentFile.TabIndex = 145;
+            this.btnGenerateStudentFile.UseVisualStyleBackColor = false;
+            this.btnGenerateStudentFile.Click += new System.EventHandler(this.btnGenerateStudentFile_Click);
+            // 
+            // btnStudentHistory
+            // 
+            this.btnStudentHistory.BackColor = System.Drawing.Color.White;
+            this.btnStudentHistory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStudentHistory.FlatAppearance.BorderSize = 0;
+            this.btnStudentHistory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnStudentHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStudentHistory.Image = global::MySchool.Properties.Resources.Student_Historique_32;
+            this.btnStudentHistory.Location = new System.Drawing.Point(343, 151);
+            this.btnStudentHistory.Name = "btnStudentHistory";
+            this.btnStudentHistory.Size = new System.Drawing.Size(33, 33);
+            this.btnStudentHistory.TabIndex = 144;
+            this.btnStudentHistory.UseVisualStyleBackColor = false;
+            // 
+            // btnEditInfo
+            // 
+            this.btnEditInfo.BackColor = System.Drawing.Color.White;
+            this.btnEditInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditInfo.FlatAppearance.BorderSize = 0;
+            this.btnEditInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnEditInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditInfo.Image = global::MySchool.Properties.Resources.Edit_Info_32;
+            this.btnEditInfo.Location = new System.Drawing.Point(343, 190);
+            this.btnEditInfo.Name = "btnEditInfo";
+            this.btnEditInfo.Size = new System.Drawing.Size(33, 33);
+            this.btnEditInfo.TabIndex = 143;
+            this.btnEditInfo.UseVisualStyleBackColor = false;
+            this.btnEditInfo.Click += new System.EventHandler(this.btnEditInfo_Click);
+            // 
+            // pbStudentStatistiques
+            // 
+            this.pbStudentStatistiques.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbStudentStatistiques.Location = new System.Drawing.Point(343, 11);
+            this.pbStudentStatistiques.Name = "pbStudentStatistiques";
+            this.pbStudentStatistiques.Size = new System.Drawing.Size(33, 33);
+            this.pbStudentStatistiques.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbStudentStatistiques.TabIndex = 130;
+            this.pbStudentStatistiques.TabStop = false;
+            this.pbStudentStatistiques.Click += new System.EventHandler(this.pbStudentStatistiques_Click);
+            // 
             // lblIsActive
             // 
             this.lblIsActive.AutoSize = true;
@@ -183,6 +238,17 @@
             this.lblFullName.Size = new System.Drawing.Size(164, 21);
             this.lblFullName.TabIndex = 100;
             this.lblFullName.Text = "Dhia Eddine DJEDDI";
+            // 
+            // pbStudentImage
+            // 
+            this.pbStudentImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbStudentImage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbStudentImage.Location = new System.Drawing.Point(0, 0);
+            this.pbStudentImage.Name = "pbStudentImage";
+            this.pbStudentImage.Size = new System.Drawing.Size(381, 232);
+            this.pbStudentImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbStudentImage.TabIndex = 99;
+            this.pbStudentImage.TabStop = false;
             // 
             // panel2
             // 
@@ -305,6 +371,26 @@
             this.label40.TabIndex = 226;
             this.label40.Text = "Medical Remarks";
             // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::MySchool.Properties.Resources.Notes_32;
+            this.pictureBox22.Location = new System.Drawing.Point(14, 413);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox22.TabIndex = 227;
+            this.pictureBox22.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::MySchool.Properties.Resources.medicine_32;
+            this.pictureBox16.Location = new System.Drawing.Point(14, 342);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 225;
+            this.pictureBox16.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.Location = new System.Drawing.Point(14, 510);
@@ -342,6 +428,7 @@
             this.flpTakeMedications.Controls.Add(this.label36);
             this.flpTakeMedications.Controls.Add(this.label37);
             this.flpTakeMedications.Controls.Add(this.label38);
+            this.flpTakeMedications.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flpTakeMedications.Location = new System.Drawing.Point(189, 342);
             this.flpTakeMedications.Name = "flpTakeMedications";
             this.flpTakeMedications.Size = new System.Drawing.Size(166, 50);
@@ -413,6 +500,16 @@
             this.label25.TabIndex = 217;
             this.label25.Text = "Allergies ?";
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::MySchool.Properties.Resources.gluten_free_32;
+            this.pictureBox11.Location = new System.Drawing.Point(14, 272);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 218;
+            this.pictureBox11.TabStop = false;
+            // 
             // flpChronicIlliness
             // 
             this.flpChronicIlliness.AutoScroll = true;
@@ -422,6 +519,7 @@
             this.flpChronicIlliness.Controls.Add(this.label21);
             this.flpChronicIlliness.Controls.Add(this.label22);
             this.flpChronicIlliness.Controls.Add(this.label23);
+            this.flpChronicIlliness.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flpChronicIlliness.Location = new System.Drawing.Point(189, 203);
             this.flpChronicIlliness.Name = "flpChronicIlliness";
             this.flpChronicIlliness.Size = new System.Drawing.Size(166, 50);
@@ -502,6 +600,7 @@
             this.flpAllergies.Controls.Add(this.label30);
             this.flpAllergies.Controls.Add(this.label31);
             this.flpAllergies.Controls.Add(this.label32);
+            this.flpAllergies.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flpAllergies.Location = new System.Drawing.Point(189, 272);
             this.flpAllergies.Name = "flpAllergies";
             this.flpAllergies.Size = new System.Drawing.Size(166, 50);
@@ -628,6 +727,26 @@
             this.label14.TabIndex = 208;
             this.label14.Text = "Chronic illness ?";
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::MySchool.Properties.Resources.Heart_32;
+            this.pictureBox12.Location = new System.Drawing.Point(14, 203);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 209;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::MySchool.Properties.Resources.surgery_32;
+            this.pictureBox10.Location = new System.Drawing.Point(14, 132);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 207;
+            this.pictureBox10.TabStop = false;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -638,6 +757,16 @@
             this.label12.Size = new System.Drawing.Size(106, 20);
             this.label12.TabIndex = 206;
             this.label12.Text = "Had Sergery ?";
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::MySchool.Properties.Resources.Ball_32;
+            this.pictureBox15.Location = new System.Drawing.Point(197, 73);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 205;
+            this.pictureBox15.TabStop = false;
             // 
             // label10
             // 
@@ -650,6 +779,16 @@
             this.label10.TabIndex = 204;
             this.label10.Text = "Plays Sports ?";
             // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::MySchool.Properties.Resources.glasses_32;
+            this.pictureBox17.Location = new System.Drawing.Point(14, 73);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 203;
+            this.pictureBox17.TabStop = false;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -661,6 +800,16 @@
             this.label11.TabIndex = 202;
             this.label11.Text = "Wears Glasses ?";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::MySchool.Properties.Resources.disablty_32;
+            this.pictureBox8.Location = new System.Drawing.Point(197, 14);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 192;
+            this.pictureBox8.TabStop = false;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -671,6 +820,16 @@
             this.label8.Size = new System.Drawing.Size(96, 20);
             this.label8.TabIndex = 191;
             this.label8.Text = "Is Disabled ?";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::MySchool.Properties.Resources.Blood_32;
+            this.pictureBox9.Location = new System.Drawing.Point(14, 14);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 169;
+            this.pictureBox9.TabStop = false;
             // 
             // label26
             // 
@@ -753,6 +912,16 @@
             this.pnlBasicInfo.Size = new System.Drawing.Size(382, 302);
             this.pnlBasicInfo.TabIndex = 96;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::MySchool.Properties.Resources.Education_Level_32;
+            this.pictureBox6.Location = new System.Drawing.Point(9, 47);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 148;
+            this.pictureBox6.TabStop = false;
+            // 
             // lblEducationLevel
             // 
             this.lblEducationLevel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -773,6 +942,76 @@
             this.label3.Size = new System.Drawing.Size(139, 21);
             this.label3.TabIndex = 146;
             this.label3.Text = "Education Level :";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::MySchool.Properties.Resources.Created_By_User_32;
+            this.pictureBox7.Location = new System.Drawing.Point(9, 263);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 145;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MySchool.Properties.Resources.Join_Date_32;
+            this.pictureBox2.Location = new System.Drawing.Point(9, 227);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 143;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::MySchool.Properties.Resources.Phone_32;
+            this.pictureBox5.Location = new System.Drawing.Point(9, 191);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 110;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::MySchool.Properties.Resources.Address_32;
+            this.pictureBox4.Location = new System.Drawing.Point(9, 155);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 110;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::MySchool.Properties.Resources.Gender_32;
+            this.pictureBox3.Location = new System.Drawing.Point(9, 119);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 110;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MySchool.Properties.Resources.Calendar_32;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 83);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 110;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::MySchool.Properties.Resources.Person_ID_32;
+            this.pictureBox14.Location = new System.Drawing.Point(9, 11);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 110;
+            this.pictureBox14.TabStop = false;
             // 
             // lblCreatedByUser
             // 
@@ -929,242 +1168,6 @@
             this.label1.TabIndex = 127;
             this.label1.Text = "Student ID :";
             // 
-            // btnGenerateStudentFile
-            // 
-            this.btnGenerateStudentFile.BackColor = System.Drawing.Color.White;
-            this.btnGenerateStudentFile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGenerateStudentFile.FlatAppearance.BorderSize = 0;
-            this.btnGenerateStudentFile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnGenerateStudentFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerateStudentFile.Image = global::MySchool.Properties.Resources.Pdf_32;
-            this.btnGenerateStudentFile.Location = new System.Drawing.Point(343, 112);
-            this.btnGenerateStudentFile.Name = "btnGenerateStudentFile";
-            this.btnGenerateStudentFile.Size = new System.Drawing.Size(33, 33);
-            this.btnGenerateStudentFile.TabIndex = 145;
-            this.btnGenerateStudentFile.UseVisualStyleBackColor = false;
-            this.btnGenerateStudentFile.Click += new System.EventHandler(this.btnGenerateStudentFile_Click);
-            // 
-            // btnStudentHistory
-            // 
-            this.btnStudentHistory.BackColor = System.Drawing.Color.White;
-            this.btnStudentHistory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStudentHistory.FlatAppearance.BorderSize = 0;
-            this.btnStudentHistory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnStudentHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStudentHistory.Image = global::MySchool.Properties.Resources.Student_Historique_32;
-            this.btnStudentHistory.Location = new System.Drawing.Point(343, 151);
-            this.btnStudentHistory.Name = "btnStudentHistory";
-            this.btnStudentHistory.Size = new System.Drawing.Size(33, 33);
-            this.btnStudentHistory.TabIndex = 144;
-            this.btnStudentHistory.UseVisualStyleBackColor = false;
-            // 
-            // btnEditInfo
-            // 
-            this.btnEditInfo.BackColor = System.Drawing.Color.White;
-            this.btnEditInfo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditInfo.FlatAppearance.BorderSize = 0;
-            this.btnEditInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnEditInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditInfo.Image = global::MySchool.Properties.Resources.Edit_Info_32;
-            this.btnEditInfo.Location = new System.Drawing.Point(343, 190);
-            this.btnEditInfo.Name = "btnEditInfo";
-            this.btnEditInfo.Size = new System.Drawing.Size(33, 33);
-            this.btnEditInfo.TabIndex = 143;
-            this.btnEditInfo.UseVisualStyleBackColor = false;
-            this.btnEditInfo.Click += new System.EventHandler(this.btnEditInfo_Click);
-            // 
-            // pbStudentStatistiques
-            // 
-            this.pbStudentStatistiques.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbStudentStatistiques.Location = new System.Drawing.Point(343, 11);
-            this.pbStudentStatistiques.Name = "pbStudentStatistiques";
-            this.pbStudentStatistiques.Size = new System.Drawing.Size(33, 33);
-            this.pbStudentStatistiques.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbStudentStatistiques.TabIndex = 130;
-            this.pbStudentStatistiques.TabStop = false;
-            this.pbStudentStatistiques.Click += new System.EventHandler(this.pbStudentStatistiques_Click);
-            // 
-            // pbStudentImage
-            // 
-            this.pbStudentImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbStudentImage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbStudentImage.Location = new System.Drawing.Point(0, 0);
-            this.pbStudentImage.Name = "pbStudentImage";
-            this.pbStudentImage.Size = new System.Drawing.Size(381, 232);
-            this.pbStudentImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbStudentImage.TabIndex = 99;
-            this.pbStudentImage.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Image = global::MySchool.Properties.Resources.Notes_32;
-            this.pictureBox22.Location = new System.Drawing.Point(14, 413);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox22.TabIndex = 227;
-            this.pictureBox22.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::MySchool.Properties.Resources.medicine_32;
-            this.pictureBox16.Location = new System.Drawing.Point(14, 342);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 225;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::MySchool.Properties.Resources.gluten_free_32;
-            this.pictureBox11.Location = new System.Drawing.Point(14, 272);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 218;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::MySchool.Properties.Resources.Heart_32;
-            this.pictureBox12.Location = new System.Drawing.Point(14, 203);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 209;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::MySchool.Properties.Resources.surgery_32;
-            this.pictureBox10.Location = new System.Drawing.Point(14, 132);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 207;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::MySchool.Properties.Resources.Ball_32;
-            this.pictureBox15.Location = new System.Drawing.Point(197, 73);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 205;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::MySchool.Properties.Resources.glasses_32;
-            this.pictureBox17.Location = new System.Drawing.Point(14, 73);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 203;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::MySchool.Properties.Resources.disablty_32;
-            this.pictureBox8.Location = new System.Drawing.Point(197, 14);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 192;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::MySchool.Properties.Resources.Blood_32;
-            this.pictureBox9.Location = new System.Drawing.Point(14, 14);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 169;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::MySchool.Properties.Resources.Education_Level_32;
-            this.pictureBox6.Location = new System.Drawing.Point(9, 47);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 148;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::MySchool.Properties.Resources.Created_By_User_32;
-            this.pictureBox7.Location = new System.Drawing.Point(9, 263);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 145;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::MySchool.Properties.Resources.Join_Date_32;
-            this.pictureBox2.Location = new System.Drawing.Point(9, 227);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 143;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::MySchool.Properties.Resources.Phone_32;
-            this.pictureBox5.Location = new System.Drawing.Point(9, 191);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 110;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::MySchool.Properties.Resources.Address_32;
-            this.pictureBox4.Location = new System.Drawing.Point(9, 155);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 110;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::MySchool.Properties.Resources.Gender_32;
-            this.pictureBox3.Location = new System.Drawing.Point(9, 119);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 110;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MySchool.Properties.Resources.Calendar_32;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 83);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 110;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::MySchool.Properties.Resources.Person_ID_32;
-            this.pictureBox14.Location = new System.Drawing.Point(9, 11);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 110;
-            this.pictureBox14.TabStop = false;
-            // 
             // ctrlStudentInfoCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1176,31 +1179,31 @@
             this.Load += new System.EventHandler(this.ctrlStudentInfoCard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStudentStatistiques)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).EndInit();
             this.panel2.ResumeLayout(false);
             this.pnlMedicalInfo.ResumeLayout(false);
             this.pnlMedicalInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.flpTakeMedications.ResumeLayout(false);
             this.flpTakeMedications.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.flpChronicIlliness.ResumeLayout(false);
             this.flpChronicIlliness.PerformLayout();
             this.flpAllergies.ResumeLayout(false);
             this.flpAllergies.PerformLayout();
-            this.pnlMedicationRemarks.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.pnlBasicInfo.ResumeLayout(false);
-            this.pnlBasicInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStudentStatistiques)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.pnlMedicationRemarks.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.pnlBasicInfo.ResumeLayout(false);
+            this.pnlBasicInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
