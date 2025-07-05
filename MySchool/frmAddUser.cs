@@ -16,7 +16,7 @@ namespace MySchool
         private clsPerson _Person;
         private clsUser _User;
         private int _UserID;
-
+        //private bool AlertVisible = true;
         enum enMode
         {
             AddNew = 1,
@@ -115,9 +115,22 @@ namespace MySchool
             ctrlPersonInfoWithFilter1.onPersonSelected += (Person) => { 
                 _Person = Person;
                 btnSave.Enabled = _Person != null; // Enable save button only if a person is selected
-                pnlAccountInformation.Enabled = _Person != null; // Show account information panel only if a person is selected
+                pnlWarning.Visible = _Person == null; // Show warning panel if no person is selected
+                tmWarning.Enabled = _Person == null; // Start the timer to hide the warning panel if no person is selected
+                //pnlAccountInformation.Enabled = _Person != null; // Show account information panel only if a person is selected
 
             };
+            ctrlPersonInfoWithFilter1.onPersonNotFound += () =>
+            {
+                _Person = null;
+                btnSave.Enabled = false; // Disable save button if no person is found
+                pnlWarning.Visible = true; // Show warning panel if no person is found
+                tmWarning.Enabled = true; // Start the timer to hide the warning panel
+
+
+                //pnlAccountInformation.Enabled = false; // Hide account information panel if no person is found
+            };
+
             //ctrlPersonInfoWithFilter1.InitializeCtrlPersonInfoWithFilter();
 
             if (Mode == enMode.Update)
@@ -136,6 +149,12 @@ namespace MySchool
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tmWarning_Tick(object sender, EventArgs e)
+        {
+            pbAlarm.Visible = !pbAlarm.Visible; // Toggle the visibility of the alarm icon
+
         }
     }
 }

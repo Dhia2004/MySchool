@@ -95,10 +95,10 @@ namespace MySchool
             if (Person != null)
             {
                 FillPersonCard(Person);
-                onPersonSelected?.Invoke(Person); // Trigger the event when a person is selected
+                
             }
-               
 
+            
 
             else
             {
@@ -108,6 +108,7 @@ namespace MySchool
                 MessageBox.Show($"This Person with ID [{PersonID}] is not Found", "Oops",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            onPersonSelected?.Invoke(Person); // Trigger the event when a person is selected
         }
 
         public void LoadPersonInfo(string NationlID)
@@ -125,6 +126,7 @@ namespace MySchool
                 MessageBox.Show($"This Person with NationalID [{NationlID}] is not Found", "Oops",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            onPersonSelected?.Invoke(Person); // Trigger the event when a person is selected
         }
 
         private void ctrlPersonInfoCard_Load(object sender, EventArgs e)

@@ -16,6 +16,10 @@ namespace MySchool
     {
         public clsPerson _Person;
         public event Action<clsPerson> onPersonSelected;
+
+        public event Action onPersonNotFound;
+
+
         public ctrlPersonInfoWithFilter()
         {
             InitializeComponent();
@@ -127,7 +131,15 @@ namespace MySchool
                 pbAddNewPerson.Enabled = false; // Disable add new person button after loading person info
 
             }
-                
+            else
+            {
+                txtInput.Text = string.Empty; // Clear the input if person not found
+                btnFilter.Text = "Person ID"; // Reset the filter to Person ID
+                _Person = null; // Reset the person object
+
+                onPersonNotFound?.Invoke(); // Trigger the event if person not found
+            }
+
 
         }
 
@@ -144,6 +156,9 @@ namespace MySchool
 
             if (_Person != null)
                 onPersonSelected?.Invoke(_Person);
+
+            else
+                onPersonNotFound?.Invoke(); // Trigger the event if person not found
         }
     }
 }

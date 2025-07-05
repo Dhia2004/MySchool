@@ -442,5 +442,23 @@
   <ItemGroup>
     <None Include="Resources\Pdf 32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmUser 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm 128.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

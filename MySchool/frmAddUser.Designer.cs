@@ -28,13 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.components = new System.ComponentModel.Container();
             this.lblMode = new System.Windows.Forms.Label();
             this.pnlAccountInformation = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pbNationalNo = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.chkIsActive = new System.Windows.Forms.CheckBox();
             this.txtConfirmPassword = new System.Windows.Forms.TextBox();
             this.txtOwnerPassword = new System.Windows.Forms.TextBox();
@@ -42,30 +38,34 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnGoToPermessions = new System.Windows.Forms.Button();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblUserID = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.pnlWarning = new System.Windows.Forms.Panel();
+            this.pbAlarm = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnGoToPermessions = new System.Windows.Forms.Button();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pbNationalNo = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tmWarning = new System.Windows.Forms.Timer(this.components);
             this.ctrlPersonInfoWithFilter1 = new MySchool.ctrlPersonInfoWithFilter();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnlAccountInformation.SuspendLayout();
+            this.pnlWarning.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNationalNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::MySchool.Properties.Resources.Students_512;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 89;
-            this.pictureBox3.TabStop = false;
             // 
             // lblMode
             // 
@@ -82,62 +82,23 @@
             // pnlAccountInformation
             // 
             this.pnlAccountInformation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAccountInformation.Controls.Add(this.pictureBox1);
             this.pnlAccountInformation.Controls.Add(this.btnGoToPermessions);
             this.pnlAccountInformation.Controls.Add(this.pictureBox15);
             this.pnlAccountInformation.Controls.Add(this.pbNationalNo);
             this.pnlAccountInformation.Controls.Add(this.pictureBox16);
             this.pnlAccountInformation.Controls.Add(this.chkIsActive);
+            this.pnlAccountInformation.Controls.Add(this.label1);
             this.pnlAccountInformation.Controls.Add(this.txtConfirmPassword);
             this.pnlAccountInformation.Controls.Add(this.txtOwnerPassword);
             this.pnlAccountInformation.Controls.Add(this.txtUserName);
             this.pnlAccountInformation.Controls.Add(this.label8);
             this.pnlAccountInformation.Controls.Add(this.label9);
             this.pnlAccountInformation.Controls.Add(this.label25);
-            this.pnlAccountInformation.Enabled = false;
             this.pnlAccountInformation.Location = new System.Drawing.Point(431, 161);
             this.pnlAccountInformation.Name = "pnlAccountInformation";
             this.pnlAccountInformation.Size = new System.Drawing.Size(383, 536);
             this.pnlAccountInformation.TabIndex = 90;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(517, 182);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 40);
-            this.label1.TabIndex = 91;
-            this.label1.Text = "Account Info :";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Location = new System.Drawing.Point(65, 299);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 109;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pbNationalNo
-            // 
-            this.pbNationalNo.Location = new System.Drawing.Point(65, 213);
-            this.pbNationalNo.Name = "pbNationalNo";
-            this.pbNationalNo.Size = new System.Drawing.Size(25, 25);
-            this.pbNationalNo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbNationalNo.TabIndex = 108;
-            this.pbNationalNo.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::MySchool.Properties.Resources.Student_32;
-            this.pictureBox16.Location = new System.Drawing.Point(65, 127);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 107;
-            this.pictureBox16.TabStop = false;
             // 
             // chkIsActive
             // 
@@ -146,7 +107,7 @@
             this.chkIsActive.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkIsActive.Enabled = false;
             this.chkIsActive.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkIsActive.Location = new System.Drawing.Point(224, 382);
+            this.chkIsActive.Location = new System.Drawing.Point(224, 436);
             this.chkIsActive.Name = "chkIsActive";
             this.chkIsActive.Size = new System.Drawing.Size(91, 25);
             this.chkIsActive.TabIndex = 106;
@@ -156,7 +117,7 @@
             // txtConfirmPassword
             // 
             this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.txtConfirmPassword.Location = new System.Drawing.Point(65, 342);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(65, 396);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(250, 27);
             this.txtConfirmPassword.TabIndex = 105;
@@ -165,7 +126,7 @@
             // txtOwnerPassword
             // 
             this.txtOwnerPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.txtOwnerPassword.Location = new System.Drawing.Point(65, 256);
+            this.txtOwnerPassword.Location = new System.Drawing.Point(65, 310);
             this.txtOwnerPassword.Name = "txtOwnerPassword";
             this.txtOwnerPassword.Size = new System.Drawing.Size(250, 27);
             this.txtOwnerPassword.TabIndex = 104;
@@ -175,7 +136,7 @@
             // txtUserName
             // 
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.txtUserName.Location = new System.Drawing.Point(65, 170);
+            this.txtUserName.Location = new System.Drawing.Point(65, 224);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(250, 27);
             this.txtUserName.TabIndex = 103;
@@ -185,7 +146,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(97, 301);
+            this.label8.Location = new System.Drawing.Point(97, 355);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(141, 21);
             this.label8.TabIndex = 102;
@@ -195,7 +156,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(97, 215);
+            this.label9.Location = new System.Drawing.Point(97, 269);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(87, 21);
             this.label9.TabIndex = 101;
@@ -205,11 +166,76 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(96, 129);
+            this.label25.Location = new System.Drawing.Point(96, 183);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(94, 21);
             this.label25.TabIndex = 100;
             this.label25.Text = "UserName :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(85, 123);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 40);
+            this.label1.TabIndex = 91;
+            this.label1.Text = "Account Info :";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblUserID
+            // 
+            this.lblUserID.AutoSize = true;
+            this.lblUserID.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserID.ForeColor = System.Drawing.Color.Red;
+            this.lblUserID.Location = new System.Drawing.Point(664, 115);
+            this.lblUserID.Name = "lblUserID";
+            this.lblUserID.Size = new System.Drawing.Size(40, 21);
+            this.lblUserID.TabIndex = 147;
+            this.lblUserID.Text = "N/A";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(587, 115);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(71, 21);
+            this.label16.TabIndex = 146;
+            this.label16.Text = "User ID :";
+            // 
+            // pnlWarning
+            // 
+            this.pnlWarning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlWarning.Controls.Add(this.label3);
+            this.pnlWarning.Controls.Add(this.label2);
+            this.pnlWarning.Controls.Add(this.pbAlarm);
+            this.pnlWarning.Location = new System.Drawing.Point(431, 161);
+            this.pnlWarning.Name = "pnlWarning";
+            this.pnlWarning.Size = new System.Drawing.Size(383, 536);
+            this.pnlWarning.TabIndex = 149;
+            // 
+            // pbAlarm
+            // 
+            this.pbAlarm.Image = global::MySchool.Properties.Resources.Alarm_128;
+            this.pbAlarm.Location = new System.Drawing.Point(117, 21);
+            this.pbAlarm.Name = "pbAlarm";
+            this.pbAlarm.Size = new System.Drawing.Size(146, 146);
+            this.pbAlarm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbAlarm.TabIndex = 150;
+            this.pbAlarm.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::MySchool.Properties.Resources.Person_ID_32;
+            this.pictureBox21.Location = new System.Drawing.Point(558, 112);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox21.TabIndex = 148;
+            this.pictureBox21.TabStop = false;
             // 
             // btnClose
             // 
@@ -250,6 +276,16 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MySchool.Properties.Resources.User_256;
+            this.pictureBox1.Location = new System.Drawing.Point(140, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 110;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnGoToPermessions
             // 
             this.btnGoToPermessions.BackColor = System.Drawing.Color.White;
@@ -271,37 +307,76 @@
             this.btnGoToPermessions.UseVisualStyleBackColor = false;
             this.btnGoToPermessions.Click += new System.EventHandler(this.btnGoToPermessions_Click);
             // 
-            // pictureBox21
+            // pictureBox15
             // 
-            this.pictureBox21.Image = global::MySchool.Properties.Resources.Person_ID_32;
-            this.pictureBox21.Location = new System.Drawing.Point(558, 112);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(25, 27);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox21.TabIndex = 148;
-            this.pictureBox21.TabStop = false;
+            this.pictureBox15.Image = global::MySchool.Properties.Resources.Password_32;
+            this.pictureBox15.Location = new System.Drawing.Point(65, 353);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 109;
+            this.pictureBox15.TabStop = false;
             // 
-            // lblUserID
+            // pbNationalNo
             // 
-            this.lblUserID.AutoSize = true;
-            this.lblUserID.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserID.ForeColor = System.Drawing.Color.Red;
-            this.lblUserID.Location = new System.Drawing.Point(664, 115);
-            this.lblUserID.Name = "lblUserID";
-            this.lblUserID.Size = new System.Drawing.Size(40, 21);
-            this.lblUserID.TabIndex = 147;
-            this.lblUserID.Text = "N/A";
+            this.pbNationalNo.Image = global::MySchool.Properties.Resources.Password_32;
+            this.pbNationalNo.Location = new System.Drawing.Point(65, 267);
+            this.pbNationalNo.Name = "pbNationalNo";
+            this.pbNationalNo.Size = new System.Drawing.Size(25, 25);
+            this.pbNationalNo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbNationalNo.TabIndex = 108;
+            this.pbNationalNo.TabStop = false;
             // 
-            // label16
+            // pictureBox16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(587, 115);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(71, 21);
-            this.label16.TabIndex = 146;
-            this.label16.Text = "User ID :";
+            this.pictureBox16.Image = global::MySchool.Properties.Resources.Student_32;
+            this.pictureBox16.Location = new System.Drawing.Point(65, 181);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 107;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::MySchool.Properties.Resources.frmUser_64;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 89;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(105, 191);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(170, 40);
+            this.label2.TabIndex = 150;
+            this.label2.Text = "Warning !!!";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(23, 287);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(311, 50);
+            this.label3.TabIndex = 206;
+            this.label3.Text = "Please select a person first before\r\nproceeding with account creation";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tmWarning
+            // 
+            this.tmWarning.Enabled = true;
+            this.tmWarning.Interval = 1000;
+            this.tmWarning.Tick += new System.EventHandler(this.tmWarning_Tick);
             // 
             // ctrlPersonInfoWithFilter1
             // 
@@ -322,23 +397,27 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pnlAccountInformation);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lblMode);
             this.Controls.Add(this.ctrlPersonInfoWithFilter1);
+            this.Controls.Add(this.pnlWarning);
+            this.Controls.Add(this.pnlAccountInformation);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddUser";
             this.Load += new System.EventHandler(this.frmAddUser_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.pnlAccountInformation.ResumeLayout(false);
             this.pnlAccountInformation.PerformLayout();
+            this.pnlWarning.ResumeLayout(false);
+            this.pnlWarning.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNationalNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,5 +446,11 @@
         private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.Label lblUserID;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel pnlWarning;
+        private System.Windows.Forms.PictureBox pbAlarm;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Timer tmWarning;
     }
 }
