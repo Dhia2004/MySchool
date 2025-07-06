@@ -1,6 +1,6 @@
 ﻿namespace MySchool
 {
-    partial class frmAddUser
+    partial class frmAddEditUser
     {
         /// <summary>
         /// Required designer variable.
@@ -32,39 +32,39 @@
             this.lblMode = new System.Windows.Forms.Label();
             this.pnlAccountInformation = new System.Windows.Forms.Panel();
             this.chkIsActive = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtConfirmPassword = new System.Windows.Forms.TextBox();
             this.txtOwnerPassword = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblUserID = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.pnlWarning = new System.Windows.Forms.Panel();
-            this.pbAlarm = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tmWarning = new System.Windows.Forms.Timer(this.components);
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pbAlarm = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnGoToPermessions = new System.Windows.Forms.Button();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pbNationalNo = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tmWarning = new System.Windows.Forms.Timer(this.components);
             this.ctrlPersonInfoWithFilter1 = new MySchool.ctrlPersonInfoWithFilter();
             this.pnlAccountInformation.SuspendLayout();
             this.pnlWarning.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNationalNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMode
@@ -105,7 +105,6 @@
             this.chkIsActive.AutoSize = true;
             this.chkIsActive.Checked = true;
             this.chkIsActive.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkIsActive.Enabled = false;
             this.chkIsActive.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkIsActive.Location = new System.Drawing.Point(224, 436);
             this.chkIsActive.Name = "chkIsActive";
@@ -113,6 +112,18 @@
             this.chkIsActive.TabIndex = 106;
             this.chkIsActive.Text = "Is Active";
             this.chkIsActive.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(85, 123);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 40);
+            this.label1.TabIndex = 91;
+            this.label1.Text = "Account Info :";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtConfirmPassword
             // 
@@ -172,18 +183,6 @@
             this.label25.TabIndex = 100;
             this.label25.Text = "UserName :";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(85, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 40);
-            this.label1.TabIndex = 91;
-            this.label1.Text = "Account Info :";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lblUserID
             // 
             this.lblUserID.AutoSize = true;
@@ -217,15 +216,36 @@
             this.pnlWarning.Size = new System.Drawing.Size(383, 536);
             this.pnlWarning.TabIndex = 149;
             // 
-            // pbAlarm
+            // label3
             // 
-            this.pbAlarm.Image = global::MySchool.Properties.Resources.Alarm_128;
-            this.pbAlarm.Location = new System.Drawing.Point(117, 21);
-            this.pbAlarm.Name = "pbAlarm";
-            this.pbAlarm.Size = new System.Drawing.Size(146, 146);
-            this.pbAlarm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbAlarm.TabIndex = 150;
-            this.pbAlarm.TabStop = false;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(37, 287);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(307, 75);
+            this.label3.TabIndex = 206;
+            this.label3.Text = "Please select a person first before\r\n proceeding\r\n with account creation";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(105, 191);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(170, 40);
+            this.label2.TabIndex = 150;
+            this.label2.Text = "Warning !!!";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tmWarning
+            // 
+            this.tmWarning.Enabled = true;
+            this.tmWarning.Interval = 1000;
+            this.tmWarning.Tick += new System.EventHandler(this.tmWarning_Tick);
             // 
             // pictureBox21
             // 
@@ -275,6 +295,27 @@
             this.btnSave.Text = "     Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::MySchool.Properties.Resources.frmUser_64;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 89;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pbAlarm
+            // 
+            this.pbAlarm.Enabled = false;
+            this.pbAlarm.Image = global::MySchool.Properties.Resources.Alarm_128;
+            this.pbAlarm.Location = new System.Drawing.Point(117, 21);
+            this.pbAlarm.Name = "pbAlarm";
+            this.pbAlarm.Size = new System.Drawing.Size(146, 146);
+            this.pbAlarm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbAlarm.TabIndex = 150;
+            this.pbAlarm.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -337,47 +378,6 @@
             this.pictureBox16.TabIndex = 107;
             this.pictureBox16.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::MySchool.Properties.Resources.frmUser_64;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 89;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(105, 191);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(170, 40);
-            this.label2.TabIndex = 150;
-            this.label2.Text = "Warning !!!";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(23, 287);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(311, 50);
-            this.label3.TabIndex = 206;
-            this.label3.Text = "Please select a person first before\r\nproceeding with account creation";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tmWarning
-            // 
-            this.tmWarning.Enabled = true;
-            this.tmWarning.Interval = 1000;
-            this.tmWarning.Tick += new System.EventHandler(this.tmWarning_Tick);
-            // 
             // ctrlPersonInfoWithFilter1
             // 
             this.ctrlPersonInfoWithFilter1.BackColor = System.Drawing.Color.White;
@@ -411,13 +411,13 @@
             this.pnlAccountInformation.PerformLayout();
             this.pnlWarning.ResumeLayout(false);
             this.pnlWarning.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNationalNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -116,8 +116,8 @@ namespace MySchool
 
         private void tUsers_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This feature is not implemented yet.", "Comming soon...",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("This feature is not implemented yet.", "Comming soon...",
+            //    MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void tSettings_Click(object sender, EventArgs e)
@@ -128,7 +128,7 @@ namespace MySchool
 
         private void addNewUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAddUser frmAddUser = new frmAddUser(-1);
+            frmAddEditUser frmAddUser = new frmAddEditUser(-1);
             frmAddUser.ShowDialog();
         }
     }

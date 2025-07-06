@@ -190,14 +190,14 @@
   <data name="Pdf 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pdf 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ball 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ball 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Allergy 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Allergy 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Back 24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Back 24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Created By User 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Created By User 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Students 512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Students 512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,8 +229,8 @@
   <data name="Gender 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gender 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ball 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ball 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Created By User 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Created By User 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Warning 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Warning 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -240,6 +240,9 @@
   </data>
   <data name="Medical File 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Medical File 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Welcome 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Welcome 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -255,6 +258,9 @@
   </data>
   <data name="close 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alarm 128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alarm 128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Person ID 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Person ID 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -343,7 +349,7 @@
   <data name="Select 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Select 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Alarm 128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alarm 128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Subject 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Subject 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

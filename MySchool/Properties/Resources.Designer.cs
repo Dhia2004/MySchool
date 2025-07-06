@@ -733,6 +733,16 @@ namespace MySchool.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Subject_32 {
+            get {
+                object obj = ResourceManager.GetObject("Subject 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap surgery_32 {
             get {
                 object obj = ResourceManager.GetObject("surgery 32", resourceCulture);
@@ -766,6 +776,16 @@ namespace MySchool.Properties {
         internal static System.Drawing.Bitmap User_256 {
             get {
                 object obj = ResourceManager.GetObject("User 256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap User_32 {
+            get {
+                object obj = ResourceManager.GetObject("User 32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -46,6 +46,8 @@
     <Compile Include="clsPersonDataAccess.cs" />
     <Compile Include="clsSchoolInfoDataAccess.cs" />
     <Compile Include="clsStudentDataAccess.cs" />
+    <Compile Include="clsSubjectDataAccess.cs" />
+    <Compile Include="clsTeacherDataAccess.cs" />
     <Compile Include="clsUserDataAccess.cs" />
     <Compile Include="DataAccessSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

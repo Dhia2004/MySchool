@@ -102,11 +102,17 @@
     <Compile Include="frmAddEditStudent.Designer.cs">
       <DependentUpon>frmAddEditStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddUser.cs">
+    <Compile Include="frmAddEditTeachers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddUser.Designer.cs">
-      <DependentUpon>frmAddUser.cs</DependentUpon>
+    <Compile Include="frmAddEditTeachers.Designer.cs">
+      <DependentUpon>frmAddEditTeachers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditUser.Designer.cs">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAllStudents.cs">
       <SubType>Form</SubType>
@@ -179,8 +185,11 @@
     <EmbeddedResource Include="frmAddEditStudent.resx">
       <DependentUpon>frmAddEditStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddUser.resx">
-      <DependentUpon>frmAddUser.cs</DependentUpon>
+    <EmbeddedResource Include="frmAddEditTeachers.resx">
+      <DependentUpon>frmAddEditTeachers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditUser.resx">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAllStudents.resx">
       <DependentUpon>frmAllStudents.cs</DependentUpon>
@@ -459,6 +468,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Alarm 128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subject 32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
