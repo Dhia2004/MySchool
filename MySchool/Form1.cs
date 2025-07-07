@@ -131,5 +131,11 @@ namespace MySchool
             frmAddEditUser frmAddUser = new frmAddEditUser(-1);
             frmAddUser.ShowDialog();
         }
+
+        private void addNewTeacherToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddEditTeachers frmAddEditTeachers = new frmAddEditTeachers(-1);
+            frmAddEditTeachers.ShowDialog();
+        }
     }
 }

@@ -115,6 +115,7 @@ namespace MySchool
         {
             ctrlPersonInfoWithFilter1.onPersonSelected += (Person) => { 
                 _Person = Person;
+                lblFullName.Text = _Person.FullName(); // Display the selected person's full name
                 btnSave.Enabled = _Person != null; // Enable save button only if a person is selected
                 pnlWarning.Visible = _Person == null; // Show warning panel if no person is selected
                 tmWarning.Enabled = _Person == null; // Start the timer to hide the warning panel if no person is selected

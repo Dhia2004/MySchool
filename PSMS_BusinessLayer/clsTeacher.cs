@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,7 +13,7 @@ namespace PSMS_BusinessLayer
         public int TeacherID { get; private set; }
         public int PersonID { get; set; }
         public clsPerson Person { get; set; } // Assuming clsPerson is a class that holds person details
-        public string SpecialityID { get; set; } // Assuming a single subject for simplicity, can be extended to multiple subject
+        public int SpecialityID { get; set; } // Assuming a single subject for simplicity, can be extended to multiple subject
         public bool IsActive { get; set; } // Active status of the teacher
         public int CreatedByUserID { get; set; } // User ID of the creator
 
@@ -27,12 +28,12 @@ namespace PSMS_BusinessLayer
             Mode = enMode.AddNew;
             this.TeacherID = -1;
             this.PersonID = -1;
-            this.SpecialityID = "";
+            this.SpecialityID = -1;
             this.IsActive = false;
             this.CreatedByUserID = -1;
             this.Person = new clsPerson(); // Initialize with a new person object
         }
-        private clsTeacher(int TeacherID, int PersonID, string SpecialityID, bool IsActive, int CraetedByUserID)
+        private clsTeacher(int TeacherID, int PersonID, int SpecialityID, bool IsActive, int CraetedByUserID)
         {
             Mode = enMode.Update;
             this.TeacherID = TeacherID;
@@ -43,10 +44,22 @@ namespace PSMS_BusinessLayer
             this.Person = clsPerson.FindByID(PersonID); // Assuming FindByPersonID is a method to get person details
         }
 
+        private bool _AddNewTeacher()
+        {
+            this.TeacherID = clsTeacherDataAccess.AddNewTeacher(PersonID,SpecialityID,IsActive,CreatedByUserID);
+
+            return this.TeacherID != -1;
+        }
+
+        private bool _UpdateTeacher()
+        {
+            return clsTeacherDataAccess.Update(this.TeacherID,this.SpecialityID, this.IsActive);
+        }
+
         static public clsTeacher FindByTeacherID(int TeacherID)
         {
-            int PersonID = -1, CraetedByUserID = -1;
-            string SpecialityID = "";
+            int PersonID = -1, CraetedByUserID = -1, SpecialityID = -1;
+     
             bool IsActive = false;
             if (clsTeacherDataAccess.FindByTeacherID(TeacherID, ref PersonID, ref SpecialityID, ref IsActive, ref CraetedByUserID))
             {
@@ -59,8 +72,8 @@ namespace PSMS_BusinessLayer
         }
         static public clsTeacher FindByPersonID(int PersonID)
         {
-            int TeacherID = -1, CraetedByUserID = -1;
-            string SpecialityID = "";
+            int TeacherID = -1, CraetedByUserID = -1,SpecialityID = -1;
+            
             bool IsActive = false;
             if (clsTeacherDataAccess.FindByPersonID(PersonID, ref TeacherID, ref SpecialityID, ref IsActive, ref CraetedByUserID))
             {
@@ -73,17 +86,26 @@ namespace PSMS_BusinessLayer
         }
         public bool Save()
         {
-            if (Mode == enMode.AddNew)
+            switch (Mode)
             {
-                // Logic to save a new teacher
-                return clsTeacherDataAccess.AddNewTeacher(this.PersonID, this.SpecialityID, this.IsActive, this.CreatedByUserID) != -1;
+                case enMode.AddNew:
+                    if (_AddNewTeacher())
+                    {
+                        Mode = enMode.Update;
+                        return true;
+                    }
+                    else
+                        return false;
+                    break;
+                case enMode.Update:
+                    return _UpdateTeacher();
+
+                    break;
+
+                default:
+                    return false;
+
             }
-            else if (Mode == enMode.Update)
-            {
-                // Logic to update an existing teacher
-                return clsTeacherDataAccess.Update(this.TeacherID, this.PersonID, this.SpecialityID, this.IsActive, this.CreatedByUserID);
-            }
-            return false; // If neither add nor update, return false
         }
         public bool Delete()
         {

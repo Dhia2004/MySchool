@@ -44,10 +44,12 @@ namespace MySchool
             if (MessageBox.Show("Are you sure for save this Changes?", "Confirm"
                 , MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                _Teacher.PersonID = _Person.PersonID; // Assuming _Person is already set from the person selection control
-                
-                _Teacher.IsActive = chkIsActive.Checked; // Assuming chkIsActive is a CheckBox for user activation status
 
+
+                _Teacher.PersonID = _Person.PersonID; // Assuming _Person is already set from the person selection control
+  
+                _Teacher.SpecialityID = clsSubject.FindByName(cbSubjects.SelectedItem.ToString()).SubjectID; // Assuming cbSubjects is a ComboBox for subject selection
+                _Teacher.IsActive = chkIsActive.Checked; // Assuming chkIsActive is a CheckBox for user activation status
                 _Teacher.CreatedByUserID = clsGlobalSettings.CurrentUser.UserID; // Assuming CurrentUser is a static property in clsGlobalSettings
 
 
@@ -55,10 +57,10 @@ namespace MySchool
 
                 if ((IsDone = _Teacher.Save()))
 
-                    MessageBox.Show("User Updated Successfully", "Done",
+                    MessageBox.Show("Teacher Updated Successfully", "Done",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
-                    MessageBox.Show("User Updated Failed", "Oops..",
+                    MessageBox.Show("Teacher Updated Failed", "Oops..",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
@@ -68,19 +70,21 @@ namespace MySchool
 
         }
 
-        private void GetUserByID(int UserID)
+        private void GetTeacherByID(int TeacherID)
         {
-            _Teacher = clsUser.FindByUserID(UserID);
+            _Teacher = clsTeacher.FindByTeacherID(TeacherID);
             if (_Teacher == null)
             {
-                MessageBox.Show("User not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Teacher not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             // Populate the form fields with user data
-            txtUserName.Text = _Teacher.UserName;
-            txtOwnerPassword.Text = _Teacher.Password; // Assuming this is the field for password input
-            txtConfirmPassword.Text = _Teacher.Password;
+            //lblPersonID.Text = _Teacher.PersonID.ToString();
+            lblFullName.Text = _Teacher.Person.FullName(); // Assuming this is the field for password input
+            cbSubjects.SelectedIndex = cbSubjects.FindString(clsSubject.FindByID(_Teacher.SpecialityID).Name);
+
             chkIsActive.Checked = _Teacher.IsActive;
+            lblCreatedByUser.Text =  _Teacher.CreatedByUserID.ToString(); // Assuming this is the field for created by user ID
             // Additional fields can be populated here as needed
         }
 
@@ -88,6 +92,9 @@ namespace MySchool
         {
             ctrlPersonInfoWithFilter1.onPersonSelected += (Person) => {
                 _Person = Person;
+                //lblPersonID.Text = _Person.PersonID.ToString(); // Display the selected person's ID
+                lblFullName.Text = _Person.FullName(); // Display the selected person's full name
+
                 btnSave.Enabled = _Person != null; // Enable save button only if a person is selected
                 pnlWarning.Visible = _Person == null; // Show warning panel if no person is selected
                 tmWarning.Enabled = _Person == null; // Start the timer to hide the warning panel if no person is selected
@@ -107,18 +114,25 @@ namespace MySchool
 
             //ctrlPersonInfoWithFilter1.InitializeCtrlPersonInfoWithFilter();
 
+            List<clsSubject> subjects = clsSubject.GetAllSubjects();
+            foreach(clsSubject subject in subjects)
+            {
+                cbSubjects.Items.Add(subject.Name);
+            }
+            lblCreatedByUser.Text = "- " + clsGlobalSettings.CurrentUser.UserName; // Assuming CurrentUser is a static property in clsGlobalSettings
+
             if (Mode == enMode.Update)
             {
                 lblMode.Text = "Update User Informations";
-                lblUserID.Text = _TeacherID.ToString();
-                GetUserByID(_TeacherID);
+                lblTeacherID.Text = _TeacherID.ToString();
+                GetTeacherByID(_TeacherID);
                 ctrlPersonInfoWithFilter1.LoadPersonInfo(_Teacher.PersonID);
 
 
 
                 return;
             }
-            _Teacher = new clsUser();
+            _Teacher = new clsTeacher();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -126,9 +140,9 @@ namespace MySchool
             if (SaveDateUpdate())
             {
                 Mode = enMode.Update;
-                _TeacherID = _Teacher.UserID;
-                lblUserID.Text = _Teacher.UserID.ToString();
-                lblMode.Text = "Update user Informations";
+                _TeacherID = _Teacher.TeacherID;
+                lblTeacherID.Text = _Teacher.TeacherID.ToString();
+                lblMode.Text = "Update Teacher Informations";
                 //IsUpdated = true;
                 //GetPersonByID(_PersonID);
                 return;
@@ -140,6 +154,11 @@ namespace MySchool
         {
             pbAlarm.Visible = !pbAlarm.Visible; // Toggle the visibility of the alarm icon
 
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

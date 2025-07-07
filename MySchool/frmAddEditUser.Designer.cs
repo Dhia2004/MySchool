@@ -31,6 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.lblMode = new System.Windows.Forms.Label();
             this.pnlAccountInformation = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnGoToPermessions = new System.Windows.Forms.Button();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pbNationalNo = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.chkIsActive = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtConfirmPassword = new System.Windows.Forms.TextBox();
@@ -44,27 +49,27 @@
             this.pnlWarning = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pbAlarm = new System.Windows.Forms.PictureBox();
             this.tmWarning = new System.Windows.Forms.Timer(this.components);
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pbAlarm = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnGoToPermessions = new System.Windows.Forms.Button();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pbNationalNo = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.ctrlPersonInfoWithFilter1 = new MySchool.ctrlPersonInfoWithFilter();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblFullName = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.pnlAccountInformation.SuspendLayout();
-            this.pnlWarning.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNationalNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            this.pnlWarning.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMode
@@ -82,6 +87,10 @@
             // pnlAccountInformation
             // 
             this.pnlAccountInformation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAccountInformation.Controls.Add(this.panel5);
+            this.pnlAccountInformation.Controls.Add(this.lblFullName);
+            this.pnlAccountInformation.Controls.Add(this.pictureBox2);
+            this.pnlAccountInformation.Controls.Add(this.label4);
             this.pnlAccountInformation.Controls.Add(this.pictureBox1);
             this.pnlAccountInformation.Controls.Add(this.btnGoToPermessions);
             this.pnlAccountInformation.Controls.Add(this.pictureBox15);
@@ -99,6 +108,67 @@
             this.pnlAccountInformation.Name = "pnlAccountInformation";
             this.pnlAccountInformation.Size = new System.Drawing.Size(383, 536);
             this.pnlAccountInformation.TabIndex = 90;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MySchool.Properties.Resources.User_256;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 110;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnGoToPermessions
+            // 
+            this.btnGoToPermessions.BackColor = System.Drawing.Color.White;
+            this.btnGoToPermessions.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGoToPermessions.FlatAppearance.BorderSize = 0;
+            this.btnGoToPermessions.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnGoToPermessions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnGoToPermessions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoToPermessions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoToPermessions.ForeColor = System.Drawing.Color.Black;
+            this.btnGoToPermessions.Image = global::MySchool.Properties.Resources.Next_24;
+            this.btnGoToPermessions.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGoToPermessions.Location = new System.Drawing.Point(150, 479);
+            this.btnGoToPermessions.Name = "btnGoToPermessions";
+            this.btnGoToPermessions.Size = new System.Drawing.Size(213, 40);
+            this.btnGoToPermessions.TabIndex = 98;
+            this.btnGoToPermessions.Text = "   Go to Permessions";
+            this.btnGoToPermessions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGoToPermessions.UseVisualStyleBackColor = false;
+            this.btnGoToPermessions.Click += new System.EventHandler(this.btnGoToPermessions_Click);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::MySchool.Properties.Resources.Password_32;
+            this.pictureBox15.Location = new System.Drawing.Point(65, 353);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 109;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pbNationalNo
+            // 
+            this.pbNationalNo.Image = global::MySchool.Properties.Resources.Password_32;
+            this.pbNationalNo.Location = new System.Drawing.Point(65, 267);
+            this.pbNationalNo.Name = "pbNationalNo";
+            this.pbNationalNo.Size = new System.Drawing.Size(25, 25);
+            this.pbNationalNo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbNationalNo.TabIndex = 108;
+            this.pbNationalNo.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::MySchool.Properties.Resources.Student_32;
+            this.pictureBox16.Location = new System.Drawing.Point(65, 181);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 107;
+            this.pictureBox16.TabStop = false;
             // 
             // chkIsActive
             // 
@@ -118,11 +188,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(85, 123);
+            this.label1.Location = new System.Drawing.Point(134, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 40);
+            this.label1.Size = new System.Drawing.Size(194, 40);
             this.label1.TabIndex = 91;
-            this.label1.Text = "Account Info :";
+            this.label1.Text = "Account Info";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtConfirmPassword
@@ -241,6 +311,17 @@
             this.label2.Text = "Warning !!!";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pbAlarm
+            // 
+            this.pbAlarm.Enabled = false;
+            this.pbAlarm.Image = global::MySchool.Properties.Resources.Alarm_128;
+            this.pbAlarm.Location = new System.Drawing.Point(117, 21);
+            this.pbAlarm.Name = "pbAlarm";
+            this.pbAlarm.Size = new System.Drawing.Size(146, 146);
+            this.pbAlarm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbAlarm.TabIndex = 150;
+            this.pbAlarm.TabStop = false;
+            // 
             // tmWarning
             // 
             this.tmWarning.Enabled = true;
@@ -306,78 +387,6 @@
             this.pictureBox3.TabIndex = 89;
             this.pictureBox3.TabStop = false;
             // 
-            // pbAlarm
-            // 
-            this.pbAlarm.Enabled = false;
-            this.pbAlarm.Image = global::MySchool.Properties.Resources.Alarm_128;
-            this.pbAlarm.Location = new System.Drawing.Point(117, 21);
-            this.pbAlarm.Name = "pbAlarm";
-            this.pbAlarm.Size = new System.Drawing.Size(146, 146);
-            this.pbAlarm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbAlarm.TabIndex = 150;
-            this.pbAlarm.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MySchool.Properties.Resources.User_256;
-            this.pictureBox1.Location = new System.Drawing.Point(140, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 110;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnGoToPermessions
-            // 
-            this.btnGoToPermessions.BackColor = System.Drawing.Color.White;
-            this.btnGoToPermessions.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGoToPermessions.FlatAppearance.BorderSize = 0;
-            this.btnGoToPermessions.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnGoToPermessions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnGoToPermessions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGoToPermessions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGoToPermessions.ForeColor = System.Drawing.Color.Black;
-            this.btnGoToPermessions.Image = global::MySchool.Properties.Resources.Next_24;
-            this.btnGoToPermessions.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGoToPermessions.Location = new System.Drawing.Point(150, 479);
-            this.btnGoToPermessions.Name = "btnGoToPermessions";
-            this.btnGoToPermessions.Size = new System.Drawing.Size(213, 40);
-            this.btnGoToPermessions.TabIndex = 98;
-            this.btnGoToPermessions.Text = "   Go to Permessions";
-            this.btnGoToPermessions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGoToPermessions.UseVisualStyleBackColor = false;
-            this.btnGoToPermessions.Click += new System.EventHandler(this.btnGoToPermessions_Click);
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::MySchool.Properties.Resources.Password_32;
-            this.pictureBox15.Location = new System.Drawing.Point(65, 353);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 109;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pbNationalNo
-            // 
-            this.pbNationalNo.Image = global::MySchool.Properties.Resources.Password_32;
-            this.pbNationalNo.Location = new System.Drawing.Point(65, 267);
-            this.pbNationalNo.Name = "pbNationalNo";
-            this.pbNationalNo.Size = new System.Drawing.Size(25, 25);
-            this.pbNationalNo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbNationalNo.TabIndex = 108;
-            this.pbNationalNo.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::MySchool.Properties.Resources.Student_32;
-            this.pictureBox16.Location = new System.Drawing.Point(65, 181);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 107;
-            this.pictureBox16.TabStop = false;
-            // 
             // ctrlPersonInfoWithFilter1
             // 
             this.ctrlPersonInfoWithFilter1.BackColor = System.Drawing.Color.White;
@@ -386,7 +395,47 @@
             this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(391, 660);
             this.ctrlPersonInfoWithFilter1.TabIndex = 0;
             // 
-            // frmAddUser
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panel5.Location = new System.Drawing.Point(21, 144);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(342, 1);
+            this.panel5.TabIndex = 235;
+            // 
+            // lblFullName
+            // 
+            this.lblFullName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullName.ForeColor = System.Drawing.Color.Red;
+            this.lblFullName.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblFullName.Location = new System.Drawing.Point(139, 99);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(213, 21);
+            this.lblFullName.TabIndex = 234;
+            this.lblFullName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MySchool.Properties.Resources.Student_32;
+            this.pictureBox2.Location = new System.Drawing.Point(137, 66);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 233;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(168, 69);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 21);
+            this.label4.TabIndex = 232;
+            this.label4.Text = "Full Name :";
+            // 
+            // frmAddEditUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -402,22 +451,26 @@
             this.Controls.Add(this.ctrlPersonInfoWithFilter1);
             this.Controls.Add(this.pnlWarning);
             this.Controls.Add(this.pnlAccountInformation);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmAddUser";
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(852, 802);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(852, 802);
+            this.Name = "frmAddEditUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddUser";
             this.Load += new System.EventHandler(this.frmAddUser_Load);
             this.pnlAccountInformation.ResumeLayout(false);
             this.pnlAccountInformation.PerformLayout();
-            this.pnlWarning.ResumeLayout(false);
-            this.pnlWarning.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNationalNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            this.pnlWarning.ResumeLayout(false);
+            this.pnlWarning.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -452,5 +505,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer tmWarning;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label lblFullName;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label4;
     }
 }

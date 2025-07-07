@@ -42,6 +42,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.addNewTeacherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -92,6 +93,8 @@
             // 
             // tTeachers
             // 
+            this.tTeachers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addNewTeacherToolStripMenuItem});
             this.tTeachers.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tTeachers.Image = global::MySchool.Properties.Resources.Teachers_64;
             this.tTeachers.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -198,6 +201,13 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // addNewTeacherToolStripMenuItem
+            // 
+            this.addNewTeacherToolStripMenuItem.Name = "addNewTeacherToolStripMenuItem";
+            this.addNewTeacherToolStripMenuItem.Size = new System.Drawing.Size(238, 30);
+            this.addNewTeacherToolStripMenuItem.Text = "Add New Teacher";
+            this.addNewTeacherToolStripMenuItem.Click += new System.EventHandler(this.addNewTeacherToolStripMenuItem_Click);
+            // 
             // frmMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -236,6 +246,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem tTeachers;
         private System.Windows.Forms.ToolStripMenuItem addNewUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewTeacherToolStripMenuItem;
     }
 }
 

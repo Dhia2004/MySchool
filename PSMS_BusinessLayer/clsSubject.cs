@@ -32,6 +32,30 @@ namespace PSMS_BusinessLayer
             this.TargetedLevels = TargetedLevels;
         }
 
+
+        static public clsSubject FindByName(string Name)
+        {
+            int SubjectID = -1, TargetedLevels = 0;
+            string Description = "";
+            if (clsSubjectDataAccess.FindByName(Name, ref SubjectID, ref Description, ref TargetedLevels))
+            {
+                return new clsSubject(SubjectID, Name, Description, TargetedLevels);
+            }
+            else
+                return null;
+        }
+
+        static public clsSubject FindByID(int SubjectID)
+        {
+            string Name = "", Description = "";
+            int TargetedLevels = 0;
+            if (clsSubjectDataAccess.FindByID(SubjectID, ref Name, ref Description, ref TargetedLevels))
+            {
+                return new clsSubject(SubjectID, Name, Description, TargetedLevels);
+            }
+            else
+                return null;
+        }
         public static List<clsSubject> GetAllSubjects()
         {
             DataTable dtSubjects = clsSubjectDataAccess.GetAllSubjects();
