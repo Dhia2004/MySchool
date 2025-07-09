@@ -135,5 +135,10 @@ namespace MySchool
                 //pbEditStatus.Image = Resources.desactivate;
             }
         }
+
+        private void ctrlStudentMiniCard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

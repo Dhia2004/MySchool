@@ -102,8 +102,10 @@ namespace MySchool
 
         private void tCourses_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This feature is not implemented yet.", "Comming soon...",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("This feature is not implemented yet.", "Comming soon...",
+            //    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            frmAddEditCourse frmAddEditCourse = new frmAddEditCourse();
+            frmAddEditCourse.ShowDialog();
         }
 
         private void tSections_Click(object sender, EventArgs e)

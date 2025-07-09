@@ -222,6 +222,7 @@
             this.Controls.Add(this.pbStudentImage);
             this.Name = "ctrlStudentMiniCard";
             this.Size = new System.Drawing.Size(874, 53);
+            this.Load += new System.EventHandler(this.ctrlStudentMiniCard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

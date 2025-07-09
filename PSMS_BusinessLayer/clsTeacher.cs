@@ -1,6 +1,7 @@
 ﻿using PSMS_DataAccessLayer;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -119,6 +120,42 @@ namespace PSMS_BusinessLayer
 
         }
 
+        //public static List<clsTeacher> GetAllTeachers()
+        //{
+        //    List<clsTeacher> teachers = new List<clsTeacher>();
+        //    var teacherData = clsTeacherDataAccess.GetAllTeachers();
+        //    foreach (var data in teacherData)
+        //    {
+        //        teachers.Add(new clsTeacher(data.TeacherID, data.PersonID, data.SpecialityID, data.IsActive, data.CreatedByUserID));
+        //    }
+        //    return teachers;
+        //}
+
+        public static List<clsTeacher> GetAllTeachersBySubject(int subjectID)
+        {
+            List<clsTeacher> teachers = new List<clsTeacher>();
+            DataTable dtTeachers = clsTeacherDataAccess.GetAllTeachersBySubject(subjectID);
+            
+            return dtTeachers!= null ? ConvertTeachersRecordsToObjects(dtTeachers) : null;
+        }
+
+
+        static public List<clsTeacher> ConvertTeachersRecordsToObjects(DataTable dtTeachers)
+        {
+            List<clsTeacher> Teachers = new List<clsTeacher>();
+            clsTeacher Teacher;
+            foreach (DataRow s in dtTeachers.Rows)
+            {
+                Teacher = new clsTeacher((int)s["TeacherID"], (int)s["PersonID"], (int)s["SpecialityID"],
+                    Convert.ToBoolean(s["IsActive"]), (int)s["CreatedByUserID"]);
+
+                Teachers.Add(Teacher);
+            }
+            return Teachers;
+
+
+
+        }
     }
 
 }

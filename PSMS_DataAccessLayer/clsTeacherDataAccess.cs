@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -114,6 +115,36 @@ namespace PSMS_DataAccessLayer
             }
 
             return RowsAffrected > 0; // Return true if at least one row was deleted
+        }
+
+        static public DataTable GetAllTeachersBySubject(int SubjectID)
+        {
+            DataTable dtAllTeachers = new DataTable();
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"SELECT * FROM Teachers
+                             WHERE SpecialityID = @SubjectID";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@SubjectID", SubjectID);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                    dtAllTeachers.Load(reader);
+                else
+                    dtAllTeachers = null;
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log them)
+                dtAllTeachers = null; // Indicate failure
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return dtAllTeachers; // Return the DataTable containing all teachers for the specified subject
+
         }
 
 
