@@ -47,22 +47,47 @@ namespace MySchool
         {
             int SubjectID = clsSubject.FindByName(cbSubjects.Text).SubjectID;
             lblSubject.Text = cbSubjects.Text;
+            pnlFirst.Visible = false; // Hide the first panel when a subject is selected
+            pnlSecond.Visible = true; // Show the second panel to display teachers
+            label10.Text = "Select a teacher for the subject:" + "\n" + cbSubjects.Text;
             FilterTeachersBySubject(SubjectID);
 
         }
 
         private void frmAddEditCourse_Load(object sender, EventArgs e)
         {
-            List<clsSubject> subjects = clsSubject.GetAllSubjects();
-            foreach (clsSubject subject in subjects)
+            List<clsLevel> Levels = clsLevel.GetAllLevelsAsObjects();
+            foreach (clsLevel level in Levels)
             {
-                cbSubjects.Items.Add(subject.Name);
+                cbLevels.Items.Add(level.Name);
             }
+
+            
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cbLevels_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            List<clsSubject> Subjects = clsSubject.GetAllSubjects();
+            cbSubjects.Items.Clear();
+            foreach (clsSubject subject in Subjects)
+            {
+                if ((subject.TargetedLevels & clsLevel.FindByName(cbLevels.Text).LevelCode) == clsLevel.FindByName(cbLevels.Text).LevelCode)              // Check if the level is targeted by the subject
+                {
+                    cbSubjects.Items.Add(subject.Name);
+                }
+            }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            pnlFirst.Visible = true; // Show the first panel to select a subject
+            pnlSecond.Visible = false; // Hide the second panel with teacher selection
+
         }
     }
 }

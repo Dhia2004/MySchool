@@ -58,5 +58,17 @@ namespace PSMS_BusinessLayer
             return clsLevelDataAccess.GetAllLevels();
         }
 
+        static public List<clsLevel> GetAllLevelsAsObjects()
+        {
+            DataTable dtLevels = clsLevelDataAccess.GetAllLevels();
+            List<clsLevel> Level = new List<clsLevel>();
+            //clsSubject Subject;
+            if (dtLevels != null)
+                foreach (DataRow s in dtLevels.Rows)
+                    Level.Add(new clsLevel((int)s["Level_ID"], (string)s["Name"], (string)s["Description"],
+                        (int)s["LevelCode"]));
+            return Level;
+        }
+
     }
 }
