@@ -75,13 +75,7 @@ namespace MySchool
 
         private void studentsToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            frmAllStudents frm = new frmAllStudents();
-
-            panel1.Visible = true;
-            menuStrip1.Visible = false;
-            frm.ShowDialog();
-            panel1.Visible = false;
-            menuStrip1.Visible = true;
+            
 
 
         }
@@ -102,10 +96,7 @@ namespace MySchool
 
         private void tCourses_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("This feature is not implemented yet.", "Comming soon...",
-            //    MessageBoxButtons.OK, MessageBoxIcon.Information);
-            frmAddEditCourse frmAddEditCourse = new frmAddEditCourse();
-            frmAddEditCourse.ShowDialog();
+            
         }
 
         private void tSections_Click(object sender, EventArgs e)
@@ -138,6 +129,43 @@ namespace MySchool
         {
             frmAddEditTeachers frmAddEditTeachers = new frmAddEditTeachers(-1);
             frmAddEditTeachers.ShowDialog();
+        }
+
+        private void StudentsManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAllStudents frm = new frmAllStudents();
+
+            panel1.Visible = true;
+            menuStrip1.Visible = false;
+            frm.ShowDialog();
+            panel1.Visible = false;
+            menuStrip1.Visible = true;
+        }
+
+        private void addNewStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddEditStudent frmAddEditStudent = new frmAddEditStudent(-1);
+            frmAddEditStudent.ShowDialog();
+        }
+
+        private void updateStudentInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmStudentInfoWithFilter frm = new frmStudentInfoWithFilter();
+            frm.ShowDialog();
+        }
+
+        private void addNewCourseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("This feature is not implemented yet.", "Comming soon...",
+            //    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            frmAddEditCourse frmAddEditCourse = new frmAddEditCourse();
+            frmAddEditCourse.ShowDialog();
+        }
+
+        private void coursesManagemantToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCoursesManagement frm = new frmCoursesManagement();
+            frm.ShowDialog();
         }
     }
 }

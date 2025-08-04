@@ -31,7 +31,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tStudents = new System.Windows.Forms.ToolStripMenuItem();
+            this.StudentsManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.addNewStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateStudentInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.activateDeactivateStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tTeachers = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewTeacherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tPeople = new System.Windows.Forms.ToolStripMenuItem();
             this.tCourses = new System.Windows.Forms.ToolStripMenuItem();
             this.tSections = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,7 +49,9 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.addNewTeacherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.coursesManagemantToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.addNewCourseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -83,6 +92,13 @@
             // 
             // tStudents
             // 
+            this.tStudents.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StudentsManagementToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.addNewStudentToolStripMenuItem,
+            this.updateStudentInfoToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.activateDeactivateStudentToolStripMenuItem});
             this.tStudents.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tStudents.Image = global::MySchool.Properties.Resources.People_64;
             this.tStudents.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -90,6 +106,47 @@
             this.tStudents.Size = new System.Drawing.Size(215, 68);
             this.tStudents.Text = "    Students";
             this.tStudents.Click += new System.EventHandler(this.studentsToolStripMenuItem_Click_1);
+            // 
+            // StudentsManagementToolStripMenuItem
+            // 
+            this.StudentsManagementToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentsManagementToolStripMenuItem.Name = "StudentsManagementToolStripMenuItem";
+            this.StudentsManagementToolStripMenuItem.Size = new System.Drawing.Size(286, 24);
+            this.StudentsManagementToolStripMenuItem.Text = "Students Management";
+            this.StudentsManagementToolStripMenuItem.Click += new System.EventHandler(this.StudentsManagementToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(283, 6);
+            // 
+            // addNewStudentToolStripMenuItem
+            // 
+            this.addNewStudentToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addNewStudentToolStripMenuItem.Name = "addNewStudentToolStripMenuItem";
+            this.addNewStudentToolStripMenuItem.Size = new System.Drawing.Size(286, 24);
+            this.addNewStudentToolStripMenuItem.Text = "Add new student";
+            this.addNewStudentToolStripMenuItem.Click += new System.EventHandler(this.addNewStudentToolStripMenuItem_Click);
+            // 
+            // updateStudentInfoToolStripMenuItem
+            // 
+            this.updateStudentInfoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateStudentInfoToolStripMenuItem.Name = "updateStudentInfoToolStripMenuItem";
+            this.updateStudentInfoToolStripMenuItem.Size = new System.Drawing.Size(286, 24);
+            this.updateStudentInfoToolStripMenuItem.Text = "Update Student Info";
+            this.updateStudentInfoToolStripMenuItem.Click += new System.EventHandler(this.updateStudentInfoToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(283, 6);
+            // 
+            // activateDeactivateStudentToolStripMenuItem
+            // 
+            this.activateDeactivateStudentToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.activateDeactivateStudentToolStripMenuItem.Name = "activateDeactivateStudentToolStripMenuItem";
+            this.activateDeactivateStudentToolStripMenuItem.Size = new System.Drawing.Size(286, 24);
+            this.activateDeactivateStudentToolStripMenuItem.Text = "Activate / Deactivate student";
             // 
             // tTeachers
             // 
@@ -101,6 +158,13 @@
             this.tTeachers.Name = "tTeachers";
             this.tTeachers.Size = new System.Drawing.Size(215, 68);
             this.tTeachers.Text = "    Teachers";
+            // 
+            // addNewTeacherToolStripMenuItem
+            // 
+            this.addNewTeacherToolStripMenuItem.Name = "addNewTeacherToolStripMenuItem";
+            this.addNewTeacherToolStripMenuItem.Size = new System.Drawing.Size(238, 30);
+            this.addNewTeacherToolStripMenuItem.Text = "Add New Teacher";
+            this.addNewTeacherToolStripMenuItem.Click += new System.EventHandler(this.addNewTeacherToolStripMenuItem_Click);
             // 
             // tPeople
             // 
@@ -114,6 +178,10 @@
             // 
             // tCourses
             // 
+            this.tCourses.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.coursesManagemantToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.addNewCourseToolStripMenuItem});
             this.tCourses.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tCourses.Image = global::MySchool.Properties.Resources.Curriculum_64;
             this.tCourses.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -201,12 +269,26 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // addNewTeacherToolStripMenuItem
+            // coursesManagemantToolStripMenuItem
             // 
-            this.addNewTeacherToolStripMenuItem.Name = "addNewTeacherToolStripMenuItem";
-            this.addNewTeacherToolStripMenuItem.Size = new System.Drawing.Size(238, 30);
-            this.addNewTeacherToolStripMenuItem.Text = "Add New Teacher";
-            this.addNewTeacherToolStripMenuItem.Click += new System.EventHandler(this.addNewTeacherToolStripMenuItem_Click);
+            this.coursesManagemantToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.coursesManagemantToolStripMenuItem.Name = "coursesManagemantToolStripMenuItem";
+            this.coursesManagemantToolStripMenuItem.Size = new System.Drawing.Size(233, 24);
+            this.coursesManagemantToolStripMenuItem.Text = "Courses Managemant";
+            this.coursesManagemantToolStripMenuItem.Click += new System.EventHandler(this.coursesManagemantToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(230, 6);
+            // 
+            // addNewCourseToolStripMenuItem
+            // 
+            this.addNewCourseToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.addNewCourseToolStripMenuItem.Name = "addNewCourseToolStripMenuItem";
+            this.addNewCourseToolStripMenuItem.Size = new System.Drawing.Size(233, 24);
+            this.addNewCourseToolStripMenuItem.Text = "Add New Course";
+            this.addNewCourseToolStripMenuItem.Click += new System.EventHandler(this.addNewCourseToolStripMenuItem_Click);
             // 
             // frmMainPage
             // 
@@ -247,6 +329,15 @@
         private System.Windows.Forms.ToolStripMenuItem tTeachers;
         private System.Windows.Forms.ToolStripMenuItem addNewUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewTeacherToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem StudentsManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem addNewStudentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateStudentInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem activateDeactivateStudentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem coursesManagemantToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem addNewCourseToolStripMenuItem;
     }
 }
 

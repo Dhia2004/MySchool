@@ -13,11 +13,16 @@ namespace MySchool
 {
     public partial class frmAddEditCourse: Form
     {
+        clsCourse Course;
         clsTeacher Teacher;
         clsSubject Subject;
+
+        
         public frmAddEditCourse()
         {
             InitializeComponent();
+            Course = new clsCourse();
+
         }
 
         private void FilterTeachersBySubject(int SubjectID)
@@ -45,17 +50,20 @@ namespace MySchool
         }
         private void cbSubjects_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int SubjectID = clsSubject.FindByName(cbSubjects.Text).SubjectID;
+            Subject = clsSubject.FindByName(cbSubjects.Text);
             lblSubject.Text = cbSubjects.Text;
             pnlFirst.Visible = false; // Hide the first panel when a subject is selected
             pnlSecond.Visible = true; // Show the second panel to display teachers
+           
+            lblPageNumber.Text = "2/2";
             label10.Text = "Select a teacher for the subject:" + "\n" + cbSubjects.Text;
-            FilterTeachersBySubject(SubjectID);
+            FilterTeachersBySubject(Subject.SubjectID);
 
         }
 
         private void frmAddEditCourse_Load(object sender, EventArgs e)
         {
+            lblCurrentUser.Text = clsGlobalSettings.CurrentUser.UserName; // Display the current user's name
             List<clsLevel> Levels = clsLevel.GetAllLevelsAsObjects();
             foreach (clsLevel level in Levels)
             {
@@ -72,6 +80,7 @@ namespace MySchool
 
         private void cbLevels_SelectedIndexChanged(object sender, EventArgs e)
         {
+            lblLevel.Text = cbLevels.Text; // Update the label to show the selected level
             List<clsSubject> Subjects = clsSubject.GetAllSubjects();
             cbSubjects.Items.Clear();
             foreach (clsSubject subject in Subjects)
@@ -87,7 +96,64 @@ namespace MySchool
         {
             pnlFirst.Visible = true; // Show the first panel to select a subject
             pnlSecond.Visible = false; // Hide the second panel with teacher selection
+            
+            lblPageNumber.Text = "1/2";
 
+        }
+
+        private void nudSeassonsNumber_ValueChanged(object sender, EventArgs e)
+        {
+            lblNumberOfSeasson.Text =  nudSeassonsNumber.Value.ToString() + " Seasson(s)";
+        }
+
+        private void nudPrice_ValueChanged(object sender, EventArgs e)
+        {
+            lblPrice.Text = nudPrice.Value.ToString() + " DA";
+        }
+
+
+        public bool SaveDateUpdate()
+        {
+            
+            if (MessageBox.Show("Are you sure for save this Changes?", "Confirm"
+                , MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Course.SubjectID = Subject.SubjectID;
+                Course.TeacherID = Teacher.TeacherID;
+                Course.LevelID = clsLevel.FindByName(cbLevels.Text).Level_ID;
+                Course.TotalSessions = (int)nudSeassonsNumber.Value;
+                Course.Price = (float)nudPrice.Value;
+                Course.CreatedByUserID = clsGlobalSettings.CurrentUser.UserID; // TODO: Replace with actual user ID
+
+                if ((Course.Save()))
+                {
+                    MessageBox.Show("Course Updated Successfully", "Done",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return true;
+                }
+
+
+              
+                MessageBox.Show("Course Updated Failed", "Oops..",
+                       MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+             
+                   
+
+
+            }
+            return false;
+        }
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (SaveDateUpdate())
+            {
+                lblMode.Text = "Update course Info";
+                lblCourseID.Text = Course.CourseID.ToString();
+
+                return;
+
+            }
         }
     }
 }

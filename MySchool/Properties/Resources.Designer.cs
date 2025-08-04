@@ -173,6 +173,26 @@ namespace MySchool.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Book_32 {
+            get {
+                object obj = ResourceManager.GetObject("Book 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Books_32 {
+            get {
+                object obj = ResourceManager.GetObject("Books 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Calendar_32 {
             get {
                 object obj = ResourceManager.GetObject("Calendar 32", resourceCulture);
@@ -233,6 +253,36 @@ namespace MySchool.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Countdown_32 {
+            get {
+                object obj = ResourceManager.GetObject("Countdown 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Countdown_32_Blue {
+            get {
+                object obj = ResourceManager.GetObject("Countdown 32 Blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Course_512 {
+            get {
+                object obj = ResourceManager.GetObject("Course 512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Created_By_User_32 {
             get {
                 object obj = ResourceManager.GetObject("Created By User 32", resourceCulture);
@@ -246,6 +296,16 @@ namespace MySchool.Properties {
         internal static System.Drawing.Bitmap Cross_64 {
             get {
                 object obj = ResourceManager.GetObject("Cross 64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Curriculum_512 {
+            get {
+                object obj = ResourceManager.GetObject("Curriculum 512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,6 +463,16 @@ namespace MySchool.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Graduation_32 {
+            get {
+                object obj = ResourceManager.GetObject("Graduation 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Groups_64 {
             get {
                 object obj = ResourceManager.GetObject("Groups 64", resourceCulture);
@@ -476,6 +546,16 @@ namespace MySchool.Properties {
         internal static System.Drawing.Bitmap medicine_32 {
             get {
                 object obj = ResourceManager.GetObject("medicine 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Money_32 {
+            get {
+                object obj = ResourceManager.GetObject("Money 32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pbAlarm = new System.Windows.Forms.PictureBox();
             this.pnlAccountInformation = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.lblCreatedByUser = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();
             this.cbSubjects = new System.Windows.Forms.ComboBox();
@@ -54,7 +55,6 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.ctrlPersonInfoWithFilter1 = new MySchool.ctrlPersonInfoWithFilter();
             this.pnlWarning.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).BeginInit();
@@ -187,6 +187,15 @@
             this.pnlAccountInformation.Name = "pnlAccountInformation";
             this.pnlAccountInformation.Size = new System.Drawing.Size(383, 536);
             this.pnlAccountInformation.TabIndex = 153;
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panel5.Location = new System.Drawing.Point(21, 144);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(342, 1);
+            this.panel5.TabIndex = 231;
             // 
             // lblCreatedByUser
             // 
@@ -358,15 +367,6 @@
             this.pictureBox3.TabIndex = 152;
             this.pictureBox3.TabStop = false;
             // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel5.Location = new System.Drawing.Point(21, 144);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(342, 1);
-            this.panel5.TabIndex = 231;
-            // 
             // ctrlPersonInfoWithFilter1
             // 
             this.ctrlPersonInfoWithFilter1.BackColor = System.Drawing.Color.White;
@@ -389,8 +389,8 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lblMode);
-            this.Controls.Add(this.pnlAccountInformation);
             this.Controls.Add(this.pnlWarning);
+            this.Controls.Add(this.pnlAccountInformation);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(852, 802);
             this.MinimizeBox = false;

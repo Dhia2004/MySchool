@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,9 +15,43 @@ namespace PSMS_DataAccessLayer
 
         static public bool FindByTeacherID(int TeacherID, ref int PersonID, ref int SpecialityID, ref bool IsActive, ref int CraetedByUserID)
         {
-            // This method should implement the logic to retrieve teacher details from the database
-            // For now, we will return false to indicate that no data was found
-            return false; // Placeholder for actual database retrieval logic
+            bool IsFound = false;
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"SELECT * FROM Teachers
+                             WHERE TeacherID = @TeacherID";
+            
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@TeacherID", TeacherID);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    IsFound = true;
+
+                    PersonID = reader.GetInt32(reader.GetOrdinal("PersonID"));
+                    SpecialityID = reader.GetInt32(reader.GetOrdinal("SpecialityID"));
+                    IsActive = Convert.ToBoolean(reader["IsActive"]);
+                    CraetedByUserID = reader.GetInt32(reader.GetOrdinal("CreatedByUserID"));
+
+
+
+                }
+                else
+                    IsFound = false;
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                IsFound = false;
+            }
+            finally { connection.Close(); }
+
+            return IsFound;
         }
         static public bool FindByPersonID(int PersonID, ref int TeacherID, ref int SpecialityID, ref bool IsActive, ref int CraetedByUserID)
         {

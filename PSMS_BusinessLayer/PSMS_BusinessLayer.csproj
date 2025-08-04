@@ -68,6 +68,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsCourse.cs" />
     <Compile Include="clsLevel.cs" />
     <Compile Include="clsMedicalFile.cs" />
     <Compile Include="clsPerson.cs" />
