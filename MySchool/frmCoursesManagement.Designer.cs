@@ -30,6 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.flpCourseList = new System.Windows.Forms.FlowLayoutPanel();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.updatePriceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblPageNumber = new System.Windows.Forms.Label();
             this.lblRecorsNumber = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,8 +48,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.updatePriceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.pbBack = new System.Windows.Forms.PictureBox();
             this.pbNext = new System.Windows.Forms.PictureBox();
@@ -53,9 +56,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbStudentImage = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnAddNewCourse = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
@@ -76,6 +76,50 @@
             this.flpCourseList.Name = "flpCourseList";
             this.flpCourseList.Size = new System.Drawing.Size(913, 505);
             this.flpCourseList.TabIndex = 114;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripSeparator1,
+            this.toolStripMenuItem2,
+            this.updatePriceToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(197, 146);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem1.Image = global::MySchool.Properties.Resources.Delete_32;
+            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(196, 38);
+            this.toolStripMenuItem1.Text = "Delete course";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem2.Image = global::MySchool.Properties.Resources.Countdown_32_Blue;
+            this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(196, 38);
+            this.toolStripMenuItem2.Text = "Update Sessions";
+            // 
+            // updatePriceToolStripMenuItem
+            // 
+            this.updatePriceToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.updatePriceToolStripMenuItem.Image = global::MySchool.Properties.Resources.Money_32;
+            this.updatePriceToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updatePriceToolStripMenuItem.Name = "updatePriceToolStripMenuItem";
+            this.updatePriceToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.updatePriceToolStripMenuItem.Text = "Update Price";
+            this.updatePriceToolStripMenuItem.Click += new System.EventHandler(this.updatePriceToolStripMenuItem_Click);
             // 
             // lblPageNumber
             // 
@@ -228,27 +272,6 @@
             this.label9.TabIndex = 135;
             this.label9.Text = "Created By User";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripSeparator1,
-            this.toolStripMenuItem2,
-            this.updatePriceToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(217, 124);
-            // 
-            // updatePriceToolStripMenuItem
-            // 
-            this.updatePriceToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatePriceToolStripMenuItem.Image = global::MySchool.Properties.Resources.Money_32;
-            this.updatePriceToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.updatePriceToolStripMenuItem.Name = "updatePriceToolStripMenuItem";
-            this.updatePriceToolStripMenuItem.Size = new System.Drawing.Size(216, 38);
-            this.updatePriceToolStripMenuItem.Text = "Update Price";
-            this.updatePriceToolStripMenuItem.Click += new System.EventHandler(this.updatePriceToolStripMenuItem_Click);
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
@@ -352,27 +375,6 @@
             this.btnClose.TabIndex = 116;
             this.btnClose.Text = "     Close";
             this.btnClose.UseVisualStyleBackColor = false;
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Image = global::MySchool.Properties.Resources.Delete_32;
-            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(216, 38);
-            this.toolStripMenuItem1.Text = "Delete course";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Image = global::MySchool.Properties.Resources.Countdown_32_Blue;
-            this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(216, 38);
-            this.toolStripMenuItem2.Text = "Update Sessions";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(213, 6);
             // 
             // btnAddNewCourse
             // 

@@ -72,6 +72,12 @@
     <Compile Include="ctrlPersonMiniCard.Designer.cs">
       <DependentUpon>ctrlPersonMiniCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ctrlSectionInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlSectionInfo.Designer.cs">
+      <DependentUpon>ctrlSectionInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ctrlStudentInfoCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -113,6 +119,12 @@
     </Compile>
     <Compile Include="frmAddEditPerson.Designer.cs">
       <DependentUpon>frmAddEditPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditSection.Designer.cs">
+      <DependentUpon>frmAddEditSection.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAddEditStudent.cs">
       <SubType>Form</SubType>
@@ -174,6 +186,18 @@
     <Compile Include="frmSchoolConfig.Designer.cs">
       <DependentUpon>frmSchoolConfig.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSectionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSectionDetails.Designer.cs">
+      <DependentUpon>frmSectionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSectionManegement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSectionManegement.Designer.cs">
+      <DependentUpon>frmSectionManegement.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStudentInfoWithFilter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +230,9 @@
     <EmbeddedResource Include="ctrlPersonMiniCard.resx">
       <DependentUpon>ctrlPersonMiniCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ctrlSectionInfo.resx">
+      <DependentUpon>ctrlSectionInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ctrlStudentInfoCard.resx">
       <DependentUpon>ctrlStudentInfoCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddEditPerson.resx">
       <DependentUpon>frmAddEditPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditSection.resx">
+      <DependentUpon>frmAddEditSection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddEditStudent.resx">
       <DependentUpon>frmAddEditStudent.cs</DependentUpon>
@@ -256,6 +286,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSchoolConfig.resx">
       <DependentUpon>frmSchoolConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSectionDetails.resx">
+      <DependentUpon>frmSectionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSectionManegement.resx">
+      <DependentUpon>frmSectionManegement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStudentInfoWithFilter.resx">
       <DependentUpon>frmStudentInfoWithFilter.cs</DependentUpon>
@@ -552,6 +588,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Book 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seat 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Courses\" />
+    <Folder Include="People\" />
+    <Folder Include="Sections\" />
+    <Folder Include="Students\" />
+    <Folder Include="Teachers\" />
+    <Folder Include="Users\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil 32 - 2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

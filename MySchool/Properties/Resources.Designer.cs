@@ -613,6 +613,26 @@ namespace MySchool.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Pencil_32 {
+            get {
+                object obj = ResourceManager.GetObject("Pencil 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pencil_32___2 {
+            get {
+                object obj = ResourceManager.GetObject("Pencil 32 - 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap People_64 {
             get {
                 object obj = ResourceManager.GetObject("People 64", resourceCulture);
@@ -696,6 +716,16 @@ namespace MySchool.Properties {
         internal static System.Drawing.Bitmap Search_32 {
             get {
                 object obj = ResourceManager.GetObject("Search 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Seat_32 {
+            get {
+                object obj = ResourceManager.GetObject("Seat 32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

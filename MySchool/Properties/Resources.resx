@@ -151,6 +151,9 @@
   <data name="Blood 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blood 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Seat 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seat 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Eye_closed 72" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Eye_closed 72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,8 +184,8 @@
   <data name="Curriculum 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Curriculum 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Info 24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Info 24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pdf 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pdf 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Man 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Man 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,14 +196,14 @@
   <data name="User 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\User 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pdf 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pdf 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Search 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Search 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Allergy 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Allergy 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search 24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search 24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Back 24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Back 24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,8 +232,11 @@
   <data name="Heart 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Heart 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Users 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Users 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Book 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Book 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pencil 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pencil 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Course 512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Course 512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,6 +262,9 @@
   <data name="Subject 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Subject 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Welcome 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Welcome 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Classroom 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Classroom 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -264,9 +273,6 @@
   </data>
   <data name="Edit Info Blue 32 " type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Edit Info Blue 32 .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AddStudent 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AddStudent 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -295,6 +301,9 @@
   <data name="gluten-free 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gluten-free 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Info 24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Info 24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Female 512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Female 512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -319,26 +328,26 @@
   <data name="Address 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Address 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Welcome 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Welcome 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AddStudent 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddStudent 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Start 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Start 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Save 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Save 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Teachers 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Teachers 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="disablty 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\disablty 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Users 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Users 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="glasses 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glasses 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Student Remove 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Student Remove 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ball 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ball 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,14 +367,14 @@
   <data name="Sign_in 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sign_in 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Delete 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Delete 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Save 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Equipment 72" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Equipment 72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search 24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search 24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="disablty 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\disablty 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Countdown 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Countdown 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -373,7 +382,7 @@
   <data name="Select 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Select 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Book 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Book 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pencil 32 - 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pencil 32 - 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

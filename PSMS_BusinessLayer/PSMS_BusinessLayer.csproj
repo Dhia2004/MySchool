@@ -73,6 +73,7 @@
     <Compile Include="clsMedicalFile.cs" />
     <Compile Include="clsPerson.cs" />
     <Compile Include="clsRapports.cs" />
+    <Compile Include="clsSection.cs" />
     <Compile Include="clsStudent.cs" />
     <Compile Include="clsSchoolInfo.cs" />
     <Compile Include="clsSubject.cs" />

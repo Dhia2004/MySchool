@@ -101,10 +101,7 @@ namespace MySchool
 
         private void tSections_Click(object sender, EventArgs e)
         {
-            //    MessageBox.Show("This feature is not implemented yet.", "Comming soon...",
-            //        MessageBoxButtons.OK, MessageBoxIcon.Information);
-            frmPersonInfoWithFilter frm = new frmPersonInfoWithFilter();
-            frm.ShowDialog();
+            
         }
 
         private void tUsers_Click(object sender, EventArgs e)
@@ -165,6 +162,18 @@ namespace MySchool
         private void coursesManagemantToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCoursesManagement frm = new frmCoursesManagement();
+            frm.ShowDialog();
+        }
+
+        private void addNewSectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddEditSection frmAddEditSection = new frmAddEditSection();
+            frmAddEditSection.ShowDialog();
+        }
+
+        private void sectionManagemantToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSectionManegement frm = new frmSectionManegement();
             frm.ShowDialog();
         }
     }
