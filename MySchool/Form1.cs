@@ -82,8 +82,8 @@ namespace MySchool
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This feature is not implemented yet.", "Comming soon...",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            frmAddEditGroup frm = new frmAddEditGroup();
+            frm.ShowDialog();
         }
 
         private void tTeachers_Click(object sender, EventArgs e)

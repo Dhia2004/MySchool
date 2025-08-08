@@ -60,7 +60,7 @@ namespace PSMS_DataAccessLayer
                              SET 
                                   Name = @Name,
                                   Description = @Description,
-                                  NumberOfSeat = @NumberOfSeat
+                                  NumberOfSeats = @NumberOfSeat
                              WHERE SectionID = @SectionID";
 
             SqlCommand command = new SqlCommand(query, connection);
@@ -107,6 +107,39 @@ namespace PSMS_DataAccessLayer
                 if (reader.Read())
                 {
                     name = reader["Name"].ToString();
+                    description = reader["Description"].ToString();
+                    numberOfSeat = Convert.ToInt32(reader["NumberOfSeats"]);
+                    createdByUserID = Convert.ToInt32(reader["CreatedByUserID"]);
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return false;
+        }
+
+        static public bool GetSectionByName(string name , ref int sectionID, ref string description, ref int numberOfSeat, ref int createdByUserID)
+        {
+
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"SELECT *
+                             FROM Sections
+                             WHERE Name = @Name";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@Name", name);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    sectionID = Convert.ToInt32(reader["SectionID"]);
                     description = reader["Description"].ToString();
                     numberOfSeat = Convert.ToInt32(reader["NumberOfSeats"]);
                     createdByUserID = Convert.ToInt32(reader["CreatedByUserID"]);
@@ -213,6 +246,28 @@ namespace PSMS_DataAccessLayer
                 connection.Close();
             }
             return RowsAffected > 0;
+        }
+
+
+        static public DataTable GetAllSections()
+        {
+            DataTable dtSections = new DataTable();
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = "SELECT * FROM Sections";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                    dtSections.Load(reader);
+                else
+                    dtSections = null;
+                reader.Close();
+            }
+            catch (Exception ex) { dtSections = null; }
+            finally { connection.Close(); }
+            return dtSections;
         }
     }
 }

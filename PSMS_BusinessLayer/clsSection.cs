@@ -70,6 +70,19 @@ namespace PSMS_BusinessLayer
             return null;
         }
 
+        static public clsSection GetSectionByName(string Name)
+        {
+            string Description = string.Empty;
+            int  SectionID = -1, NumberOfSeat = 0, CreatedByUserID = -1;
+
+            if (clsSectionDataAccess.GetSectionByName(Name, ref SectionID , ref Description, ref NumberOfSeat, ref CreatedByUserID))
+            {
+                return new clsSection(SectionID, Name, Description, NumberOfSeat, CreatedByUserID);
+            }
+            return null;
+        }
+
+
         public bool Save()
         {
             switch (Mode)
@@ -119,6 +132,15 @@ namespace PSMS_BusinessLayer
         static public bool Delete(int SectionID)
         {
             return clsSectionDataAccess.DeleteSection(SectionID);
+        }
+
+
+        static public List <clsSection> GetAllSectionsAsObjects()
+        {
+            DataTable dt = clsSectionDataAccess.GetAllSections();
+            if (dt == null || dt.Rows.Count == 0)
+                return new List<clsSection>();
+            return ConvertSectionsRecordsToObjects(dt);
         }
 
     }

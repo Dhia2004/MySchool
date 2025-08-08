@@ -54,6 +54,12 @@
     <Compile Include="ctrlCourseInfo.Designer.cs">
       <DependentUpon>ctrlCourseInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ctrlGroupInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlGroupInfo.Designer.cs">
+      <DependentUpon>ctrlGroupInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ctrlPersonInfoCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -113,6 +119,12 @@
     </Compile>
     <Compile Include="frmAddEditCourse.Designer.cs">
       <DependentUpon>frmAddEditCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditGroup.Designer.cs">
+      <DependentUpon>frmAddEditGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAddEditPerson.cs">
       <SubType>Form</SubType>
@@ -192,6 +204,12 @@
     <Compile Include="frmSectionDetails.Designer.cs">
       <DependentUpon>frmSectionDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSectionGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSectionGroups.Designer.cs">
+      <DependentUpon>frmSectionGroups.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSectionManegement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +238,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ctrlCourseInfo.resx">
       <DependentUpon>ctrlCourseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlGroupInfo.resx">
+      <DependentUpon>ctrlGroupInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ctrlPersonInfoCard.resx">
       <DependentUpon>ctrlPersonInfoCard.cs</DependentUpon>
@@ -250,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddEditCourse.resx">
       <DependentUpon>frmAddEditCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditGroup.resx">
+      <DependentUpon>frmAddEditGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddEditPerson.resx">
       <DependentUpon>frmAddEditPerson.cs</DependentUpon>
@@ -289,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSectionDetails.resx">
       <DependentUpon>frmSectionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSectionGroups.resx">
+      <DependentUpon>frmSectionGroups.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSectionManegement.resx">
       <DependentUpon>frmSectionManegement.cs</DependentUpon>
