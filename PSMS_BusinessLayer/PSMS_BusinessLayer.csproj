@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsCourse.cs" />
+    <Compile Include="clsCourseSection.cs" />
     <Compile Include="clsGroup.cs" />
     <Compile Include="clsLevel.cs" />
     <Compile Include="clsMedicalFile.cs" />

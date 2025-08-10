@@ -30,9 +30,8 @@
         {
             this.lblMode = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSectionName = new System.Windows.Forms.Label();
             this.flpGroupsList = new System.Windows.Forms.FlowLayoutPanel();
-            this.ctrlGroupInfo1 = new MySchool.ctrlGroupInfo();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +42,8 @@
             this.pbRefrech = new System.Windows.Forms.PictureBox();
             this.lblPageNumber = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
+            this.ctrlGroupInfo1 = new MySchool.ctrlGroupInfo();
+            this.btnAddNewGroup = new System.Windows.Forms.Button();
             this.flpGroupsList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
@@ -70,32 +71,25 @@
             this.panel1.Size = new System.Drawing.Size(40, 102);
             this.panel1.TabIndex = 126;
             // 
-            // label1
+            // lblSectionName
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(206, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 37);
-            this.label1.TabIndex = 129;
-            this.label1.Text = "Section - A";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSectionName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSectionName.ForeColor = System.Drawing.Color.Black;
+            this.lblSectionName.Location = new System.Drawing.Point(206, 70);
+            this.lblSectionName.Name = "lblSectionName";
+            this.lblSectionName.Size = new System.Drawing.Size(237, 37);
+            this.lblSectionName.TabIndex = 129;
+            this.lblSectionName.Text = "Section - A";
+            this.lblSectionName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flpGroupsList
             // 
+            this.flpGroupsList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flpGroupsList.Controls.Add(this.ctrlGroupInfo1);
             this.flpGroupsList.Location = new System.Drawing.Point(56, 158);
             this.flpGroupsList.Name = "flpGroupsList";
             this.flpGroupsList.Size = new System.Drawing.Size(537, 238);
             this.flpGroupsList.TabIndex = 130;
-            // 
-            // ctrlGroupInfo1
-            // 
-            this.ctrlGroupInfo1.BackColor = System.Drawing.Color.White;
-            this.ctrlGroupInfo1.Location = new System.Drawing.Point(3, 3);
-            this.ctrlGroupInfo1.Name = "ctrlGroupInfo1";
-            this.ctrlGroupInfo1.Size = new System.Drawing.Size(530, 30);
-            this.ctrlGroupInfo1.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -165,6 +159,7 @@
             this.pbBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbBack.TabIndex = 145;
             this.pbBack.TabStop = false;
+            this.pbBack.Click += new System.EventHandler(this.pbBack_Click);
             // 
             // pbNext
             // 
@@ -176,6 +171,7 @@
             this.pbNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbNext.TabIndex = 144;
             this.pbNext.TabStop = false;
+            this.pbNext.Click += new System.EventHandler(this.pbNext_Click);
             // 
             // pbRefrech
             // 
@@ -217,6 +213,33 @@
             this.btnClose.TabIndex = 141;
             this.btnClose.Text = "     Close";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // ctrlGroupInfo1
+            // 
+            this.ctrlGroupInfo1.BackColor = System.Drawing.Color.White;
+            this.ctrlGroupInfo1.Location = new System.Drawing.Point(3, 3);
+            this.ctrlGroupInfo1.Name = "ctrlGroupInfo1";
+            this.ctrlGroupInfo1.Size = new System.Drawing.Size(530, 30);
+            this.ctrlGroupInfo1.TabIndex = 0;
+            // 
+            // btnAddNewGroup
+            // 
+            this.btnAddNewGroup.BackColor = System.Drawing.Color.White;
+            this.btnAddNewGroup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddNewGroup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnAddNewGroup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnAddNewGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewGroup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewGroup.ForeColor = System.Drawing.Color.Black;
+            this.btnAddNewGroup.Image = global::MySchool.Properties.Resources.Groups_64;
+            this.btnAddNewGroup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddNewGroup.Location = new System.Drawing.Point(518, 42);
+            this.btnAddNewGroup.Name = "btnAddNewGroup";
+            this.btnAddNewGroup.Size = new System.Drawing.Size(75, 75);
+            this.btnAddNewGroup.TabIndex = 146;
+            this.btnAddNewGroup.UseVisualStyleBackColor = false;
+            this.btnAddNewGroup.Click += new System.EventHandler(this.btnAddNewGroup_Click);
             // 
             // frmSectionGroups
             // 
@@ -224,6 +247,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(649, 466);
+            this.Controls.Add(this.btnAddNewGroup);
             this.Controls.Add(this.pbBack);
             this.Controls.Add(this.pbNext);
             this.Controls.Add(this.pbRefrech);
@@ -231,7 +255,7 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.flpGroupsList);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblSectionName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblMode);
             this.Controls.Add(this.label2);
@@ -240,6 +264,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSectionGroups";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSectionGroups";
             this.Load += new System.EventHandler(this.frmSectionGroups_Load);
             this.flpGroupsList.ResumeLayout(false);
@@ -257,7 +282,7 @@
         private System.Windows.Forms.Label lblMode;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSectionName;
         private System.Windows.Forms.FlowLayoutPanel flpGroupsList;
         private ctrlGroupInfo ctrlGroupInfo1;
         private System.Windows.Forms.Label label6;
@@ -269,5 +294,6 @@
         private System.Windows.Forms.PictureBox pbRefrech;
         private System.Windows.Forms.Label lblPageNumber;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnAddNewGroup;
     }
 }

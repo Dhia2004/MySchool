@@ -30,7 +30,7 @@ namespace MySchool
             this.Course = Course;
             lblCourseID.Text = Course.CourseID.ToString();
             lblSubject.Text = clsSubject.FindByID(Course.SubjectID).Name;
-            lblLevel.Text = clsLevel.FindByID(Course.LevelID).Name;
+            lblLevel.Text = clsLevel.GetLevelByID(Course.LevelID).Name;
             lblTeacher.Text = clsTeacher.FindByTeacherID(Course.TeacherID).Person.FullName();
             lblSessions.Text = Course.TotalSessions.ToString();
             lblPrice.Text = Course.Price.ToString();

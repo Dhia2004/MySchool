@@ -38,9 +38,41 @@ namespace MySchool
 
         private void frmSectionGroups_Load(object sender, EventArgs e)
         {
+            lblSectionName.Text = Section.Name;
             pbBack.Enabled = false;
             lblPageNumber.Tag = 1;
             UpdateGroupsList();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pbNext_Click(object sender, EventArgs e)
+        {
+            lblPageNumber.Tag = Convert.ToInt32(lblPageNumber.Tag) + 1;
+            lblPageNumber.Text = lblPageNumber.Tag.ToString();
+            pbBack.Enabled = true;
+            UpdateGroupsList();
+        }
+
+        private void pbBack_Click(object sender, EventArgs e)
+        {
+            lblPageNumber.Tag = Convert.ToInt32(lblPageNumber.Tag) - 1;
+            lblPageNumber.Text = lblPageNumber.Tag.ToString();
+            if (Convert.ToInt32(lblPageNumber.Tag) == 1)
+            {
+                pbBack.Enabled = false;
+            }
+            UpdateGroupsList();
+        }
+
+        private void btnAddNewGroup_Click(object sender, EventArgs e)
+        {
+            frmAddEditGroup frm = new frmAddEditGroup(Section);
+            frm.ShowDialog();
+            UpdateGroupsList(); // Refresh the list after adding a new group
         }
     }
 }

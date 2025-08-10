@@ -49,6 +49,21 @@ namespace PSMS_BusinessLayer
             Mode = enMode.Update;
         }
 
+        public static clsCourse GetCourseByID(int CourseID)
+        {
+            int SubjectID = -1, TeacherID = -1, LevelID = -1, TotalSessions = 0, CreatedByUserID = -1;
+            float Price = 0.0f;
+            if (clsCourseDataAccess.GetCourseByID(CourseID, ref SubjectID, ref TeacherID, ref LevelID, ref TotalSessions
+                ,ref CreatedByUserID,ref Price))
+            {
+                return new clsCourse(CourseID, SubjectID, TeacherID, LevelID, TotalSessions, Price, CreatedByUserID);
+            }
+            else
+            {
+                return null; // or throw an exception if preferred
+
+            }
+        }
         private bool _AddNewCourse()
         {
             CourseID = clsCourseDataAccess.AddNewCourse(SubjectID, TeacherID,

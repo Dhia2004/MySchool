@@ -136,5 +136,63 @@ namespace PSMS_DataAccessLayer
 
             return dtCourses;
         }
+
+        static public bool DeleteCourse(int CourseID)
+        {
+            int RowsAffected = 0;
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"DELETE FROM Courses
+                             WHERE CourseID = @CourseID";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@CourseID", CourseID);
+            try
+            {
+                connection.Open();
+                RowsAffected = command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                RowsAffected = 0;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return RowsAffected > 0;
+        }
+        static public bool GetCourseByID(int CourseID, ref int SubjectID, ref int TeacherID, ref int LevelID,
+                                         ref int TotalSessions, ref int CreatedByUserID, ref float Price)
+        {
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"SELECT *
+                             FROM Courses
+                             WHERE CourseID = @CourseID";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@CourseID", CourseID);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    SubjectID = reader.GetInt32(reader.GetOrdinal("SubjectID"));
+                    TeacherID = reader.GetInt32(reader.GetOrdinal("TeacherID"));
+                    LevelID = reader.GetInt32(reader.GetOrdinal("Level_ID"));
+                    TotalSessions = reader.GetInt32(reader.GetOrdinal("TotalSessions"));
+                    CreatedByUserID = reader.GetInt32(reader.GetOrdinal("CreatedByUserID"));
+                    Price = reader.GetFloat(reader.GetOrdinal("Price"));
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return false;
+        }
     }
 }

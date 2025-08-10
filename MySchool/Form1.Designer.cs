@@ -48,7 +48,7 @@
             this.sectionManagemantToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
             this.addNewSectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tGroups = new System.Windows.Forms.ToolStripMenuItem();
+            this.tCoursesSection = new System.Windows.Forms.ToolStripMenuItem();
             this.tUsers = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tSettings = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,10 +64,10 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(222, 0);
+            this.label1.Location = new System.Drawing.Point(264, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(880, 580);
+            this.label1.Size = new System.Drawing.Size(838, 580);
             this.label1.TabIndex = 2;
             this.label1.Text = "قيد التطوير ...";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -84,12 +84,12 @@
             this.tPeople,
             this.tCourses,
             this.tSections,
-            this.tGroups,
+            this.tCoursesSection,
             this.tUsers,
             this.tSettings});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(222, 580);
+            this.menuStrip1.Size = new System.Drawing.Size(264, 580);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -104,51 +104,58 @@
             this.activateDeactivateStudentToolStripMenuItem});
             this.tStudents.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tStudents.Image = global::MySchool.Properties.Resources.People_64;
+            this.tStudents.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tStudents.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tStudents.Name = "tStudents";
-            this.tStudents.Size = new System.Drawing.Size(215, 68);
+            this.tStudents.Size = new System.Drawing.Size(257, 68);
             this.tStudents.Text = "    Students";
             this.tStudents.Click += new System.EventHandler(this.studentsToolStripMenuItem_Click_1);
             // 
             // StudentsManagementToolStripMenuItem
             // 
             this.StudentsManagementToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentsManagementToolStripMenuItem.Image = global::MySchool.Properties.Resources.student_config_32;
+            this.StudentsManagementToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.StudentsManagementToolStripMenuItem.Name = "StudentsManagementToolStripMenuItem";
-            this.StudentsManagementToolStripMenuItem.Size = new System.Drawing.Size(286, 24);
+            this.StudentsManagementToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
             this.StudentsManagementToolStripMenuItem.Text = "Students Management";
             this.StudentsManagementToolStripMenuItem.Click += new System.EventHandler(this.StudentsManagementToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(283, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(299, 6);
             // 
             // addNewStudentToolStripMenuItem
             // 
             this.addNewStudentToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addNewStudentToolStripMenuItem.Image = global::MySchool.Properties.Resources.student_add_32;
+            this.addNewStudentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewStudentToolStripMenuItem.Name = "addNewStudentToolStripMenuItem";
-            this.addNewStudentToolStripMenuItem.Size = new System.Drawing.Size(286, 24);
+            this.addNewStudentToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
             this.addNewStudentToolStripMenuItem.Text = "Add new student";
             this.addNewStudentToolStripMenuItem.Click += new System.EventHandler(this.addNewStudentToolStripMenuItem_Click);
             // 
             // updateStudentInfoToolStripMenuItem
             // 
             this.updateStudentInfoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateStudentInfoToolStripMenuItem.Image = global::MySchool.Properties.Resources.student_update_32;
+            this.updateStudentInfoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.updateStudentInfoToolStripMenuItem.Name = "updateStudentInfoToolStripMenuItem";
-            this.updateStudentInfoToolStripMenuItem.Size = new System.Drawing.Size(286, 24);
+            this.updateStudentInfoToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
             this.updateStudentInfoToolStripMenuItem.Text = "Update Student Info";
             this.updateStudentInfoToolStripMenuItem.Click += new System.EventHandler(this.updateStudentInfoToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(283, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(299, 6);
             // 
             // activateDeactivateStudentToolStripMenuItem
             // 
             this.activateDeactivateStudentToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.activateDeactivateStudentToolStripMenuItem.Name = "activateDeactivateStudentToolStripMenuItem";
-            this.activateDeactivateStudentToolStripMenuItem.Size = new System.Drawing.Size(286, 24);
+            this.activateDeactivateStudentToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
             this.activateDeactivateStudentToolStripMenuItem.Text = "Activate / Deactivate student";
             // 
             // tTeachers
@@ -157,15 +164,17 @@
             this.addNewTeacherToolStripMenuItem});
             this.tTeachers.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tTeachers.Image = global::MySchool.Properties.Resources.Teachers_64;
+            this.tTeachers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tTeachers.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tTeachers.Name = "tTeachers";
-            this.tTeachers.Size = new System.Drawing.Size(215, 68);
+            this.tTeachers.Size = new System.Drawing.Size(257, 68);
             this.tTeachers.Text = "    Teachers";
             // 
             // addNewTeacherToolStripMenuItem
             // 
+            this.addNewTeacherToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.addNewTeacherToolStripMenuItem.Name = "addNewTeacherToolStripMenuItem";
-            this.addNewTeacherToolStripMenuItem.Size = new System.Drawing.Size(238, 30);
+            this.addNewTeacherToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
             this.addNewTeacherToolStripMenuItem.Text = "Add New Teacher";
             this.addNewTeacherToolStripMenuItem.Click += new System.EventHandler(this.addNewTeacherToolStripMenuItem_Click);
             // 
@@ -173,9 +182,10 @@
             // 
             this.tPeople.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tPeople.Image = global::MySchool.Properties.Resources.People_64;
+            this.tPeople.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tPeople.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tPeople.Name = "tPeople";
-            this.tPeople.Size = new System.Drawing.Size(215, 68);
+            this.tPeople.Size = new System.Drawing.Size(257, 68);
             this.tPeople.Text = "    People";
             this.tPeople.Click += new System.EventHandler(this.tTeachers_Click);
             // 
@@ -187,9 +197,10 @@
             this.addNewCourseToolStripMenuItem});
             this.tCourses.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tCourses.Image = global::MySchool.Properties.Resources.Curriculum_64;
+            this.tCourses.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tCourses.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tCourses.Name = "tCourses";
-            this.tCourses.Size = new System.Drawing.Size(215, 68);
+            this.tCourses.Size = new System.Drawing.Size(257, 68);
             this.tCourses.Text = "    Courses";
             this.tCourses.Click += new System.EventHandler(this.tCourses_Click);
             // 
@@ -222,9 +233,10 @@
             this.addNewSectionToolStripMenuItem});
             this.tSections.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tSections.Image = global::MySchool.Properties.Resources.Classroom_64;
+            this.tSections.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tSections.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tSections.Name = "tSections";
-            this.tSections.Size = new System.Drawing.Size(215, 68);
+            this.tSections.Size = new System.Drawing.Size(257, 68);
             this.tSections.Text = "    Sections";
             this.tSections.Click += new System.EventHandler(this.tSections_Click);
             // 
@@ -249,15 +261,16 @@
             this.addNewSectionToolStripMenuItem.Text = "Add New Section";
             this.addNewSectionToolStripMenuItem.Click += new System.EventHandler(this.addNewSectionToolStripMenuItem_Click);
             // 
-            // tGroups
+            // tCoursesSection
             // 
-            this.tGroups.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tGroups.Image = global::MySchool.Properties.Resources.Groups_64;
-            this.tGroups.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tGroups.Name = "tGroups";
-            this.tGroups.Size = new System.Drawing.Size(215, 68);
-            this.tGroups.Text = "    Groups";
-            this.tGroups.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.tCoursesSection.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tCoursesSection.Image = global::MySchool.Properties.Resources.Groups_64;
+            this.tCoursesSection.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tCoursesSection.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tCoursesSection.Name = "tCoursesSection";
+            this.tCoursesSection.Size = new System.Drawing.Size(257, 68);
+            this.tCoursesSection.Text = "    Courses Section";
+            this.tCoursesSection.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // tUsers
             // 
@@ -265,19 +278,21 @@
             this.addNewUserToolStripMenuItem});
             this.tUsers.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tUsers.Image = global::MySchool.Properties.Resources.Users_64;
+            this.tUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tUsers.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tUsers.Name = "tUsers";
-            this.tUsers.Size = new System.Drawing.Size(215, 68);
+            this.tUsers.Size = new System.Drawing.Size(257, 68);
             this.tUsers.Text = "    Users";
             this.tUsers.Click += new System.EventHandler(this.tUsers_Click);
             // 
             // addNewUserToolStripMenuItem
             // 
+            this.addNewUserToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.addNewUserToolStripMenuItem.Image = global::MySchool.Properties.Resources.User_32;
             this.addNewUserToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addNewUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewUserToolStripMenuItem.Name = "addNewUserToolStripMenuItem";
-            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(198, 38);
             this.addNewUserToolStripMenuItem.Text = "Add New User";
             this.addNewUserToolStripMenuItem.Click += new System.EventHandler(this.addNewUserToolStripMenuItem_Click);
             // 
@@ -287,16 +302,18 @@
             this.exitToolStripMenuItem});
             this.tSettings.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tSettings.Image = global::MySchool.Properties.Resources.Settings_64;
+            this.tSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tSettings.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tSettings.Name = "tSettings";
-            this.tSettings.Size = new System.Drawing.Size(215, 68);
+            this.tSettings.Size = new System.Drawing.Size(257, 68);
             this.tSettings.Text = "    Settings";
             this.tSettings.Click += new System.EventHandler(this.tSettings_Click);
             // 
             // exitToolStripMenuItem
             // 
+            this.exitToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(117, 30);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -304,17 +321,17 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(222, 0);
+            this.panel1.Location = new System.Drawing.Point(264, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(880, 580);
+            this.panel1.Size = new System.Drawing.Size(838, 580);
             this.panel1.TabIndex = 6;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(222, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(264, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(880, 580);
+            this.pictureBox1.Size = new System.Drawing.Size(838, 580);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -352,7 +369,7 @@
         private System.Windows.Forms.ToolStripMenuItem tSettings;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem tGroups;
+        private System.Windows.Forms.ToolStripMenuItem tCoursesSection;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem tTeachers;
         private System.Windows.Forms.ToolStripMenuItem addNewUserToolStripMenuItem;

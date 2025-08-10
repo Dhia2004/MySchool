@@ -210,7 +210,7 @@ namespace MySchool
             lblAddress.Text = Student.Address;
             lblPhoneNumber.Text = Student.PhoneNumber;
             lblJoinDate.Text = Student.JoinDate.ToShortDateString().ToString();
-            lblEducationLevel.Text = clsLevel.FindByID(Student.LevelID).Name;
+            lblEducationLevel.Text = clsLevel.GetLevelByID(Student.LevelID).Name;
             lblIsActive.Text = Student.IsActive ? "Active" : "Inactive";
             lblIsActive.ForeColor = Student.IsActive ? Color.Green : Color.Red;
 

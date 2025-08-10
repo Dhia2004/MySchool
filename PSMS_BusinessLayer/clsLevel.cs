@@ -39,7 +39,7 @@ namespace PSMS_BusinessLayer
         }
 
 
-        static public clsLevel FindByID(int Level_ID)
+        static public clsLevel GetLevelByID(int Level_ID)
         {
             string Name = "",Descreption = "";
             int LevelCode = 0;
@@ -52,6 +52,7 @@ namespace PSMS_BusinessLayer
                 return null;
             
         }
+
 
         static public DataTable GetAllLevels()
         {

@@ -34,20 +34,20 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblSectionName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblDescription = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblSeats = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lblSectionName = new System.Windows.Forms.Label();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.lblSeats = new System.Windows.Forms.Label();
             this.lblGroupsCount = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEditInfo = new System.Windows.Forms.Button();
             this.pbClose = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSectionGroups = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -129,6 +129,17 @@
             this.panel2.Size = new System.Drawing.Size(482, 51);
             this.panel2.TabIndex = 153;
             // 
+            // lblSectionName
+            // 
+            this.lblSectionName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSectionName.ForeColor = System.Drawing.Color.Black;
+            this.lblSectionName.Location = new System.Drawing.Point(13, 14);
+            this.lblSectionName.Name = "lblSectionName";
+            this.lblSectionName.Size = new System.Drawing.Size(454, 21);
+            this.lblSectionName.TabIndex = 164;
+            this.lblSectionName.Text = "N/A";
+            this.lblSectionName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -148,6 +159,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(482, 121);
             this.panel3.TabIndex = 156;
+            // 
+            // lblDescription
+            // 
+            this.lblDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.ForeColor = System.Drawing.Color.Black;
+            this.lblDescription.Location = new System.Drawing.Point(13, 19);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(454, 84);
+            this.lblDescription.TabIndex = 165;
+            this.lblDescription.Text = "N/A";
             // 
             // label2
             // 
@@ -169,6 +190,17 @@
             this.panel4.Size = new System.Drawing.Size(216, 46);
             this.panel4.TabIndex = 159;
             // 
+            // lblSeats
+            // 
+            this.lblSeats.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeats.ForeColor = System.Drawing.Color.Black;
+            this.lblSeats.Location = new System.Drawing.Point(10, 12);
+            this.lblSeats.Name = "lblSeats";
+            this.lblSeats.Size = new System.Drawing.Size(195, 21);
+            this.lblSeats.TabIndex = 165;
+            this.lblSeats.Text = "N/A";
+            this.lblSeats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -188,38 +220,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(216, 45);
             this.panel5.TabIndex = 162;
-            // 
-            // lblSectionName
-            // 
-            this.lblSectionName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSectionName.ForeColor = System.Drawing.Color.Black;
-            this.lblSectionName.Location = new System.Drawing.Point(13, 14);
-            this.lblSectionName.Name = "lblSectionName";
-            this.lblSectionName.Size = new System.Drawing.Size(454, 21);
-            this.lblSectionName.TabIndex = 164;
-            this.lblSectionName.Text = "N/A";
-            this.lblSectionName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblDescription
-            // 
-            this.lblDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.ForeColor = System.Drawing.Color.Black;
-            this.lblDescription.Location = new System.Drawing.Point(13, 19);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(454, 84);
-            this.lblDescription.TabIndex = 165;
-            this.lblDescription.Text = "N/A";
-            // 
-            // lblSeats
-            // 
-            this.lblSeats.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeats.ForeColor = System.Drawing.Color.Black;
-            this.lblSeats.Location = new System.Drawing.Point(10, 12);
-            this.lblSeats.Name = "lblSeats";
-            this.lblSeats.Size = new System.Drawing.Size(195, 21);
-            this.lblSeats.TabIndex = 165;
-            this.lblSeats.Text = "N/A";
-            this.lblSeats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblGroupsCount
             // 
@@ -274,23 +274,24 @@
             this.pbClose.TabStop = false;
             this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
             // 
-            // btnClose
+            // btnSectionGroups
             // 
-            this.btnClose.BackColor = System.Drawing.Color.White;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.Black;
-            this.btnClose.Image = global::MySchool.Properties.Resources.Groups_64;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(42, 481);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(482, 42);
-            this.btnClose.TabIndex = 163;
-            this.btnClose.Text = "Show goups of this Section";
-            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnSectionGroups.BackColor = System.Drawing.Color.White;
+            this.btnSectionGroups.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSectionGroups.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnSectionGroups.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSectionGroups.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSectionGroups.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSectionGroups.ForeColor = System.Drawing.Color.Black;
+            this.btnSectionGroups.Image = global::MySchool.Properties.Resources.Groups_64;
+            this.btnSectionGroups.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSectionGroups.Location = new System.Drawing.Point(42, 481);
+            this.btnSectionGroups.Name = "btnSectionGroups";
+            this.btnSectionGroups.Size = new System.Drawing.Size(482, 42);
+            this.btnSectionGroups.TabIndex = 163;
+            this.btnSectionGroups.Text = "Show goups of this Section";
+            this.btnSectionGroups.UseVisualStyleBackColor = false;
+            this.btnSectionGroups.Click += new System.EventHandler(this.btnSectionGroups_Click);
             // 
             // pictureBox4
             // 
@@ -361,7 +362,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEditInfo);
             this.Controls.Add(this.pbClose);
-            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnSectionGroups);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel5);
@@ -421,7 +422,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnSectionGroups;
         private System.Windows.Forms.Label lblSectionName;
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Label lblSeats;

@@ -20,13 +20,19 @@ namespace MySchool
             this.Section = Section;
         }
 
-        private void frmSectionDetails_Load(object sender, EventArgs e)
+        public void UpdateSectionDetails(clsSection Section)
         {
+            this.Section = Section;
             lblSectionID.Text = Section.SectionID.ToString();
             lblSectionName.Text = Section.Name;
             lblDescription.Text = Section.Description;
             lblSeats.Text = Section.NumberOfSeat.ToString() + " Seat(s)";
             lblGroupsCount.Text = Section.GroupsCount.ToString() + " Group(s)";
+        }
+
+        private void frmSectionDetails_Load(object sender, EventArgs e)
+        {
+            UpdateSectionDetails(Section);
 
 
         }
@@ -65,6 +71,14 @@ namespace MySchool
                 MessageBox.Show("Failed to delete section. Please try again.", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnSectionGroups_Click(object sender, EventArgs e)
+        {
+            frmSectionGroups frm = new frmSectionGroups(Section);
+            frm.ShowDialog();
+            UpdateSectionDetails(clsSection.GetSectionByID(Section.SectionID)); // Refresh the section details after viewing groups
+
         }
     }
 }

@@ -54,6 +54,12 @@
     <Compile Include="ctrlCourseInfo.Designer.cs">
       <DependentUpon>ctrlCourseInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ctrlCoursSectionInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlCoursSectionInfo.Designer.cs">
+      <DependentUpon>ctrlCoursSectionInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ctrlGroupInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -120,6 +126,12 @@
     <Compile Include="frmAddEditCourse.Designer.cs">
       <DependentUpon>frmAddEditCourse.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddEditCourseSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditCourseSection.Designer.cs">
+      <DependentUpon>frmAddEditCourseSection.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddEditGroup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +179,12 @@
     </Compile>
     <Compile Include="frmCoursesManagement.Designer.cs">
       <DependentUpon>frmCoursesManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCoursesSectionManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoursesSectionManagement.Designer.cs">
+      <DependentUpon>frmCoursesSectionManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEditStudentStatus.cs">
       <SubType>Form</SubType>
@@ -239,6 +257,9 @@
     <EmbeddedResource Include="ctrlCourseInfo.resx">
       <DependentUpon>ctrlCourseInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ctrlCoursSectionInfo.resx">
+      <DependentUpon>ctrlCoursSectionInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ctrlGroupInfo.resx">
       <DependentUpon>ctrlGroupInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -272,6 +293,9 @@
     <EmbeddedResource Include="frmAddEditCourse.resx">
       <DependentUpon>frmAddEditCourse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditCourseSection.resx">
+      <DependentUpon>frmAddEditCourseSection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddEditGroup.resx">
       <DependentUpon>frmAddEditGroup.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCoursesManagement.resx">
       <DependentUpon>frmCoursesManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCoursesSectionManagement.resx">
+      <DependentUpon>frmCoursesSectionManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditStudentStatus.resx">
       <DependentUpon>frmEditStudentStatus.cs</DependentUpon>
@@ -632,6 +659,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Pencil 32 - 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_add 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_config 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_config 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_add 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_update 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar 32 - 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar 32 - 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time 32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -291,7 +291,7 @@ namespace MySchool
                 
 
 
-                cbLevel.SelectedIndex = cbLevel.FindString(clsLevel.FindByID(_Student.LevelID).Name);
+                cbLevel.SelectedIndex = cbLevel.FindString(clsLevel.GetLevelByID(_Student.LevelID).Name);
 
                 if (_Student.HasMedicalFile)
                 {

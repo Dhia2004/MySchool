@@ -57,6 +57,7 @@ namespace MySchool
         {
             frmSectionDetails frm = new frmSectionDetails(SectionInfo.Section);
             frm.ShowDialog();
+            UpdateCoursesList(); // Refresh the list after viewing details
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
@@ -94,6 +95,18 @@ namespace MySchool
                 MessageBox.Show("Failed to delete section. Please try again.", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void pbNext_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            frmAddEditGroup frm = new frmAddEditGroup(SectionInfo.Section);
+            frm.ShowDialog();
+            UpdateCoursesList(); // Refresh the list after adding a new group
         }
     }
 }

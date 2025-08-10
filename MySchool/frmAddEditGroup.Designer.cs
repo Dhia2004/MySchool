@@ -199,6 +199,7 @@
             this.btnClose.TabIndex = 106;
             this.btnClose.Text = "     Close";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pictureBox1
             // 
@@ -227,6 +228,7 @@
             this.btnSave.TabIndex = 105;
             this.btnSave.Text = "     Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label34
             // 
