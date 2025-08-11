@@ -175,6 +175,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnMedicalFile = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.pnlBasicInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -863,10 +864,10 @@
             // lblMode
             // 
             this.lblMode.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMode.ForeColor = System.Drawing.Color.Red;
-            this.lblMode.Location = new System.Drawing.Point(138, 28);
+            this.lblMode.ForeColor = System.Drawing.Color.Blue;
+            this.lblMode.Location = new System.Drawing.Point(166, 28);
             this.lblMode.Name = "lblMode";
-            this.lblMode.Size = new System.Drawing.Size(367, 50);
+            this.lblMode.Size = new System.Drawing.Size(327, 50);
             this.lblMode.TabIndex = 81;
             this.lblMode.Text = "Add New Student";
             this.lblMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -878,7 +879,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(127, 28);
+            this.panel1.Location = new System.Drawing.Point(155, 28);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2, 50);
             this.panel1.TabIndex = 87;
@@ -1913,7 +1914,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::MySchool.Properties.Resources.Students_512;
-            this.pictureBox3.Location = new System.Drawing.Point(28, 10);
+            this.pictureBox3.Location = new System.Drawing.Point(49, 10);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(93, 86);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1977,12 +1978,21 @@
             this.btnMedicalFile.UseVisualStyleBackColor = false;
             this.btnMedicalFile.Click += new System.EventHandler(this.btnMedicalFile_Click);
             // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.Blue;
+            this.panel12.Location = new System.Drawing.Point(-21, 12);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(43, 84);
+            this.panel12.TabIndex = 150;
+            // 
             // frmAddEditStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(588, 786);
+            this.Controls.Add(this.panel12);
             this.Controls.Add(this.pbDelete);
             this.Controls.Add(this.pbUpdate);
             this.Controls.Add(this.chkMedicalFile);
@@ -2218,5 +2228,6 @@
         private System.Windows.Forms.TextBox txtMedicalRemarks;
         private System.Windows.Forms.PictureBox pbUpdate;
         private System.Windows.Forms.PictureBox pbDelete;
+        private System.Windows.Forms.Panel panel12;
     }
 }

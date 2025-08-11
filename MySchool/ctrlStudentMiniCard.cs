@@ -42,13 +42,13 @@ namespace MySchool
             {
                 lblStatus.Text = "Active";
                 lblStatus.ForeColor = Color.Green;
-                //pbEditStatus.Image = Resources.desactivate;
+                btnEditStutus.Image = Resources.Desactivate_32;
             }
             else
             {
                 lblStatus.Text = "Inactive";
                 lblStatus.ForeColor = Color.Red;
-                //pbEditStatus.Image = Resources.Activate;
+                btnEditStutus.Image = Resources.Activate_32;
             }
         }
 

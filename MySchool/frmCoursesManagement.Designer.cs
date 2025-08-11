@@ -38,9 +38,6 @@
             this.lblPageNumber = new System.Windows.Forms.Label();
             this.lblRecorsNumber = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblMode = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,10 +50,14 @@
             this.pbNext = new System.Windows.Forms.PictureBox();
             this.pbRefrech = new System.Windows.Forms.PictureBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pbStudentImage = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnAddNewCourse = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblMode = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pbStudentImage = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNext)).BeginInit();
@@ -72,7 +73,7 @@
             this.flpCourseList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flpCourseList.ContextMenuStrip = this.contextMenuStrip1;
             this.flpCourseList.Cursor = System.Windows.Forms.Cursors.Default;
-            this.flpCourseList.Location = new System.Drawing.Point(9, 255);
+            this.flpCourseList.Location = new System.Drawing.Point(33, 255);
             this.flpCourseList.Name = "flpCourseList";
             this.flpCourseList.Size = new System.Drawing.Size(913, 505);
             this.flpCourseList.TabIndex = 114;
@@ -86,7 +87,7 @@
             this.toolStripMenuItem2,
             this.updatePriceToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(197, 146);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(194, 124);
             // 
             // toolStripMenuItem1
             // 
@@ -94,13 +95,13 @@
             this.toolStripMenuItem1.Image = global::MySchool.Properties.Resources.Delete_32;
             this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(196, 38);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(193, 38);
             this.toolStripMenuItem1.Text = "Delete course";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(190, 6);
             // 
             // toolStripMenuItem2
             // 
@@ -108,7 +109,7 @@
             this.toolStripMenuItem2.Image = global::MySchool.Properties.Resources.Countdown_32_Blue;
             this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(196, 38);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(193, 38);
             this.toolStripMenuItem2.Text = "Update Sessions";
             // 
             // updatePriceToolStripMenuItem
@@ -117,7 +118,7 @@
             this.updatePriceToolStripMenuItem.Image = global::MySchool.Properties.Resources.Money_32;
             this.updatePriceToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.updatePriceToolStripMenuItem.Name = "updatePriceToolStripMenuItem";
-            this.updatePriceToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.updatePriceToolStripMenuItem.Size = new System.Drawing.Size(193, 38);
             this.updatePriceToolStripMenuItem.Text = "Update Price";
             this.updatePriceToolStripMenuItem.Click += new System.EventHandler(this.updatePriceToolStripMenuItem_Click);
             // 
@@ -125,7 +126,7 @@
             // 
             this.lblPageNumber.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPageNumber.ForeColor = System.Drawing.Color.Black;
-            this.lblPageNumber.Location = new System.Drawing.Point(808, 776);
+            this.lblPageNumber.Location = new System.Drawing.Point(844, 780);
             this.lblPageNumber.Name = "lblPageNumber";
             this.lblPageNumber.Size = new System.Drawing.Size(61, 35);
             this.lblPageNumber.TabIndex = 125;
@@ -148,45 +149,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(7, 781);
+            this.label1.ForeColor = System.Drawing.Color.DarkViolet;
+            this.label1.Location = new System.Drawing.Point(28, 780);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 25);
             this.label1.TabIndex = 123;
             this.label1.Text = "#Records :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(172, 91);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(275, 21);
-            this.label2.TabIndex = 120;
-            this.label2.Text = "Search - Add - Edit - Delete - etc .....";
-            // 
-            // lblMode
-            // 
-            this.lblMode.AutoSize = true;
-            this.lblMode.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMode.ForeColor = System.Drawing.Color.Red;
-            this.lblMode.Location = new System.Drawing.Point(209, 44);
-            this.lblMode.Name = "lblMode";
-            this.lblMode.Size = new System.Drawing.Size(377, 47);
-            this.lblMode.TabIndex = 119;
-            this.lblMode.Text = "Courses Management";
-            this.lblMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(160, 37);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2, 100);
-            this.panel1.TabIndex = 118;
             // 
             // label3
             // 
@@ -194,7 +163,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(99, 235);
+            this.label3.Location = new System.Drawing.Point(123, 235);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 15);
             this.label3.TabIndex = 129;
@@ -206,7 +175,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(12, 235);
+            this.label4.Location = new System.Drawing.Point(36, 235);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 15);
             this.label4.TabIndex = 130;
@@ -218,7 +187,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(263, 235);
+            this.label5.Location = new System.Drawing.Point(287, 235);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 15);
             this.label5.TabIndex = 131;
@@ -230,7 +199,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(485, 235);
+            this.label6.Location = new System.Drawing.Point(509, 235);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 15);
             this.label6.TabIndex = 132;
@@ -242,7 +211,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(596, 235);
+            this.label7.Location = new System.Drawing.Point(620, 235);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 15);
             this.label7.TabIndex = 133;
@@ -254,7 +223,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(666, 235);
+            this.label8.Location = new System.Drawing.Point(690, 235);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(33, 15);
             this.label8.TabIndex = 134;
@@ -266,7 +235,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(777, 235);
+            this.label9.Location = new System.Drawing.Point(801, 235);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(89, 15);
             this.label9.TabIndex = 135;
@@ -283,7 +252,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = global::MySchool.Properties.Resources.Close_ic_32;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(595, 777);
+            this.button1.Location = new System.Drawing.Point(631, 781);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 35);
             this.button1.TabIndex = 136;
@@ -295,7 +264,7 @@
             // 
             this.pbBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbBack.Image = global::MySchool.Properties.Resources.Back_32;
-            this.pbBack.Location = new System.Drawing.Point(767, 776);
+            this.pbBack.Location = new System.Drawing.Point(803, 780);
             this.pbBack.Name = "pbBack";
             this.pbBack.Size = new System.Drawing.Size(35, 35);
             this.pbBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -307,7 +276,7 @@
             // 
             this.pbNext.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbNext.Image = global::MySchool.Properties.Resources.Next_32;
-            this.pbNext.Location = new System.Drawing.Point(875, 776);
+            this.pbNext.Location = new System.Drawing.Point(911, 780);
             this.pbNext.Name = "pbNext";
             this.pbNext.Size = new System.Drawing.Size(35, 35);
             this.pbNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -319,7 +288,7 @@
             // 
             this.pbRefrech.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbRefrech.Image = global::MySchool.Properties.Resources.Reload_24;
-            this.pbRefrech.Location = new System.Drawing.Point(714, 776);
+            this.pbRefrech.Location = new System.Drawing.Point(750, 780);
             this.pbRefrech.Name = "pbRefrech";
             this.pbRefrech.Size = new System.Drawing.Size(35, 35);
             this.pbRefrech.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -330,33 +299,12 @@
             // 
             this.pbExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbExit.Image = global::MySchool.Properties.Resources.Cross_64;
-            this.pbExit.Location = new System.Drawing.Point(875, 6);
+            this.pbExit.Location = new System.Drawing.Point(919, 12);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(47, 48);
             this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExit.TabIndex = 122;
             this.pbExit.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::MySchool.Properties.Resources.Equipment_72;
-            this.pictureBox2.Location = new System.Drawing.Point(176, 53);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(37, 38);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 121;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pbStudentImage
-            // 
-            this.pbStudentImage.Image = global::MySchool.Properties.Resources.Curriculum_512;
-            this.pbStudentImage.Location = new System.Drawing.Point(12, 13);
-            this.pbStudentImage.Name = "pbStudentImage";
-            this.pbStudentImage.Size = new System.Drawing.Size(142, 148);
-            this.pbStudentImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbStudentImage.TabIndex = 117;
-            this.pbStudentImage.TabStop = false;
             // 
             // btnClose
             // 
@@ -388,7 +336,7 @@
             this.btnAddNewCourse.ForeColor = System.Drawing.Color.Black;
             this.btnAddNewCourse.Image = global::MySchool.Properties.Resources.Curriculum_64;
             this.btnAddNewCourse.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAddNewCourse.Location = new System.Drawing.Point(851, 74);
+            this.btnAddNewCourse.Location = new System.Drawing.Point(875, 74);
             this.btnAddNewCourse.Name = "btnAddNewCourse";
             this.btnAddNewCourse.Size = new System.Drawing.Size(71, 120);
             this.btnAddNewCourse.TabIndex = 138;
@@ -397,12 +345,79 @@
             this.btnAddNewCourse.UseVisualStyleBackColor = false;
             this.btnAddNewCourse.Click += new System.EventHandler(this.btnAddNewCourse_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::MySchool.Properties.Resources.Equipment_72;
+            this.pictureBox2.Location = new System.Drawing.Point(201, 56);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(37, 38);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 144;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(197, 94);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(275, 21);
+            this.label2.TabIndex = 143;
+            this.label2.Text = "Search - Add - Edit - Delete - etc .....";
+            // 
+            // lblMode
+            // 
+            this.lblMode.AutoSize = true;
+            this.lblMode.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMode.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblMode.Location = new System.Drawing.Point(234, 47);
+            this.lblMode.Name = "lblMode";
+            this.lblMode.Size = new System.Drawing.Size(377, 47);
+            this.lblMode.TabIndex = 142;
+            this.lblMode.Text = "Courses Management";
+            this.lblMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(185, 40);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(2, 100);
+            this.panel2.TabIndex = 141;
+            // 
+            // pbStudentImage
+            // 
+            this.pbStudentImage.Image = global::MySchool.Properties.Resources.Curriculum_512;
+            this.pbStudentImage.Location = new System.Drawing.Point(37, 16);
+            this.pbStudentImage.Name = "pbStudentImage";
+            this.pbStudentImage.Size = new System.Drawing.Size(142, 148);
+            this.pbStudentImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbStudentImage.TabIndex = 140;
+            this.pbStudentImage.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkViolet;
+            this.panel1.Location = new System.Drawing.Point(-8, 32);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(29, 112);
+            this.panel1.TabIndex = 139;
+            // 
             // frmCoursesManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(934, 827);
+            this.ClientSize = new System.Drawing.Size(978, 827);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblMode);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pbStudentImage);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAddNewCourse);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
@@ -420,11 +435,6 @@
             this.Controls.Add(this.lblRecorsNumber);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbExit);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblMode);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pbStudentImage);
             this.Controls.Add(this.btnClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCoursesManagement";
@@ -453,11 +463,6 @@
         private System.Windows.Forms.Label lblRecorsNumber;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pbExit;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblMode;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pbStudentImage;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -473,5 +478,11 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.Button btnAddNewCourse;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblMode;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pbStudentImage;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -283,7 +283,7 @@
             this.btnSectionGroups.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSectionGroups.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSectionGroups.ForeColor = System.Drawing.Color.Black;
-            this.btnSectionGroups.Image = global::MySchool.Properties.Resources.Groups_64;
+            this.btnSectionGroups.Image = global::MySchool.Properties.Resources.Eye_32;
             this.btnSectionGroups.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSectionGroups.Location = new System.Drawing.Point(42, 481);
             this.btnSectionGroups.Name = "btnSectionGroups";

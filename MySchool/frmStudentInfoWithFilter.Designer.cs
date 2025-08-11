@@ -28,126 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pbClose = new System.Windows.Forms.PictureBox();
-            this.lblMode = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.ctrlStudentInfoWithFilter1 = new MySchool.ctrlStudentInfoWithFilter();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblMode = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(283, 729);
-            this.panel1.TabIndex = 87;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(19, 273);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 32);
-            this.label1.TabIndex = 90;
-            this.label1.Text = "Update Student Info";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::MySchool.Properties.Resources.Students_512;
-            this.pictureBox3.Location = new System.Drawing.Point(59, 64);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(164, 164);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 88;
-            this.pictureBox3.TabStop = false;
             // 
             // pbClose
             // 
             this.pbClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbClose.Image = global::MySchool.Properties.Resources.Cross_64;
-            this.pbClose.Location = new System.Drawing.Point(660, 0);
+            this.pbClose.Location = new System.Drawing.Point(359, 16);
             this.pbClose.Name = "pbClose";
             this.pbClose.Size = new System.Drawing.Size(48, 45);
             this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbClose.TabIndex = 89;
             this.pbClose.TabStop = false;
-            // 
-            // lblMode
-            // 
-            this.lblMode.AutoSize = true;
-            this.lblMode.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMode.ForeColor = System.Drawing.Color.Black;
-            this.lblMode.Location = new System.Drawing.Point(373, 15);
-            this.lblMode.Name = "lblMode";
-            this.lblMode.Size = new System.Drawing.Size(251, 30);
-            this.lblMode.TabIndex = 88;
-            this.lblMode.Text = "Student Card With Filter";
-            this.lblMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(17, 348);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(248, 50);
-            this.label2.TabIndex = 91;
-            this.label2.Text = "Please scan the student QR\r\n or enter the ID";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
             // 
             // ctrlStudentInfoWithFilter1
             // 
             this.ctrlStudentInfoWithFilter1.BackColor = System.Drawing.Color.White;
-            this.ctrlStudentInfoWithFilter1.Location = new System.Drawing.Point(300, 48);
+            this.ctrlStudentInfoWithFilter1.Location = new System.Drawing.Point(18, 116);
             this.ctrlStudentInfoWithFilter1.Name = "ctrlStudentInfoWithFilter1";
             this.ctrlStudentInfoWithFilter1.Size = new System.Drawing.Size(389, 658);
             this.ctrlStudentInfoWithFilter1.TabIndex = 90;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.Blue;
+            this.panel12.Location = new System.Drawing.Point(-19, 16);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(43, 84);
+            this.panel12.TabIndex = 151;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(135, 34);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2, 50);
+            this.panel1.TabIndex = 154;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::MySchool.Properties.Resources.Students_512;
+            this.pictureBox3.Location = new System.Drawing.Point(29, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(93, 86);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 153;
+            this.pictureBox3.TabStop = false;
+            // 
+            // lblMode
+            // 
+            this.lblMode.AutoSize = true;
+            this.lblMode.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMode.ForeColor = System.Drawing.Color.Blue;
+            this.lblMode.Location = new System.Drawing.Point(164, 34);
+            this.lblMode.Name = "lblMode";
+            this.lblMode.Size = new System.Drawing.Size(153, 50);
+            this.lblMode.TabIndex = 152;
+            this.lblMode.Text = "Enter ID or scan\r\nstudent QR";
+            this.lblMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmStudentInfoWithFilter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(709, 729);
+            this.ClientSize = new System.Drawing.Size(425, 800);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.lblMode);
+            this.Controls.Add(this.panel12);
             this.Controls.Add(this.ctrlStudentInfoWithFilter1);
             this.Controls.Add(this.pbClose);
-            this.Controls.Add(this.lblMode);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmStudentInfoWithFilter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmStudentInfoWithFilter";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pbClose;
-        private System.Windows.Forms.Label lblMode;
         private ctrlStudentInfoWithFilter ctrlStudentInfoWithFilter1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblMode;
     }
 }

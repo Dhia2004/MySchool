@@ -28,7 +28,9 @@ namespace MySchool
                 if (clsGlobalSettings.ConfigurationSucc)
                     RunTheSystem();
             }
-                
+
+
+
 
         }
 

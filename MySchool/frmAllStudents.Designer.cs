@@ -35,7 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblRecorsNumber = new System.Windows.Forms.Label();
             this.lblPageNumber = new System.Windows.Forms.Label();
-            this.ctrlStudentInfoWithFilter1 = new MySchool.ctrlStudentInfoWithFilter();
             this.pbBack = new System.Windows.Forms.PictureBox();
             this.pbNext = new System.Windows.Forms.PictureBox();
             this.pbRefrech = new System.Windows.Forms.PictureBox();
@@ -43,6 +42,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbStudentImage = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ctrlStudentInfoWithFilter1 = new MySchool.ctrlStudentInfoWithFilter();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRefrech)).BeginInit();
@@ -63,7 +64,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(160, 29);
+            this.panel1.Location = new System.Drawing.Point(201, 29);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2, 100);
             this.panel1.TabIndex = 86;
@@ -72,8 +73,8 @@
             // 
             this.lblMode.AutoSize = true;
             this.lblMode.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMode.ForeColor = System.Drawing.Color.Red;
-            this.lblMode.Location = new System.Drawing.Point(209, 36);
+            this.lblMode.ForeColor = System.Drawing.Color.Blue;
+            this.lblMode.Location = new System.Drawing.Point(250, 36);
             this.lblMode.Name = "lblMode";
             this.lblMode.Size = new System.Drawing.Size(410, 47);
             this.lblMode.TabIndex = 87;
@@ -86,7 +87,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(172, 83);
+            this.label2.Location = new System.Drawing.Point(213, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(275, 21);
             this.label2.TabIndex = 103;
@@ -96,7 +97,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.ForeColor = System.Drawing.Color.Blue;
             this.label1.Location = new System.Drawing.Point(12, 760);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 25);
@@ -107,12 +108,13 @@
             // lblRecorsNumber
             // 
             this.lblRecorsNumber.AutoSize = true;
-            this.lblRecorsNumber.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecorsNumber.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRecorsNumber.ForeColor = System.Drawing.Color.Black;
-            this.lblRecorsNumber.Location = new System.Drawing.Point(114, 760);
+            this.lblRecorsNumber.Location = new System.Drawing.Point(113, 765);
             this.lblRecorsNumber.Name = "lblRecorsNumber";
-            this.lblRecorsNumber.Size = new System.Drawing.Size(0, 25);
+            this.lblRecorsNumber.Size = new System.Drawing.Size(118, 20);
             this.lblRecorsNumber.TabIndex = 107;
+            this.lblRecorsNumber.Text = "110 Student (s)";
             this.lblRecorsNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPageNumber
@@ -126,14 +128,6 @@
             this.lblPageNumber.Tag = "1";
             this.lblPageNumber.Text = "1";
             this.lblPageNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ctrlStudentInfoWithFilter1
-            // 
-            this.ctrlStudentInfoWithFilter1.BackColor = System.Drawing.Color.White;
-            this.ctrlStudentInfoWithFilter1.Location = new System.Drawing.Point(919, 92);
-            this.ctrlStudentInfoWithFilter1.Name = "ctrlStudentInfoWithFilter1";
-            this.ctrlStudentInfoWithFilter1.Size = new System.Drawing.Size(389, 658);
-            this.ctrlStudentInfoWithFilter1.TabIndex = 0;
             // 
             // pbBack
             // 
@@ -187,7 +181,7 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::MySchool.Properties.Resources.Equipment_72;
-            this.pictureBox2.Location = new System.Drawing.Point(176, 45);
+            this.pictureBox2.Location = new System.Drawing.Point(217, 45);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(37, 38);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -197,7 +191,7 @@
             // pbStudentImage
             // 
             this.pbStudentImage.Image = global::MySchool.Properties.Resources.Students_512;
-            this.pbStudentImage.Location = new System.Drawing.Point(12, 5);
+            this.pbStudentImage.Location = new System.Drawing.Point(53, 5);
             this.pbStudentImage.Name = "pbStudentImage";
             this.pbStudentImage.Size = new System.Drawing.Size(142, 148);
             this.pbStudentImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -223,12 +217,29 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Blue;
+            this.panel2.Location = new System.Drawing.Point(-5, 21);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(29, 113);
+            this.panel2.TabIndex = 114;
+            // 
+            // ctrlStudentInfoWithFilter1
+            // 
+            this.ctrlStudentInfoWithFilter1.BackColor = System.Drawing.Color.White;
+            this.ctrlStudentInfoWithFilter1.Location = new System.Drawing.Point(919, 92);
+            this.ctrlStudentInfoWithFilter1.Name = "ctrlStudentInfoWithFilter1";
+            this.ctrlStudentInfoWithFilter1.Size = new System.Drawing.Size(389, 658);
+            this.ctrlStudentInfoWithFilter1.TabIndex = 0;
+            // 
             // frmAllStudents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1315, 799);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pbBack);
             this.Controls.Add(this.pbNext);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -277,5 +288,6 @@
         private System.Windows.Forms.PictureBox pbRefrech;
         private System.Windows.Forms.PictureBox pbNext;
         private System.Windows.Forms.PictureBox pbBack;
+        private System.Windows.Forms.Panel panel2;
     }
 }

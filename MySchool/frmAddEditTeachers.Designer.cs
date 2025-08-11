@@ -55,6 +55,8 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.ctrlPersonInfoWithFilter1 = new MySchool.ctrlPersonInfoWithFilter();
             this.pnlWarning.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).BeginInit();
@@ -72,7 +74,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(105, 191);
+            this.label2.Location = new System.Drawing.Point(105, 208);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(170, 40);
             this.label2.TabIndex = 150;
@@ -91,7 +93,7 @@
             this.chkIsActive.Checked = true;
             this.chkIsActive.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkIsActive.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkIsActive.Location = new System.Drawing.Point(230, 298);
+            this.chkIsActive.Location = new System.Drawing.Point(230, 315);
             this.chkIsActive.Name = "chkIsActive";
             this.chkIsActive.Size = new System.Drawing.Size(91, 25);
             this.chkIsActive.TabIndex = 106;
@@ -103,7 +105,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(134, 20);
+            this.label1.Location = new System.Drawing.Point(134, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(186, 40);
             this.label1.TabIndex = 91;
@@ -115,7 +117,7 @@
             this.lblTeacherID.AutoSize = true;
             this.lblTeacherID.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTeacherID.ForeColor = System.Drawing.Color.Red;
-            this.lblTeacherID.Location = new System.Drawing.Point(674, 112);
+            this.lblTeacherID.Location = new System.Drawing.Point(674, 129);
             this.lblTeacherID.Name = "lblTeacherID";
             this.lblTeacherID.Size = new System.Drawing.Size(40, 21);
             this.lblTeacherID.TabIndex = 157;
@@ -126,7 +128,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(578, 112);
+            this.label16.Location = new System.Drawing.Point(578, 129);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(94, 21);
             this.label16.TabIndex = 156;
@@ -138,7 +140,7 @@
             this.pnlWarning.Controls.Add(this.label3);
             this.pnlWarning.Controls.Add(this.label2);
             this.pnlWarning.Controls.Add(this.pbAlarm);
-            this.pnlWarning.Location = new System.Drawing.Point(436, 158);
+            this.pnlWarning.Location = new System.Drawing.Point(436, 175);
             this.pnlWarning.Name = "pnlWarning";
             this.pnlWarning.Size = new System.Drawing.Size(383, 536);
             this.pnlWarning.TabIndex = 159;
@@ -149,18 +151,18 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(37, 287);
+            this.label3.Location = new System.Drawing.Point(37, 304);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(307, 75);
+            this.label3.Size = new System.Drawing.Size(307, 50);
             this.label3.TabIndex = 206;
-            this.label3.Text = "Please select a person first before\r\n proceeding\r\n with account creation";
+            this.label3.Text = "Please select a person first before\r\ncontinuing the process";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbAlarm
             // 
             this.pbAlarm.Enabled = false;
             this.pbAlarm.Image = global::MySchool.Properties.Resources.Alarm_128;
-            this.pbAlarm.Location = new System.Drawing.Point(117, 21);
+            this.pbAlarm.Location = new System.Drawing.Point(117, 38);
             this.pbAlarm.Name = "pbAlarm";
             this.pbAlarm.Size = new System.Drawing.Size(146, 146);
             this.pbAlarm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -183,7 +185,7 @@
             this.pnlAccountInformation.Controls.Add(this.pictureBox1);
             this.pnlAccountInformation.Controls.Add(this.chkIsActive);
             this.pnlAccountInformation.Controls.Add(this.label1);
-            this.pnlAccountInformation.Location = new System.Drawing.Point(436, 158);
+            this.pnlAccountInformation.Location = new System.Drawing.Point(436, 175);
             this.pnlAccountInformation.Name = "pnlAccountInformation";
             this.pnlAccountInformation.Size = new System.Drawing.Size(383, 536);
             this.pnlAccountInformation.TabIndex = 153;
@@ -192,7 +194,7 @@
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel5.Location = new System.Drawing.Point(21, 144);
+            this.panel5.Location = new System.Drawing.Point(21, 161);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(342, 1);
             this.panel5.TabIndex = 231;
@@ -200,7 +202,7 @@
             // lblCreatedByUser
             // 
             this.lblCreatedByUser.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCreatedByUser.Location = new System.Drawing.Point(95, 421);
+            this.lblCreatedByUser.Location = new System.Drawing.Point(95, 438);
             this.lblCreatedByUser.Name = "lblCreatedByUser";
             this.lblCreatedByUser.Size = new System.Drawing.Size(225, 21);
             this.lblCreatedByUser.TabIndex = 125;
@@ -211,7 +213,7 @@
             this.lblFullName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFullName.ForeColor = System.Drawing.Color.Red;
             this.lblFullName.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblFullName.Location = new System.Drawing.Point(139, 99);
+            this.lblFullName.Location = new System.Drawing.Point(139, 116);
             this.lblFullName.Name = "lblFullName";
             this.lblFullName.Size = new System.Drawing.Size(213, 21);
             this.lblFullName.TabIndex = 124;
@@ -221,7 +223,7 @@
             // 
             this.cbSubjects.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.cbSubjects.FormattingEnabled = true;
-            this.cbSubjects.Location = new System.Drawing.Point(59, 236);
+            this.cbSubjects.Location = new System.Drawing.Point(59, 253);
             this.cbSubjects.Name = "cbSubjects";
             this.cbSubjects.Size = new System.Drawing.Size(262, 28);
             this.cbSubjects.TabIndex = 122;
@@ -229,7 +231,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::MySchool.Properties.Resources.Created_By_User_32;
-            this.pictureBox5.Location = new System.Drawing.Point(59, 375);
+            this.pictureBox5.Location = new System.Drawing.Point(59, 392);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 25);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -240,7 +242,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(95, 377);
+            this.label6.Location = new System.Drawing.Point(95, 394);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(135, 21);
             this.label6.TabIndex = 115;
@@ -249,7 +251,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::MySchool.Properties.Resources.Subject_32;
-            this.pictureBox4.Location = new System.Drawing.Point(129, 181);
+            this.pictureBox4.Location = new System.Drawing.Point(129, 198);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(44, 39);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -260,7 +262,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(179, 190);
+            this.label5.Location = new System.Drawing.Point(179, 207);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 21);
             this.label5.TabIndex = 113;
@@ -269,7 +271,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::MySchool.Properties.Resources.Student_32;
-            this.pictureBox2.Location = new System.Drawing.Point(137, 66);
+            this.pictureBox2.Location = new System.Drawing.Point(137, 83);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -280,7 +282,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(168, 69);
+            this.label4.Location = new System.Drawing.Point(168, 86);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 21);
             this.label4.TabIndex = 111;
@@ -289,7 +291,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MySchool.Properties.Resources.User_256;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 37);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -301,7 +303,7 @@
             this.lblMode.AutoSize = true;
             this.lblMode.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMode.ForeColor = System.Drawing.Color.Red;
-            this.lblMode.Location = new System.Drawing.Point(93, 30);
+            this.lblMode.Location = new System.Drawing.Point(154, 38);
             this.lblMode.Name = "lblMode";
             this.lblMode.Size = new System.Drawing.Size(256, 40);
             this.lblMode.TabIndex = 151;
@@ -311,7 +313,7 @@
             // pictureBox21
             // 
             this.pictureBox21.Image = global::MySchool.Properties.Resources.Person_ID_32;
-            this.pictureBox21.Location = new System.Drawing.Point(549, 109);
+            this.pictureBox21.Location = new System.Drawing.Point(549, 126);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(25, 27);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -329,7 +331,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::MySchool.Properties.Resources.Close_ic_32;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(587, 709);
+            this.btnClose.Location = new System.Drawing.Point(587, 726);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(113, 35);
             this.btnClose.TabIndex = 155;
@@ -349,7 +351,7 @@
             this.btnSave.ForeColor = System.Drawing.Color.Black;
             this.btnSave.Image = global::MySchool.Properties.Resources.Save_32;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(706, 709);
+            this.btnSave.Location = new System.Drawing.Point(706, 726);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(113, 35);
             this.btnSave.TabIndex = 154;
@@ -359,18 +361,34 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::MySchool.Properties.Resources.Teachers_64;
-            this.pictureBox3.Location = new System.Drawing.Point(17, 13);
+            this.pictureBox3.Image = global::MySchool.Properties.Resources.teacher_32;
+            this.pictureBox3.Location = new System.Drawing.Point(57, 18);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox3.Size = new System.Drawing.Size(81, 81);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 152;
+            this.pictureBox3.TabIndex = 170;
             this.pictureBox3.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Location = new System.Drawing.Point(-18, 7);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(40, 102);
+            this.panel1.TabIndex = 169;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(146, 28);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(2, 60);
+            this.panel2.TabIndex = 171;
             // 
             // ctrlPersonInfoWithFilter1
             // 
             this.ctrlPersonInfoWithFilter1.BackColor = System.Drawing.Color.White;
-            this.ctrlPersonInfoWithFilter1.Location = new System.Drawing.Point(17, 89);
+            this.ctrlPersonInfoWithFilter1.Location = new System.Drawing.Point(17, 106);
             this.ctrlPersonInfoWithFilter1.Name = "ctrlPersonInfoWithFilter1";
             this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(391, 660);
             this.ctrlPersonInfoWithFilter1.TabIndex = 150;
@@ -380,19 +398,20 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(836, 763);
+            this.ClientSize = new System.Drawing.Size(836, 775);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.ctrlPersonInfoWithFilter1);
             this.Controls.Add(this.lblTeacherID);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lblMode);
             this.Controls.Add(this.pnlWarning);
             this.Controls.Add(this.pnlAccountInformation);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(852, 802);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(852, 802);
             this.Name = "frmAddEditTeachers";
@@ -431,7 +450,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel pnlWarning;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel pnlAccountInformation;
         private System.Windows.Forms.Label lblMode;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -444,5 +462,8 @@
         private System.Windows.Forms.Label lblFullName;
         private System.Windows.Forms.Label lblCreatedByUser;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

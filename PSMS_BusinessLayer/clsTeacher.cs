@@ -156,6 +156,12 @@ namespace PSMS_BusinessLayer
 
 
         }
+
+        public static List<clsTeacher> fetchTeachersBatch(int pageNumber)
+        {
+            DataTable dtTeachers = clsTeacherDataAccess.fetchTeachersBatch(pageNumber);
+            return dtTeachers != null ? ConvertTeachersRecordsToObjects(dtTeachers) : null;
+        }
     }
 
 }

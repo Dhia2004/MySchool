@@ -51,12 +51,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblPageNumber = new System.Windows.Forms.Label();
+            this.btnAddNewSection = new System.Windows.Forms.Button();
             this.pbBack = new System.Windows.Forms.PictureBox();
             this.pbNext = new System.Windows.Forms.PictureBox();
             this.pbRefrech = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbStudentImage = new System.Windows.Forms.PictureBox();
+            this.btnAddNewGroup = new System.Windows.Forms.Button();
+            this.lblRecorsNumber = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNext)).BeginInit();
@@ -136,7 +140,7 @@
             // sectionDetailsToolStripMenuItem
             // 
             this.sectionDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.sectionDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.Info_24;
+            this.sectionDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.Info_32;
             this.sectionDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.sectionDetailsToolStripMenuItem.Name = "sectionDetailsToolStripMenuItem";
             this.sectionDetailsToolStripMenuItem.Size = new System.Drawing.Size(284, 38);
@@ -151,7 +155,7 @@
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem2.Image = global::MySchool.Properties.Resources.Add_24;
+            this.toolStripMenuItem2.Image = global::MySchool.Properties.Resources.classroom_32;
             this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(284, 38);
@@ -166,6 +170,8 @@
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem4.Image = global::MySchool.Properties.Resources.Group_32;
+            this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size(284, 38);
             this.toolStripMenuItem4.Text = "Add New Group";
@@ -179,7 +185,7 @@
             // editSectionInfoToolStripMenuItem
             // 
             this.editSectionInfoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.editSectionInfoToolStripMenuItem.Image = global::MySchool.Properties.Resources.Edit_Info_32;
+            this.editSectionInfoToolStripMenuItem.Image = global::MySchool.Properties.Resources.Pencil_32;
             this.editSectionInfoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.editSectionInfoToolStripMenuItem.Name = "editSectionInfoToolStripMenuItem";
             this.editSectionInfoToolStripMenuItem.Size = new System.Drawing.Size(284, 38);
@@ -204,9 +210,12 @@
             // showThisGroupsOfThisSectionToolStripMenuItem
             // 
             this.showThisGroupsOfThisSectionToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showThisGroupsOfThisSectionToolStripMenuItem.Image = global::MySchool.Properties.Resources.Eye_32;
+            this.showThisGroupsOfThisSectionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.showThisGroupsOfThisSectionToolStripMenuItem.Name = "showThisGroupsOfThisSectionToolStripMenuItem";
             this.showThisGroupsOfThisSectionToolStripMenuItem.Size = new System.Drawing.Size(284, 38);
             this.showThisGroupsOfThisSectionToolStripMenuItem.Text = "Show the groups of this section";
+            this.showThisGroupsOfThisSectionToolStripMenuItem.Click += new System.EventHandler(this.showThisGroupsOfThisSectionToolStripMenuItem_Click);
             // 
             // label4
             // 
@@ -279,6 +288,23 @@
             this.lblPageNumber.Tag = "1";
             this.lblPageNumber.Text = "1";
             this.lblPageNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnAddNewSection
+            // 
+            this.btnAddNewSection.BackColor = System.Drawing.Color.White;
+            this.btnAddNewSection.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddNewSection.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnAddNewSection.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnAddNewSection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewSection.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewSection.ForeColor = System.Drawing.Color.Black;
+            this.btnAddNewSection.Image = global::MySchool.Properties.Resources.classroom_32;
+            this.btnAddNewSection.Location = new System.Drawing.Point(646, 121);
+            this.btnAddNewSection.Name = "btnAddNewSection";
+            this.btnAddNewSection.Size = new System.Drawing.Size(56, 58);
+            this.btnAddNewSection.TabIndex = 147;
+            this.btnAddNewSection.UseVisualStyleBackColor = false;
+            this.btnAddNewSection.Click += new System.EventHandler(this.btnAddNewSection_Click);
             // 
             // pbBack
             // 
@@ -354,12 +380,57 @@
             this.pbStudentImage.TabIndex = 122;
             this.pbStudentImage.TabStop = false;
             // 
+            // btnAddNewGroup
+            // 
+            this.btnAddNewGroup.BackColor = System.Drawing.Color.White;
+            this.btnAddNewGroup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddNewGroup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnAddNewGroup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnAddNewGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewGroup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewGroup.ForeColor = System.Drawing.Color.Black;
+            this.btnAddNewGroup.Image = global::MySchool.Properties.Resources.Group_32;
+            this.btnAddNewGroup.Location = new System.Drawing.Point(584, 121);
+            this.btnAddNewGroup.Name = "btnAddNewGroup";
+            this.btnAddNewGroup.Size = new System.Drawing.Size(56, 58);
+            this.btnAddNewGroup.TabIndex = 148;
+            this.btnAddNewGroup.UseVisualStyleBackColor = false;
+            this.btnAddNewGroup.Click += new System.EventHandler(this.btnAddNewGroup_Click);
+            // 
+            // lblRecorsNumber
+            // 
+            this.lblRecorsNumber.AutoSize = true;
+            this.lblRecorsNumber.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecorsNumber.ForeColor = System.Drawing.Color.Black;
+            this.lblRecorsNumber.Location = new System.Drawing.Point(137, 603);
+            this.lblRecorsNumber.Name = "lblRecorsNumber";
+            this.lblRecorsNumber.Size = new System.Drawing.Size(92, 20);
+            this.lblRecorsNumber.TabIndex = 150;
+            this.lblRecorsNumber.Text = "3 Section(s)";
+            this.lblRecorsNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label7.Location = new System.Drawing.Point(36, 600);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(104, 25);
+            this.label7.TabIndex = 149;
+            this.label7.Text = "#Records :";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmSectionManegement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(748, 633);
+            this.Controls.Add(this.lblRecorsNumber);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnAddNewGroup);
+            this.Controls.Add(this.btnAddNewSection);
             this.Controls.Add(this.pbBack);
             this.Controls.Add(this.pbNext);
             this.Controls.Add(this.pbRefrech);
@@ -423,5 +494,9 @@
         private System.Windows.Forms.ToolStripMenuItem showThisGroupsOfThisSectionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.Button btnAddNewSection;
+        private System.Windows.Forms.Button btnAddNewGroup;
+        private System.Windows.Forms.Label lblRecorsNumber;
+        private System.Windows.Forms.Label label7;
     }
 }

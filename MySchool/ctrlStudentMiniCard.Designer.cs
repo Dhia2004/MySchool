@@ -36,10 +36,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblBirthDate = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
-            this.btnMoreDetails = new System.Windows.Forms.Button();
             this.btnEditStutus = new System.Windows.Forms.Button();
             this.btnDeleteStudent = new System.Windows.Forms.Button();
             this.btnEditInfo = new System.Windows.Forms.Button();
+            this.btnMoreDetails = new System.Windows.Forms.Button();
             this.pbStudentImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).BeginInit();
             this.SuspendLayout();
@@ -129,24 +129,6 @@
             this.lblStatus.TabIndex = 119;
             this.lblStatus.Text = "Yes";
             // 
-            // btnMoreDetails
-            // 
-            this.btnMoreDetails.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnMoreDetails.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnMoreDetails.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
-            this.btnMoreDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMoreDetails.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMoreDetails.Image = global::MySchool.Properties.Resources.Basic_Info_32;
-            this.btnMoreDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMoreDetails.Location = new System.Drawing.Point(714, 7);
-            this.btnMoreDetails.Name = "btnMoreDetails";
-            this.btnMoreDetails.Size = new System.Drawing.Size(150, 40);
-            this.btnMoreDetails.TabIndex = 124;
-            this.btnMoreDetails.Text = "Student Card";
-            this.btnMoreDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMoreDetails.UseVisualStyleBackColor = true;
-            this.btnMoreDetails.Click += new System.EventHandler(this.btnMoreDetails_Click);
-            // 
             // btnEditStutus
             // 
             this.btnEditStutus.BackColor = System.Drawing.Color.White;
@@ -154,7 +136,7 @@
             this.btnEditStutus.FlatAppearance.BorderSize = 0;
             this.btnEditStutus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnEditStutus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditStutus.Image = global::MySchool.Properties.Resources.Edit_Info_32;
+            this.btnEditStutus.Image = global::MySchool.Properties.Resources.Desactivate_32;
             this.btnEditStutus.Location = new System.Drawing.Point(666, 11);
             this.btnEditStutus.Name = "btnEditStutus";
             this.btnEditStutus.Size = new System.Drawing.Size(33, 33);
@@ -191,6 +173,24 @@
             this.btnEditInfo.TabIndex = 144;
             this.btnEditInfo.UseVisualStyleBackColor = false;
             this.btnEditInfo.Click += new System.EventHandler(this.btnEditInfo_Click);
+            // 
+            // btnMoreDetails
+            // 
+            this.btnMoreDetails.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnMoreDetails.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnMoreDetails.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
+            this.btnMoreDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMoreDetails.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMoreDetails.Image = global::MySchool.Properties.Resources.Basic_Info_32;
+            this.btnMoreDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMoreDetails.Location = new System.Drawing.Point(714, 7);
+            this.btnMoreDetails.Name = "btnMoreDetails";
+            this.btnMoreDetails.Size = new System.Drawing.Size(150, 40);
+            this.btnMoreDetails.TabIndex = 124;
+            this.btnMoreDetails.Text = "Student Card";
+            this.btnMoreDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMoreDetails.UseVisualStyleBackColor = true;
+            this.btnMoreDetails.Click += new System.EventHandler(this.btnMoreDetails_Click);
             // 
             // pbStudentImage
             // 

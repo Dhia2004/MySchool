@@ -35,7 +35,7 @@ namespace MySchool
             btnPage1Next.Enabled = false;
             btnPage2Next.Enabled = false;
             btnSaveInfo.Enabled = false;
-            l_lblRemoveImage.Visible = false;
+            //l_lblRemoveImage.Visible = false;
             ll_RemoveLink.Visible = false;
         }
 
@@ -209,7 +209,7 @@ namespace MySchool
                 if (openFileDialog1.FileName != "")
                 {
                     pbSchoolLogo.Load(openFileDialog1.FileName);
-                    l_lblRemoveImage.Visible = true;
+                    //l_lblRemoveImage.Visible = true;
                 }
 
         }
@@ -217,7 +217,7 @@ namespace MySchool
         private void l_lblRemoveImage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             pbSchoolLogo.ImageLocation = null;
-            l_lblRemoveImage.Visible = false;
+            //l_lblRemoveImage.Visible = false;
         }
 
         private void ll_SetLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

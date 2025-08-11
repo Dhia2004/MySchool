@@ -182,6 +182,43 @@ namespace PSMS_DataAccessLayer
 
         }
 
+        static public DataTable fetchTeachersBatch(int PageNumber)
+        {
+
+            DataTable dtTeachers = new DataTable();
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"DECLARE @PageNumber AS INT, @RowsPerPage AS INT;
+                             SET @PageNumber = @@PageNumber;
+                             SET @RowsPerPage = 9;
+
+                             SELECT *
+                             FROM Teachers
+                             order by TeacherID
+                             OFFSET (@PageNumber - 1) * @RowsPerPage ROWS
+                             FETCH NEXT @RowsPerPage ROWS ONLY;";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@@PageNumber", PageNumber);
+
+            try
+            {
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                    dtTeachers.Load(reader);
+                else
+                    dtTeachers = null;
+            }
+            catch (Exception ex)
+            {
+                dtTeachers = null;
+            }
+            finally { connection.Close(); }
+
+            return dtTeachers;
+        }
+
 
 
     }

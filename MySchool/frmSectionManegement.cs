@@ -108,5 +108,26 @@ namespace MySchool
             frm.ShowDialog();
             UpdateCoursesList(); // Refresh the list after adding a new group
         }
+
+        private void showThisGroupsOfThisSectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSectionGroups frm = new frmSectionGroups(SectionInfo.Section);
+            frm.ShowDialog();
+            UpdateCoursesList(); // Refresh the list after adding a new group
+        }
+
+        private void btnAddNewSection_Click(object sender, EventArgs e)
+        {
+            frmAddEditSection frm = new frmAddEditSection();
+            frm.ShowDialog();
+            UpdateCoursesList(); // Refresh the list after adding a new section
+        }
+
+        private void btnAddNewGroup_Click(object sender, EventArgs e)
+        {
+            frmAddEditGroup frm = new frmAddEditGroup();
+            frm.ShowDialog();
+            UpdateCoursesList(); // Refresh the list after adding a new group
+        }
     }
 }

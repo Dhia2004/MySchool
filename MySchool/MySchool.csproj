@@ -108,6 +108,12 @@
     <Compile Include="ctrlStudentMiniCard.Designer.cs">
       <DependentUpon>ctrlStudentMiniCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ctrlTeacherInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlTeacherInfo.Designer.cs">
+      <DependentUpon>ctrlTeacherInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ctrlTeacherMiniCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -240,6 +246,18 @@
     <Compile Include="frmStudentInfoWithFilter.Designer.cs">
       <DependentUpon>frmStudentInfoWithFilter.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTeacherInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeacherInfo.Designer.cs">
+      <DependentUpon>frmTeacherInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTeacherManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeacherManagement.Designer.cs">
+      <DependentUpon>frmTeacherManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUpdatePrice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -283,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ctrlStudentMiniCard.resx">
       <DependentUpon>ctrlStudentMiniCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlTeacherInfo.resx">
+      <DependentUpon>ctrlTeacherInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ctrlTeacherMiniCard.resx">
       <DependentUpon>ctrlTeacherMiniCard.cs</DependentUpon>
@@ -349,6 +370,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmStudentInfoWithFilter.resx">
       <DependentUpon>frmStudentInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeacherInfo.resx">
+      <DependentUpon>frmTeacherInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeacherManagement.resx">
+      <DependentUpon>frmTeacherManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdatePrice.resx">
       <DependentUpon>frmUpdatePrice.cs</DependentUpon>
@@ -683,6 +710,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Time 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subscription 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attendance 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Activate 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desactivate 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classroom 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher 32 - 2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

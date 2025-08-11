@@ -270,5 +270,10 @@ namespace PSMS_BusinessLayer
         {
             clsRapports.GenerateStudentRapport(this);
         }
+
+        public bool UpdateStudentStatus()
+        {
+            return clsStudentDataAccess.UpdateStudentStatus(this.StudentID, this.IsActive, this.DeactivationReason);
+        }
     }
 }

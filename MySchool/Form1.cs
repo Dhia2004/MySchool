@@ -176,5 +176,11 @@ namespace MySchool
             frmSectionManegement frm = new frmSectionManegement();
             frm.ShowDialog();
         }
+
+        private void tTeachers_Click_1(object sender, EventArgs e)
+        {
+            frmTeacherManagement frmTeacherManagement = new frmTeacherManagement();
+            frmTeacherManagement.ShowDialog();
+        }
     }
 }

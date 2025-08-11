@@ -184,6 +184,8 @@ namespace MySchool
             bool MedicalFileTest = true;
 
             btnEditInfo.Visible = true;
+            btnGenerateStudentFile.Visible = true;
+            btnEditStatus.Visible = true;
             btnStudentHistory.Visible = true;
             pbStudentStatistiques.Visible = true;
 
@@ -212,6 +214,7 @@ namespace MySchool
             lblJoinDate.Text = Student.JoinDate.ToShortDateString().ToString();
             lblEducationLevel.Text = clsLevel.GetLevelByID(Student.LevelID).Name;
             lblIsActive.Text = Student.IsActive ? "Active" : "Inactive";
+            btnEditStatus.Image = Student.IsActive ? Resources.Desactivate_32 : Resources.Activate_32;
             lblIsActive.ForeColor = Student.IsActive ? Color.Green : Color.Red;
 
             lblCreatedByUser.Text = clsUser.FindByUserID(Student.CreatedByUserID).UserName;
@@ -374,6 +377,28 @@ namespace MySchool
         private void btnGenerateStudentFile_Click(object sender, EventArgs e)
         {
             Student.GenerateStudentRapport();
+        }
+
+        private void btnEditStatus_Click(object sender, EventArgs e)
+        {
+            if (Student.IsActive)
+            {
+                
+                frmEditStudentStatus frm = new frmEditStudentStatus(Student);
+                frm.ShowDialog();
+                //Student.IsActive = false;
+                //lblStatus.Text = "Inactive";
+                //lblStatus.ForeColor = Color.Red;
+                //pbEditStatus.Image = Resources.Activate;
+            }
+            else
+            {
+
+                //Student.IsActive = true;
+                //lblStatus.Text = "Active";
+                //lblStatus.ForeColor = Color.Green;
+                //pbEditStatus.Image = Resources.desactivate;
+            }
         }
     }
 }

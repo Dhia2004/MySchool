@@ -42,8 +42,10 @@
             this.pbRefrech = new System.Windows.Forms.PictureBox();
             this.lblPageNumber = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
-            this.ctrlGroupInfo1 = new MySchool.ctrlGroupInfo();
             this.btnAddNewGroup = new System.Windows.Forms.Button();
+            this.ctrlGroupInfo1 = new MySchool.ctrlGroupInfo();
+            this.lblRecorsNumber = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.flpGroupsList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
@@ -215,14 +217,6 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // ctrlGroupInfo1
-            // 
-            this.ctrlGroupInfo1.BackColor = System.Drawing.Color.White;
-            this.ctrlGroupInfo1.Location = new System.Drawing.Point(3, 3);
-            this.ctrlGroupInfo1.Name = "ctrlGroupInfo1";
-            this.ctrlGroupInfo1.Size = new System.Drawing.Size(530, 30);
-            this.ctrlGroupInfo1.TabIndex = 0;
-            // 
             // btnAddNewGroup
             // 
             this.btnAddNewGroup.BackColor = System.Drawing.Color.White;
@@ -232,14 +226,45 @@
             this.btnAddNewGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNewGroup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNewGroup.ForeColor = System.Drawing.Color.Black;
-            this.btnAddNewGroup.Image = global::MySchool.Properties.Resources.Groups_64;
-            this.btnAddNewGroup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNewGroup.Location = new System.Drawing.Point(518, 42);
+            this.btnAddNewGroup.Image = global::MySchool.Properties.Resources.Group_32;
+            this.btnAddNewGroup.Location = new System.Drawing.Point(537, 59);
             this.btnAddNewGroup.Name = "btnAddNewGroup";
-            this.btnAddNewGroup.Size = new System.Drawing.Size(75, 75);
+            this.btnAddNewGroup.Size = new System.Drawing.Size(56, 58);
             this.btnAddNewGroup.TabIndex = 146;
             this.btnAddNewGroup.UseVisualStyleBackColor = false;
             this.btnAddNewGroup.Click += new System.EventHandler(this.btnAddNewGroup_Click);
+            // 
+            // ctrlGroupInfo1
+            // 
+            this.ctrlGroupInfo1.BackColor = System.Drawing.Color.White;
+            this.ctrlGroupInfo1.Location = new System.Drawing.Point(3, 3);
+            this.ctrlGroupInfo1.Name = "ctrlGroupInfo1";
+            this.ctrlGroupInfo1.Size = new System.Drawing.Size(530, 30);
+            this.ctrlGroupInfo1.TabIndex = 0;
+            // 
+            // lblRecorsNumber
+            // 
+            this.lblRecorsNumber.AutoSize = true;
+            this.lblRecorsNumber.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecorsNumber.ForeColor = System.Drawing.Color.Black;
+            this.lblRecorsNumber.Location = new System.Drawing.Point(152, 420);
+            this.lblRecorsNumber.Name = "lblRecorsNumber";
+            this.lblRecorsNumber.Size = new System.Drawing.Size(85, 20);
+            this.lblRecorsNumber.TabIndex = 152;
+            this.lblRecorsNumber.Text = "5 Group(s)";
+            this.lblRecorsNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Turquoise;
+            this.label7.Location = new System.Drawing.Point(51, 417);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(104, 25);
+            this.label7.TabIndex = 151;
+            this.label7.Text = "#Records :";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmSectionGroups
             // 
@@ -247,6 +272,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(649, 466);
+            this.Controls.Add(this.lblRecorsNumber);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnAddNewGroup);
             this.Controls.Add(this.pbBack);
             this.Controls.Add(this.pbNext);
@@ -295,5 +322,7 @@
         private System.Windows.Forms.Label lblPageNumber;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnAddNewGroup;
+        private System.Windows.Forms.Label lblRecorsNumber;
+        private System.Windows.Forms.Label label7;
     }
 }

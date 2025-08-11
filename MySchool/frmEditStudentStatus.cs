@@ -32,5 +32,23 @@ namespace MySchool
             OnFormClosing?.Invoke();
             this.Close();
         }
+
+        private void btnDesactivate_Click(object sender, EventArgs e)
+        {
+            Student.IsActive = false;
+            Student.DeactivationReason = cbDeactivationReason.Text.Trim();
+            if (Student.UpdateStudentStatus())
+            {
+                MessageBox.Show("The student status has been updated successfully.", "Success",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                OnFormClosing?.Invoke();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Failed to update the student status. Please try again.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

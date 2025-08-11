@@ -116,6 +116,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnEditStatus = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbStudentStatistiques)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).BeginInit();
@@ -149,6 +150,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnEditStatus);
             this.panel1.Controls.Add(this.btnGenerateStudentFile);
             this.panel1.Controls.Add(this.btnStudentHistory);
             this.panel1.Controls.Add(this.btnEditInfo);
@@ -175,6 +177,7 @@
             this.btnGenerateStudentFile.Size = new System.Drawing.Size(33, 33);
             this.btnGenerateStudentFile.TabIndex = 145;
             this.btnGenerateStudentFile.UseVisualStyleBackColor = false;
+            this.btnGenerateStudentFile.Visible = false;
             this.btnGenerateStudentFile.Click += new System.EventHandler(this.btnGenerateStudentFile_Click);
             // 
             // btnStudentHistory
@@ -271,6 +274,7 @@
             this.btnMedicalFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMedicalFile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMedicalFile.ForeColor = System.Drawing.Color.Black;
+            this.btnMedicalFile.Image = global::MySchool.Properties.Resources.Medical_File_32;
             this.btnMedicalFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedicalFile.Location = new System.Drawing.Point(6, 9);
             this.btnMedicalFile.Name = "btnMedicalFile";
@@ -1168,6 +1172,22 @@
             this.label1.TabIndex = 127;
             this.label1.Text = "Student ID :";
             // 
+            // btnEditStatus
+            // 
+            this.btnEditStatus.BackColor = System.Drawing.Color.White;
+            this.btnEditStatus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditStatus.FlatAppearance.BorderSize = 0;
+            this.btnEditStatus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnEditStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditStatus.Image = global::MySchool.Properties.Resources.Desactivate_32;
+            this.btnEditStatus.Location = new System.Drawing.Point(343, 69);
+            this.btnEditStatus.Name = "btnEditStatus";
+            this.btnEditStatus.Size = new System.Drawing.Size(33, 33);
+            this.btnEditStatus.TabIndex = 146;
+            this.btnEditStatus.UseVisualStyleBackColor = false;
+            this.btnEditStatus.Visible = false;
+            this.btnEditStatus.Click += new System.EventHandler(this.btnEditStatus_Click);
+            // 
             // ctrlStudentInfoCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1306,5 +1326,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnGenerateStudentFile;
+        private System.Windows.Forms.Button btnEditStatus;
     }
 }

@@ -63,7 +63,7 @@ namespace MySchool
 
         private void frmAddEditCourse_Load(object sender, EventArgs e)
         {
-            lblCurrentUser.Text = clsGlobalSettings.CurrentUser.UserName; // Display the current user's name
+            //lblCurrentUser.Text = clsGlobalSettings.CurrentUser.UserName; // Display the current user's name
             List<clsLevel> Levels = clsLevel.GetAllLevelsAsObjects();
             foreach (clsLevel level in Levels)
             {

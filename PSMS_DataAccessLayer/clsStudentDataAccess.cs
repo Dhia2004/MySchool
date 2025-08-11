@@ -510,5 +510,38 @@ namespace PSMS_DataAccessLayer
 
             return dtPersons;
         }
+
+
+        static public bool UpdateStudentStatus(int StudentID,bool IsActive,string DeactivationReason = "")
+        {
+            int RowsAffected = 0;
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"UPDATE Students
+                             SET IsActive = @IsActive,
+                                 DeactivationReason = @DeactivationReason
+                             WHERE StudentID = @StudentID";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@StudentID", StudentID);
+            command.Parameters.AddWithValue("@IsActive", IsActive);
+
+            if (DeactivationReason == "")
+                command.Parameters.AddWithValue("@DeactivationReason", DBNull.Value);
+            else
+                command.Parameters.AddWithValue("@DeactivationReason", DeactivationReason);
+            try
+            {
+                connection.Open();
+                RowsAffected = command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                RowsAffected = 0;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return RowsAffected > 0;
+        }
     }
 }
