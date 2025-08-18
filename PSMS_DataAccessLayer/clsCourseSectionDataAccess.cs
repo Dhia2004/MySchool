@@ -55,7 +55,7 @@ namespace PSMS_DataAccessLayer
             string time, int numberOfSeats, int remainingSeats, string notes, bool status, int createdByUserID)
         {
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
-            string query = @"INSERT INTO CourseSections (Course_ID, Section_ID, Group_ID, Day, Time,
+            string query = @"INSERT INTO CoursesSection (Course_ID, Section_ID, Group_ID, Day, Time,
                                 NumberOfSeats, RemainingSeats, Notes, Status, CreatedByUserID)
                              VALUES (@CourseID, @SectionID, @GroupID, @Day, @Time,
                                 @NumberOfSeats, @RemainingSeats, @Notes, @Status, @CreatedByUserID);
@@ -89,7 +89,7 @@ namespace PSMS_DataAccessLayer
             string time, int numberOfSeats, int remainingSeats, string notes, bool status)
         {
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
-            string query = @"UPDATE CourseSections
+            string query = @"UPDATE CoursesSection
                              SET Course_ID = @CourseID,
                                  Section_ID = @SectionID,
                                  Group_ID = @GroupID,

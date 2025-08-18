@@ -14,6 +14,7 @@ namespace PSMS_BusinessLayer
         public string Name { get; set; }
         public string Description { get; set; }
         public int TargetedLevels { get; set; } // This could be a bitmask or a list of levels, depending on your design
+        public string ImagePath { get;set; }
 
 
         public clsSubject() 
@@ -22,24 +23,26 @@ namespace PSMS_BusinessLayer
             this.Name = string.Empty;
             this.Description = string.Empty;
             this.TargetedLevels = 0; // Default value, can be adjusted based on your requirements
+            this.ImagePath = string.Empty; // Default value for ImagePath
 
         }
-        private clsSubject(int SubjectID, string Name, string Description, int TargetedLevels)
+        private clsSubject(int SubjectID, string Name, string Description, int TargetedLevels,string ImagePath)
         {
             this.SubjectID = SubjectID;
             this.Name = Name;
             this.Description = Description;
             this.TargetedLevels = TargetedLevels;
+            this.ImagePath = ImagePath; // Initialize ImagePath
         }
 
 
         static public clsSubject FindByName(string Name)
         {
             int SubjectID = -1, TargetedLevels = 0;
-            string Description = "";
-            if (clsSubjectDataAccess.FindByName(Name, ref SubjectID, ref Description, ref TargetedLevels))
+            string Description = "",ImagePath = "";
+            if (clsSubjectDataAccess.FindByName(Name, ref SubjectID, ref Description, ref TargetedLevels,ref ImagePath))
             {
-                return new clsSubject(SubjectID, Name, Description, TargetedLevels);
+                return new clsSubject(SubjectID, Name, Description, TargetedLevels, ImagePath);
             }
             else
                 return null;
@@ -47,11 +50,11 @@ namespace PSMS_BusinessLayer
 
         static public clsSubject FindByID(int SubjectID)
         {
-            string Name = "", Description = "";
+            string Name = "", Description = "", ImagePath = "";
             int TargetedLevels = 0;
-            if (clsSubjectDataAccess.FindByID(SubjectID, ref Name, ref Description, ref TargetedLevels))
+            if (clsSubjectDataAccess.FindByID(SubjectID, ref Name, ref Description, ref TargetedLevels,ref ImagePath))
             {
-                return new clsSubject(SubjectID, Name, Description, TargetedLevels);
+                return new clsSubject(SubjectID, Name, Description, TargetedLevels, ImagePath);
             }
             else
                 return null;
@@ -64,7 +67,7 @@ namespace PSMS_BusinessLayer
             if (dtSubjects != null)
                 foreach (DataRow s in dtSubjects.Rows)
                     Subjects.Add(new clsSubject((int)s["SubjectID"], (string)s["Name"], (string)s["Description"],
-                                             (int)s["TargetedLevels"]));
+                                             (int)s["TargetedLevels"], (string)s["ImagePath"]));
             return Subjects;
         }
 

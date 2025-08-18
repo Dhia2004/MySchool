@@ -101,6 +101,10 @@ namespace PSMS_BusinessLayer
         {
             List<clsCourse> Courses = new List<clsCourse>();
             clsCourse Course;
+            if (dtCourses == null || dtCourses.Rows.Count == 0)
+            {
+                return Courses; // Return an empty list if no records found
+            }
             foreach (DataRow s in dtCourses.Rows)
             {
                 Course = new clsCourse((int)s["CourseID"], (int)s["SubjectID"], (int)s["TeacherID"],
@@ -124,6 +128,18 @@ namespace PSMS_BusinessLayer
 
 
 
+        }
+
+        static public List<clsCourse> GetAllCoursesAsObjects()
+        {
+            DataTable dt = clsCourseDataAccess.GetAllCourses();
+            return ConvertCoursesRecordsToObjects(dt);
+        }
+
+        static public List<clsCourse> GetAllCoursesAsObjectsByLevel(int LevelID)
+        {
+            DataTable dt = clsCourseDataAccess.GetAllCoursesByLevel(LevelID);
+            return ConvertCoursesRecordsToObjects(dt);
         }
     }
 }

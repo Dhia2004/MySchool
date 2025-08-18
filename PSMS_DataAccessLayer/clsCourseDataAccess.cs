@@ -194,5 +194,65 @@ namespace PSMS_DataAccessLayer
             }
             return false;
         }
+
+        static public DataTable GetAllCourses()
+        {
+            DataTable dtSubjects = new DataTable();
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"SELECT * FROM Courses";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            try
+            {
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                    dtSubjects.Load(reader);
+                else
+                    dtSubjects = null;
+            }
+            catch (Exception ex)
+            {
+                dtSubjects = null;
+            }
+            finally { connection.Close(); }
+
+            return dtSubjects;
+        }
+
+
+        static public DataTable GetAllCoursesByLevel(int LevelID)
+        {
+            DataTable dtSubjects = new DataTable();
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"SELECT * FROM Courses WHERE Level_ID = @LevelID";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@LevelID", LevelID);
+
+
+
+            try
+            {
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                    dtSubjects.Load(reader);
+                else
+                    dtSubjects = null;
+            }
+            catch (Exception ex)
+            {
+                dtSubjects = null;
+            }
+            finally { connection.Close(); }
+
+            return dtSubjects;
+        }
+
+        
     }
 }

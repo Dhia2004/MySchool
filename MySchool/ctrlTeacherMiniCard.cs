@@ -37,5 +37,10 @@ namespace MySchool
         {
             OnTeacherSelected?.Invoke(Teacher);
         }
+
+        private void ctrlTeacherMiniCard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

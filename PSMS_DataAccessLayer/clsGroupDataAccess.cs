@@ -171,5 +171,75 @@ namespace PSMS_DataAccessLayer
             return dtGroups;
         }
 
+        static public DataTable GetAllGroupsBySectionID(int SectionID)
+        {
+            DataTable dtSubjects = new DataTable();
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"SELECT * FROM Groups WHERE SectionID = @SectionID";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@SectionID", SectionID);
+
+
+
+            try
+            {
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                    dtSubjects.Load(reader);
+                else
+                    dtSubjects = null;
+            }
+            catch (Exception ex)
+            {
+                dtSubjects = null;
+            }
+            finally { connection.Close(); }
+
+            return dtSubjects;
+        }
+
+        static public bool GetGroupByName(string Name, ref int GroupID, ref string Description, ref int SectionID,
+                ref int MaxSeatsNumber, ref int CreatedByUserID) 
+        {
+            bool IsFound = false;
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"SELECT * FROM Groups
+                             WHERE Name = @Name";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@Name", Name);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    IsFound = true;
+
+                    GroupID = (int)reader["GroupID"];
+                    Description = reader["Description"] != DBNull.Value ? (string)reader["Description"] : string.Empty;
+                    SectionID = (int)reader["SectionID"];
+                    MaxSeatsNumber = (int)reader["MaxSeats"];
+                    CreatedByUserID = (int)reader["CreatedByUserID"];
+
+                }
+                else
+                    IsFound = false;
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                IsFound = false;
+            }
+            finally { connection.Close(); }
+
+            return IsFound;
+
+        }
     }
 }

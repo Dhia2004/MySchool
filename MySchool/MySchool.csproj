@@ -54,6 +54,12 @@
     <Compile Include="ctrlCourseInfo.Designer.cs">
       <DependentUpon>ctrlCourseInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ctrlCourseMiniCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlCourseMiniCard.Designer.cs">
+      <DependentUpon>ctrlCourseMiniCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="ctrlCoursSectionInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -274,6 +280,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ctrlCourseInfo.resx">
       <DependentUpon>ctrlCourseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlCourseMiniCard.resx">
+      <DependentUpon>ctrlCourseMiniCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ctrlCoursSectionInfo.resx">
       <DependentUpon>ctrlCoursSectionInfo.cs</DependentUpon>

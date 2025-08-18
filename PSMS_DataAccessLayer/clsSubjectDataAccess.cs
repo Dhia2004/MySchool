@@ -11,7 +11,8 @@ namespace PSMS_DataAccessLayer
     static public class clsSubjectDataAccess
     {
 
-        static public bool FindByName(string Name, ref int SubjectID, ref string Description, ref int TargetedLevels)
+        static public bool FindByName(string Name, ref int SubjectID, ref string Description,
+            ref int TargetedLevels,ref string ImagePath)
         {
             bool IsFound = false;
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
@@ -28,7 +29,8 @@ namespace PSMS_DataAccessLayer
                     SubjectID = (int)reader["SubjectID"];
                     Description =  (string)reader["Description"];
                     TargetedLevels = (int)reader["TargetedLevels"];
-                    
+                    ImagePath = reader["ImagePath"] != DBNull.Value ? (string)reader["ImagePath"] : string.Empty;
+
                 }
                 
             }
@@ -41,7 +43,7 @@ namespace PSMS_DataAccessLayer
             return IsFound;
         }
 
-        static public bool FindByID(int SubjectID, ref string Name, ref string Description, ref int TargetedLevels)
+        static public bool FindByID(int SubjectID, ref string Name, ref string Description, ref int TargetedLevels,ref string ImagePath)
         {
             bool IsFound = false;
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
@@ -58,8 +60,9 @@ namespace PSMS_DataAccessLayer
                     Name = (string)reader["Name"];
                     Description = (string)reader["Description"];
                     TargetedLevels = (int)reader["TargetedLevels"];
+                    ImagePath = reader["ImagePath"] != DBNull.Value ? (string)reader["ImagePath"] : string.Empty;
 
-                    
+
                 }
                
             }

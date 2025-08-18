@@ -82,8 +82,7 @@ namespace MySchool
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frmAddEditGroup frm = new frmAddEditGroup();
-            frm.ShowDialog();
+            
         }
 
         private void tTeachers_Click(object sender, EventArgs e)
@@ -181,6 +180,18 @@ namespace MySchool
         {
             frmTeacherManagement frmTeacherManagement = new frmTeacherManagement();
             frmTeacherManagement.ShowDialog();
+        }
+
+        private void openNewCourseSectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddEditCourseSection frmAddEditCourseSection = new frmAddEditCourseSection();
+            frmAddEditCourseSection.ShowDialog();
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            frmCoursesSectionManagement frm = new frmCoursesSectionManagement();
+            frm.ShowDialog();
         }
     }
 }

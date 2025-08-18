@@ -1,6 +1,6 @@
 ﻿namespace MySchool
 {
-    partial class ctrlTeacherMiniCard
+    partial class ctrlCourseMiniCard
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,32 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblFullName = new System.Windows.Forms.Label();
-            this.lblSubject = new System.Windows.Forms.Label();
             this.btnSelect = new System.Windows.Forms.Button();
+            this.lblTeacherName = new System.Windows.Forms.Label();
+            this.lblCourseName = new System.Windows.Forms.Label();
             this.pbTeacherImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbTeacherImage)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblFullName
-            // 
-            this.lblFullName.AutoSize = true;
-            this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.Location = new System.Drawing.Point(53, 6);
-            this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(134, 17);
-            this.lblFullName.TabIndex = 113;
-            this.lblFullName.Text = "Dhia Eddine DJEDDI";
-            // 
-            // lblSubject
-            // 
-            this.lblSubject.AutoSize = true;
-            this.lblSubject.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubject.Location = new System.Drawing.Point(53, 28);
-            this.lblSubject.Name = "lblSubject";
-            this.lblSubject.Size = new System.Drawing.Size(76, 17);
-            this.lblSubject.TabIndex = 116;
-            this.lblSubject.Text = "24/01/2004";
             // 
             // btnSelect
             // 
@@ -66,9 +46,29 @@
             this.btnSelect.Location = new System.Drawing.Point(220, 8);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(33, 33);
-            this.btnSelect.TabIndex = 145;
+            this.btnSelect.TabIndex = 149;
             this.btnSelect.UseVisualStyleBackColor = false;
-            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click_1);
+            // 
+            // lblTeacherName
+            // 
+            this.lblTeacherName.AutoSize = true;
+            this.lblTeacherName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeacherName.Location = new System.Drawing.Point(53, 28);
+            this.lblTeacherName.Name = "lblTeacherName";
+            this.lblTeacherName.Size = new System.Drawing.Size(130, 17);
+            this.lblTeacherName.TabIndex = 148;
+            this.lblTeacherName.Text = "DhiaEddine DJEDDI";
+            // 
+            // lblCourseName
+            // 
+            this.lblCourseName.AutoSize = true;
+            this.lblCourseName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCourseName.Location = new System.Drawing.Point(53, 6);
+            this.lblCourseName.Name = "lblCourseName";
+            this.lblCourseName.Size = new System.Drawing.Size(47, 17);
+            this.lblCourseName.TabIndex = 147;
+            this.lblCourseName.Text = "Arabic";
             // 
             // pbTeacherImage
             // 
@@ -77,20 +77,21 @@
             this.pbTeacherImage.Name = "pbTeacherImage";
             this.pbTeacherImage.Size = new System.Drawing.Size(47, 50);
             this.pbTeacherImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbTeacherImage.TabIndex = 1;
+            this.pbTeacherImage.TabIndex = 146;
             this.pbTeacherImage.TabStop = false;
             // 
-            // ctrlTeacherMiniCard
+            // ctrlCourseMiniCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnSelect);
-            this.Controls.Add(this.lblSubject);
-            this.Controls.Add(this.lblFullName);
+            this.Controls.Add(this.lblTeacherName);
+            this.Controls.Add(this.lblCourseName);
             this.Controls.Add(this.pbTeacherImage);
-            this.Name = "ctrlTeacherMiniCard";
+            this.Name = "ctrlCourseMiniCard";
             this.Size = new System.Drawing.Size(262, 50);
-            this.Load += new System.EventHandler(this.ctrlTeacherMiniCard_Load);
+            this.Load += new System.EventHandler(this.ctrlCourseMiniCard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbTeacherImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -99,9 +100,9 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbTeacherImage;
-        private System.Windows.Forms.Label lblFullName;
-        private System.Windows.Forms.Label lblSubject;
         private System.Windows.Forms.Button btnSelect;
+        private System.Windows.Forms.Label lblTeacherName;
+        private System.Windows.Forms.Label lblCourseName;
+        private System.Windows.Forms.PictureBox pbTeacherImage;
     }
 }

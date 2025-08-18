@@ -33,8 +33,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pbStudentImage = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -45,6 +43,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbStudentImage = new System.Windows.Forms.PictureBox();
             this.ctrlCoursSectionInfo1 = new MySchool.ctrlCoursSectionInfo();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -98,27 +98,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1109, 366);
             this.flowLayoutPanel1.TabIndex = 133;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::MySchool.Properties.Resources.Equipment_72;
-            this.pictureBox2.Location = new System.Drawing.Point(201, 48);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(37, 38);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 132;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pbStudentImage
-            // 
-            this.pbStudentImage.Image = global::MySchool.Properties.Resources.Groups_64;
-            this.pbStudentImage.Location = new System.Drawing.Point(37, 8);
-            this.pbStudentImage.Name = "pbStudentImage";
-            this.pbStudentImage.Size = new System.Drawing.Size(142, 148);
-            this.pbStudentImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbStudentImage.TabIndex = 128;
-            this.pbStudentImage.TabStop = false;
             // 
             // label9
             // 
@@ -240,6 +219,27 @@
             this.label11.TabIndex = 145;
             this.label11.Text = "Created by user";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::MySchool.Properties.Resources.Equipment_72;
+            this.pictureBox2.Location = new System.Drawing.Point(201, 48);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(37, 38);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 132;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pbStudentImage
+            // 
+            this.pbStudentImage.Image = global::MySchool.Properties.Resources.Groups_64;
+            this.pbStudentImage.Location = new System.Drawing.Point(37, 8);
+            this.pbStudentImage.Name = "pbStudentImage";
+            this.pbStudentImage.Size = new System.Drawing.Size(142, 148);
+            this.pbStudentImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbStudentImage.TabIndex = 128;
+            this.pbStudentImage.TabStop = false;
+            // 
             // ctrlCoursSectionInfo1
             // 
             this.ctrlCoursSectionInfo1.Location = new System.Drawing.Point(3, 3);
@@ -272,7 +272,9 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCoursesSectionManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCoursesSectionManagement";
+            this.Load += new System.EventHandler(this.frmCoursesSectionManagement_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).EndInit();

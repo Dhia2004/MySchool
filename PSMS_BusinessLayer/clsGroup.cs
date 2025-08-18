@@ -97,6 +97,8 @@ namespace PSMS_BusinessLayer
         {
             List<clsGroup> Groups = new List<clsGroup>();
             clsGroup Group;
+            if (dtGroups == null || dtGroups.Rows.Count == 0)
+                return Groups;
             foreach (DataRow s in dtGroups.Rows)
             {
                 Group = new clsGroup((int)s["GroupID"], (string)s["Name"], (string)s["Description"],
@@ -119,6 +121,24 @@ namespace PSMS_BusinessLayer
 
 
 
+        }
+
+        static public List<clsGroup> GetAllGroupsBySectionID(int SectionID)
+        {
+            DataTable dtGroups = clsGroupDataAccess.GetAllGroupsBySectionID(SectionID);
+            return ConvertGroupsRecordsToObjects(dtGroups);
+        }
+
+        static public clsGroup GetGroupByName(string GroupName)
+        {
+            int GroupID = -1, SectionID = -1, MaxSeatsNumber = 0, CreatedByUserID = -1;
+            string Description = string.Empty;
+            if (clsGroupDataAccess.GetGroupByName(GroupName, ref GroupID, ref Description, ref SectionID,
+                ref MaxSeatsNumber, ref CreatedByUserID))
+            {
+                return new clsGroup(GroupID, GroupName, Description, SectionID, MaxSeatsNumber, CreatedByUserID);
+            }
+            return null; // or throw an exception based on your design choice
         }
 
     }

@@ -33,10 +33,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lblCourseID = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblDay = new System.Windows.Forms.Label();
             this.lblNumberOfSeasson = new System.Windows.Forms.Label();
             this.lblLevel = new System.Windows.Forms.Label();
             this.lblTeacher = new System.Windows.Forms.Label();
@@ -44,28 +44,32 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.pnlFirst = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.flpCoursesList = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.cbLevels = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pnlSecond = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtNotes = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtTimeEnd = new System.Windows.Forms.TextBox();
+            this.txtTimeStart = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cbDays = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cbGroup = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.cbSections = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.lblSeats = new System.Windows.Forms.Label();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -74,6 +78,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -81,12 +86,15 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.pnlFirst.SuspendLayout();
             this.pnlSecond.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -95,24 +103,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMode
             // 
             this.lblMode.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMode.ForeColor = System.Drawing.Color.DarkViolet;
-            this.lblMode.Location = new System.Drawing.Point(283, 16);
+            this.lblMode.Location = new System.Drawing.Point(201, 16);
             this.lblMode.Name = "lblMode";
-            this.lblMode.Size = new System.Drawing.Size(188, 33);
+            this.lblMode.Size = new System.Drawing.Size(353, 33);
             this.lblMode.TabIndex = 98;
-            this.lblMode.Text = "Add New Section";
+            this.lblMode.Text = "Open new course section";
             this.lblMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSectionID
@@ -120,7 +128,7 @@
             this.lblSectionID.AutoSize = true;
             this.lblSectionID.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSectionID.ForeColor = System.Drawing.Color.Red;
-            this.lblSectionID.Location = new System.Drawing.Point(420, 66);
+            this.lblSectionID.Location = new System.Drawing.Point(446, 66);
             this.lblSectionID.Name = "lblSectionID";
             this.lblSectionID.Size = new System.Drawing.Size(40, 21);
             this.lblSectionID.TabIndex = 100;
@@ -131,11 +139,11 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(322, 66);
+            this.label16.Location = new System.Drawing.Point(302, 66);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 21);
+            this.label16.Size = new System.Drawing.Size(148, 21);
             this.label16.TabIndex = 99;
-            this.label16.Text = "Section ID :";
+            this.label16.Text = "Course Section ID :";
             // 
             // panel1
             // 
@@ -149,7 +157,7 @@
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.pictureBox21);
-            this.panel3.Controls.Add(this.lblCourseID);
+            this.panel3.Controls.Add(this.lblUser);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.panel5);
@@ -160,32 +168,36 @@
             this.panel3.Size = new System.Drawing.Size(311, 430);
             this.panel3.TabIndex = 103;
             // 
-            // lblCourseID
+            // lblUser
             // 
-            this.lblCourseID.AutoSize = true;
-            this.lblCourseID.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCourseID.ForeColor = System.Drawing.Color.Red;
-            this.lblCourseID.Location = new System.Drawing.Point(241, 87);
-            this.lblCourseID.Name = "lblCourseID";
-            this.lblCourseID.Size = new System.Drawing.Size(40, 21);
-            this.lblCourseID.TabIndex = 240;
-            this.lblCourseID.Text = "N/A";
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.ForeColor = System.Drawing.Color.Red;
+            this.lblUser.Location = new System.Drawing.Point(124, 88);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(40, 21);
+            this.lblUser.TabIndex = 240;
+            this.lblUser.Text = "N/A";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(153, 87);
+            this.label1.Location = new System.Drawing.Point(153, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 21);
+            this.label1.Size = new System.Drawing.Size(134, 21);
             this.label1.TabIndex = 239;
-            this.label1.Text = "Course ID :";
+            this.label1.Text = "Created bu user :";
             // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.lblPrice);
+            this.panel4.Controls.Add(this.lblSeats);
+            this.panel4.Controls.Add(this.pictureBox17);
+            this.panel4.Controls.Add(this.lblTime);
+            this.panel4.Controls.Add(this.pictureBox16);
+            this.panel4.Controls.Add(this.lblDay);
             this.panel4.Controls.Add(this.lblNumberOfSeasson);
             this.panel4.Controls.Add(this.lblLevel);
             this.panel4.Controls.Add(this.pictureBox9);
@@ -195,20 +207,20 @@
             this.panel4.Controls.Add(this.pictureBox7);
             this.panel4.Controls.Add(this.pictureBox6);
             this.panel4.Controls.Add(this.pictureBox5);
-            this.panel4.Location = new System.Drawing.Point(36, 175);
+            this.panel4.Location = new System.Drawing.Point(36, 148);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(237, 196);
+            this.panel4.Size = new System.Drawing.Size(237, 268);
             this.panel4.TabIndex = 238;
             // 
-            // lblPrice
+            // lblDay
             // 
-            this.lblPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(53, 159);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(131, 21);
-            this.lblPrice.TabIndex = 139;
-            this.lblPrice.Text = "N/A";
-            this.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDay.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDay.Location = new System.Drawing.Point(53, 159);
+            this.lblDay.Name = "lblDay";
+            this.lblDay.Size = new System.Drawing.Size(131, 21);
+            this.lblDay.TabIndex = 139;
+            this.lblDay.Text = "N/A";
+            this.lblDay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblNumberOfSeasson
             // 
@@ -267,11 +279,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(121, 10);
+            this.label6.Location = new System.Drawing.Point(112, 10);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 32);
+            this.label6.Size = new System.Drawing.Size(192, 32);
             this.label6.TabIndex = 232;
-            this.label6.Text = "Course Info";
+            this.label6.Text = "Course Sec Info";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlFirst
@@ -279,7 +291,7 @@
             this.pnlFirst.AutoScroll = true;
             this.pnlFirst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlFirst.Controls.Add(this.label2);
-            this.pnlFirst.Controls.Add(this.flowLayoutPanel1);
+            this.pnlFirst.Controls.Add(this.flpCoursesList);
             this.pnlFirst.Controls.Add(this.label4);
             this.pnlFirst.Controls.Add(this.cbLevels);
             this.pnlFirst.Controls.Add(this.pictureBox4);
@@ -288,6 +300,29 @@
             this.pnlFirst.Name = "pnlFirst";
             this.pnlFirst.Size = new System.Drawing.Size(324, 430);
             this.pnlFirst.TabIndex = 102;
+            this.pnlFirst.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlFirst_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(82, 192);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(158, 30);
+            this.label2.TabIndex = 133;
+            this.label2.Text = "Select a course";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flpCoursesList
+            // 
+            this.flpCoursesList.AutoScroll = true;
+            this.flpCoursesList.Location = new System.Drawing.Point(15, 254);
+            this.flpCoursesList.Name = "flpCoursesList";
+            this.flpCoursesList.Size = new System.Drawing.Size(293, 157);
+            this.flpCoursesList.TabIndex = 132;
+            this.flpCoursesList.Paint += new System.Windows.Forms.PaintEventHandler(this.flpCoursesList_Paint);
             // 
             // label4
             // 
@@ -310,6 +345,7 @@
             this.cbLevels.Name = "cbLevels";
             this.cbLevels.Size = new System.Drawing.Size(262, 28);
             this.cbLevels.TabIndex = 131;
+            this.cbLevels.SelectedIndexChanged += new System.EventHandler(this.cbLevels_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -325,20 +361,20 @@
             // 
             this.pnlSecond.AutoScroll = true;
             this.pnlSecond.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSecond.Controls.Add(this.textBox3);
+            this.pnlSecond.Controls.Add(this.txtNotes);
             this.pnlSecond.Controls.Add(this.pictureBox15);
             this.pnlSecond.Controls.Add(this.label3);
-            this.pnlSecond.Controls.Add(this.textBox2);
-            this.pnlSecond.Controls.Add(this.textBox1);
+            this.pnlSecond.Controls.Add(this.txtTimeEnd);
+            this.pnlSecond.Controls.Add(this.txtTimeStart);
             this.pnlSecond.Controls.Add(this.pictureBox14);
             this.pnlSecond.Controls.Add(this.label17);
             this.pnlSecond.Controls.Add(this.pictureBox13);
             this.pnlSecond.Controls.Add(this.label15);
-            this.pnlSecond.Controls.Add(this.comboBox2);
+            this.pnlSecond.Controls.Add(this.cbDays);
             this.pnlSecond.Controls.Add(this.pictureBox12);
             this.pnlSecond.Controls.Add(this.label13);
             this.pnlSecond.Controls.Add(this.label14);
-            this.pnlSecond.Controls.Add(this.comboBox1);
+            this.pnlSecond.Controls.Add(this.cbGroup);
             this.pnlSecond.Controls.Add(this.pictureBox11);
             this.pnlSecond.Controls.Add(this.label11);
             this.pnlSecond.Controls.Add(this.label12);
@@ -352,90 +388,75 @@
             this.pnlSecond.Size = new System.Drawing.Size(324, 430);
             this.pnlSecond.TabIndex = 133;
             // 
-            // flowLayoutPanel1
+            // txtNotes
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(15, 254);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(293, 157);
-            this.flowLayoutPanel1.TabIndex = 132;
+            this.txtNotes.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.txtNotes.Location = new System.Drawing.Point(11, 335);
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Size = new System.Drawing.Size(289, 27);
+            this.txtNotes.TabIndex = 262;
             // 
-            // label2
+            // label3
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(82, 192);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 30);
-            this.label2.TabIndex = 133;
-            this.label2.Text = "Select a course";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(41, 294);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 21);
+            this.label3.TabIndex = 260;
+            this.label3.Text = "Notes :";
             // 
-            // cbSections
+            // txtTimeEnd
             // 
-            this.cbSections.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.cbSections.FormattingEnabled = true;
-            this.cbSections.Location = new System.Drawing.Point(131, 28);
-            this.cbSections.Name = "cbSections";
-            this.cbSections.Size = new System.Drawing.Size(169, 28);
-            this.cbSections.TabIndex = 245;
+            this.txtTimeEnd.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.txtTimeEnd.Location = new System.Drawing.Point(177, 242);
+            this.txtTimeEnd.Name = "txtTimeEnd";
+            this.txtTimeEnd.Size = new System.Drawing.Size(123, 27);
+            this.txtTimeEnd.TabIndex = 259;
+            this.txtTimeEnd.MouseLeave += new System.EventHandler(this.txtTimeEnd_MouseLeave);
             // 
-            // label5
+            // txtTimeStart
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(108, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 21);
-            this.label5.TabIndex = 243;
-            this.label5.Text = "*";
+            this.txtTimeStart.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.txtTimeStart.Location = new System.Drawing.Point(11, 242);
+            this.txtTimeStart.Name = "txtTimeStart";
+            this.txtTimeStart.Size = new System.Drawing.Size(123, 27);
+            this.txtTimeStart.TabIndex = 258;
+            this.txtTimeStart.TextChanged += new System.EventHandler(this.txtTimeStart_TextChanged);
+            this.txtTimeStart.MouseLeave += new System.EventHandler(this.txtTimeStart_MouseLeave);
             // 
-            // label10
+            // label17
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(41, 32);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 21);
-            this.label10.TabIndex = 242;
-            this.label10.Text = "Section :";
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(207, 201);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(85, 21);
+            this.label17.TabIndex = 256;
+            this.label17.Text = "Time End :";
             // 
-            // comboBox1
+            // label15
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(131, 84);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(169, 28);
-            this.comboBox1.TabIndex = 249;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(41, 201);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(93, 21);
+            this.label15.TabIndex = 254;
+            this.label15.Text = "Time Start :";
             // 
-            // label11
+            // cbDays
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(108, 86);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(17, 21);
-            this.label11.TabIndex = 247;
-            this.label11.Text = "*";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(41, 88);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 21);
-            this.label12.TabIndex = 246;
-            this.label12.Text = "Group :";
+            this.cbDays.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.cbDays.FormattingEnabled = true;
+            this.cbDays.Location = new System.Drawing.Point(131, 144);
+            this.cbDays.Name = "cbDays";
+            this.cbDays.Size = new System.Drawing.Size(169, 28);
+            this.cbDays.TabIndex = 253;
+            this.cbDays.SelectedIndexChanged += new System.EventHandler(this.cbDays_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -460,85 +481,125 @@
             this.label14.TabIndex = 250;
             this.label14.Text = "Day :";
             // 
-            // comboBox2
+            // cbGroup
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(131, 144);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(169, 28);
-            this.comboBox2.TabIndex = 253;
+            this.cbGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.cbGroup.FormattingEnabled = true;
+            this.cbGroup.Location = new System.Drawing.Point(131, 84);
+            this.cbGroup.Name = "cbGroup";
+            this.cbGroup.Size = new System.Drawing.Size(169, 28);
+            this.cbGroup.TabIndex = 249;
+            this.cbGroup.SelectedIndexChanged += new System.EventHandler(this.cbGroup_SelectedIndexChanged);
             // 
-            // label15
+            // label11
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(41, 201);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(93, 21);
-            this.label15.TabIndex = 254;
-            this.label15.Text = "Time Start :";
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Red;
+            this.label11.Location = new System.Drawing.Point(108, 86);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(17, 21);
+            this.label11.TabIndex = 247;
+            this.label11.Text = "*";
             // 
-            // label17
+            // label12
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(207, 201);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(85, 21);
-            this.label17.TabIndex = 256;
-            this.label17.Text = "Time End :";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(41, 88);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(64, 21);
+            this.label12.TabIndex = 246;
+            this.label12.Text = "Group :";
             // 
-            // textBox1
+            // cbSections
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(11, 242);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 27);
-            this.textBox1.TabIndex = 258;
+            this.cbSections.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.cbSections.FormattingEnabled = true;
+            this.cbSections.Location = new System.Drawing.Point(131, 28);
+            this.cbSections.Name = "cbSections";
+            this.cbSections.Size = new System.Drawing.Size(169, 28);
+            this.cbSections.TabIndex = 245;
+            this.cbSections.SelectedIndexChanged += new System.EventHandler(this.cbSections_SelectedIndexChanged);
             // 
-            // textBox2
+            // label5
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(177, 242);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(123, 27);
-            this.textBox2.TabIndex = 259;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(108, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 21);
+            this.label5.TabIndex = 243;
+            this.label5.Text = "*";
             // 
-            // textBox3
+            // label10
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(11, 335);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(289, 27);
-            this.textBox3.TabIndex = 262;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(41, 32);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(73, 21);
+            this.label10.TabIndex = 242;
+            this.label10.Text = "Section :";
             // 
-            // label3
+            // lblTime
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(41, 294);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 21);
-            this.label3.TabIndex = 260;
-            this.label3.Text = "Notes :";
+            this.lblTime.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Location = new System.Drawing.Point(53, 195);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(131, 21);
+            this.lblTime.TabIndex = 141;
+            this.lblTime.Text = "N/A";
+            this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblSeats
+            // 
+            this.lblSeats.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeats.Location = new System.Drawing.Point(53, 231);
+            this.lblSeats.Name = "lblSeats";
+            this.lblSeats.Size = new System.Drawing.Size(131, 21);
+            this.lblSeats.TabIndex = 143;
+            this.lblSeats.Text = "N/A";
+            this.lblSeats.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox21
             // 
             this.pictureBox21.Image = global::MySchool.Properties.Resources.Person_ID_32;
-            this.pictureBox21.Location = new System.Drawing.Point(124, 84);
+            this.pictureBox21.Location = new System.Drawing.Point(124, 50);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(25, 27);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox21.TabIndex = 241;
             this.pictureBox21.TabStop = false;
             // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::MySchool.Properties.Resources.Seat_32;
+            this.pictureBox17.Location = new System.Drawing.Point(8, 226);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 142;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::MySchool.Properties.Resources.Time_32;
+            this.pictureBox16.Location = new System.Drawing.Point(8, 190);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 140;
+            this.pictureBox16.TabStop = false;
+            // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::MySchool.Properties.Resources.Money_32;
+            this.pictureBox9.Image = global::MySchool.Properties.Resources.Calendar_32___3;
             this.pictureBox9.Location = new System.Drawing.Point(8, 154);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(30, 30);
@@ -609,12 +670,22 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::MySchool.Properties.Resources.Person_ID_32;
-            this.pictureBox8.Location = new System.Drawing.Point(289, 63);
+            this.pictureBox8.Location = new System.Drawing.Point(269, 63);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(25, 27);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 101;
             this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::MySchool.Properties.Resources.Education_Level_32;
+            this.pictureBox4.Location = new System.Drawing.Point(108, 78);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(44, 39);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 130;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox15
             // 
@@ -693,23 +764,54 @@
             this.btnBack.Size = new System.Drawing.Size(43, 35);
             this.btnBack.TabIndex = 133;
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // pictureBox4
+            // btnSave
             // 
-            this.pictureBox4.Image = global::MySchool.Properties.Resources.Education_Level_32;
-            this.pictureBox4.Location = new System.Drawing.Point(108, 78);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(44, 39);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 130;
-            this.pictureBox4.TabStop = false;
+            this.btnSave.BackColor = System.Drawing.Color.White;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Image = global::MySchool.Properties.Resources.Save_32;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(588, 557);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(113, 35);
+            this.btnSave.TabIndex = 135;
+            this.btnSave.Text = "     Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.White;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.Black;
+            this.btnClose.Image = global::MySchool.Properties.Resources.Close_ic_32;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(463, 557);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(113, 35);
+            this.btnClose.TabIndex = 134;
+            this.btnClose.Text = "     Close";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmAddEditCourseSection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(754, 583);
+            this.ClientSize = new System.Drawing.Size(754, 606);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.lblMode);
             this.Controls.Add(this.pictureBox1);
@@ -721,7 +823,9 @@
             this.Controls.Add(this.pnlFirst);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddEditCourseSection";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddEditCourseSection";
+            this.Load += new System.EventHandler(this.frmAddEditCourseSection_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -730,6 +834,8 @@
             this.pnlSecond.ResumeLayout(false);
             this.pnlSecond.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -738,13 +844,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -760,10 +866,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.Label lblCourseID;
+        private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Label lblDay;
         private System.Windows.Forms.Label lblNumberOfSeasson;
         private System.Windows.Forms.Label lblLevel;
         private System.Windows.Forms.PictureBox pictureBox9;
@@ -782,14 +888,14 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flpCoursesList;
         private System.Windows.Forms.Panel pnlSecond;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbDays;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbGroup;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
@@ -797,14 +903,20 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNotes;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTimeEnd;
+        private System.Windows.Forms.TextBox txtTimeStart;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.Label lblSeats;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnClose;
     }
 }

@@ -16,5 +16,10 @@ namespace MySchool
         {
             InitializeComponent();
         }
+
+        private void frmCoursesSectionManagement_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
