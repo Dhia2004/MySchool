@@ -34,6 +34,12 @@
             this.lblMode = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flpTeacherList = new System.Windows.Forms.FlowLayoutPanel();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.activateDesactivateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,17 +49,11 @@
             this.lblRecorsNumber = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lblPageNumber = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnAddNewTeacher = new System.Windows.Forms.Button();
             this.pbBack = new System.Windows.Forms.PictureBox();
             this.pbNext = new System.Windows.Forms.PictureBox();
             this.pbRefrech = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.activateDesactivateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbStudentImage = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1.SuspendLayout();
@@ -106,12 +106,62 @@
             // 
             // flpTeacherList
             // 
+            this.flpTeacherList.AutoScroll = true;
             this.flpTeacherList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flpTeacherList.ContextMenuStrip = this.contextMenuStrip1;
             this.flpTeacherList.Location = new System.Drawing.Point(39, 199);
             this.flpTeacherList.Name = "flpTeacherList";
             this.flpTeacherList.Size = new System.Drawing.Size(784, 278);
             this.flpTeacherList.TabIndex = 121;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripSeparator1,
+            this.deleteToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.activateDesactivateToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(223, 130);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem1.Image = global::MySchool.Properties.Resources.Info_32;
+            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(222, 38);
+            this.toolStripMenuItem1.Text = "Teacher details";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(219, 6);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.deleteToolStripMenuItem.Image = global::MySchool.Properties.Resources.Delete_32;
+            this.deleteToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(222, 38);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(219, 6);
+            // 
+            // activateDesactivateToolStripMenuItem
+            // 
+            this.activateDesactivateToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.activateDesactivateToolStripMenuItem.Image = global::MySchool.Properties.Resources.Desactivate_32;
+            this.activateDesactivateToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.activateDesactivateToolStripMenuItem.Name = "activateDesactivateToolStripMenuItem";
+            this.activateDesactivateToolStripMenuItem.Size = new System.Drawing.Size(222, 38);
+            this.activateDesactivateToolStripMenuItem.Text = "Activate / Desactivate";
             // 
             // label6
             // 
@@ -221,27 +271,6 @@
             this.lblPageNumber.Text = "1";
             this.lblPageNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripSeparator1,
-            this.deleteToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.activateDesactivateToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(223, 130);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(219, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(219, 6);
-            // 
             // btnAddNewTeacher
             // 
             this.btnAddNewTeacher.BackColor = System.Drawing.Color.White;
@@ -310,34 +339,6 @@
             this.btnClose.Text = "     Close";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem1.Image = global::MySchool.Properties.Resources.Info_32;
-            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(222, 38);
-            this.toolStripMenuItem1.Text = "Teacher details";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.deleteToolStripMenuItem.Image = global::MySchool.Properties.Resources.Delete_32;
-            this.deleteToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(222, 38);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            // 
-            // activateDesactivateToolStripMenuItem
-            // 
-            this.activateDesactivateToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.activateDesactivateToolStripMenuItem.Image = global::MySchool.Properties.Resources.Desactivate_32;
-            this.activateDesactivateToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.activateDesactivateToolStripMenuItem.Name = "activateDesactivateToolStripMenuItem";
-            this.activateDesactivateToolStripMenuItem.Size = new System.Drawing.Size(222, 38);
-            this.activateDesactivateToolStripMenuItem.Text = "Activate / Desactivate";
             // 
             // pictureBox2
             // 

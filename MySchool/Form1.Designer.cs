@@ -49,6 +49,9 @@
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
             this.addNewSectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tCoursesSection = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.openNewCourseSectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.tUsers = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,9 +60,8 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.openNewCourseSectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -168,6 +170,8 @@
             // tTeachers
             // 
             this.tTeachers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem8,
+            this.toolStripSeparator2,
             this.addNewTeacherToolStripMenuItem});
             this.tTeachers.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tTeachers.Image = global::MySchool.Properties.Resources.Teachers_64;
@@ -182,7 +186,7 @@
             // 
             this.addNewTeacherToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.addNewTeacherToolStripMenuItem.Name = "addNewTeacherToolStripMenuItem";
-            this.addNewTeacherToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.addNewTeacherToolStripMenuItem.Size = new System.Drawing.Size(232, 24);
             this.addNewTeacherToolStripMenuItem.Text = "Add New Teacher";
             this.addNewTeacherToolStripMenuItem.Click += new System.EventHandler(this.addNewTeacherToolStripMenuItem_Click);
             // 
@@ -284,6 +288,27 @@
             this.tCoursesSection.Text = "    Courses Section";
             this.tCoursesSection.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(288, 24);
+            this.toolStripMenuItem7.Text = "Courses Section Managemant";
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(285, 6);
+            // 
+            // openNewCourseSectionToolStripMenuItem
+            // 
+            this.openNewCourseSectionToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.openNewCourseSectionToolStripMenuItem.Name = "openNewCourseSectionToolStripMenuItem";
+            this.openNewCourseSectionToolStripMenuItem.Size = new System.Drawing.Size(288, 24);
+            this.openNewCourseSectionToolStripMenuItem.Text = "Open new course section";
+            this.openNewCourseSectionToolStripMenuItem.Click += new System.EventHandler(this.openNewCourseSectionToolStripMenuItem_Click);
+            // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
@@ -367,26 +392,18 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // openNewCourseSectionToolStripMenuItem
+            // toolStripMenuItem8
             // 
-            this.openNewCourseSectionToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.openNewCourseSectionToolStripMenuItem.Name = "openNewCourseSectionToolStripMenuItem";
-            this.openNewCourseSectionToolStripMenuItem.Size = new System.Drawing.Size(288, 24);
-            this.openNewCourseSectionToolStripMenuItem.Text = "Open new course section";
-            this.openNewCourseSectionToolStripMenuItem.Click += new System.EventHandler(this.openNewCourseSectionToolStripMenuItem_Click);
+            this.toolStripMenuItem8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(232, 24);
+            this.toolStripMenuItem8.Text = "Teacher Management";
+            this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
-            // toolStripMenuItem7
+            // toolStripSeparator2
             // 
-            this.toolStripMenuItem7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(288, 24);
-            this.toolStripMenuItem7.Text = "Courses Section Managemant";
-            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(285, 6);
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(229, 6);
             // 
             // frmMainPage
             // 
@@ -444,6 +461,8 @@
         private System.Windows.Forms.ToolStripMenuItem openNewCourseSectionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }
 

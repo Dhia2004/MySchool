@@ -918,12 +918,12 @@
             this.pnlMedicalInfo.Controls.Add(this.panel9);
             this.pnlMedicalInfo.Controls.Add(this.panel8);
             this.pnlMedicalInfo.Controls.Add(this.pictureBox4);
-            this.pnlMedicalInfo.Controls.Add(this.pnlChronicIllness);
-            this.pnlMedicalInfo.Controls.Add(this.pnlNoChronics);
             this.pnlMedicalInfo.Controls.Add(this.pnlAllergy);
             this.pnlMedicalInfo.Controls.Add(this.pnlNoAllergy);
             this.pnlMedicalInfo.Controls.Add(this.pnlMedications);
             this.pnlMedicalInfo.Controls.Add(this.pnlNoMedication);
+            this.pnlMedicalInfo.Controls.Add(this.pnlChronicIllness);
+            this.pnlMedicalInfo.Controls.Add(this.pnlNoChronics);
             this.pnlMedicalInfo.Location = new System.Drawing.Point(13, 154);
             this.pnlMedicalInfo.Name = "pnlMedicalInfo";
             this.pnlMedicalInfo.Size = new System.Drawing.Size(561, 571);
@@ -2004,9 +2004,9 @@
             this.Controls.Add(this.lblMode);
             this.Controls.Add(this.lblPersonID);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.pnlBasicInfo);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnMedicalFile);
+            this.Controls.Add(this.pnlBasicInfo);
             this.Controls.Add(this.pnlMedicalInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddEditStudent";

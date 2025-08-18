@@ -58,6 +58,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ctrlPersonInfoWithFilter1 = new MySchool.ctrlPersonInfoWithFilter();
+            this.pbSubjectImage = new System.Windows.Forms.PictureBox();
             this.pnlWarning.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).BeginInit();
             this.pnlAccountInformation.SuspendLayout();
@@ -67,6 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSubjectImage)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -172,6 +174,7 @@
             // pnlAccountInformation
             // 
             this.pnlAccountInformation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAccountInformation.Controls.Add(this.pbSubjectImage);
             this.pnlAccountInformation.Controls.Add(this.panel5);
             this.pnlAccountInformation.Controls.Add(this.lblCreatedByUser);
             this.pnlAccountInformation.Controls.Add(this.lblFullName);
@@ -227,6 +230,7 @@
             this.cbSubjects.Name = "cbSubjects";
             this.cbSubjects.Size = new System.Drawing.Size(262, 28);
             this.cbSubjects.TabIndex = 122;
+            this.cbSubjects.SelectedIndexChanged += new System.EventHandler(this.cbSubjects_SelectedIndexChanged);
             // 
             // pictureBox5
             // 
@@ -393,6 +397,15 @@
             this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(391, 660);
             this.ctrlPersonInfoWithFilter1.TabIndex = 150;
             // 
+            // pbSubjectImage
+            // 
+            this.pbSubjectImage.Location = new System.Drawing.Point(59, 302);
+            this.pbSubjectImage.Name = "pbSubjectImage";
+            this.pbSubjectImage.Size = new System.Drawing.Size(50, 50);
+            this.pbSubjectImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSubjectImage.TabIndex = 232;
+            this.pbSubjectImage.TabStop = false;
+            // 
             // frmAddEditTeachers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,8 +422,8 @@
             this.Controls.Add(this.lblTeacherID);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.lblMode);
-            this.Controls.Add(this.pnlWarning);
             this.Controls.Add(this.pnlAccountInformation);
+            this.Controls.Add(this.pnlWarning);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(852, 802);
@@ -429,6 +442,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSubjectImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -465,5 +479,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pbSubjectImage;
     }
 }

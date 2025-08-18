@@ -58,6 +58,7 @@ namespace MySchool
             lblPageNumber.Text = "2/2";
             label10.Text = "Select a teacher for the subject:" + "\n" + cbSubjects.Text;
             FilterTeachersBySubject(Subject.SubjectID);
+            pbSubjectImage.Load(Subject.ImagePath); // Load the subject image into the PictureBox
 
         }
 

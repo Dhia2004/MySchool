@@ -65,12 +65,15 @@ namespace MySchool
             List<clsCourse> Courses = clsCourse.GetAllCoursesAsObjectsByLevel(clsLevel.FindByName(cbLevels.Text).Level_ID);
             flpCoursesList.Controls.Clear();
 
+
             if (Courses == null || Courses.Count == 0)
             {
                 MessageBox.Show("No courses found for the selected level.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 flpCoursesList.Controls.Clear(); // Clear the flow layout panel if no courses are found
+                pnlNull.BringToFront(); // Bring the null panel to the front if no courses are found
                 return;
             }
+            pnlNull.SendToBack(); 
             foreach (clsCourse Course in Courses)
             {
                 
@@ -83,6 +86,7 @@ namespace MySchool
                         lblNumberOfSeasson.Text = _Course.TotalSessions.ToString();
                         pnlFirst.Visible = false; // Hide the first panel when a subject is selected
                         pnlSecond.Visible = true; // Show the second panel to display teachers
+                        pbSubjectImage.Load(clsSubject.FindByID(_Course.SubjectID).ImagePath); // Load the subject image into the PictureBox
 
                     };
                     newCard.SetTeacherInfo(Course);

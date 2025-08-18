@@ -15,6 +15,7 @@ namespace MySchool
     {
         private clsPerson _Person;
         private clsTeacher _Teacher;
+        private clsSubject _Subject;
         private int _TeacherID;
 
         enum enMode
@@ -159,6 +160,12 @@ namespace MySchool
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cbSubjects_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _Subject = clsSubject.FindByName(cbSubjects.SelectedItem.ToString());
+            pbSubjectImage.Load(_Subject.ImagePath); // Assuming ImagePath is a property of clsSubject that contains the image URL or path
         }
     }
 }
