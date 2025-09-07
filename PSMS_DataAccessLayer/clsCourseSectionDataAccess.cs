@@ -172,18 +172,25 @@ namespace PSMS_DataAccessLayer
             return dtCourseSections;
         }
 
-        public static System.Data.DataTable GetCourseSectionsByCourseID(int courseID)
+        public static System.Data.DataTable GetAllCourseSectionsByCourseID(int courseID)
         {
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
-            string query = @"SELECT * FROM CourseSections WHERE Course_ID = @CourseID";
+            string query = @"SELECT * FROM CoursesSection WHERE Course_ID = @CourseID";
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@CourseID", courseID);
             System.Data.DataTable dtCourseSections = new System.Data.DataTable();
             try
             {
                 connection.Open();
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                adapter.Fill(dtCourseSections);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    dtCourseSections.Load(reader);
+                }
+                else
+                {
+                    dtCourseSections = null;
+                }
             }
             catch (Exception ex)
             {
@@ -292,6 +299,7 @@ namespace PSMS_DataAccessLayer
             return dtCourseSections;
         }
 
+        
 
     }
 }

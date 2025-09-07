@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -139,6 +140,12 @@ namespace PSMS_BusinessLayer
         static public List<clsCourse> GetAllCoursesAsObjectsByLevel(int LevelID)
         {
             DataTable dt = clsCourseDataAccess.GetAllCoursesByLevel(LevelID);
+            return ConvertCoursesRecordsToObjects(dt);
+        }
+
+        static public List<clsCourse> GetAllCoursesBySubjectAndLevelAsObjects(int SubjectID, int LevelID)
+        {
+            DataTable dt = clsCourseDataAccess.GetAllCoursesBySubjectAndLevel(SubjectID, LevelID);
             return ConvertCoursesRecordsToObjects(dt);
         }
     }

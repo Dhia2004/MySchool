@@ -28,7 +28,7 @@ namespace PSMS_DataAccessLayer
                     name = reader["Name"].ToString();
                     description = reader["Description"].ToString();
                     sectionID = Convert.ToInt32(reader["SectionID"]);
-                    maxSeatsNumber = Convert.ToInt32(reader["MaxSeatsNumber"]);
+                    maxSeatsNumber = Convert.ToInt32(reader["MaxSeats"]);
                     createdByUserID = Convert.ToInt32(reader["CreatedByUserID"]);
 
 

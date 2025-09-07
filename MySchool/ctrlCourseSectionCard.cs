@@ -56,5 +56,10 @@ namespace MySchool
         {
             pnlAlarm.Visible = !pnlAlarm.Visible;
         }
+
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            OnCourseSectionSelected?.Invoke(this.CourseSection);
+        }
     }
 }

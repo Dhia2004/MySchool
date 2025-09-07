@@ -161,6 +161,10 @@ namespace PSMS_BusinessLayer
 
 
         }
+        static public bool CheckExistingActiveSubscription(int studentID, int courseID)
+        {
+            return clsSubscriptionDataAccess.CheckExistingActiveSubscription(studentID, courseID);
+        }
 
     }
 }

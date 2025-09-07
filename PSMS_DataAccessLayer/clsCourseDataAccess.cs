@@ -180,7 +180,7 @@ namespace PSMS_DataAccessLayer
                     LevelID = reader.GetInt32(reader.GetOrdinal("Level_ID"));
                     TotalSessions = reader.GetInt32(reader.GetOrdinal("TotalSessions"));
                     CreatedByUserID = reader.GetInt32(reader.GetOrdinal("CreatedByUserID"));
-                    Price = reader.GetFloat(reader.GetOrdinal("Price"));
+                    Price = (float)(double)reader["Price"];
                     return true;
                 }
             }
@@ -253,6 +253,30 @@ namespace PSMS_DataAccessLayer
             return dtSubjects;
         }
 
-        
-    }
-}
+        static public DataTable GetAllCoursesBySubjectAndLevel(int SubjectID, int LevelID)
+        {
+            DataTable dtCourses = new DataTable();
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"SELECT * FROM Courses WHERE SubjectID = @SubjectID AND Level_ID = @LevelID";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@SubjectID", SubjectID);
+            command.Parameters.AddWithValue("@LevelID", LevelID);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                    dtCourses.Load(reader);
+                else
+                    dtCourses = null;
+            }
+            catch (Exception ex)
+            {
+                dtCourses = null;
+            }
+            finally { connection.Close(); }
+            return dtCourses;
+
+
+        }
+}}
