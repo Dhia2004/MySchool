@@ -60,6 +60,12 @@
     <Compile Include="ctrlCourseMiniCard.Designer.cs">
       <DependentUpon>ctrlCourseMiniCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ctrlCourseSectionCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlCourseSectionCard.Designer.cs">
+      <DependentUpon>ctrlCourseSectionCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="ctrlCoursSectionInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -114,6 +120,12 @@
     <Compile Include="ctrlStudentMiniCard.Designer.cs">
       <DependentUpon>ctrlStudentMiniCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ctrlSubscriptionInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlSubscriptionInfo.Designer.cs">
+      <DependentUpon>ctrlSubscriptionInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ctrlTeacherInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,6 +179,12 @@
     </Compile>
     <Compile Include="frmAddEditStudent.Designer.cs">
       <DependentUpon>frmAddEditStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditSubscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditSubscription.Designer.cs">
+      <DependentUpon>frmAddEditSubscription.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAddEditTeachers.cs">
       <SubType>Form</SubType>
@@ -252,6 +270,12 @@
     <Compile Include="frmStudentInfoWithFilter.Designer.cs">
       <DependentUpon>frmStudentInfoWithFilter.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSubscriptionsManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubscriptionsManagement.Designer.cs">
+      <DependentUpon>frmSubscriptionsManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTeacherInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +308,9 @@
     <EmbeddedResource Include="ctrlCourseMiniCard.resx">
       <DependentUpon>ctrlCourseMiniCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ctrlCourseSectionCard.resx">
+      <DependentUpon>ctrlCourseSectionCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ctrlCoursSectionInfo.resx">
       <DependentUpon>ctrlCoursSectionInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,6 +338,9 @@
     <EmbeddedResource Include="ctrlStudentMiniCard.resx">
       <DependentUpon>ctrlStudentMiniCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ctrlSubscriptionInfo.resx">
+      <DependentUpon>ctrlSubscriptionInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ctrlTeacherInfo.resx">
       <DependentUpon>ctrlTeacherInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -337,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddEditStudent.resx">
       <DependentUpon>frmAddEditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditSubscription.resx">
+      <DependentUpon>frmAddEditSubscription.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddEditTeachers.resx">
       <DependentUpon>frmAddEditTeachers.cs</DependentUpon>
@@ -379,6 +412,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmStudentInfoWithFilter.resx">
       <DependentUpon>frmStudentInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubscriptionsManagement.resx">
+      <DependentUpon>frmSubscriptionsManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTeacherInfo.resx">
       <DependentUpon>frmTeacherInfo.cs</DependentUpon>

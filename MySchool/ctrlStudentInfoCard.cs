@@ -34,6 +34,8 @@ namespace MySchool
 
         public event Action onReloadData;
 
+        public event Action <clsStudent>onStudentSelected;
+
 
         public void ResetMedicalFileToDefault()
         {
@@ -232,15 +234,21 @@ namespace MySchool
                 SystemSounds.Hand.Play();
             }
 
+            
+
 
 
         }
 
-        public void LoadStudentInfo(int StudentID)
+        public bool LoadStudentInfo(int StudentID)
         {
             Student = clsStudent.FindByID(StudentID);
             if (Student != null)
+            {
                 FillPersonCard(Student);
+                return true;
+            }
+                
 
 
             else
@@ -251,6 +259,7 @@ namespace MySchool
                 ResetPersonCardToDefault();
                 MessageBox.Show($"This Student with ID [{StudentID}] is not Found", "Oops",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
             }
         }
 

@@ -38,6 +38,8 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.activateDeactivateStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tTeachers = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.addNewTeacherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tPeople = new System.Windows.Forms.ToolStripMenuItem();
             this.tCourses = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,8 +62,9 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.subscriptionsManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripSeparator();
+            this.addNewSubscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -181,6 +184,19 @@
             this.tTeachers.Size = new System.Drawing.Size(257, 68);
             this.tTeachers.Text = "    Teachers";
             this.tTeachers.Click += new System.EventHandler(this.tTeachers_Click_1);
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(232, 24);
+            this.toolStripMenuItem8.Text = "Teacher Management";
+            this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(229, 6);
             // 
             // addNewTeacherToolStripMenuItem
             // 
@@ -311,7 +327,11 @@
             // 
             // toolStripMenuItem5
             // 
-            this.toolStripMenuItem5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.subscriptionsManagementToolStripMenuItem,
+            this.toolStripMenuItem9,
+            this.addNewSubscriptionToolStripMenuItem});
+            this.toolStripMenuItem5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.toolStripMenuItem5.Image = global::MySchool.Properties.Resources.Subscription_64;
             this.toolStripMenuItem5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripMenuItem5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -392,18 +412,26 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // toolStripMenuItem8
+            // subscriptionsManagementToolStripMenuItem
             // 
-            this.toolStripMenuItem8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(232, 24);
-            this.toolStripMenuItem8.Text = "Teacher Management";
-            this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
+            this.subscriptionsManagementToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.subscriptionsManagementToolStripMenuItem.Name = "subscriptionsManagementToolStripMenuItem";
+            this.subscriptionsManagementToolStripMenuItem.Size = new System.Drawing.Size(269, 24);
+            this.subscriptionsManagementToolStripMenuItem.Text = "Subscriptions Management";
+            this.subscriptionsManagementToolStripMenuItem.Click += new System.EventHandler(this.subscriptionsManagementToolStripMenuItem_Click);
             // 
-            // toolStripSeparator2
+            // toolStripMenuItem9
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(229, 6);
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(266, 6);
+            // 
+            // addNewSubscriptionToolStripMenuItem
+            // 
+            this.addNewSubscriptionToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.addNewSubscriptionToolStripMenuItem.Name = "addNewSubscriptionToolStripMenuItem";
+            this.addNewSubscriptionToolStripMenuItem.Size = new System.Drawing.Size(269, 24);
+            this.addNewSubscriptionToolStripMenuItem.Text = "Add new Subscription";
+            this.addNewSubscriptionToolStripMenuItem.Click += new System.EventHandler(this.addNewSubscriptionToolStripMenuItem_Click);
             // 
             // frmMainPage
             // 
@@ -463,6 +491,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem subscriptionsManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem9;
+        private System.Windows.Forms.ToolStripMenuItem addNewSubscriptionToolStripMenuItem;
     }
 }
 

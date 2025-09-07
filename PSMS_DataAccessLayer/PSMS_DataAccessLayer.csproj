@@ -51,6 +51,7 @@
     <Compile Include="clsSectionDataAccess.cs" />
     <Compile Include="clsStudentDataAccess.cs" />
     <Compile Include="clsSubjectDataAccess.cs" />
+    <Compile Include="clsSubscriptionDataAccess.cs" />
     <Compile Include="clsTeacherDataAccess.cs" />
     <Compile Include="clsUserDataAccess.cs" />
     <Compile Include="DataAccessSettings.cs" />

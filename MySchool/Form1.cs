@@ -198,5 +198,17 @@ namespace MySchool
             frmTeacherManagement frmTeacherManagement = new frmTeacherManagement();
             frmTeacherManagement.ShowDialog();
         }
+
+        private void subscriptionsManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSubscriptionsManagement frm = new frmSubscriptionsManagement();
+            frm.ShowDialog();
+        }
+
+        private void addNewSubscriptionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddEditSubscription frmAddEditSubscription = new frmAddEditSubscription();
+            frmAddEditSubscription.ShowDialog();
+        }
     }
 }

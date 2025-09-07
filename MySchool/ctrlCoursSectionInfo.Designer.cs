@@ -156,6 +156,7 @@
             this.Controls.Add(this.lblCourseSec);
             this.Name = "ctrlCoursSectionInfo";
             this.Size = new System.Drawing.Size(1076, 30);
+            this.Load += new System.EventHandler(this.ctrlCoursSectionInfo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

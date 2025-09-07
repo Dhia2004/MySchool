@@ -16,5 +16,10 @@ namespace MySchool
         {
             InitializeComponent();
         }
+
+        private void ctrlCoursSectionInfo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

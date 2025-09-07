@@ -79,6 +79,7 @@
     <Compile Include="clsStudent.cs" />
     <Compile Include="clsSchoolInfo.cs" />
     <Compile Include="clsSubject.cs" />
+    <Compile Include="clsSubscription.cs" />
     <Compile Include="clsTeacher.cs" />
     <Compile Include="clsUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
