@@ -161,9 +161,9 @@ namespace PSMS_BusinessLayer
 
 
         }
-        static public bool CheckExistingActiveSubscription(int studentID, int courseID)
+        static public bool CheckExistingActiveSubscription(int studentID, int SubjectID)
         {
-            return clsSubscriptionDataAccess.CheckExistingActiveSubscription(studentID, courseID);
+            return clsSubscriptionDataAccess.CheckExistingActiveSubscription(studentID, SubjectID);
         }
 
     }

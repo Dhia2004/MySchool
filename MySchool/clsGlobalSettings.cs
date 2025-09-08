@@ -11,6 +11,7 @@ namespace MySchool
     {
         static public clsSchoolInfo SchoolInfo;
         static public clsUser CurrentUser;
+        static public string BarCodeFilesPath = @"C:\MySchool\BarCodes\";
         static public bool IsLoggedIn = false;
         static public bool IsLoggedOut = false;
         static public bool EndProgram = false;

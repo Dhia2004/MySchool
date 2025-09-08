@@ -26,6 +26,7 @@ namespace MySchool
         public event Action OnbtnAddNewStudentClicked;
         public event Action OnBackToFormHandeler;
         public event Action<clsStudent> onStudentSelected;
+        public event Action onStudentNotFound;
 
         public void InitializeCtrlStudentCardEvents(Action OnbtnAddNewStudentClicked, Action OnBackToFormHandeler, Action onEditButtonClicked, Action OnBackToFormHandler)
         {
@@ -163,9 +164,13 @@ namespace MySchool
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtStudentID.Text))
+            if (!string.IsNullOrEmpty(txtStudentID.Text)) { 
                 if(ctrlStudentInfoCard1.LoadStudentInfo(Convert.ToInt32(txtStudentID.Text)))
                     onStudentSelected?.Invoke(ctrlStudentInfoCard1.Student);
+                else
+                    onStudentNotFound?.Invoke();
+
+            }
 
         }
 

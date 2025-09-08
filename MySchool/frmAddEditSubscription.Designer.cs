@@ -79,29 +79,26 @@
             this.lblPrice = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlAlert = new System.Windows.Forms.Panel();
-            this.pbAlarm = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pbAlarm = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnSave = new System.Windows.Forms.Button();
+            this.pnlSectionAlarm = new System.Windows.Forms.Panel();
+            this.pbWarning = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.ctrlStudentInfoWithFilter1 = new MySchool.ctrlStudentInfoWithFilter();
-            this.ctrlCourseSectionCard1 = new MySchool.ctrlCourseSectionCard();
-            this.ctrlCourseSectionCard2 = new MySchool.ctrlCourseSectionCard();
-            this.ctrlCourseSectionCard3 = new MySchool.ctrlCourseSectionCard();
-            this.ctrlCourseSectionCard4 = new MySchool.ctrlCourseSectionCard();
-            this.ctrlCourseSectionCard5 = new MySchool.ctrlCourseSectionCard();
-            this.ctrlCourseSectionCard6 = new MySchool.ctrlCourseSectionCard();
-            this.ctrlCourseSectionCard7 = new MySchool.ctrlCourseSectionCard();
-            this.ctrlCourseSectionCard8 = new MySchool.ctrlCourseSectionCard();
-            this.ctrlCourseSectionCard9 = new MySchool.ctrlCourseSectionCard();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.pnlSummary.SuspendLayout();
-            this.flpCoursesSectionsList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).BeginInit();
             this.pnlAlert.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).BeginInit();
+            this.pnlSectionAlarm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWarning)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -170,11 +167,11 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(207, 110);
+            this.label1.Location = new System.Drawing.Point(213, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 30);
+            this.label1.Size = new System.Drawing.Size(185, 30);
             this.label1.TabIndex = 205;
-            this.label1.Text = "Select open course";
+            this.label1.Text = "Select the section";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
@@ -184,11 +181,12 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.chkIsPaid);
             this.panel3.Controls.Add(this.pnlSummary);
-            this.panel3.Controls.Add(this.flpCoursesSectionsList);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.cbSubjects);
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.pnlSectionAlarm);
+            this.panel3.Controls.Add(this.flpCoursesSectionsList);
             this.panel3.Location = new System.Drawing.Point(459, 160);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(613, 654);
@@ -216,7 +214,8 @@
             // txtNotes
             // 
             this.txtNotes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNotes.Location = new System.Drawing.Point(14, 13);
+            this.txtNotes.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNotes.Location = new System.Drawing.Point(14, 11);
             this.txtNotes.Multiline = true;
             this.txtNotes.Name = "txtNotes";
             this.txtNotes.Size = new System.Drawing.Size(329, 20);
@@ -440,9 +439,9 @@
             this.lblLevel.ForeColor = System.Drawing.Color.DarkBlue;
             this.lblLevel.Location = new System.Drawing.Point(365, 41);
             this.lblLevel.Name = "lblLevel";
-            this.lblLevel.Size = new System.Drawing.Size(32, 17);
+            this.lblLevel.Size = new System.Drawing.Size(42, 17);
             this.lblLevel.TabIndex = 213;
-            this.lblLevel.Text = "4 th";
+            this.lblLevel.Text = "[????]";
             // 
             // label7
             // 
@@ -471,9 +470,9 @@
             this.lblStudentFullName.ForeColor = System.Drawing.Color.DarkBlue;
             this.lblStudentFullName.Location = new System.Drawing.Point(140, 41);
             this.lblStudentFullName.Name = "lblStudentFullName";
-            this.lblStudentFullName.Size = new System.Drawing.Size(130, 17);
+            this.lblStudentFullName.Size = new System.Drawing.Size(42, 17);
             this.lblStudentFullName.TabIndex = 211;
-            this.lblStudentFullName.Text = "DhiaEddine DJEDDI";
+            this.lblStudentFullName.Text = "[????]";
             // 
             // label18
             // 
@@ -582,16 +581,7 @@
             // 
             this.flpCoursesSectionsList.AutoScroll = true;
             this.flpCoursesSectionsList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flpCoursesSectionsList.Controls.Add(this.ctrlCourseSectionCard1);
-            this.flpCoursesSectionsList.Controls.Add(this.ctrlCourseSectionCard2);
-            this.flpCoursesSectionsList.Controls.Add(this.ctrlCourseSectionCard3);
-            this.flpCoursesSectionsList.Controls.Add(this.ctrlCourseSectionCard4);
-            this.flpCoursesSectionsList.Controls.Add(this.ctrlCourseSectionCard5);
-            this.flpCoursesSectionsList.Controls.Add(this.ctrlCourseSectionCard6);
-            this.flpCoursesSectionsList.Controls.Add(this.ctrlCourseSectionCard7);
-            this.flpCoursesSectionsList.Controls.Add(this.ctrlCourseSectionCard8);
-            this.flpCoursesSectionsList.Controls.Add(this.ctrlCourseSectionCard9);
-            this.flpCoursesSectionsList.Location = new System.Drawing.Point(29, 155);
+            this.flpCoursesSectionsList.Location = new System.Drawing.Point(26, 155);
             this.flpCoursesSectionsList.Name = "flpCoursesSectionsList";
             this.flpCoursesSectionsList.Size = new System.Drawing.Size(558, 220);
             this.flpCoursesSectionsList.TabIndex = 206;
@@ -633,7 +623,7 @@
             this.label16.BackColor = System.Drawing.Color.White;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.label16.ForeColor = System.Drawing.Color.Red;
-            this.label16.Location = new System.Drawing.Point(668, 826);
+            this.label16.Location = new System.Drawing.Point(661, 826);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(73, 30);
             this.label16.TabIndex = 208;
@@ -646,7 +636,7 @@
             this.lblPrice.BackColor = System.Drawing.Color.White;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.lblPrice.ForeColor = System.Drawing.Color.Blue;
-            this.lblPrice.Location = new System.Drawing.Point(753, 826);
+            this.lblPrice.Location = new System.Drawing.Point(746, 826);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(61, 30);
             this.lblPrice.TabIndex = 209;
@@ -664,9 +654,9 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::MySchool.Properties.Resources.Close_ic_32;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(959, 826);
+            this.btnClose.Location = new System.Drawing.Point(839, 826);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(113, 40);
+            this.btnClose.Size = new System.Drawing.Size(113, 35);
             this.btnClose.TabIndex = 211;
             this.btnClose.Text = "     Close";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -683,27 +673,6 @@
             this.pnlAlert.TabIndex = 212;
             this.pnlAlert.Visible = false;
             // 
-            // pbAlarm
-            // 
-            this.pbAlarm.Image = global::MySchool.Properties.Resources.Alarm_128;
-            this.pbAlarm.Location = new System.Drawing.Point(205, 69);
-            this.pbAlarm.Name = "pbAlarm";
-            this.pbAlarm.Size = new System.Drawing.Size(203, 185);
-            this.pbAlarm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbAlarm.TabIndex = 0;
-            this.pbAlarm.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(165, 279);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(282, 65);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Warning !!!";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -716,10 +685,86 @@
             this.label8.Text = "The selected student is not active,\r\n Please select an active student.";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(165, 279);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(282, 65);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Warning !!!";
+            // 
+            // pbAlarm
+            // 
+            this.pbAlarm.Image = global::MySchool.Properties.Resources.Alarm_128;
+            this.pbAlarm.Location = new System.Drawing.Point(205, 69);
+            this.pbAlarm.Name = "pbAlarm";
+            this.pbAlarm.Size = new System.Drawing.Size(203, 185);
+            this.pbAlarm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbAlarm.TabIndex = 0;
+            this.pbAlarm.TabStop = false;
+            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.White;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.Enabled = false;
+            this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Image = global::MySchool.Properties.Resources.Save_32;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(958, 826);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(113, 35);
+            this.btnSave.TabIndex = 213;
+            this.btnSave.Text = "     Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // pnlSectionAlarm
+            // 
+            this.pnlSectionAlarm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSectionAlarm.Controls.Add(this.label11);
+            this.pnlSectionAlarm.Controls.Add(this.pbWarning);
+            this.pnlSectionAlarm.Location = new System.Drawing.Point(26, 155);
+            this.pnlSectionAlarm.Name = "pnlSectionAlarm";
+            this.pnlSectionAlarm.Size = new System.Drawing.Size(558, 220);
+            this.pnlSectionAlarm.TabIndex = 218;
+            // 
+            // pbWarning
+            // 
+            this.pbWarning.Image = global::MySchool.Properties.Resources.Warning_64;
+            this.pbWarning.Location = new System.Drawing.Point(136, 90);
+            this.pbWarning.Name = "pbWarning";
+            this.pbWarning.Size = new System.Drawing.Size(44, 39);
+            this.pbWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbWarning.TabIndex = 219;
+            this.pbWarning.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(193, 100);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(236, 21);
+            this.label11.TabIndex = 219;
+            this.label11.Text = "You must choose a subject first";
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // ctrlStudentInfoWithFilter1
             // 
@@ -729,85 +774,6 @@
             this.ctrlStudentInfoWithFilter1.Size = new System.Drawing.Size(389, 658);
             this.ctrlStudentInfoWithFilter1.TabIndex = 210;
             // 
-            // ctrlCourseSectionCard1
-            // 
-            this.ctrlCourseSectionCard1.BackColor = System.Drawing.Color.White;
-            this.ctrlCourseSectionCard1.Location = new System.Drawing.Point(3, 3);
-            this.ctrlCourseSectionCard1.Name = "ctrlCourseSectionCard1";
-            this.ctrlCourseSectionCard1.Size = new System.Drawing.Size(172, 213);
-            this.ctrlCourseSectionCard1.TabIndex = 0;
-            // 
-            // ctrlCourseSectionCard2
-            // 
-            this.ctrlCourseSectionCard2.BackColor = System.Drawing.Color.White;
-            this.ctrlCourseSectionCard2.Location = new System.Drawing.Point(181, 3);
-            this.ctrlCourseSectionCard2.Name = "ctrlCourseSectionCard2";
-            this.ctrlCourseSectionCard2.Size = new System.Drawing.Size(172, 213);
-            this.ctrlCourseSectionCard2.TabIndex = 1;
-            // 
-            // ctrlCourseSectionCard3
-            // 
-            this.ctrlCourseSectionCard3.AutoSize = true;
-            this.ctrlCourseSectionCard3.BackColor = System.Drawing.Color.White;
-            this.ctrlCourseSectionCard3.Location = new System.Drawing.Point(359, 3);
-            this.ctrlCourseSectionCard3.Name = "ctrlCourseSectionCard3";
-            this.ctrlCourseSectionCard3.Size = new System.Drawing.Size(169, 209);
-            this.ctrlCourseSectionCard3.TabIndex = 2;
-            // 
-            // ctrlCourseSectionCard4
-            // 
-            this.ctrlCourseSectionCard4.AutoSize = true;
-            this.ctrlCourseSectionCard4.BackColor = System.Drawing.Color.White;
-            this.ctrlCourseSectionCard4.Location = new System.Drawing.Point(3, 222);
-            this.ctrlCourseSectionCard4.Name = "ctrlCourseSectionCard4";
-            this.ctrlCourseSectionCard4.Size = new System.Drawing.Size(169, 209);
-            this.ctrlCourseSectionCard4.TabIndex = 3;
-            // 
-            // ctrlCourseSectionCard5
-            // 
-            this.ctrlCourseSectionCard5.AutoSize = true;
-            this.ctrlCourseSectionCard5.BackColor = System.Drawing.Color.White;
-            this.ctrlCourseSectionCard5.Location = new System.Drawing.Point(178, 222);
-            this.ctrlCourseSectionCard5.Name = "ctrlCourseSectionCard5";
-            this.ctrlCourseSectionCard5.Size = new System.Drawing.Size(169, 209);
-            this.ctrlCourseSectionCard5.TabIndex = 4;
-            // 
-            // ctrlCourseSectionCard6
-            // 
-            this.ctrlCourseSectionCard6.AutoSize = true;
-            this.ctrlCourseSectionCard6.BackColor = System.Drawing.Color.White;
-            this.ctrlCourseSectionCard6.Location = new System.Drawing.Point(353, 222);
-            this.ctrlCourseSectionCard6.Name = "ctrlCourseSectionCard6";
-            this.ctrlCourseSectionCard6.Size = new System.Drawing.Size(169, 209);
-            this.ctrlCourseSectionCard6.TabIndex = 5;
-            // 
-            // ctrlCourseSectionCard7
-            // 
-            this.ctrlCourseSectionCard7.AutoSize = true;
-            this.ctrlCourseSectionCard7.BackColor = System.Drawing.Color.White;
-            this.ctrlCourseSectionCard7.Location = new System.Drawing.Point(3, 437);
-            this.ctrlCourseSectionCard7.Name = "ctrlCourseSectionCard7";
-            this.ctrlCourseSectionCard7.Size = new System.Drawing.Size(169, 209);
-            this.ctrlCourseSectionCard7.TabIndex = 6;
-            // 
-            // ctrlCourseSectionCard8
-            // 
-            this.ctrlCourseSectionCard8.AutoSize = true;
-            this.ctrlCourseSectionCard8.BackColor = System.Drawing.Color.White;
-            this.ctrlCourseSectionCard8.Location = new System.Drawing.Point(178, 437);
-            this.ctrlCourseSectionCard8.Name = "ctrlCourseSectionCard8";
-            this.ctrlCourseSectionCard8.Size = new System.Drawing.Size(169, 209);
-            this.ctrlCourseSectionCard8.TabIndex = 7;
-            // 
-            // ctrlCourseSectionCard9
-            // 
-            this.ctrlCourseSectionCard9.AutoSize = true;
-            this.ctrlCourseSectionCard9.BackColor = System.Drawing.Color.White;
-            this.ctrlCourseSectionCard9.Location = new System.Drawing.Point(353, 437);
-            this.ctrlCourseSectionCard9.Name = "ctrlCourseSectionCard9";
-            this.ctrlCourseSectionCard9.Size = new System.Drawing.Size(169, 209);
-            this.ctrlCourseSectionCard9.TabIndex = 8;
-            // 
             // frmAddEditSubscription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -815,6 +781,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1114, 879);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ctrlStudentInfoWithFilter1);
             this.Controls.Add(this.lblPrice);
@@ -837,14 +804,15 @@
             this.panel4.PerformLayout();
             this.pnlSummary.ResumeLayout(false);
             this.pnlSummary.PerformLayout();
-            this.flpCoursesSectionsList.ResumeLayout(false);
-            this.flpCoursesSectionsList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbStudentImage)).EndInit();
             this.pnlAlert.ResumeLayout(false);
             this.pnlAlert.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).EndInit();
+            this.pnlSectionAlarm.ResumeLayout(false);
+            this.pnlSectionAlarm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWarning)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -864,15 +832,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel flpCoursesSectionsList;
-        private ctrlCourseSectionCard ctrlCourseSectionCard1;
-        private ctrlCourseSectionCard ctrlCourseSectionCard2;
-        private ctrlCourseSectionCard ctrlCourseSectionCard3;
-        private ctrlCourseSectionCard ctrlCourseSectionCard4;
-        private ctrlCourseSectionCard ctrlCourseSectionCard5;
-        private ctrlCourseSectionCard ctrlCourseSectionCard6;
-        private ctrlCourseSectionCard ctrlCourseSectionCard7;
-        private ctrlCourseSectionCard ctrlCourseSectionCard8;
-        private ctrlCourseSectionCard ctrlCourseSectionCard9;
         private System.Windows.Forms.Panel pnlSummary;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblStudentFullName;
@@ -916,5 +875,10 @@
         private System.Windows.Forms.PictureBox pbAlarm;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Panel pnlSectionAlarm;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pbWarning;
+        private System.Windows.Forms.Timer timer2;
     }
 }

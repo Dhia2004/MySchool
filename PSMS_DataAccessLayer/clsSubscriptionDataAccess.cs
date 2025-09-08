@@ -252,15 +252,19 @@ namespace PSMS_DataAccessLayer
         }
 
 
-        static public bool CheckExistingActiveSubscription(int studentID, int courseID)
+        static public bool CheckExistingActiveSubscription(int studentID, int subjectID)
         {
             bool exists = false;
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
-            string query = @"SELECT COUNT(*) FROM Subscriptions 
-                             WHERE Student_ID = @studentID AND Course_ID = @courseID AND IsActive = 1";
+            string query = @"SELECT count(*) FROM Subscriptions
+                             JOIN Courses ON Subscriptions.Course_ID = Courses.CourseID
+                             JOIN Subjects ON Courses.SubjectID = Subjects.SubjectID
+                             WHERE Subscriptions.Student_ID = @studentID
+                             AND Subjects.SubjectID = @subjectID
+                             AND Subscriptions.IsActive = 1";
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@studentID", studentID);
-            command.Parameters.AddWithValue("@courseID", courseID);
+            command.Parameters.AddWithValue("@subjectID", subjectID);
             try
             {
                 connection.Open();
