@@ -30,28 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnSelect = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lblDay = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTime = new System.Windows.Forms.Label();
             this.lblNumberOfSeats = new System.Windows.Forms.Label();
             this.lblGroupName = new System.Windows.Forms.Label();
             this.lblSectionName = new System.Windows.Forms.Label();
-            this.pbAlarm = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlAlarm = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSelect = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbAlarm = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
+            this.pnlAlarm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).BeginInit();
-            this.pnlAlarm.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -72,31 +72,6 @@
             this.panel4.Size = new System.Drawing.Size(160, 200);
             this.panel4.TabIndex = 206;
             // 
-            // btnSelect
-            // 
-            this.btnSelect.FlatAppearance.BorderSize = 0;
-            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelect.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelect.Image = global::MySchool.Properties.Resources.Select_32;
-            this.btnSelect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSelect.Location = new System.Drawing.Point(8, 161);
-            this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(140, 30);
-            this.btnSelect.TabIndex = 215;
-            this.btnSelect.Text = "    Select";
-            this.btnSelect.UseVisualStyleBackColor = true;
-            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::MySchool.Properties.Resources.Calendar_32___3;
-            this.pictureBox6.Location = new System.Drawing.Point(8, 96);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 213;
-            this.pictureBox6.TabStop = false;
-            // 
             // lblDay
             // 
             this.lblDay.AutoSize = true;
@@ -106,36 +81,6 @@
             this.lblDay.Size = new System.Drawing.Size(58, 17);
             this.lblDay.TabIndex = 212;
             this.lblDay.Text = "Monday";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::MySchool.Properties.Resources.Time_32;
-            this.pictureBox5.Location = new System.Drawing.Point(8, 127);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 211;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::MySchool.Properties.Resources.Seat_32;
-            this.pictureBox3.Location = new System.Drawing.Point(8, 65);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 210;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MySchool.Properties.Resources.Group_32;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 34);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 207;
-            this.pictureBox1.TabStop = false;
             // 
             // lblTime
             // 
@@ -178,17 +123,6 @@
             this.lblSectionName.TabIndex = 207;
             this.lblSectionName.Text = "Section - A";
             // 
-            // pbAlarm
-            // 
-            this.pbAlarm.Image = global::MySchool.Properties.Resources.Alarm_128;
-            this.pbAlarm.Location = new System.Drawing.Point(45, 10);
-            this.pbAlarm.Name = "pbAlarm";
-            this.pbAlarm.Size = new System.Drawing.Size(70, 70);
-            this.pbAlarm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAlarm.TabIndex = 214;
-            this.pbAlarm.TabStop = false;
-            this.pbAlarm.Visible = false;
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
@@ -229,6 +163,72 @@
             this.label1.Text = "This section group\r\n are full";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnSelect
+            // 
+            this.btnSelect.FlatAppearance.BorderSize = 0;
+            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelect.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelect.Image = global::MySchool.Properties.Resources.Select_32;
+            this.btnSelect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSelect.Location = new System.Drawing.Point(8, 161);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(140, 30);
+            this.btnSelect.TabIndex = 215;
+            this.btnSelect.Text = "    Select";
+            this.btnSelect.UseVisualStyleBackColor = true;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::MySchool.Properties.Resources.Calendar_32___3;
+            this.pictureBox6.Location = new System.Drawing.Point(8, 96);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 213;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::MySchool.Properties.Resources.Time_32;
+            this.pictureBox5.Location = new System.Drawing.Point(8, 127);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 211;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::MySchool.Properties.Resources.Seat_32;
+            this.pictureBox3.Location = new System.Drawing.Point(8, 65);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 210;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MySchool.Properties.Resources.Group_32;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 207;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pbAlarm
+            // 
+            this.pbAlarm.Image = global::MySchool.Properties.Resources.Alarm_128;
+            this.pbAlarm.Location = new System.Drawing.Point(45, 10);
+            this.pbAlarm.Name = "pbAlarm";
+            this.pbAlarm.Size = new System.Drawing.Size(70, 70);
+            this.pbAlarm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAlarm.TabIndex = 214;
+            this.pbAlarm.TabStop = false;
+            this.pbAlarm.Visible = false;
+            // 
             // ctrlCourseSectionCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,13 +241,13 @@
             this.Load += new System.EventHandler(this.ctrlCourseSectionCard_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.pnlAlarm.ResumeLayout(false);
+            this.pnlAlarm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlarm)).EndInit();
-            this.pnlAlarm.ResumeLayout(false);
-            this.pnlAlarm.PerformLayout();
             this.ResumeLayout(false);
 
         }

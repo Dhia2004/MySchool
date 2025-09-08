@@ -44,7 +44,7 @@
             // 
             this.lblSectionName.AutoSize = true;
             this.lblSectionName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSectionName.Location = new System.Drawing.Point(731, 7);
+            this.lblSectionName.Location = new System.Drawing.Point(834, 7);
             this.lblSectionName.Name = "lblSectionName";
             this.lblSectionName.Size = new System.Drawing.Size(75, 17);
             this.lblSectionName.TabIndex = 139;
@@ -54,7 +54,7 @@
             // 
             this.lblGroupName.AutoSize = true;
             this.lblGroupName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGroupName.Location = new System.Drawing.Point(834, 7);
+            this.lblGroupName.Location = new System.Drawing.Point(935, 7);
             this.lblGroupName.Name = "lblGroupName";
             this.lblGroupName.Size = new System.Drawing.Size(68, 17);
             this.lblGroupName.TabIndex = 138;
@@ -74,7 +74,7 @@
             // 
             this.lblIsPaid.AutoSize = true;
             this.lblIsPaid.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIsPaid.Location = new System.Drawing.Point(1020, 7);
+            this.lblIsPaid.Location = new System.Drawing.Point(1116, 7);
             this.lblIsPaid.Name = "lblIsPaid";
             this.lblIsPaid.Size = new System.Drawing.Size(28, 17);
             this.lblIsPaid.TabIndex = 136;
@@ -84,7 +84,7 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(934, 7);
+            this.lblStatus.Location = new System.Drawing.Point(1032, 7);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(56, 17);
             this.lblStatus.TabIndex = 135;
@@ -94,7 +94,7 @@
             // 
             this.lblLevel.AutoSize = true;
             this.lblLevel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLevel.Location = new System.Drawing.Point(515, 7);
+            this.lblLevel.Location = new System.Drawing.Point(584, 7);
             this.lblLevel.Name = "lblLevel";
             this.lblLevel.Size = new System.Drawing.Size(150, 17);
             this.lblLevel.TabIndex = 134;
@@ -104,7 +104,7 @@
             // 
             this.lblCourseID.AutoSize = true;
             this.lblCourseID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCourseID.Location = new System.Drawing.Point(301, 7);
+            this.lblCourseID.Location = new System.Drawing.Point(326, 7);
             this.lblCourseID.Name = "lblCourseID";
             this.lblCourseID.Size = new System.Drawing.Size(29, 17);
             this.lblCourseID.TabIndex = 133;
@@ -114,7 +114,7 @@
             // 
             this.lblSubjectName.AutoSize = true;
             this.lblSubjectName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubjectName.Location = new System.Drawing.Point(372, 7);
+            this.lblSubjectName.Location = new System.Drawing.Point(405, 7);
             this.lblSubjectName.Name = "lblSubjectName";
             this.lblSubjectName.Size = new System.Drawing.Size(47, 17);
             this.lblSubjectName.TabIndex = 132;
@@ -124,7 +124,7 @@
             // 
             this.lblStudentFullName.AutoSize = true;
             this.lblStudentFullName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentFullName.Location = new System.Drawing.Point(132, 7);
+            this.lblStudentFullName.Location = new System.Drawing.Point(140, 7);
             this.lblStudentFullName.Name = "lblStudentFullName";
             this.lblStudentFullName.Size = new System.Drawing.Size(130, 17);
             this.lblStudentFullName.TabIndex = 131;
@@ -157,7 +157,7 @@
             this.Controls.Add(this.lblStudentFullName);
             this.Controls.Add(this.lblSubscriptionID);
             this.Name = "ctrlSubscriptionInfo";
-            this.Size = new System.Drawing.Size(1069, 30);
+            this.Size = new System.Drawing.Size(1195, 30);
             this.Load += new System.EventHandler(this.ctrlSubscriptionInfo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

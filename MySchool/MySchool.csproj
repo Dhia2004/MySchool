@@ -270,6 +270,12 @@
     <Compile Include="frmStudentInfoWithFilter.Designer.cs">
       <DependentUpon>frmStudentInfoWithFilter.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSubscriptionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubscriptionDetails.Designer.cs">
+      <DependentUpon>frmSubscriptionDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSubscriptionsManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -412,6 +418,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmStudentInfoWithFilter.resx">
       <DependentUpon>frmStudentInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubscriptionDetails.resx">
+      <DependentUpon>frmSubscriptionDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSubscriptionsManagement.resx">
       <DependentUpon>frmSubscriptionsManagement.cs</DependentUpon>

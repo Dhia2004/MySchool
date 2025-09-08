@@ -137,7 +137,7 @@ namespace PSMS_BusinessLayer
             }
             foreach (DataRow s in dtSubscriptions.Rows)
             {
-                Subscription = new clsSubscription((int)s["SubscriptionID"], (int)s["StudentID"], (int)s["CourseID"],
+                Subscription = new clsSubscription((int)s["Subscription_ID"], (int)s["Student_ID"], (int)s["Course_ID"],
                                         (int)s["CourseSec_ID"], (int)s["TotalSessions"], (int)s["RemainingSessions"],
                                         (DateTime)s["StartDate"], s["EndDate"] != DBNull.Value ? (DateTime)s["EndDate"] : DateTime.MinValue, (bool)s["IsActive"],
                                         s["Notes"] == DBNull.Value ? string.Empty : (string)s["Notes"],

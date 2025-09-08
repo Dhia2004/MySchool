@@ -141,7 +141,7 @@ namespace PSMS_DataAccessLayer
 
                              SELECT *
                              FROM Subscriptions
-                             order by SubscriptionID
+                             order by Subscription_ID
                              OFFSET (@PageNumber - 1) * @RowsPerPage ROWS
                              FETCH NEXT @RowsPerPage ROWS ONLY;";
 

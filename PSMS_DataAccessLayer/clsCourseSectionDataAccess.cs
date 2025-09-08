@@ -16,7 +16,7 @@ namespace PSMS_DataAccessLayer
         {
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
             string query = @"SELECT *
-                             FROM CourseSections
+                             FROM CoursesSection
                              WHERE CourseSec_ID = @CourseSecID";
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@CourseSecID", courseSecID);

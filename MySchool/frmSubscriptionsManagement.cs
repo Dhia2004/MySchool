@@ -57,5 +57,16 @@ namespace MySchool
             }
             UpdateCoursesList();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void subscriptionDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSubscriptionDetails detailsForm = new frmSubscriptionDetails(subscriptionInfo.Subscription);
+            detailsForm.ShowDialog();
+        }
     }
 }
