@@ -299,7 +299,34 @@ namespace PSMS_DataAccessLayer
             return dtCourseSections;
         }
 
-        
+        static public bool OccupySeat(int courseSecID)
+        {
+            
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"UPDATE CoursesSection
+                             SET RemainingSeats = RemainingSeats - 1
+                             WHERE CourseSec_ID = @CourseSecID AND RemainingSeats > 0";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@CourseSecID", courseSecID);
+            try
+            {
+                connection.Open();
+
+                return command.ExecuteNonQuery() > 0;
+            }
+            catch (Exception ex)
+            {
+                // Handle exception if needed
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return false;
+        }
+
+
+
 
     }
 }

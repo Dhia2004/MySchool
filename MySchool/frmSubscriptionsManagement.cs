@@ -68,5 +68,28 @@ namespace MySchool
             frmSubscriptionDetails detailsForm = new frmSubscriptionDetails(subscriptionInfo.Subscription);
             detailsForm.ShowDialog();
         }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete this subscription?", "Confirm Deletion",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+            {
+                return; // User chose not to delete
+            }
+            if (clsSubscription.Delete(subscriptionInfo.Subscription.SubscriptionID))
+            {
+                if (MessageBox.Show("Subscription Deleted Successfully", "Done",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+                {
+                    this.Close(); // Close the details form after deletion
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Failed to delete subscription. Please try again.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

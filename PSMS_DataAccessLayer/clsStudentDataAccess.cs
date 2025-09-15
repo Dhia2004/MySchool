@@ -543,5 +543,25 @@ namespace PSMS_DataAccessLayer
             }
             return RowsAffected > 0;
         }
+
+        static public int UnpaidSubscriptionsCount(int StudentID)
+        {
+            int Count = 0;
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"SELECT COUNT(*) FROM Subscriptions
+                             WHERE Student_ID = @StudentID AND IsPaid = 0";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@StudentID", StudentID);
+            try
+            {
+                connection.Open();
+                object Result = command.ExecuteScalar();
+                if (Result != null && int.TryParse(Result.ToString(), out int c))
+                    Count = c;
+            }
+            catch (Exception ex) { Count = 0; }
+            finally { connection.Close(); }
+            return Count;
+        }
     }
 }

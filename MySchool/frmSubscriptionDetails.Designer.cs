@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbClose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lblSubscriptionID = new System.Windows.Forms.Label();
@@ -98,7 +97,6 @@
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.lblCreatedByUser = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -133,18 +131,6 @@
             this.panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbClose
-            // 
-            this.pbClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbClose.Image = global::MySchool.Properties.Resources.Cross_64;
-            this.pbClose.Location = new System.Drawing.Point(476, 15);
-            this.pbClose.Name = "pbClose";
-            this.pbClose.Size = new System.Drawing.Size(59, 61);
-            this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbClose.TabIndex = 186;
-            this.pbClose.TabStop = false;
-            this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
             // 
             // pictureBox1
             // 
@@ -910,19 +896,21 @@
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pbClose);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.lblSubscriptionID);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.lblMode);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(570, 786);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(570, 786);
             this.Name = "frmSubscriptionDetails";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSubscriptionDetails";
             this.Load += new System.EventHandler(this.frmSubscriptionDetails_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -962,7 +950,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pbClose;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label lblSubscriptionID;

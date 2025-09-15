@@ -208,6 +208,7 @@ namespace MySchool
 
                 if ((Subscription.Save()))
                 {
+                    CourseSection.OccupySeat();
                     MessageBox.Show("Subscription Updated Successfully", "Done",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return true;

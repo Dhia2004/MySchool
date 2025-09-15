@@ -171,7 +171,7 @@ namespace PSMS_DataAccessLayer
         {
             int RowsAffected = 0;
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
-            string query = @"DELETE FROM Subscriptions WHERE SubscriptionID = @SubscriptionID";
+            string query = @"DELETE FROM Subscriptions WHERE Subscription_ID = @SubscriptionID";
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@SubscriptionID", SubscriptionID);
             try
@@ -197,7 +197,7 @@ namespace PSMS_DataAccessLayer
         {
             bool IsFound = false;
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
-            string query = @"SELECT * FROM Subscriptions WHERE SubscriptionID = @SubscriptionID";
+            string query = @"SELECT * FROM Subscriptions WHERE Subscription_ID = @SubscriptionID";
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@SubscriptionID", SubscriptionID);
             try
@@ -207,8 +207,8 @@ namespace PSMS_DataAccessLayer
                 if (reader.Read())
                 {
                     IsFound = true;
-                    studentID = (int)reader["StudentID"];
-                    courseID = (int)reader["CourseID"];
+                    studentID = (int)reader["Student_ID"];
+                    courseID = (int)reader["Course_ID"];
                     courseSec_ID = (int)reader["CourseSec_ID"];
                     totalSessions = (int)reader["TotalSessions"];
                     remainingSessions = (int)reader["RemainingSessions"];
@@ -280,6 +280,38 @@ namespace PSMS_DataAccessLayer
                 connection.Close();
             }
             return exists;
+        }
+
+        static public bool DecrementRemainingSessions(int SubscriptionID)
+        {
+            int RowsAffected = 0;
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+            string query = @"UPDATE Subscriptions
+                             SET RemainingSessions = CASE 
+                                                        WHEN RemainingSessions > 0 THEN RemainingSessions - 1 
+                                                        ELSE 0 
+                                                     END,
+                                 IsActive = CASE 
+                                                WHEN RemainingSessions > 1 THEN 1 
+                                                ELSE 0 
+                                             END
+                             WHERE Subscription_ID = @SubscriptionID";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@SubscriptionID", SubscriptionID);
+            try
+            {
+                connection.Open();
+                RowsAffected = command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                RowsAffected = 0;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return RowsAffected > 0;
         }
 
     }

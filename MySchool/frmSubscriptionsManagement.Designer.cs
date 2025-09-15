@@ -40,32 +40,32 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.flpSubscriptionsList = new System.Windows.Forms.FlowLayoutPanel();
+            this.cmsSubscriprions = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.subscriptionDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.studentDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.courseDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.courseSectionDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.sectionDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ctrlSubscriptionInfo1 = new MySchool.ctrlSubscriptionInfo();
             this.label2 = new System.Windows.Forms.Label();
             this.lblMode = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblPageNumber = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.cmsSubscriprions = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.ctrlSubscriptionInfo1 = new MySchool.ctrlSubscriptionInfo();
             this.button1 = new System.Windows.Forms.Button();
             this.pbBack = new System.Windows.Forms.PictureBox();
             this.pbNext = new System.Windows.Forms.PictureBox();
             this.pbRefrech = new System.Windows.Forms.PictureBox();
-            this.subscriptionDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.studentDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.studentHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.courseDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.courseSectionDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sectionDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbStudentImage = new System.Windows.Forms.PictureBox();
             this.flpSubscriptionsList.SuspendLayout();
@@ -207,6 +207,147 @@
             this.flpSubscriptionsList.Size = new System.Drawing.Size(1204, 384);
             this.flpSubscriptionsList.TabIndex = 152;
             // 
+            // cmsSubscriprions
+            // 
+            this.cmsSubscriprions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.subscriptionDetailsToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem6,
+            this.toolStripSeparator1,
+            this.studentDetailsToolStripMenuItem,
+            this.studentHistoryToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.courseDetailsToolStripMenuItem,
+            this.courseSectionDetailsToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.sectionDetailsToolStripMenuItem,
+            this.groupDetailsToolStripMenuItem});
+            this.cmsSubscriprions.Name = "cmsSubscriprions";
+            this.cmsSubscriprions.Size = new System.Drawing.Size(224, 430);
+            // 
+            // subscriptionDetailsToolStripMenuItem
+            // 
+            this.subscriptionDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.subscriptionDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.Info_32;
+            this.subscriptionDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.subscriptionDetailsToolStripMenuItem.Name = "subscriptionDetailsToolStripMenuItem";
+            this.subscriptionDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
+            this.subscriptionDetailsToolStripMenuItem.Text = "Subscription details";
+            this.subscriptionDetailsToolStripMenuItem.Click += new System.EventHandler(this.subscriptionDetailsToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(220, 6);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem4.Image = global::MySchool.Properties.Resources.Edit_Info_32;
+            this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(223, 38);
+            this.toolStripMenuItem4.Text = "Add new subscription";
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem5.Image = global::MySchool.Properties.Resources.Pencil_32___2;
+            this.toolStripMenuItem5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(223, 38);
+            this.toolStripMenuItem5.Text = "Edit subscription";
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem6.Image = global::MySchool.Properties.Resources.Delete_32;
+            this.toolStripMenuItem6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(223, 38);
+            this.toolStripMenuItem6.Text = "Delete subscription";
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(220, 6);
+            // 
+            // studentDetailsToolStripMenuItem
+            // 
+            this.studentDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.studentDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.Info_32;
+            this.studentDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.studentDetailsToolStripMenuItem.Name = "studentDetailsToolStripMenuItem";
+            this.studentDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
+            this.studentDetailsToolStripMenuItem.Text = "Student details";
+            // 
+            // studentHistoryToolStripMenuItem
+            // 
+            this.studentHistoryToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.studentHistoryToolStripMenuItem.Image = global::MySchool.Properties.Resources.Student_Historique_32;
+            this.studentHistoryToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.studentHistoryToolStripMenuItem.Name = "studentHistoryToolStripMenuItem";
+            this.studentHistoryToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
+            this.studentHistoryToolStripMenuItem.Text = "Student history";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(220, 6);
+            // 
+            // courseDetailsToolStripMenuItem
+            // 
+            this.courseDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.courseDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.Info_32;
+            this.courseDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.courseDetailsToolStripMenuItem.Name = "courseDetailsToolStripMenuItem";
+            this.courseDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
+            this.courseDetailsToolStripMenuItem.Text = "Course details";
+            // 
+            // courseSectionDetailsToolStripMenuItem
+            // 
+            this.courseSectionDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.courseSectionDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.Graduation_32;
+            this.courseSectionDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.courseSectionDetailsToolStripMenuItem.Name = "courseSectionDetailsToolStripMenuItem";
+            this.courseSectionDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
+            this.courseSectionDetailsToolStripMenuItem.Text = "Course section details";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(220, 6);
+            // 
+            // sectionDetailsToolStripMenuItem
+            // 
+            this.sectionDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.sectionDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.classroom_32;
+            this.sectionDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.sectionDetailsToolStripMenuItem.Name = "sectionDetailsToolStripMenuItem";
+            this.sectionDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
+            this.sectionDetailsToolStripMenuItem.Text = "Section details";
+            // 
+            // groupDetailsToolStripMenuItem
+            // 
+            this.groupDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.groupDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.Group_32;
+            this.groupDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.groupDetailsToolStripMenuItem.Name = "groupDetailsToolStripMenuItem";
+            this.groupDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
+            this.groupDetailsToolStripMenuItem.Text = "Group details";
+            // 
+            // ctrlSubscriptionInfo1
+            // 
+            this.ctrlSubscriptionInfo1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ctrlSubscriptionInfo1.BackColor = System.Drawing.Color.White;
+            this.ctrlSubscriptionInfo1.Location = new System.Drawing.Point(3, 3);
+            this.ctrlSubscriptionInfo1.Name = "ctrlSubscriptionInfo1";
+            this.ctrlSubscriptionInfo1.Size = new System.Drawing.Size(1186, 30);
+            this.ctrlSubscriptionInfo1.TabIndex = 0;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -271,55 +412,6 @@
             this.label12.Text = "#Records :";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cmsSubscriprions
-            // 
-            this.cmsSubscriprions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.subscriptionDetailsToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5,
-            this.toolStripMenuItem6,
-            this.toolStripSeparator1,
-            this.studentDetailsToolStripMenuItem,
-            this.studentHistoryToolStripMenuItem,
-            this.toolStripMenuItem2,
-            this.courseDetailsToolStripMenuItem,
-            this.courseSectionDetailsToolStripMenuItem,
-            this.toolStripMenuItem3,
-            this.sectionDetailsToolStripMenuItem,
-            this.groupDetailsToolStripMenuItem});
-            this.cmsSubscriprions.Name = "cmsSubscriprions";
-            this.cmsSubscriprions.Size = new System.Drawing.Size(224, 430);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(220, 6);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(220, 6);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(220, 6);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(220, 6);
-            // 
-            // ctrlSubscriptionInfo1
-            // 
-            this.ctrlSubscriptionInfo1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ctrlSubscriptionInfo1.BackColor = System.Drawing.Color.White;
-            this.ctrlSubscriptionInfo1.Location = new System.Drawing.Point(3, 3);
-            this.ctrlSubscriptionInfo1.Name = "ctrlSubscriptionInfo1";
-            this.ctrlSubscriptionInfo1.Size = new System.Drawing.Size(1186, 30);
-            this.ctrlSubscriptionInfo1.TabIndex = 0;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
@@ -373,97 +465,6 @@
             this.pbRefrech.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbRefrech.TabIndex = 165;
             this.pbRefrech.TabStop = false;
-            // 
-            // subscriptionDetailsToolStripMenuItem
-            // 
-            this.subscriptionDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.subscriptionDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.Info_32;
-            this.subscriptionDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.subscriptionDetailsToolStripMenuItem.Name = "subscriptionDetailsToolStripMenuItem";
-            this.subscriptionDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
-            this.subscriptionDetailsToolStripMenuItem.Text = "Subscription details";
-            this.subscriptionDetailsToolStripMenuItem.Click += new System.EventHandler(this.subscriptionDetailsToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem4.Image = global::MySchool.Properties.Resources.Edit_Info_32;
-            this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(223, 38);
-            this.toolStripMenuItem4.Text = "Add new subscription";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem5.Image = global::MySchool.Properties.Resources.Pencil_32___2;
-            this.toolStripMenuItem5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(223, 38);
-            this.toolStripMenuItem5.Text = "Edit subscription";
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem6.Image = global::MySchool.Properties.Resources.Delete_32;
-            this.toolStripMenuItem6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(223, 38);
-            this.toolStripMenuItem6.Text = "Delete subscription";
-            // 
-            // studentDetailsToolStripMenuItem
-            // 
-            this.studentDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.studentDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.Info_32;
-            this.studentDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.studentDetailsToolStripMenuItem.Name = "studentDetailsToolStripMenuItem";
-            this.studentDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
-            this.studentDetailsToolStripMenuItem.Text = "Student details";
-            // 
-            // studentHistoryToolStripMenuItem
-            // 
-            this.studentHistoryToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.studentHistoryToolStripMenuItem.Image = global::MySchool.Properties.Resources.Student_Historique_32;
-            this.studentHistoryToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.studentHistoryToolStripMenuItem.Name = "studentHistoryToolStripMenuItem";
-            this.studentHistoryToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
-            this.studentHistoryToolStripMenuItem.Text = "Student history";
-            // 
-            // courseDetailsToolStripMenuItem
-            // 
-            this.courseDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.courseDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.Info_32;
-            this.courseDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.courseDetailsToolStripMenuItem.Name = "courseDetailsToolStripMenuItem";
-            this.courseDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
-            this.courseDetailsToolStripMenuItem.Text = "Course details";
-            // 
-            // courseSectionDetailsToolStripMenuItem
-            // 
-            this.courseSectionDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.courseSectionDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.Graduation_32;
-            this.courseSectionDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.courseSectionDetailsToolStripMenuItem.Name = "courseSectionDetailsToolStripMenuItem";
-            this.courseSectionDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
-            this.courseSectionDetailsToolStripMenuItem.Text = "Course section details";
-            // 
-            // sectionDetailsToolStripMenuItem
-            // 
-            this.sectionDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.sectionDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.classroom_32;
-            this.sectionDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.sectionDetailsToolStripMenuItem.Name = "sectionDetailsToolStripMenuItem";
-            this.sectionDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
-            this.sectionDetailsToolStripMenuItem.Text = "Section details";
-            // 
-            // groupDetailsToolStripMenuItem
-            // 
-            this.groupDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.groupDetailsToolStripMenuItem.Image = global::MySchool.Properties.Resources.Group_32;
-            this.groupDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.groupDetailsToolStripMenuItem.Name = "groupDetailsToolStripMenuItem";
-            this.groupDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 38);
-            this.groupDetailsToolStripMenuItem.Text = "Group details";
             // 
             // pictureBox2
             // 

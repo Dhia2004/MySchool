@@ -403,6 +403,16 @@ namespace MySchool.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Done_512 {
+            get {
+                object obj = ResourceManager.GetObject("Done 512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Edit_Info_32 {
             get {
                 object obj = ResourceManager.GetObject("Edit Info 32", resourceCulture);

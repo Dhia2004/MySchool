@@ -192,7 +192,7 @@ namespace PSMS_BusinessLayer
                         return false;
                     }
                     
-                    break;
+                        break;
 
                 default:
                     return false;
@@ -274,6 +274,11 @@ namespace PSMS_BusinessLayer
         public bool UpdateStudentStatus()
         {
             return clsStudentDataAccess.UpdateStudentStatus(this.StudentID, this.IsActive, this.DeactivationReason);
+        }
+
+        public int UnpaidSubscriptionsCount()
+        {
+            return clsStudentDataAccess.UnpaidSubscriptionsCount(this.StudentID);
         }
     }
 }

@@ -107,6 +107,10 @@ namespace PSMS_BusinessLayer
                 TotalSessions, RemainingSessions, StartDate, EndDate, IsActive, Notes, IsPaid);
         }
 
+        public static bool Delete(int SubscriptionID)
+        {
+            return clsSubscriptionDataAccess.DeleteSubscription(SubscriptionID);
+        }
         public bool Save()
         {
             switch (Mode)
@@ -164,6 +168,26 @@ namespace PSMS_BusinessLayer
         static public bool CheckExistingActiveSubscription(int studentID, int SubjectID)
         {
             return clsSubscriptionDataAccess.CheckExistingActiveSubscription(studentID, SubjectID);
+        }
+
+        public bool IncrementRemainingSessions()
+        {
+            if (this.RemainingSessions < this.TotalSessions)
+            {
+                this.RemainingSessions += 1;
+                return _UpdateSubscription();
+            }
+            return false;
+        }
+
+        public bool DecrementRemainingSessions()
+        {
+            if (this.RemainingSessions > 0)
+            {
+                this.RemainingSessions -= 1;
+                return clsSubscriptionDataAccess.DecrementRemainingSessions(this.SubscriptionID);
+            }
+            return false;
         }
 
     }

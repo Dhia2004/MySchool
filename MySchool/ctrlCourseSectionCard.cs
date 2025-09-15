@@ -32,7 +32,7 @@ namespace MySchool
             lblGroupName.Text = CourseSection.Group.Name;
             lblDay.Text = CourseSection.Day;
             lblTime.Text = CourseSection.Time;
-            lblNumberOfSeats.Text = CourseSection.NumberOfSeats.ToString();
+            lblNumberOfSeats.Text = CourseSection.NumberOfSeats.ToString() + " ~ " + CourseSection.RemainingSeats.ToString();
             if (CourseSection.RemainingSeats != 0)
             {
                 pnlAlarm.Visible = false;

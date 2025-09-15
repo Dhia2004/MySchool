@@ -44,15 +44,15 @@ namespace MySchool
         private void button2_Click(object sender, EventArgs e)
         {
             frmAllStudents frm = new frmAllStudents();
-            panel1.Visible = true;
+            //panel1.Visible = true;
             frm.ShowDialog();
-            panel1.Visible = false;
+            //panel1.Visible = false;
 
         }
 
         private void frmMainPage_Load(object sender, EventArgs e)
         {
-            panel1.Visible = false;
+            
             
            
 
@@ -62,10 +62,10 @@ namespace MySchool
         private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAllStudents frm = new frmAllStudents();
-            panel1.Visible = true;
+            //panel1.Visible = true;
             menuStrip1.Visible = false;
             frm.ShowDialog();
-            panel1.Visible = false;
+            //panel1.Visible = false;
             menuStrip1.Visible = true;
 
         }
@@ -131,10 +131,10 @@ namespace MySchool
         {
             frmAllStudents frm = new frmAllStudents();
 
-            panel1.Visible = true;
+            //panel1.Visible = true;
             menuStrip1.Visible = false;
             frm.ShowDialog();
-            panel1.Visible = false;
+            //panel1.Visible = false;
             menuStrip1.Visible = true;
         }
 
@@ -209,6 +209,12 @@ namespace MySchool
         {
             frmAddEditSubscription frmAddEditSubscription = new frmAddEditSubscription();
             frmAddEditSubscription.ShowDialog();
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            frmAttendances frm = new frmAttendances();
+            frm.ShowDialog();
         }
     }
 }

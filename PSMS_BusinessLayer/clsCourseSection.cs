@@ -178,5 +178,19 @@ namespace PSMS_BusinessLayer
             DataTable dtCourseSections = clsCourseSectionDataAccess.GetAllCourseSectionsByCourseID(courseID);
             return ConvertCourseSectionsRecordsToObjects(dtCourseSections);
         }
+
+        public bool OccupySeat()
+        {
+            if (this.RemainingSeats > 0)
+            {
+                if (clsCourseSectionDataAccess.OccupySeat(this.CourseSecID))
+                {
+                    this.RemainingSeats--;
+                    return true;
+                }
+                
+            }
+            return false;
+        }
     }
 }
